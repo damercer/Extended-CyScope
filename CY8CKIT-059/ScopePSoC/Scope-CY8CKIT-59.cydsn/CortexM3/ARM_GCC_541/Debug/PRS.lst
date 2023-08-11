@@ -1,0 +1,1916 @@
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"PRS.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	PRS_initVar
+  20              		.bss
+  21              		.type	PRS_initVar, %object
+  22              		.size	PRS_initVar, 1
+  23              	PRS_initVar:
+  24 0000 00       		.space	1
+  25              		.global	PRS_backup
+  26              		.data
+  27              		.align	2
+  28              		.type	PRS_backup, %object
+  29              		.size	PRS_backup, 4
+  30              	PRS_backup:
+  31 0000 00       		.byte	0
+  32 0001 00       		.space	1
+  33 0002 FFFF     		.short	-1
+  34              		.section	.text.PRS_Init,"ax",%progbits
+  35              		.align	2
+  36              		.global	PRS_Init
+  37              		.thumb
+  38              		.thumb_func
+  39              		.type	PRS_Init, %function
+  40              	PRS_Init:
+  41              	.LFB0:
+  42              		.file 1 "Generated_Source\\PSoC5\\PRS.c"
+   1:Generated_Source\PSoC5/PRS.c **** /*******************************************************************************
+   2:Generated_Source\PSoC5/PRS.c **** * File Name: PRS.c
+   3:Generated_Source\PSoC5/PRS.c **** * Version 2.40
+   4:Generated_Source\PSoC5/PRS.c **** *
+   5:Generated_Source\PSoC5/PRS.c **** * Description:
+   6:Generated_Source\PSoC5/PRS.c **** *  This file provides the source code to the API for the PRS component
+   7:Generated_Source\PSoC5/PRS.c **** *
+   8:Generated_Source\PSoC5/PRS.c **** * Note:
+   9:Generated_Source\PSoC5/PRS.c **** *  None
+  10:Generated_Source\PSoC5/PRS.c **** *
+  11:Generated_Source\PSoC5/PRS.c **** ********************************************************************************
+  12:Generated_Source\PSoC5/PRS.c **** * Copyright 2008-2013, Cypress Semiconductor Corporation.  All rights reserved.
+  13:Generated_Source\PSoC5/PRS.c **** * You may use this file only in accordance with the license, terms, conditions,
+  14:Generated_Source\PSoC5/PRS.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  15:Generated_Source\PSoC5/PRS.c **** * the software package with which this file was provided.
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 2
+
+
+  16:Generated_Source\PSoC5/PRS.c **** *******************************************************************************/
+  17:Generated_Source\PSoC5/PRS.c **** 
+  18:Generated_Source\PSoC5/PRS.c **** #include "PRS.h"
+  19:Generated_Source\PSoC5/PRS.c **** 
+  20:Generated_Source\PSoC5/PRS.c **** uint8 PRS_initVar = 0u;
+  21:Generated_Source\PSoC5/PRS.c **** 
+  22:Generated_Source\PSoC5/PRS.c **** PRS_BACKUP_STRUCT PRS_backup =
+  23:Generated_Source\PSoC5/PRS.c **** {
+  24:Generated_Source\PSoC5/PRS.c ****     0x00u, /* enableState; */
+  25:Generated_Source\PSoC5/PRS.c **** 
+  26:Generated_Source\PSoC5/PRS.c ****     #if (PRS_WAKEUP_BEHAVIOUR == PRS__RESUMEWORK)
+  27:Generated_Source\PSoC5/PRS.c ****         /* Save dff register for time mult */
+  28:Generated_Source\PSoC5/PRS.c ****         #if (PRS_TIME_MULTIPLEXING_ENABLE)
+  29:Generated_Source\PSoC5/PRS.c ****             PRS_INIT_STATE, /* dffStatus; */
+  30:Generated_Source\PSoC5/PRS.c ****         #endif  /* End PRS_TIME_MULTIPLEXING_ENABLE */
+  31:Generated_Source\PSoC5/PRS.c **** 
+  32:Generated_Source\PSoC5/PRS.c ****         /* Save A0 and A1 registers are none-retention */
+  33:Generated_Source\PSoC5/PRS.c ****         #if(PRS_PRS_SIZE <= 32u)
+  34:Generated_Source\PSoC5/PRS.c ****             PRS_DEFAULT_SEED, /* seed */
+  35:Generated_Source\PSoC5/PRS.c **** 
+  36:Generated_Source\PSoC5/PRS.c ****         #else
+  37:Generated_Source\PSoC5/PRS.c ****             PRS_DEFAULT_SEED_UPPER, /* seedUpper; */
+  38:Generated_Source\PSoC5/PRS.c ****             PRS_DEFAULT_SEED_LOWER, /* seedLower; */
+  39:Generated_Source\PSoC5/PRS.c **** 
+  40:Generated_Source\PSoC5/PRS.c ****         #endif  /* End (PRS_PRS_SIZE <= 32u) */
+  41:Generated_Source\PSoC5/PRS.c **** 
+  42:Generated_Source\PSoC5/PRS.c ****     #endif  /* End (PRS_WAKEUP_BEHAVIOUR == PRS__RESUMEWORK) */
+  43:Generated_Source\PSoC5/PRS.c **** };
+  44:Generated_Source\PSoC5/PRS.c **** 
+  45:Generated_Source\PSoC5/PRS.c **** 
+  46:Generated_Source\PSoC5/PRS.c **** /*******************************************************************************
+  47:Generated_Source\PSoC5/PRS.c **** * Function Name: PRS_Init
+  48:Generated_Source\PSoC5/PRS.c **** ********************************************************************************
+  49:Generated_Source\PSoC5/PRS.c **** *
+  50:Generated_Source\PSoC5/PRS.c **** * Summary:
+  51:Generated_Source\PSoC5/PRS.c **** *  Initializes seed and polynomial registers with initial values.
+  52:Generated_Source\PSoC5/PRS.c **** *
+  53:Generated_Source\PSoC5/PRS.c **** * Parameters:
+  54:Generated_Source\PSoC5/PRS.c **** *  void
+  55:Generated_Source\PSoC5/PRS.c **** *
+  56:Generated_Source\PSoC5/PRS.c **** * Return:
+  57:Generated_Source\PSoC5/PRS.c **** *  void
+  58:Generated_Source\PSoC5/PRS.c **** *
+  59:Generated_Source\PSoC5/PRS.c **** *******************************************************************************/
+  60:Generated_Source\PSoC5/PRS.c **** void PRS_Init(void) 
+  61:Generated_Source\PSoC5/PRS.c **** {
+  43              		.loc 1 61 0
+  44              		.cfi_startproc
+  45              		@ args = 0, pretend = 0, frame = 0
+  46              		@ frame_needed = 1, uses_anonymous_args = 0
+  47 0000 80B5     		push	{r7, lr}
+  48              		.cfi_def_cfa_offset 8
+  49              		.cfi_offset 7, -8
+  50              		.cfi_offset 14, -4
+  51 0002 00AF     		add	r7, sp, #0
+  52              		.cfi_def_cfa_register 7
+  62:Generated_Source\PSoC5/PRS.c ****     /* Writes seed value and ponynom value provided for customizer */
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 3
+
+
+  63:Generated_Source\PSoC5/PRS.c ****     #if (PRS_PRS_SIZE <= 32u)
+  64:Generated_Source\PSoC5/PRS.c ****         PRS_WritePolynomial(PRS_DEFAULT_POLYNOM);
+  53              		.loc 1 64 0
+  54 0004 4FF43440 		mov	r0, #46080
+  55 0008 FFF7FEFF 		bl	PRS_WritePolynomial
+  65:Generated_Source\PSoC5/PRS.c ****         PRS_WriteSeed(PRS_DEFAULT_SEED);
+  56              		.loc 1 65 0
+  57 000c 4FF6FF70 		movw	r0, #65535
+  58 0010 FFF7FEFF 		bl	PRS_WriteSeed
+  66:Generated_Source\PSoC5/PRS.c ****         #if (PRS_RUN_MODE == PRS__CLOCKED)
+  67:Generated_Source\PSoC5/PRS.c ****             PRS_ResetSeedInit(PRS_DEFAULT_SEED);
+  59              		.loc 1 67 0
+  60 0014 4FF6FF70 		movw	r0, #65535
+  61 0018 FFF7FEFF 		bl	PRS_ResetSeedInit
+  68:Generated_Source\PSoC5/PRS.c ****         #endif  /* End (PRS_RUN_MODE == PRS__CLOCKED) */
+  69:Generated_Source\PSoC5/PRS.c ****             PRS_Enable();
+  62              		.loc 1 69 0
+  63 001c FFF7FEFF 		bl	PRS_Enable
+  70:Generated_Source\PSoC5/PRS.c ****     #else
+  71:Generated_Source\PSoC5/PRS.c ****         PRS_WritePolynomialUpper(PRS_DEFAULT_POLYNOM_UPPER);
+  72:Generated_Source\PSoC5/PRS.c ****         PRS_WritePolynomialLower(PRS_DEFAULT_POLYNOM_LOWER);
+  73:Generated_Source\PSoC5/PRS.c ****         PRS_WriteSeedUpper(PRS_DEFAULT_SEED_UPPER);
+  74:Generated_Source\PSoC5/PRS.c ****         PRS_WriteSeedLower(PRS_DEFAULT_SEED_LOWER);
+  75:Generated_Source\PSoC5/PRS.c ****         #if (PRS_RUN_MODE == PRS__CLOCKED)
+  76:Generated_Source\PSoC5/PRS.c ****             PRS_ResetSeedInitUpper(PRS_DEFAULT_SEED_UPPER);
+  77:Generated_Source\PSoC5/PRS.c ****             PRS_ResetSeedInitLower(PRS_DEFAULT_SEED_LOWER);
+  78:Generated_Source\PSoC5/PRS.c ****         #endif  /* End (PRS_RUN_MODE == PRS__CLOCKED) */
+  79:Generated_Source\PSoC5/PRS.c ****             PRS_Enable();
+  80:Generated_Source\PSoC5/PRS.c ****     #endif  /* End (PRS_PRS_SIZE <= 32u) */
+  81:Generated_Source\PSoC5/PRS.c **** }
+  64              		.loc 1 81 0
+  65 0020 00BF     		nop
+  66 0022 80BD     		pop	{r7, pc}
+  67              		.cfi_endproc
+  68              	.LFE0:
+  69              		.size	PRS_Init, .-PRS_Init
+  70              		.section	.text.PRS_Enable,"ax",%progbits
+  71              		.align	2
+  72              		.global	PRS_Enable
+  73              		.thumb
+  74              		.thumb_func
+  75              		.type	PRS_Enable, %function
+  76              	PRS_Enable:
+  77              	.LFB1:
+  82:Generated_Source\PSoC5/PRS.c **** 
+  83:Generated_Source\PSoC5/PRS.c **** 
+  84:Generated_Source\PSoC5/PRS.c **** /*******************************************************************************
+  85:Generated_Source\PSoC5/PRS.c **** * Function Name: PRS_Enable
+  86:Generated_Source\PSoC5/PRS.c **** ********************************************************************************
+  87:Generated_Source\PSoC5/PRS.c **** *
+  88:Generated_Source\PSoC5/PRS.c **** * Summary:
+  89:Generated_Source\PSoC5/PRS.c **** *  Starts PRS computation on rising edge of input clock.
+  90:Generated_Source\PSoC5/PRS.c **** *
+  91:Generated_Source\PSoC5/PRS.c **** * Parameters:
+  92:Generated_Source\PSoC5/PRS.c **** *  void
+  93:Generated_Source\PSoC5/PRS.c **** *
+  94:Generated_Source\PSoC5/PRS.c **** * Return:
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 4
+
+
+  95:Generated_Source\PSoC5/PRS.c **** *  void
+  96:Generated_Source\PSoC5/PRS.c **** *
+  97:Generated_Source\PSoC5/PRS.c **** *******************************************************************************/
+  98:Generated_Source\PSoC5/PRS.c **** void PRS_Enable(void) 
+  99:Generated_Source\PSoC5/PRS.c **** {
+  78              		.loc 1 99 0
+  79              		.cfi_startproc
+  80              		@ args = 0, pretend = 0, frame = 0
+  81              		@ frame_needed = 1, uses_anonymous_args = 0
+  82              		@ link register save eliminated.
+  83 0000 80B4     		push	{r7}
+  84              		.cfi_def_cfa_offset 4
+  85              		.cfi_offset 7, -4
+  86 0002 00AF     		add	r7, sp, #0
+  87              		.cfi_def_cfa_register 7
+ 100:Generated_Source\PSoC5/PRS.c ****         PRS_CONTROL_REG |= PRS_CTRL_ENABLE;
+  88              		.loc 1 100 0
+  89 0004 054A     		ldr	r2, .L3
+  90 0006 054B     		ldr	r3, .L3
+  91 0008 1B78     		ldrb	r3, [r3]
+  92 000a DBB2     		uxtb	r3, r3
+  93 000c 43F00103 		orr	r3, r3, #1
+  94 0010 DBB2     		uxtb	r3, r3
+  95 0012 1370     		strb	r3, [r2]
+ 101:Generated_Source\PSoC5/PRS.c **** }
+  96              		.loc 1 101 0
+  97 0014 00BF     		nop
+  98 0016 BD46     		mov	sp, r7
+  99              		.cfi_def_cfa_register 13
+ 100              		@ sp needed
+ 101 0018 80BC     		pop	{r7}
+ 102              		.cfi_restore 7
+ 103              		.cfi_def_cfa_offset 0
+ 104 001a 7047     		bx	lr
+ 105              	.L4:
+ 106              		.align	2
+ 107              	.L3:
+ 108 001c 76650040 		.word	1073767798
+ 109              		.cfi_endproc
+ 110              	.LFE1:
+ 111              		.size	PRS_Enable, .-PRS_Enable
+ 112              		.section	.text.PRS_Start,"ax",%progbits
+ 113              		.align	2
+ 114              		.global	PRS_Start
+ 115              		.thumb
+ 116              		.thumb_func
+ 117              		.type	PRS_Start, %function
+ 118              	PRS_Start:
+ 119              	.LFB2:
+ 102:Generated_Source\PSoC5/PRS.c **** 
+ 103:Generated_Source\PSoC5/PRS.c **** 
+ 104:Generated_Source\PSoC5/PRS.c **** /*******************************************************************************
+ 105:Generated_Source\PSoC5/PRS.c **** * Function Name: PRS_Start
+ 106:Generated_Source\PSoC5/PRS.c **** ********************************************************************************
+ 107:Generated_Source\PSoC5/PRS.c **** *
+ 108:Generated_Source\PSoC5/PRS.c **** * Summary:
+ 109:Generated_Source\PSoC5/PRS.c **** *  Initializes seed and polynomial registers with initial values. Computation
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 5
+
+
+ 110:Generated_Source\PSoC5/PRS.c **** *  of PRS starts on rising edge of input clock.
+ 111:Generated_Source\PSoC5/PRS.c **** *
+ 112:Generated_Source\PSoC5/PRS.c **** * Parameters:
+ 113:Generated_Source\PSoC5/PRS.c **** *  void
+ 114:Generated_Source\PSoC5/PRS.c **** *
+ 115:Generated_Source\PSoC5/PRS.c **** * Return:
+ 116:Generated_Source\PSoC5/PRS.c **** *  void
+ 117:Generated_Source\PSoC5/PRS.c **** *
+ 118:Generated_Source\PSoC5/PRS.c **** * Global variables:
+ 119:Generated_Source\PSoC5/PRS.c **** *  PRS_initVar: global variable is used to indicate initial
+ 120:Generated_Source\PSoC5/PRS.c **** *  configuration of this component.  The variable is initialized to zero and set
+ 121:Generated_Source\PSoC5/PRS.c **** *  to 1 the first time PRS_Start() is called. This allows
+ 122:Generated_Source\PSoC5/PRS.c **** *  enable/disable component without re-initialization in all subsequent calls
+ 123:Generated_Source\PSoC5/PRS.c **** *  to the PRS_Start() routine.
+ 124:Generated_Source\PSoC5/PRS.c **** *
+ 125:Generated_Source\PSoC5/PRS.c **** *******************************************************************************/
+ 126:Generated_Source\PSoC5/PRS.c **** void PRS_Start(void) 
+ 127:Generated_Source\PSoC5/PRS.c **** {
+ 120              		.loc 1 127 0
+ 121              		.cfi_startproc
+ 122              		@ args = 0, pretend = 0, frame = 0
+ 123              		@ frame_needed = 1, uses_anonymous_args = 0
+ 124 0000 80B5     		push	{r7, lr}
+ 125              		.cfi_def_cfa_offset 8
+ 126              		.cfi_offset 7, -8
+ 127              		.cfi_offset 14, -4
+ 128 0002 00AF     		add	r7, sp, #0
+ 129              		.cfi_def_cfa_register 7
+ 128:Generated_Source\PSoC5/PRS.c ****     /* Writes seed value and ponynom value provided from customizer */
+ 129:Generated_Source\PSoC5/PRS.c ****     if (PRS_initVar == 0u)
+ 130              		.loc 1 129 0
+ 131 0004 064B     		ldr	r3, .L7
+ 132 0006 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 133 0008 002B     		cmp	r3, #0
+ 134 000a 04D1     		bne	.L6
+ 130:Generated_Source\PSoC5/PRS.c ****     {
+ 131:Generated_Source\PSoC5/PRS.c ****         PRS_Init();
+ 135              		.loc 1 131 0
+ 136 000c FFF7FEFF 		bl	PRS_Init
+ 132:Generated_Source\PSoC5/PRS.c ****         PRS_initVar = 1u;
+ 137              		.loc 1 132 0
+ 138 0010 034B     		ldr	r3, .L7
+ 139 0012 0122     		movs	r2, #1
+ 140 0014 1A70     		strb	r2, [r3]
+ 141              	.L6:
+ 133:Generated_Source\PSoC5/PRS.c ****     }
+ 134:Generated_Source\PSoC5/PRS.c **** 
+ 135:Generated_Source\PSoC5/PRS.c ****     PRS_Enable();
+ 142              		.loc 1 135 0
+ 143 0016 FFF7FEFF 		bl	PRS_Enable
+ 136:Generated_Source\PSoC5/PRS.c **** }
+ 144              		.loc 1 136 0
+ 145 001a 00BF     		nop
+ 146 001c 80BD     		pop	{r7, pc}
+ 147              	.L8:
+ 148 001e 00BF     		.align	2
+ 149              	.L7:
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 6
+
+
+ 150 0020 00000000 		.word	PRS_initVar
+ 151              		.cfi_endproc
+ 152              	.LFE2:
+ 153              		.size	PRS_Start, .-PRS_Start
+ 154              		.section	.text.PRS_Stop,"ax",%progbits
+ 155              		.align	2
+ 156              		.global	PRS_Stop
+ 157              		.thumb
+ 158              		.thumb_func
+ 159              		.type	PRS_Stop, %function
+ 160              	PRS_Stop:
+ 161              	.LFB3:
+ 137:Generated_Source\PSoC5/PRS.c **** 
+ 138:Generated_Source\PSoC5/PRS.c **** 
+ 139:Generated_Source\PSoC5/PRS.c **** /*******************************************************************************
+ 140:Generated_Source\PSoC5/PRS.c **** * Function Name: PRS_Stop
+ 141:Generated_Source\PSoC5/PRS.c **** ********************************************************************************
+ 142:Generated_Source\PSoC5/PRS.c **** *
+ 143:Generated_Source\PSoC5/PRS.c **** * Summary:
+ 144:Generated_Source\PSoC5/PRS.c **** *  Stops PRS computation.
+ 145:Generated_Source\PSoC5/PRS.c **** *
+ 146:Generated_Source\PSoC5/PRS.c **** * Parameters:
+ 147:Generated_Source\PSoC5/PRS.c **** *  void
+ 148:Generated_Source\PSoC5/PRS.c **** *
+ 149:Generated_Source\PSoC5/PRS.c **** * Return:
+ 150:Generated_Source\PSoC5/PRS.c **** *  void
+ 151:Generated_Source\PSoC5/PRS.c **** *
+ 152:Generated_Source\PSoC5/PRS.c **** *******************************************************************************/
+ 153:Generated_Source\PSoC5/PRS.c **** void PRS_Stop(void) 
+ 154:Generated_Source\PSoC5/PRS.c **** {
+ 162              		.loc 1 154 0
+ 163              		.cfi_startproc
+ 164              		@ args = 0, pretend = 0, frame = 0
+ 165              		@ frame_needed = 1, uses_anonymous_args = 0
+ 166              		@ link register save eliminated.
+ 167 0000 80B4     		push	{r7}
+ 168              		.cfi_def_cfa_offset 4
+ 169              		.cfi_offset 7, -4
+ 170 0002 00AF     		add	r7, sp, #0
+ 171              		.cfi_def_cfa_register 7
+ 155:Generated_Source\PSoC5/PRS.c ****     PRS_CONTROL_REG &= ((uint8)~PRS_CTRL_ENABLE);
+ 172              		.loc 1 155 0
+ 173 0004 054A     		ldr	r2, .L10
+ 174 0006 054B     		ldr	r3, .L10
+ 175 0008 1B78     		ldrb	r3, [r3]
+ 176 000a DBB2     		uxtb	r3, r3
+ 177 000c 23F00103 		bic	r3, r3, #1
+ 178 0010 DBB2     		uxtb	r3, r3
+ 179 0012 1370     		strb	r3, [r2]
+ 156:Generated_Source\PSoC5/PRS.c **** }
+ 180              		.loc 1 156 0
+ 181 0014 00BF     		nop
+ 182 0016 BD46     		mov	sp, r7
+ 183              		.cfi_def_cfa_register 13
+ 184              		@ sp needed
+ 185 0018 80BC     		pop	{r7}
+ 186              		.cfi_restore 7
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 7
+
+
+ 187              		.cfi_def_cfa_offset 0
+ 188 001a 7047     		bx	lr
+ 189              	.L11:
+ 190              		.align	2
+ 191              	.L10:
+ 192 001c 76650040 		.word	1073767798
+ 193              		.cfi_endproc
+ 194              	.LFE3:
+ 195              		.size	PRS_Stop, .-PRS_Stop
+ 196              		.section	.text.PRS_ResetSeedInit,"ax",%progbits
+ 197              		.align	2
+ 198              		.global	PRS_ResetSeedInit
+ 199              		.thumb
+ 200              		.thumb_func
+ 201              		.type	PRS_ResetSeedInit, %function
+ 202              	PRS_ResetSeedInit:
+ 203              	.LFB4:
+ 157:Generated_Source\PSoC5/PRS.c **** 
+ 158:Generated_Source\PSoC5/PRS.c **** 
+ 159:Generated_Source\PSoC5/PRS.c **** #if (PRS_RUN_MODE == PRS__APISINGLESTEP)
+ 160:Generated_Source\PSoC5/PRS.c ****     /*******************************************************************************
+ 161:Generated_Source\PSoC5/PRS.c ****     * FUNCTION NAME: PRS_Step
+ 162:Generated_Source\PSoC5/PRS.c ****     ********************************************************************************
+ 163:Generated_Source\PSoC5/PRS.c ****     *
+ 164:Generated_Source\PSoC5/PRS.c ****     * Summary:
+ 165:Generated_Source\PSoC5/PRS.c ****     *  Increments the PRS by one when API single step mode is used.
+ 166:Generated_Source\PSoC5/PRS.c ****     *
+ 167:Generated_Source\PSoC5/PRS.c ****     * Parameters:
+ 168:Generated_Source\PSoC5/PRS.c ****     *  void
+ 169:Generated_Source\PSoC5/PRS.c ****     *
+ 170:Generated_Source\PSoC5/PRS.c ****     * Return:
+ 171:Generated_Source\PSoC5/PRS.c ****     *  void
+ 172:Generated_Source\PSoC5/PRS.c ****     *
+ 173:Generated_Source\PSoC5/PRS.c ****     *******************************************************************************/
+ 174:Generated_Source\PSoC5/PRS.c ****     void PRS_Step(void) 
+ 175:Generated_Source\PSoC5/PRS.c ****     {
+ 176:Generated_Source\PSoC5/PRS.c ****         #if (PRS_TIME_MULTIPLEXING_ENABLE)
+ 177:Generated_Source\PSoC5/PRS.c ****             /* Makes 4 pulse, 4x for Time Mult */
+ 178:Generated_Source\PSoC5/PRS.c ****             PRS_EXECUTE_STEP;
+ 179:Generated_Source\PSoC5/PRS.c ****             PRS_EXECUTE_STEP;
+ 180:Generated_Source\PSoC5/PRS.c ****             PRS_EXECUTE_STEP;
+ 181:Generated_Source\PSoC5/PRS.c ****             PRS_EXECUTE_STEP;
+ 182:Generated_Source\PSoC5/PRS.c **** 
+ 183:Generated_Source\PSoC5/PRS.c ****         #else
+ 184:Generated_Source\PSoC5/PRS.c ****             /* One pulse without Time mult required */
+ 185:Generated_Source\PSoC5/PRS.c ****             PRS_EXECUTE_STEP;
+ 186:Generated_Source\PSoC5/PRS.c **** 
+ 187:Generated_Source\PSoC5/PRS.c ****         #endif  /* End PRS_TIME_MULTIPLEXING_ENABLE */
+ 188:Generated_Source\PSoC5/PRS.c ****     }
+ 189:Generated_Source\PSoC5/PRS.c **** #endif  /* End (PRS_RUN_MODE == PRS__APISINGLESTEP) */
+ 190:Generated_Source\PSoC5/PRS.c **** 
+ 191:Generated_Source\PSoC5/PRS.c **** 
+ 192:Generated_Source\PSoC5/PRS.c **** #if (PRS_RUN_MODE == PRS__CLOCKED)
+ 193:Generated_Source\PSoC5/PRS.c ****     #if (PRS_PRS_SIZE <= 32u) /* 8-32 bits PRS */
+ 194:Generated_Source\PSoC5/PRS.c ****         /*******************************************************************************
+ 195:Generated_Source\PSoC5/PRS.c ****         * FUNCTION NAME: PRS_ResetSeedInit
+ 196:Generated_Source\PSoC5/PRS.c ****         ********************************************************************************
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 8
+
+
+ 197:Generated_Source\PSoC5/PRS.c ****         *
+ 198:Generated_Source\PSoC5/PRS.c ****         * Summary:
+ 199:Generated_Source\PSoC5/PRS.c ****         *  Increments the PRS by one when API single step mode is used.
+ 200:Generated_Source\PSoC5/PRS.c ****         *
+ 201:Generated_Source\PSoC5/PRS.c ****         * Parameters:
+ 202:Generated_Source\PSoC5/PRS.c ****         *  void
+ 203:Generated_Source\PSoC5/PRS.c ****         *
+ 204:Generated_Source\PSoC5/PRS.c ****         * Return:
+ 205:Generated_Source\PSoC5/PRS.c ****         *  void
+ 206:Generated_Source\PSoC5/PRS.c ****         *
+ 207:Generated_Source\PSoC5/PRS.c ****         *******************************************************************************/
+ 208:Generated_Source\PSoC5/PRS.c ****         void PRS_ResetSeedInit(uint16 seed)
+ 209:Generated_Source\PSoC5/PRS.c ****                                             
+ 210:Generated_Source\PSoC5/PRS.c ****         {
+ 204              		.loc 1 210 0
+ 205              		.cfi_startproc
+ 206              		@ args = 0, pretend = 0, frame = 16
+ 207              		@ frame_needed = 1, uses_anonymous_args = 0
+ 208 0000 80B5     		push	{r7, lr}
+ 209              		.cfi_def_cfa_offset 8
+ 210              		.cfi_offset 7, -8
+ 211              		.cfi_offset 14, -4
+ 212 0002 84B0     		sub	sp, sp, #16
+ 213              		.cfi_def_cfa_offset 24
+ 214 0004 00AF     		add	r7, sp, #0
+ 215              		.cfi_def_cfa_register 7
+ 216 0006 0346     		mov	r3, r0
+ 217 0008 FB80     		strh	r3, [r7, #6]	@ movhi
+ 211:Generated_Source\PSoC5/PRS.c ****             uint8 enableInterrupts;
+ 212:Generated_Source\PSoC5/PRS.c **** 
+ 213:Generated_Source\PSoC5/PRS.c ****             /* Mask the Seed to cut unused bits */
+ 214:Generated_Source\PSoC5/PRS.c ****             seed &= PRS_MASK;
+ 215:Generated_Source\PSoC5/PRS.c **** 
+ 216:Generated_Source\PSoC5/PRS.c ****             /* Change AuxControl reg, need to be safety */
+ 217:Generated_Source\PSoC5/PRS.c ****             enableInterrupts = CyEnterCriticalSection();
+ 218              		.loc 1 217 0
+ 219 000a FFF7FEFF 		bl	CyEnterCriticalSection
+ 220 000e 0346     		mov	r3, r0
+ 221 0010 FB73     		strb	r3, [r7, #15]
+ 218:Generated_Source\PSoC5/PRS.c **** 
+ 219:Generated_Source\PSoC5/PRS.c ****             #if (PRS_TIME_MULTIPLEXING_ENABLE)
+ 220:Generated_Source\PSoC5/PRS.c ****                 /* Set FIFOs to single register */
+ 221:Generated_Source\PSoC5/PRS.c ****                 PRS_AUX_CONTROL_A_REG |= PRS_AUXCTRL_FIFO_SINGLE_REG;
+ 222:Generated_Source\PSoC5/PRS.c **** 
+ 223:Generated_Source\PSoC5/PRS.c ****                 #if(PRS_PRS_SIZE > 16u)       /* 17-32 bits PRS */
+ 224:Generated_Source\PSoC5/PRS.c ****                     PRS_AUX_CONTROL_B_REG |= PRS_AUXCTRL_FIFO_SINGLE_REG;
+ 225:Generated_Source\PSoC5/PRS.c ****                 #endif  /* End (PRS_PRS_SIZE <= 8u) */
+ 226:Generated_Source\PSoC5/PRS.c **** 
+ 227:Generated_Source\PSoC5/PRS.c ****                 /* AuxControl reg settings are done */
+ 228:Generated_Source\PSoC5/PRS.c ****                 CyExitCriticalSection(enableInterrupts);
+ 229:Generated_Source\PSoC5/PRS.c **** 
+ 230:Generated_Source\PSoC5/PRS.c ****                 /* Write Seed COPY */
+ 231:Generated_Source\PSoC5/PRS.c ****                 #if (PRS_PRS_SIZE <= 16u)          /* 16 bits PRS */
+ 232:Generated_Source\PSoC5/PRS.c ****                     PRS_SEED_COPY_A__A1_REG = HI8(seed);
+ 233:Generated_Source\PSoC5/PRS.c ****                     PRS_SEED_COPY_A__A0_REG = LO8(seed);
+ 234:Generated_Source\PSoC5/PRS.c **** 
+ 235:Generated_Source\PSoC5/PRS.c ****                 #elif (PRS_PRS_SIZE <= 24u)        /* 24 bits PRS */
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 9
+
+
+ 236:Generated_Source\PSoC5/PRS.c ****                     PRS_SEED_COPY_B__A1_REG = LO8(HI16(seed));
+ 237:Generated_Source\PSoC5/PRS.c ****                     PRS_SEED_COPY_B__A0_REG = HI8(seed);
+ 238:Generated_Source\PSoC5/PRS.c ****                     PRS_SEED_COPY_A__A0_REG = LO8(seed);
+ 239:Generated_Source\PSoC5/PRS.c **** 
+ 240:Generated_Source\PSoC5/PRS.c ****                 #else                                           /* 32 bits PRS */
+ 241:Generated_Source\PSoC5/PRS.c ****                     PRS_SEED_COPY_B__A1_REG = HI8(HI16(seed));
+ 242:Generated_Source\PSoC5/PRS.c ****                     PRS_SEED_COPY_A__A1_REG = LO8(HI16(seed));
+ 243:Generated_Source\PSoC5/PRS.c ****                     PRS_SEED_COPY_B__A0_REG = HI8(seed);
+ 244:Generated_Source\PSoC5/PRS.c ****                     PRS_SEED_COPY_A__A0_REG = LO8(seed);
+ 245:Generated_Source\PSoC5/PRS.c ****                 #endif  /* End (PRS_PRS_SIZE <= 32u) */
+ 246:Generated_Source\PSoC5/PRS.c **** 
+ 247:Generated_Source\PSoC5/PRS.c ****             #else
+ 248:Generated_Source\PSoC5/PRS.c ****                 /* Set FIFOs to single register */
+ 249:Generated_Source\PSoC5/PRS.c ****                 #if (PRS_PRS_SIZE <= 8u)      /* 8 bits PRS */
+ 250:Generated_Source\PSoC5/PRS.c ****                     PRS_AUX_CONTROL_A_REG |= PRS_AUXCTRL_FIFO_SINGLE_REG;
+ 251:Generated_Source\PSoC5/PRS.c **** 
+ 252:Generated_Source\PSoC5/PRS.c ****                 #elif (PRS_PRS_SIZE <= 16u)      /* 16 bits PRS */
+ 253:Generated_Source\PSoC5/PRS.c ****                     PRS_AUX_CONTROL_A_REG  |= PRS_AUXCTRL_FIFO_SINGLE_REG;
+ 222              		.loc 1 253 0
+ 223 0012 0D4A     		ldr	r2, .L13
+ 224 0014 0C4B     		ldr	r3, .L13
+ 225 0016 1B78     		ldrb	r3, [r3]
+ 226 0018 DBB2     		uxtb	r3, r3
+ 227 001a 43F00303 		orr	r3, r3, #3
+ 228 001e DBB2     		uxtb	r3, r3
+ 229 0020 1370     		strb	r3, [r2]
+ 254:Generated_Source\PSoC5/PRS.c ****                     PRS_AUX_CONTROL_B_REG  |= PRS_AUXCTRL_FIFO_SINGLE_REG;
+ 230              		.loc 1 254 0
+ 231 0022 0A4A     		ldr	r2, .L13+4
+ 232 0024 094B     		ldr	r3, .L13+4
+ 233 0026 1B78     		ldrb	r3, [r3]
+ 234 0028 DBB2     		uxtb	r3, r3
+ 235 002a 43F00303 		orr	r3, r3, #3
+ 236 002e DBB2     		uxtb	r3, r3
+ 237 0030 1370     		strb	r3, [r2]
+ 255:Generated_Source\PSoC5/PRS.c **** 
+ 256:Generated_Source\PSoC5/PRS.c ****                 #elif (PRS_PRS_SIZE <= 24u)      /* 24-39 bits PRS */
+ 257:Generated_Source\PSoC5/PRS.c ****                     PRS_AUX_CONTROL_A_REG  |= PRS_AUXCTRL_FIFO_SINGLE_REG;
+ 258:Generated_Source\PSoC5/PRS.c ****                     PRS_AUX_CONTROL_B_REG  |= PRS_AUXCTRL_FIFO_SINGLE_REG;
+ 259:Generated_Source\PSoC5/PRS.c ****                     PRS_AUX_CONTROL_C_REG  |= PRS_AUXCTRL_FIFO_SINGLE_REG;
+ 260:Generated_Source\PSoC5/PRS.c **** 
+ 261:Generated_Source\PSoC5/PRS.c ****                 #elif (PRS_PRS_SIZE <= 32u)      /* 40-55 bits PRS */
+ 262:Generated_Source\PSoC5/PRS.c ****                     PRS_AUX_CONTROL_A_REG  |= PRS_AUXCTRL_FIFO_SINGLE_REG;
+ 263:Generated_Source\PSoC5/PRS.c ****                     PRS_AUX_CONTROL_B_REG  |= PRS_AUXCTRL_FIFO_SINGLE_REG;
+ 264:Generated_Source\PSoC5/PRS.c ****                     PRS_AUX_CONTROL_C_REG  |= PRS_AUXCTRL_FIFO_SINGLE_REG;
+ 265:Generated_Source\PSoC5/PRS.c ****                     PRS_AUX_CONTROL_D_REG  |= PRS_AUXCTRL_FIFO_SINGLE_REG;
+ 266:Generated_Source\PSoC5/PRS.c **** 
+ 267:Generated_Source\PSoC5/PRS.c ****                 #endif  /* End (PRS_PRS_SIZE <= 8u) */
+ 268:Generated_Source\PSoC5/PRS.c **** 
+ 269:Generated_Source\PSoC5/PRS.c ****                 /* AuxControl reg setting are done */
+ 270:Generated_Source\PSoC5/PRS.c ****                 CyExitCriticalSection(enableInterrupts);
+ 238              		.loc 1 270 0
+ 239 0032 FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
+ 240 0034 1846     		mov	r0, r3
+ 241 0036 FFF7FEFF 		bl	CyExitCriticalSection
+ 271:Generated_Source\PSoC5/PRS.c **** 
+ 272:Generated_Source\PSoC5/PRS.c ****                 /* Write Seed COPY */
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 10
+
+
+ 273:Generated_Source\PSoC5/PRS.c ****                 CY_SET_REG16(PRS_SEED_COPY_PTR, seed);
+ 242              		.loc 1 273 0
+ 243 003a 054A     		ldr	r2, .L13+8
+ 244 003c FB88     		ldrh	r3, [r7, #6]	@ movhi
+ 245 003e 1380     		strh	r3, [r2]	@ movhi
+ 274:Generated_Source\PSoC5/PRS.c **** 
+ 275:Generated_Source\PSoC5/PRS.c ****             #endif  /* End (PRS_TIME_MULTIPLEXING_ENABLE) */
+ 276:Generated_Source\PSoC5/PRS.c ****         }
+ 246              		.loc 1 276 0
+ 247 0040 00BF     		nop
+ 248 0042 1037     		adds	r7, r7, #16
+ 249              		.cfi_def_cfa_offset 8
+ 250 0044 BD46     		mov	sp, r7
+ 251              		.cfi_def_cfa_register 13
+ 252              		@ sp needed
+ 253 0046 80BD     		pop	{r7, pc}
+ 254              	.L14:
+ 255              		.align	2
+ 256              	.L13:
+ 257 0048 94650040 		.word	1073767828
+ 258 004c 95650040 		.word	1073767829
+ 259 0050 44650040 		.word	1073767748
+ 260              		.cfi_endproc
+ 261              	.LFE4:
+ 262              		.size	PRS_ResetSeedInit, .-PRS_ResetSeedInit
+ 263              		.section	.text.PRS_Read,"ax",%progbits
+ 264              		.align	2
+ 265              		.global	PRS_Read
+ 266              		.thumb
+ 267              		.thumb_func
+ 268              		.type	PRS_Read, %function
+ 269              	PRS_Read:
+ 270              	.LFB5:
+ 277:Generated_Source\PSoC5/PRS.c **** 
+ 278:Generated_Source\PSoC5/PRS.c ****     #else
+ 279:Generated_Source\PSoC5/PRS.c **** 
+ 280:Generated_Source\PSoC5/PRS.c ****         /*******************************************************************************
+ 281:Generated_Source\PSoC5/PRS.c ****         * FUNCTION NAME: PRS_ResetSeedInitUpper
+ 282:Generated_Source\PSoC5/PRS.c ****         ********************************************************************************
+ 283:Generated_Source\PSoC5/PRS.c ****         *
+ 284:Generated_Source\PSoC5/PRS.c ****         * Summary:
+ 285:Generated_Source\PSoC5/PRS.c ****         *  Increments the PRS by one when API single step mode is used.
+ 286:Generated_Source\PSoC5/PRS.c ****         *
+ 287:Generated_Source\PSoC5/PRS.c ****         * Parameters:
+ 288:Generated_Source\PSoC5/PRS.c ****         *  void
+ 289:Generated_Source\PSoC5/PRS.c ****         *
+ 290:Generated_Source\PSoC5/PRS.c ****         * Return:
+ 291:Generated_Source\PSoC5/PRS.c ****         *  void
+ 292:Generated_Source\PSoC5/PRS.c ****         *
+ 293:Generated_Source\PSoC5/PRS.c ****         *******************************************************************************/
+ 294:Generated_Source\PSoC5/PRS.c ****         void PRS_ResetSeedInitUpper(uint32 seed) 
+ 295:Generated_Source\PSoC5/PRS.c ****         {
+ 296:Generated_Source\PSoC5/PRS.c **** 			uint8 enableInterrupts;
+ 297:Generated_Source\PSoC5/PRS.c **** 
+ 298:Generated_Source\PSoC5/PRS.c **** 			/* Mask the Seed Upper half to cut unused bits */
+ 299:Generated_Source\PSoC5/PRS.c ****             seed &= PRS_MASK;
+ 300:Generated_Source\PSoC5/PRS.c **** 
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 11
+
+
+ 301:Generated_Source\PSoC5/PRS.c **** 			/* Change AuxControl reg, need to be safety */
+ 302:Generated_Source\PSoC5/PRS.c ****             enableInterrupts = CyEnterCriticalSection();
+ 303:Generated_Source\PSoC5/PRS.c **** 
+ 304:Generated_Source\PSoC5/PRS.c ****             /* Set FIFOs to single register */
+ 305:Generated_Source\PSoC5/PRS.c ****             PRS_AUX_CONTROL_A_REG |= PRS_AUXCTRL_FIFO_SINGLE_REG;
+ 306:Generated_Source\PSoC5/PRS.c ****             PRS_AUX_CONTROL_B_REG |= PRS_AUXCTRL_FIFO_SINGLE_REG;
+ 307:Generated_Source\PSoC5/PRS.c ****             PRS_AUX_CONTROL_C_REG |= PRS_AUXCTRL_FIFO_SINGLE_REG;
+ 308:Generated_Source\PSoC5/PRS.c **** 
+ 309:Generated_Source\PSoC5/PRS.c **** 			#if (PRS_PRS_SIZE > 48u)               /* 49-64 bits PRS */
+ 310:Generated_Source\PSoC5/PRS.c ****                 PRS_AUX_CONTROL_D_REG |= PRS_AUXCTRL_FIFO_SINGLE_REG;
+ 311:Generated_Source\PSoC5/PRS.c ****             #endif  /* End (PRS_PRS_SIZE <= 8u) */
+ 312:Generated_Source\PSoC5/PRS.c **** 
+ 313:Generated_Source\PSoC5/PRS.c ****             /* AuxControl reg settings are done */
+ 314:Generated_Source\PSoC5/PRS.c ****             CyExitCriticalSection(enableInterrupts);
+ 315:Generated_Source\PSoC5/PRS.c **** 
+ 316:Generated_Source\PSoC5/PRS.c ****             /* Write Seed Upper COPY */
+ 317:Generated_Source\PSoC5/PRS.c ****             #if (PRS_PRS_SIZE <= 40u)          /* 40 bits PRS */
+ 318:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_UPPER_COPY_C__A1_REG = LO8(seed);
+ 319:Generated_Source\PSoC5/PRS.c **** 
+ 320:Generated_Source\PSoC5/PRS.c ****             #elif (PRS_PRS_SIZE <= 48u)        /* 48 bits PRS */
+ 321:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_UPPER_COPY_C__A1_REG = HI8(seed);
+ 322:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_UPPER_COPY_B__A1_REG = LO8(seed);
+ 323:Generated_Source\PSoC5/PRS.c **** 
+ 324:Generated_Source\PSoC5/PRS.c ****             #elif (PRS_PRS_SIZE <= 56u)        /* 56 bits PRS */
+ 325:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_UPPER_COPY_D__A1_REG = LO8(HI16(seed));
+ 326:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_UPPER_COPY_C__A1_REG = HI8(seed);
+ 327:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_UPPER_COPY_B__A1_REG = HI8(seed);
+ 328:Generated_Source\PSoC5/PRS.c **** 
+ 329:Generated_Source\PSoC5/PRS.c ****             #else                                           /* 64 bits PRS */
+ 330:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_UPPER_COPY_D__A1_REG = HI8(HI16(seed));
+ 331:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_UPPER_COPY_C__A1_REG = LO8(HI16(seed));
+ 332:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_UPPER_COPY_B__A1_REG = HI8(seed);
+ 333:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_UPPER_COPY_A__A1_REG = LO8(seed);
+ 334:Generated_Source\PSoC5/PRS.c **** 
+ 335:Generated_Source\PSoC5/PRS.c ****             #endif  /* End (PRS_PRS_SIZE <= 32u) */
+ 336:Generated_Source\PSoC5/PRS.c ****         }
+ 337:Generated_Source\PSoC5/PRS.c **** 
+ 338:Generated_Source\PSoC5/PRS.c **** 
+ 339:Generated_Source\PSoC5/PRS.c ****         /*******************************************************************************
+ 340:Generated_Source\PSoC5/PRS.c ****         * FUNCTION NAME: PRS_ResetSeedInitLower
+ 341:Generated_Source\PSoC5/PRS.c ****         ********************************************************************************
+ 342:Generated_Source\PSoC5/PRS.c ****         *
+ 343:Generated_Source\PSoC5/PRS.c ****         * Summary:
+ 344:Generated_Source\PSoC5/PRS.c ****         *  Increments the PRS by one when API single step mode is used.
+ 345:Generated_Source\PSoC5/PRS.c ****         *
+ 346:Generated_Source\PSoC5/PRS.c ****         * Parameters:
+ 347:Generated_Source\PSoC5/PRS.c ****         *  void
+ 348:Generated_Source\PSoC5/PRS.c ****         *
+ 349:Generated_Source\PSoC5/PRS.c ****         * Return:
+ 350:Generated_Source\PSoC5/PRS.c ****         *  void
+ 351:Generated_Source\PSoC5/PRS.c ****         *
+ 352:Generated_Source\PSoC5/PRS.c ****         *******************************************************************************/
+ 353:Generated_Source\PSoC5/PRS.c ****         void PRS_ResetSeedInitLower(uint32 seed) 
+ 354:Generated_Source\PSoC5/PRS.c ****         {
+ 355:Generated_Source\PSoC5/PRS.c ****             /* Write Seed Lower COPY */
+ 356:Generated_Source\PSoC5/PRS.c ****             #if (PRS_PRS_SIZE <= 40u)          /* 40 bits PRS */
+ 357:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_LOWER_COPY_B__A1_REG = HI8(HI16(seed));
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 12
+
+
+ 358:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_LOWER_COPY_C__A0_REG = LO8(HI16(seed));
+ 359:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_LOWER_COPY_B__A0_REG = HI8(seed);
+ 360:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_LOWER_COPY_A__A0_REG = LO8(seed);
+ 361:Generated_Source\PSoC5/PRS.c **** 
+ 362:Generated_Source\PSoC5/PRS.c ****             #elif (PRS_PRS_SIZE <= 48u)        /* 48 bits PRS */
+ 363:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_LOWER_COPY_A__A1_REG = HI8(HI16(seed));
+ 364:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_LOWER_COPY_C__A0_REG = LO8(HI16(seed));
+ 365:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_LOWER_COPY_B__A0_REG = HI8(seed);
+ 366:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_LOWER_COPY_A__A0_REG = LO8(seed);
+ 367:Generated_Source\PSoC5/PRS.c **** 
+ 368:Generated_Source\PSoC5/PRS.c ****             #else                                           /* 64 bits PRS */
+ 369:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_LOWER_COPY_D__A0_REG = HI8(HI16(seed));
+ 370:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_LOWER_COPY_C__A0_REG = LO8(HI16(seed));
+ 371:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_LOWER_COPY_B__A0_REG = HI8(seed);
+ 372:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_LOWER_COPY_A__A0_REG = LO8(seed);
+ 373:Generated_Source\PSoC5/PRS.c **** 
+ 374:Generated_Source\PSoC5/PRS.c ****             #endif  /* End (PRS_PRS_SIZE <= 32u) */
+ 375:Generated_Source\PSoC5/PRS.c ****         }
+ 376:Generated_Source\PSoC5/PRS.c **** 
+ 377:Generated_Source\PSoC5/PRS.c ****     #endif  /* End (PRS_PRS_SIZE <= 32u) */
+ 378:Generated_Source\PSoC5/PRS.c **** 
+ 379:Generated_Source\PSoC5/PRS.c **** #endif  /* End (PRS_RUN_MODE == PRS__CLOCKED) */
+ 380:Generated_Source\PSoC5/PRS.c **** 
+ 381:Generated_Source\PSoC5/PRS.c **** 
+ 382:Generated_Source\PSoC5/PRS.c **** #if(PRS_PRS_SIZE <= 32u) /* 8-32 bits PRS */
+ 383:Generated_Source\PSoC5/PRS.c ****     /*******************************************************************************
+ 384:Generated_Source\PSoC5/PRS.c ****     * Function Name: PRS_Read
+ 385:Generated_Source\PSoC5/PRS.c ****     ********************************************************************************
+ 386:Generated_Source\PSoC5/PRS.c ****     *
+ 387:Generated_Source\PSoC5/PRS.c ****     * Summary:
+ 388:Generated_Source\PSoC5/PRS.c ****     *  Reads PRS value.
+ 389:Generated_Source\PSoC5/PRS.c ****     *
+ 390:Generated_Source\PSoC5/PRS.c ****     * Parameters:
+ 391:Generated_Source\PSoC5/PRS.c ****     *  void
+ 392:Generated_Source\PSoC5/PRS.c ****     *
+ 393:Generated_Source\PSoC5/PRS.c ****     * Return:
+ 394:Generated_Source\PSoC5/PRS.c ****     *  Returns PRS value.
+ 395:Generated_Source\PSoC5/PRS.c ****     *
+ 396:Generated_Source\PSoC5/PRS.c ****     * Side Effects:
+ 397:Generated_Source\PSoC5/PRS.c ****     *  The seed value is cut according to mask = 2^(Resolution) - 1.
+ 398:Generated_Source\PSoC5/PRS.c ****     *  For example if PRS Resolution is 14 bits the mask value is:
+ 399:Generated_Source\PSoC5/PRS.c ****     *  mask = 2^(14) - 1 = 0x3FFFu.
+ 400:Generated_Source\PSoC5/PRS.c ****     *  The seed value = 0xFFFFu is cut:
+ 401:Generated_Source\PSoC5/PRS.c ****     *  seed & mask = 0xFFFFu & 0x3FFFu = 0x3FFFu.
+ 402:Generated_Source\PSoC5/PRS.c ****     *
+ 403:Generated_Source\PSoC5/PRS.c ****     *******************************************************************************/
+ 404:Generated_Source\PSoC5/PRS.c ****     uint16 PRS_Read(void) 
+ 405:Generated_Source\PSoC5/PRS.c ****     {
+ 271              		.loc 1 405 0
+ 272              		.cfi_startproc
+ 273              		@ args = 0, pretend = 0, frame = 0
+ 274              		@ frame_needed = 1, uses_anonymous_args = 0
+ 275              		@ link register save eliminated.
+ 276 0000 80B4     		push	{r7}
+ 277              		.cfi_def_cfa_offset 4
+ 278              		.cfi_offset 7, -4
+ 279 0002 00AF     		add	r7, sp, #0
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 13
+
+
+ 280              		.cfi_def_cfa_register 7
+ 406:Generated_Source\PSoC5/PRS.c ****         /* Read PRS */
+ 407:Generated_Source\PSoC5/PRS.c ****         #if (PRS_TIME_MULTIPLEXING_ENABLE)
+ 408:Generated_Source\PSoC5/PRS.c **** 
+ 409:Generated_Source\PSoC5/PRS.c ****             uint16 seed;
+ 410:Generated_Source\PSoC5/PRS.c **** 
+ 411:Generated_Source\PSoC5/PRS.c ****             #if (PRS_PRS_SIZE <= 16u)          /* 16 bits PRS */
+ 412:Generated_Source\PSoC5/PRS.c ****                 seed = ((uint16) PRS_SEED_A__A1_REG) << 8u;
+ 413:Generated_Source\PSoC5/PRS.c ****                 seed |= PRS_SEED_A__A0_REG;
+ 414:Generated_Source\PSoC5/PRS.c **** 
+ 415:Generated_Source\PSoC5/PRS.c ****             #elif (PRS_PRS_SIZE <= 24u)        /* 24 bits PRS */
+ 416:Generated_Source\PSoC5/PRS.c ****                 seed = ((uint32) (PRS_SEED_B__A1_REG)) << 16u;
+ 417:Generated_Source\PSoC5/PRS.c ****                 seed |= ((uint32) (PRS_SEED_B__A0_REG)) << 8u;
+ 418:Generated_Source\PSoC5/PRS.c ****                 seed |= PRS_SEED_A__A0_REG;
+ 419:Generated_Source\PSoC5/PRS.c **** 
+ 420:Generated_Source\PSoC5/PRS.c ****             #else                                           /* 32 bits PRS */
+ 421:Generated_Source\PSoC5/PRS.c ****                 seed = ((uint32) PRS_SEED_B__A1_REG) << 24u;
+ 422:Generated_Source\PSoC5/PRS.c ****                 seed |= ((uint32) PRS_SEED_A__A1_REG) << 16u;
+ 423:Generated_Source\PSoC5/PRS.c ****                 seed |= ((uint32) PRS_SEED_B__A0_REG) << 8u;
+ 424:Generated_Source\PSoC5/PRS.c ****                 seed |= PRS_SEED_A__A0_REG;
+ 425:Generated_Source\PSoC5/PRS.c **** 
+ 426:Generated_Source\PSoC5/PRS.c ****             #endif  /* End (PRS_PRS_SIZE <= 8u) */
+ 427:Generated_Source\PSoC5/PRS.c **** 
+ 428:Generated_Source\PSoC5/PRS.c ****             return (seed  & PRS_MASK);
+ 429:Generated_Source\PSoC5/PRS.c **** 
+ 430:Generated_Source\PSoC5/PRS.c ****         #else
+ 431:Generated_Source\PSoC5/PRS.c **** 
+ 432:Generated_Source\PSoC5/PRS.c ****             return (CY_GET_REG16(PRS_SEED_PTR) & PRS_MASK);
+ 281              		.loc 1 432 0
+ 282 0004 034B     		ldr	r3, .L17
+ 283 0006 1B88     		ldrh	r3, [r3]	@ movhi
+ 284 0008 9BB2     		uxth	r3, r3
+ 433:Generated_Source\PSoC5/PRS.c **** 
+ 434:Generated_Source\PSoC5/PRS.c ****         #endif  /* End (PRS_TIME_MULTIPLEXING_ENABLE) */
+ 435:Generated_Source\PSoC5/PRS.c ****     }
+ 285              		.loc 1 435 0
+ 286 000a 1846     		mov	r0, r3
+ 287 000c BD46     		mov	sp, r7
+ 288              		.cfi_def_cfa_register 13
+ 289              		@ sp needed
+ 290 000e 80BC     		pop	{r7}
+ 291              		.cfi_restore 7
+ 292              		.cfi_def_cfa_offset 0
+ 293 0010 7047     		bx	lr
+ 294              	.L18:
+ 295 0012 00BF     		.align	2
+ 296              	.L17:
+ 297 0014 04650040 		.word	1073767684
+ 298              		.cfi_endproc
+ 299              	.LFE5:
+ 300              		.size	PRS_Read, .-PRS_Read
+ 301              		.section	.text.PRS_WriteSeed,"ax",%progbits
+ 302              		.align	2
+ 303              		.global	PRS_WriteSeed
+ 304              		.thumb
+ 305              		.thumb_func
+ 306              		.type	PRS_WriteSeed, %function
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 14
+
+
+ 307              	PRS_WriteSeed:
+ 308              	.LFB6:
+ 436:Generated_Source\PSoC5/PRS.c **** 
+ 437:Generated_Source\PSoC5/PRS.c **** 
+ 438:Generated_Source\PSoC5/PRS.c ****     /*******************************************************************************
+ 439:Generated_Source\PSoC5/PRS.c ****     * Function Name: PRS_WriteSeed
+ 440:Generated_Source\PSoC5/PRS.c ****     ********************************************************************************
+ 441:Generated_Source\PSoC5/PRS.c ****     *
+ 442:Generated_Source\PSoC5/PRS.c ****     * Summary:
+ 443:Generated_Source\PSoC5/PRS.c ****     *  Writes seed value.
+ 444:Generated_Source\PSoC5/PRS.c ****     *
+ 445:Generated_Source\PSoC5/PRS.c ****     * Parameters:
+ 446:Generated_Source\PSoC5/PRS.c ****     *  seed:  Seed value.
+ 447:Generated_Source\PSoC5/PRS.c ****     *
+ 448:Generated_Source\PSoC5/PRS.c ****     * Return:
+ 449:Generated_Source\PSoC5/PRS.c ****     *  void
+ 450:Generated_Source\PSoC5/PRS.c ****     *
+ 451:Generated_Source\PSoC5/PRS.c ****     * Side Effects:
+ 452:Generated_Source\PSoC5/PRS.c ****     *  The seed value is cut according to mask = 2^(Resolution) - 1.
+ 453:Generated_Source\PSoC5/PRS.c ****     *  For example if PRS Resolution is 14 bits the mask value is:
+ 454:Generated_Source\PSoC5/PRS.c ****     *  mask = 2^(14) - 1 = 0x3FFFu.
+ 455:Generated_Source\PSoC5/PRS.c ****     *  The seed value = 0xFFFFu is cut:
+ 456:Generated_Source\PSoC5/PRS.c ****     *  seed & mask = 0xFFFFu & 0x3FFFu = 0x3FFFu.
+ 457:Generated_Source\PSoC5/PRS.c ****     *
+ 458:Generated_Source\PSoC5/PRS.c ****     *******************************************************************************/
+ 459:Generated_Source\PSoC5/PRS.c ****     void PRS_WriteSeed(uint16 seed) 
+ 460:Generated_Source\PSoC5/PRS.c ****     {
+ 309              		.loc 1 460 0
+ 310              		.cfi_startproc
+ 311              		@ args = 0, pretend = 0, frame = 8
+ 312              		@ frame_needed = 1, uses_anonymous_args = 0
+ 313              		@ link register save eliminated.
+ 314 0000 80B4     		push	{r7}
+ 315              		.cfi_def_cfa_offset 4
+ 316              		.cfi_offset 7, -4
+ 317 0002 83B0     		sub	sp, sp, #12
+ 318              		.cfi_def_cfa_offset 16
+ 319 0004 00AF     		add	r7, sp, #0
+ 320              		.cfi_def_cfa_register 7
+ 321 0006 0346     		mov	r3, r0
+ 322 0008 FB80     		strh	r3, [r7, #6]	@ movhi
+ 461:Generated_Source\PSoC5/PRS.c ****         /* Masks the Seed to cut unused bits */
+ 462:Generated_Source\PSoC5/PRS.c ****         seed &= PRS_MASK;
+ 463:Generated_Source\PSoC5/PRS.c **** 
+ 464:Generated_Source\PSoC5/PRS.c ****         /* Writes Seed */
+ 465:Generated_Source\PSoC5/PRS.c ****         #if (PRS_TIME_MULTIPLEXING_ENABLE)
+ 466:Generated_Source\PSoC5/PRS.c **** 
+ 467:Generated_Source\PSoC5/PRS.c ****             #if (PRS_PRS_SIZE <= 16u)          /* 16 bits PRS */
+ 468:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_A__A1_REG = HI8(seed);
+ 469:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_A__A0_REG = LO8(seed);
+ 470:Generated_Source\PSoC5/PRS.c **** 
+ 471:Generated_Source\PSoC5/PRS.c ****             #elif (PRS_PRS_SIZE <= 24u)        /* 24 bits PRS */
+ 472:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_B__A1_REG = LO8(HI16(seed));
+ 473:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_B__A0_REG = HI8(seed);
+ 474:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_A__A0_REG = LO8(seed);
+ 475:Generated_Source\PSoC5/PRS.c **** 
+ 476:Generated_Source\PSoC5/PRS.c ****             #else                                           /* 32 bits PRS */
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 15
+
+
+ 477:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_B__A1_REG = HI8(HI16(seed));
+ 478:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_A__A1_REG = LO8(HI16(seed));
+ 479:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_B__A0_REG = HI8(seed);
+ 480:Generated_Source\PSoC5/PRS.c ****                 PRS_SEED_A__A0_REG = LO8(seed);
+ 481:Generated_Source\PSoC5/PRS.c ****             #endif  /* End (PRS_PRS_SIZE <= 32u) */
+ 482:Generated_Source\PSoC5/PRS.c **** 
+ 483:Generated_Source\PSoC5/PRS.c ****             /* Resets triggers */
+ 484:Generated_Source\PSoC5/PRS.c ****             #if (PRS_WAKEUP_BEHAVIOUR == PRS__RESUMEWORK)
+ 485:Generated_Source\PSoC5/PRS.c ****                 if((PRS_sleepState & PRS_NORMAL_SEQUENCE) != 0u)
+ 486:Generated_Source\PSoC5/PRS.c ****                 {
+ 487:Generated_Source\PSoC5/PRS.c ****                     PRS_EXECUTE_DFF_RESET;
+ 488:Generated_Source\PSoC5/PRS.c ****                 }
+ 489:Generated_Source\PSoC5/PRS.c ****             #else
+ 490:Generated_Source\PSoC5/PRS.c ****                 PRS_EXECUTE_DFF_RESET;
+ 491:Generated_Source\PSoC5/PRS.c ****             #endif  /* (PRS_WAKEUP_BEHAVIOUR == PRS__RESUMEWORK) */
+ 492:Generated_Source\PSoC5/PRS.c **** 
+ 493:Generated_Source\PSoC5/PRS.c ****         #else
+ 494:Generated_Source\PSoC5/PRS.c **** 
+ 495:Generated_Source\PSoC5/PRS.c ****             CY_SET_REG16(PRS_SEED_PTR, seed);
+ 323              		.loc 1 495 0
+ 324 000a 044A     		ldr	r2, .L20
+ 325 000c FB88     		ldrh	r3, [r7, #6]	@ movhi
+ 326 000e 1380     		strh	r3, [r2]	@ movhi
+ 496:Generated_Source\PSoC5/PRS.c **** 
+ 497:Generated_Source\PSoC5/PRS.c ****         #endif  /* End (PRS_TIME_MULTIPLEXING_ENABLE) */
+ 498:Generated_Source\PSoC5/PRS.c ****     }
+ 327              		.loc 1 498 0
+ 328 0010 00BF     		nop
+ 329 0012 0C37     		adds	r7, r7, #12
+ 330              		.cfi_def_cfa_offset 4
+ 331 0014 BD46     		mov	sp, r7
+ 332              		.cfi_def_cfa_register 13
+ 333              		@ sp needed
+ 334 0016 80BC     		pop	{r7}
+ 335              		.cfi_restore 7
+ 336              		.cfi_def_cfa_offset 0
+ 337 0018 7047     		bx	lr
+ 338              	.L21:
+ 339 001a 00BF     		.align	2
+ 340              	.L20:
+ 341 001c 04650040 		.word	1073767684
+ 342              		.cfi_endproc
+ 343              	.LFE6:
+ 344              		.size	PRS_WriteSeed, .-PRS_WriteSeed
+ 345              		.section	.text.PRS_ReadPolynomial,"ax",%progbits
+ 346              		.align	2
+ 347              		.global	PRS_ReadPolynomial
+ 348              		.thumb
+ 349              		.thumb_func
+ 350              		.type	PRS_ReadPolynomial, %function
+ 351              	PRS_ReadPolynomial:
+ 352              	.LFB7:
+ 499:Generated_Source\PSoC5/PRS.c **** 
+ 500:Generated_Source\PSoC5/PRS.c **** 
+ 501:Generated_Source\PSoC5/PRS.c ****     /*******************************************************************************
+ 502:Generated_Source\PSoC5/PRS.c ****     * Function Name: PRS_ReadPolynomial
+ 503:Generated_Source\PSoC5/PRS.c ****     ********************************************************************************
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 16
+
+
+ 504:Generated_Source\PSoC5/PRS.c ****     *
+ 505:Generated_Source\PSoC5/PRS.c ****     * Summary:
+ 506:Generated_Source\PSoC5/PRS.c ****     *  Reads PRS polynomial value.
+ 507:Generated_Source\PSoC5/PRS.c ****     *
+ 508:Generated_Source\PSoC5/PRS.c ****     * Parameters:
+ 509:Generated_Source\PSoC5/PRS.c ****     *  void
+ 510:Generated_Source\PSoC5/PRS.c ****     *
+ 511:Generated_Source\PSoC5/PRS.c ****     * Return:
+ 512:Generated_Source\PSoC5/PRS.c ****     *  Returns PRS polynomial value.
+ 513:Generated_Source\PSoC5/PRS.c ****     *
+ 514:Generated_Source\PSoC5/PRS.c ****     *******************************************************************************/
+ 515:Generated_Source\PSoC5/PRS.c ****     uint16 PRS_ReadPolynomial(void)
+ 516:Generated_Source\PSoC5/PRS.c ****                                 
+ 517:Generated_Source\PSoC5/PRS.c ****     {
+ 353              		.loc 1 517 0
+ 354              		.cfi_startproc
+ 355              		@ args = 0, pretend = 0, frame = 0
+ 356              		@ frame_needed = 1, uses_anonymous_args = 0
+ 357              		@ link register save eliminated.
+ 358 0000 80B4     		push	{r7}
+ 359              		.cfi_def_cfa_offset 4
+ 360              		.cfi_offset 7, -4
+ 361 0002 00AF     		add	r7, sp, #0
+ 362              		.cfi_def_cfa_register 7
+ 518:Generated_Source\PSoC5/PRS.c ****         /* Reads polynomial */
+ 519:Generated_Source\PSoC5/PRS.c ****         #if (PRS_TIME_MULTIPLEXING_ENABLE)
+ 520:Generated_Source\PSoC5/PRS.c **** 
+ 521:Generated_Source\PSoC5/PRS.c ****             uint16 polynomial;
+ 522:Generated_Source\PSoC5/PRS.c **** 
+ 523:Generated_Source\PSoC5/PRS.c ****             #if (PRS_PRS_SIZE <= 16u)          /* 16 bits PRS */
+ 524:Generated_Source\PSoC5/PRS.c ****                 polynomial = ((uint16) PRS_POLYNOM_A__D1_REG) << 8u;
+ 525:Generated_Source\PSoC5/PRS.c ****                 polynomial |= (PRS_POLYNOM_A__D0_REG);
+ 526:Generated_Source\PSoC5/PRS.c **** 
+ 527:Generated_Source\PSoC5/PRS.c ****             #elif (PRS_PRS_SIZE <= 24u)        /* 24 bits PRS */
+ 528:Generated_Source\PSoC5/PRS.c ****                 polynomial = ((uint32) PRS_POLYNOM_B__D1_REG) << 16u;
+ 529:Generated_Source\PSoC5/PRS.c ****                 polynomial |= ((uint32) PRS_POLYNOM_B__D0_REG) << 8u;
+ 530:Generated_Source\PSoC5/PRS.c ****                 polynomial |= PRS_POLYNOM_A__D0_REG;
+ 531:Generated_Source\PSoC5/PRS.c **** 
+ 532:Generated_Source\PSoC5/PRS.c ****             #else                                           /* 32 bits PRS */
+ 533:Generated_Source\PSoC5/PRS.c ****                 polynomial = ((uint32) PRS_POLYNOM_B__D1_REG) << 24u;
+ 534:Generated_Source\PSoC5/PRS.c ****                 polynomial |= ((uint32) PRS_POLYNOM_A__D1_REG) << 16u;
+ 535:Generated_Source\PSoC5/PRS.c ****                 polynomial |= ((uint32) PRS_POLYNOM_B__D0_REG) << 8u;
+ 536:Generated_Source\PSoC5/PRS.c ****                 polynomial |= PRS_POLYNOM_A__D0_REG;
+ 537:Generated_Source\PSoC5/PRS.c **** 
+ 538:Generated_Source\PSoC5/PRS.c ****             #endif  /* End (PRS_PRS_SIZE <= 32u) */
+ 539:Generated_Source\PSoC5/PRS.c **** 
+ 540:Generated_Source\PSoC5/PRS.c ****             return polynomial;
+ 541:Generated_Source\PSoC5/PRS.c **** 
+ 542:Generated_Source\PSoC5/PRS.c ****         #else
+ 543:Generated_Source\PSoC5/PRS.c **** 
+ 544:Generated_Source\PSoC5/PRS.c ****             return CY_GET_REG16(PRS_POLYNOM_PTR);
+ 363              		.loc 1 544 0
+ 364 0004 034B     		ldr	r3, .L24
+ 365 0006 1B88     		ldrh	r3, [r3]	@ movhi
+ 366 0008 9BB2     		uxth	r3, r3
+ 545:Generated_Source\PSoC5/PRS.c **** 
+ 546:Generated_Source\PSoC5/PRS.c ****         #endif  /* End (PRS_TIME_MULTIPLEXING_ENABLE) */
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 17
+
+
+ 547:Generated_Source\PSoC5/PRS.c ****     }
+ 367              		.loc 1 547 0
+ 368 000a 1846     		mov	r0, r3
+ 369 000c BD46     		mov	sp, r7
+ 370              		.cfi_def_cfa_register 13
+ 371              		@ sp needed
+ 372 000e 80BC     		pop	{r7}
+ 373              		.cfi_restore 7
+ 374              		.cfi_def_cfa_offset 0
+ 375 0010 7047     		bx	lr
+ 376              	.L25:
+ 377 0012 00BF     		.align	2
+ 378              	.L24:
+ 379 0014 24650040 		.word	1073767716
+ 380              		.cfi_endproc
+ 381              	.LFE7:
+ 382              		.size	PRS_ReadPolynomial, .-PRS_ReadPolynomial
+ 383              		.section	.text.PRS_WritePolynomial,"ax",%progbits
+ 384              		.align	2
+ 385              		.global	PRS_WritePolynomial
+ 386              		.thumb
+ 387              		.thumb_func
+ 388              		.type	PRS_WritePolynomial, %function
+ 389              	PRS_WritePolynomial:
+ 390              	.LFB8:
+ 548:Generated_Source\PSoC5/PRS.c **** 
+ 549:Generated_Source\PSoC5/PRS.c **** 
+ 550:Generated_Source\PSoC5/PRS.c ****     /*******************************************************************************
+ 551:Generated_Source\PSoC5/PRS.c ****     * Function Name: PRS_WritePolynomial
+ 552:Generated_Source\PSoC5/PRS.c ****     ********************************************************************************
+ 553:Generated_Source\PSoC5/PRS.c ****     *
+ 554:Generated_Source\PSoC5/PRS.c ****     * Summary:
+ 555:Generated_Source\PSoC5/PRS.c ****     *  Writes PRS polynomial value.
+ 556:Generated_Source\PSoC5/PRS.c ****     *
+ 557:Generated_Source\PSoC5/PRS.c ****     * Parameters:
+ 558:Generated_Source\PSoC5/PRS.c ****     *  polynomial:  PRS polynomial.
+ 559:Generated_Source\PSoC5/PRS.c ****     *
+ 560:Generated_Source\PSoC5/PRS.c ****     * Return:
+ 561:Generated_Source\PSoC5/PRS.c ****     *  void
+ 562:Generated_Source\PSoC5/PRS.c ****     *
+ 563:Generated_Source\PSoC5/PRS.c ****     * Side Effects:
+ 564:Generated_Source\PSoC5/PRS.c ****     *  The polynomial value is cut according to mask = 2^(Resolution) - 1.
+ 565:Generated_Source\PSoC5/PRS.c ****     *  For example if PRS Resolution is 14 bits the mask value is:
+ 566:Generated_Source\PSoC5/PRS.c ****     *  mask = 2^(14) - 1 = 0x3FFFu.
+ 567:Generated_Source\PSoC5/PRS.c ****     *  The polynomial value = 0xFFFFu is cut:
+ 568:Generated_Source\PSoC5/PRS.c ****     *  polynomial & mask = 0xFFFFu & 0x3FFFu = 0x3FFFu.
+ 569:Generated_Source\PSoC5/PRS.c ****     *
+ 570:Generated_Source\PSoC5/PRS.c ****     *******************************************************************************/
+ 571:Generated_Source\PSoC5/PRS.c ****     void PRS_WritePolynomial(uint16 polynomial)
+ 572:Generated_Source\PSoC5/PRS.c ****                                           
+ 573:Generated_Source\PSoC5/PRS.c ****     {
+ 391              		.loc 1 573 0
+ 392              		.cfi_startproc
+ 393              		@ args = 0, pretend = 0, frame = 8
+ 394              		@ frame_needed = 1, uses_anonymous_args = 0
+ 395              		@ link register save eliminated.
+ 396 0000 80B4     		push	{r7}
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 18
+
+
+ 397              		.cfi_def_cfa_offset 4
+ 398              		.cfi_offset 7, -4
+ 399 0002 83B0     		sub	sp, sp, #12
+ 400              		.cfi_def_cfa_offset 16
+ 401 0004 00AF     		add	r7, sp, #0
+ 402              		.cfi_def_cfa_register 7
+ 403 0006 0346     		mov	r3, r0
+ 404 0008 FB80     		strh	r3, [r7, #6]	@ movhi
+ 574:Generated_Source\PSoC5/PRS.c ****         /* Mask polynomial to cut unused bits */
+ 575:Generated_Source\PSoC5/PRS.c ****         polynomial &= PRS_MASK;
+ 576:Generated_Source\PSoC5/PRS.c **** 
+ 577:Generated_Source\PSoC5/PRS.c ****         /* Write polynomial */
+ 578:Generated_Source\PSoC5/PRS.c ****         #if (PRS_TIME_MULTIPLEXING_ENABLE)
+ 579:Generated_Source\PSoC5/PRS.c **** 
+ 580:Generated_Source\PSoC5/PRS.c ****             #if (PRS_PRS_SIZE <= 16u)          /* 16 bits PRS */
+ 581:Generated_Source\PSoC5/PRS.c **** 
+ 582:Generated_Source\PSoC5/PRS.c ****                 PRS_POLYNOM_A__D1_REG = HI8(polynomial);
+ 583:Generated_Source\PSoC5/PRS.c ****                 PRS_POLYNOM_A__D0_REG = LO8(polynomial);
+ 584:Generated_Source\PSoC5/PRS.c **** 
+ 585:Generated_Source\PSoC5/PRS.c ****             #elif (PRS_PRS_SIZE <= 24u)        /* 24 bits PRS */
+ 586:Generated_Source\PSoC5/PRS.c ****                 PRS_POLYNOM_B__D1_REG = LO8(HI16(polynomial));
+ 587:Generated_Source\PSoC5/PRS.c ****                 PRS_POLYNOM_B__D0_REG = HI8(polynomial);
+ 588:Generated_Source\PSoC5/PRS.c ****                 PRS_POLYNOM_A__D0_REG = LO8(polynomial);
+ 589:Generated_Source\PSoC5/PRS.c **** 
+ 590:Generated_Source\PSoC5/PRS.c ****             #else                                           /* 32 bits PRS */
+ 591:Generated_Source\PSoC5/PRS.c ****                 PRS_POLYNOM_B__D1_REG = HI8(HI16(polynomial));
+ 592:Generated_Source\PSoC5/PRS.c ****                 PRS_POLYNOM_A__D1_REG = LO8(HI16(polynomial));
+ 593:Generated_Source\PSoC5/PRS.c ****                 PRS_POLYNOM_B__D0_REG = HI8(polynomial);
+ 594:Generated_Source\PSoC5/PRS.c ****                 PRS_POLYNOM_A__D0_REG = LO8(polynomial);
+ 595:Generated_Source\PSoC5/PRS.c **** 
+ 596:Generated_Source\PSoC5/PRS.c ****             #endif  /* End (PRS_PRS_SIZE <= 32u) */
+ 597:Generated_Source\PSoC5/PRS.c **** 
+ 598:Generated_Source\PSoC5/PRS.c ****             /* Resets triggers */
+ 599:Generated_Source\PSoC5/PRS.c ****             #if (PRS_WAKEUP_BEHAVIOUR == PRS__RESUMEWORK)
+ 600:Generated_Source\PSoC5/PRS.c ****                 if((PRS_sleepState & PRS_NORMAL_SEQUENCE) != 0u)
+ 601:Generated_Source\PSoC5/PRS.c ****                 {
+ 602:Generated_Source\PSoC5/PRS.c ****                     PRS_EXECUTE_DFF_RESET;
+ 603:Generated_Source\PSoC5/PRS.c ****                 }
+ 604:Generated_Source\PSoC5/PRS.c ****             #else
+ 605:Generated_Source\PSoC5/PRS.c ****                 PRS_EXECUTE_DFF_RESET;
+ 606:Generated_Source\PSoC5/PRS.c ****             #endif  /* (PRS_WAKEUP_BEHAVIOUR == PRS__RESUMEWORK) */
+ 607:Generated_Source\PSoC5/PRS.c **** 
+ 608:Generated_Source\PSoC5/PRS.c ****         #else
+ 609:Generated_Source\PSoC5/PRS.c **** 
+ 610:Generated_Source\PSoC5/PRS.c ****             CY_SET_REG16(PRS_POLYNOM_PTR, polynomial);
+ 405              		.loc 1 610 0
+ 406 000a 044A     		ldr	r2, .L27
+ 407 000c FB88     		ldrh	r3, [r7, #6]	@ movhi
+ 408 000e 1380     		strh	r3, [r2]	@ movhi
+ 611:Generated_Source\PSoC5/PRS.c **** 
+ 612:Generated_Source\PSoC5/PRS.c ****         #endif  /* End (PRS_TIME_MULTIPLEXING_ENABLE) */
+ 613:Generated_Source\PSoC5/PRS.c ****     }
+ 409              		.loc 1 613 0
+ 410 0010 00BF     		nop
+ 411 0012 0C37     		adds	r7, r7, #12
+ 412              		.cfi_def_cfa_offset 4
+ 413 0014 BD46     		mov	sp, r7
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 19
+
+
+ 414              		.cfi_def_cfa_register 13
+ 415              		@ sp needed
+ 416 0016 80BC     		pop	{r7}
+ 417              		.cfi_restore 7
+ 418              		.cfi_def_cfa_offset 0
+ 419 0018 7047     		bx	lr
+ 420              	.L28:
+ 421 001a 00BF     		.align	2
+ 422              	.L27:
+ 423 001c 24650040 		.word	1073767716
+ 424              		.cfi_endproc
+ 425              	.LFE8:
+ 426              		.size	PRS_WritePolynomial, .-PRS_WritePolynomial
+ 427              		.text
+ 428              	.Letext0:
+ 429              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 430              		.file 3 "Generated_Source\\PSoC5\\PRS.h"
+ 431              		.section	.debug_info,"",%progbits
+ 432              	.Ldebug_info0:
+ 433 0000 01020000 		.4byte	0x201
+ 434 0004 0400     		.2byte	0x4
+ 435 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 436 000a 04       		.byte	0x4
+ 437 000b 01       		.uleb128 0x1
+ 438 000c 26000000 		.4byte	.LASF33
+ 439 0010 0C       		.byte	0xc
+ 440 0011 00000000 		.4byte	.LASF34
+ 441 0015 C6010000 		.4byte	.LASF35
+ 442 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 443 001d 00000000 		.4byte	0
+ 444 0021 00000000 		.4byte	.Ldebug_line0
+ 445 0025 02       		.uleb128 0x2
+ 446 0026 01       		.byte	0x1
+ 447 0027 06       		.byte	0x6
+ 448 0028 7A020000 		.4byte	.LASF0
+ 449 002c 02       		.uleb128 0x2
+ 450 002d 01       		.byte	0x1
+ 451 002e 08       		.byte	0x8
+ 452 002f E2000000 		.4byte	.LASF1
+ 453 0033 02       		.uleb128 0x2
+ 454 0034 02       		.byte	0x2
+ 455 0035 05       		.byte	0x5
+ 456 0036 23020000 		.4byte	.LASF2
+ 457 003a 02       		.uleb128 0x2
+ 458 003b 02       		.byte	0x2
+ 459 003c 07       		.byte	0x7
+ 460 003d B4000000 		.4byte	.LASF3
+ 461 0041 02       		.uleb128 0x2
+ 462 0042 04       		.byte	0x4
+ 463 0043 05       		.byte	0x5
+ 464 0044 47020000 		.4byte	.LASF4
+ 465 0048 02       		.uleb128 0x2
+ 466 0049 04       		.byte	0x4
+ 467 004a 07       		.byte	0x7
+ 468 004b F5000000 		.4byte	.LASF5
+ 469 004f 02       		.uleb128 0x2
+ 470 0050 08       		.byte	0x8
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 20
+
+
+ 471 0051 05       		.byte	0x5
+ 472 0052 A5010000 		.4byte	.LASF6
+ 473 0056 02       		.uleb128 0x2
+ 474 0057 08       		.byte	0x8
+ 475 0058 07       		.byte	0x7
+ 476 0059 6E010000 		.4byte	.LASF7
+ 477 005d 03       		.uleb128 0x3
+ 478 005e 04       		.byte	0x4
+ 479 005f 05       		.byte	0x5
+ 480 0060 696E7400 		.ascii	"int\000"
+ 481 0064 02       		.uleb128 0x2
+ 482 0065 04       		.byte	0x4
+ 483 0066 07       		.byte	0x7
+ 484 0067 61010000 		.4byte	.LASF8
+ 485 006b 04       		.uleb128 0x4
+ 486 006c 07010000 		.4byte	.LASF9
+ 487 0070 02       		.byte	0x2
+ 488 0071 E901     		.2byte	0x1e9
+ 489 0073 2C000000 		.4byte	0x2c
+ 490 0077 04       		.uleb128 0x4
+ 491 0078 55010000 		.4byte	.LASF10
+ 492 007c 02       		.byte	0x2
+ 493 007d EA01     		.2byte	0x1ea
+ 494 007f 3A000000 		.4byte	0x3a
+ 495 0083 02       		.uleb128 0x2
+ 496 0084 04       		.byte	0x4
+ 497 0085 04       		.byte	0x4
+ 498 0086 DC000000 		.4byte	.LASF11
+ 499 008a 02       		.uleb128 0x2
+ 500 008b 08       		.byte	0x8
+ 501 008c 04       		.byte	0x4
+ 502 008d 3A010000 		.4byte	.LASF12
+ 503 0091 02       		.uleb128 0x2
+ 504 0092 01       		.byte	0x1
+ 505 0093 08       		.byte	0x8
+ 506 0094 C1010000 		.4byte	.LASF13
+ 507 0098 04       		.uleb128 0x4
+ 508 0099 F0000000 		.4byte	.LASF14
+ 509 009d 02       		.byte	0x2
+ 510 009e 9302     		.2byte	0x293
+ 511 00a0 A4000000 		.4byte	0xa4
+ 512 00a4 05       		.uleb128 0x5
+ 513 00a5 6B000000 		.4byte	0x6b
+ 514 00a9 04       		.uleb128 0x4
+ 515 00aa 2D020000 		.4byte	.LASF15
+ 516 00ae 02       		.byte	0x2
+ 517 00af 9402     		.2byte	0x294
+ 518 00b1 B5000000 		.4byte	0xb5
+ 519 00b5 05       		.uleb128 0x5
+ 520 00b6 77000000 		.4byte	0x77
+ 521 00ba 02       		.uleb128 0x2
+ 522 00bb 08       		.byte	0x8
+ 523 00bc 04       		.byte	0x4
+ 524 00bd 6E020000 		.4byte	.LASF16
+ 525 00c1 02       		.uleb128 0x2
+ 526 00c2 04       		.byte	0x4
+ 527 00c3 07       		.byte	0x7
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 21
+
+
+ 528 00c4 91010000 		.4byte	.LASF17
+ 529 00c8 06       		.uleb128 0x6
+ 530 00c9 04       		.byte	0x4
+ 531 00ca 03       		.byte	0x3
+ 532 00cb 31       		.byte	0x31
+ 533 00cc E9000000 		.4byte	0xe9
+ 534 00d0 07       		.uleb128 0x7
+ 535 00d1 50020000 		.4byte	.LASF18
+ 536 00d5 03       		.byte	0x3
+ 537 00d6 33       		.byte	0x33
+ 538 00d7 6B000000 		.4byte	0x6b
+ 539 00db 00       		.byte	0
+ 540 00dc 07       		.uleb128 0x7
+ 541 00dd 5C010000 		.4byte	.LASF19
+ 542 00e1 03       		.byte	0x3
+ 543 00e2 3D       		.byte	0x3d
+ 544 00e3 77000000 		.4byte	0x77
+ 545 00e7 02       		.byte	0x2
+ 546 00e8 00       		.byte	0
+ 547 00e9 08       		.uleb128 0x8
+ 548 00ea 5C020000 		.4byte	.LASF20
+ 549 00ee 03       		.byte	0x3
+ 550 00ef 47       		.byte	0x47
+ 551 00f0 C8000000 		.4byte	0xc8
+ 552 00f4 09       		.uleb128 0x9
+ 553 00f5 1D000000 		.4byte	.LASF21
+ 554 00f9 01       		.byte	0x1
+ 555 00fa 3C       		.byte	0x3c
+ 556 00fb 00000000 		.4byte	.LFB0
+ 557 00ff 24000000 		.4byte	.LFE0-.LFB0
+ 558 0103 01       		.uleb128 0x1
+ 559 0104 9C       		.byte	0x9c
+ 560 0105 0A       		.uleb128 0xa
+ 561 0106 9A010000 		.4byte	.LASF22
+ 562 010a 01       		.byte	0x1
+ 563 010b 62       		.byte	0x62
+ 564 010c 00000000 		.4byte	.LFB1
+ 565 0110 20000000 		.4byte	.LFE1-.LFB1
+ 566 0114 01       		.uleb128 0x1
+ 567 0115 9C       		.byte	0x9c
+ 568 0116 09       		.uleb128 0x9
+ 569 0117 D2000000 		.4byte	.LASF23
+ 570 011b 01       		.byte	0x1
+ 571 011c 7E       		.byte	0x7e
+ 572 011d 00000000 		.4byte	.LFB2
+ 573 0121 24000000 		.4byte	.LFE2-.LFB2
+ 574 0125 01       		.uleb128 0x1
+ 575 0126 9C       		.byte	0x9c
+ 576 0127 0A       		.uleb128 0xa
+ 577 0128 0D010000 		.4byte	.LASF24
+ 578 012c 01       		.byte	0x1
+ 579 012d 99       		.byte	0x99
+ 580 012e 00000000 		.4byte	.LFB3
+ 581 0132 20000000 		.4byte	.LFE3-.LFB3
+ 582 0136 01       		.uleb128 0x1
+ 583 0137 9C       		.byte	0x9c
+ 584 0138 0B       		.uleb128 0xb
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 22
+
+
+ 585 0139 86020000 		.4byte	.LASF25
+ 586 013d 01       		.byte	0x1
+ 587 013e D0       		.byte	0xd0
+ 588 013f 00000000 		.4byte	.LFB4
+ 589 0143 54000000 		.4byte	.LFE4-.LFB4
+ 590 0147 01       		.uleb128 0x1
+ 591 0148 9C       		.byte	0x9c
+ 592 0149 6A010000 		.4byte	0x16a
+ 593 014d 0C       		.uleb128 0xc
+ 594 014e 5C010000 		.4byte	.LASF19
+ 595 0152 01       		.byte	0x1
+ 596 0153 D0       		.byte	0xd0
+ 597 0154 77000000 		.4byte	0x77
+ 598 0158 02       		.uleb128 0x2
+ 599 0159 91       		.byte	0x91
+ 600 015a 6E       		.sleb128 -18
+ 601 015b 0D       		.uleb128 0xd
+ 602 015c 29010000 		.4byte	.LASF36
+ 603 0160 01       		.byte	0x1
+ 604 0161 D3       		.byte	0xd3
+ 605 0162 6B000000 		.4byte	0x6b
+ 606 0166 02       		.uleb128 0x2
+ 607 0167 91       		.byte	0x91
+ 608 0168 77       		.sleb128 -9
+ 609 0169 00       		.byte	0
+ 610 016a 0E       		.uleb128 0xe
+ 611 016b 4C010000 		.4byte	.LASF27
+ 612 016f 01       		.byte	0x1
+ 613 0170 9401     		.2byte	0x194
+ 614 0172 77000000 		.4byte	0x77
+ 615 0176 00000000 		.4byte	.LFB5
+ 616 017a 18000000 		.4byte	.LFE5-.LFB5
+ 617 017e 01       		.uleb128 0x1
+ 618 017f 9C       		.byte	0x9c
+ 619 0180 0F       		.uleb128 0xf
+ 620 0181 B3010000 		.4byte	.LASF26
+ 621 0185 01       		.byte	0x1
+ 622 0186 CB01     		.2byte	0x1cb
+ 623 0188 00000000 		.4byte	.LFB6
+ 624 018c 20000000 		.4byte	.LFE6-.LFB6
+ 625 0190 01       		.uleb128 0x1
+ 626 0191 9C       		.byte	0x9c
+ 627 0192 A6010000 		.4byte	0x1a6
+ 628 0196 10       		.uleb128 0x10
+ 629 0197 5C010000 		.4byte	.LASF19
+ 630 019b 01       		.byte	0x1
+ 631 019c CB01     		.2byte	0x1cb
+ 632 019e 77000000 		.4byte	0x77
+ 633 01a2 02       		.uleb128 0x2
+ 634 01a3 91       		.byte	0x91
+ 635 01a4 76       		.sleb128 -10
+ 636 01a5 00       		.byte	0
+ 637 01a6 0E       		.uleb128 0xe
+ 638 01a7 16010000 		.4byte	.LASF28
+ 639 01ab 01       		.byte	0x1
+ 640 01ac 0302     		.2byte	0x203
+ 641 01ae 77000000 		.4byte	0x77
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 23
+
+
+ 642 01b2 00000000 		.4byte	.LFB7
+ 643 01b6 18000000 		.4byte	.LFE7-.LFB7
+ 644 01ba 01       		.uleb128 0x1
+ 645 01bb 9C       		.byte	0x9c
+ 646 01bc 0F       		.uleb128 0xf
+ 647 01bd 33020000 		.4byte	.LASF29
+ 648 01c1 01       		.byte	0x1
+ 649 01c2 3B02     		.2byte	0x23b
+ 650 01c4 00000000 		.4byte	.LFB8
+ 651 01c8 20000000 		.4byte	.LFE8-.LFB8
+ 652 01cc 01       		.uleb128 0x1
+ 653 01cd 9C       		.byte	0x9c
+ 654 01ce E2010000 		.4byte	0x1e2
+ 655 01d2 10       		.uleb128 0x10
+ 656 01d3 41010000 		.4byte	.LASF30
+ 657 01d7 01       		.byte	0x1
+ 658 01d8 3B02     		.2byte	0x23b
+ 659 01da 77000000 		.4byte	0x77
+ 660 01de 02       		.uleb128 0x2
+ 661 01df 91       		.byte	0x91
+ 662 01e0 76       		.sleb128 -10
+ 663 01e1 00       		.byte	0
+ 664 01e2 11       		.uleb128 0x11
+ 665 01e3 85010000 		.4byte	.LASF31
+ 666 01e7 01       		.byte	0x1
+ 667 01e8 14       		.byte	0x14
+ 668 01e9 6B000000 		.4byte	0x6b
+ 669 01ed 05       		.uleb128 0x5
+ 670 01ee 03       		.byte	0x3
+ 671 01ef 00000000 		.4byte	PRS_initVar
+ 672 01f3 11       		.uleb128 0x11
+ 673 01f4 C7000000 		.4byte	.LASF32
+ 674 01f8 01       		.byte	0x1
+ 675 01f9 16       		.byte	0x16
+ 676 01fa E9000000 		.4byte	0xe9
+ 677 01fe 05       		.uleb128 0x5
+ 678 01ff 03       		.byte	0x3
+ 679 0200 00000000 		.4byte	PRS_backup
+ 680 0204 00       		.byte	0
+ 681              		.section	.debug_abbrev,"",%progbits
+ 682              	.Ldebug_abbrev0:
+ 683 0000 01       		.uleb128 0x1
+ 684 0001 11       		.uleb128 0x11
+ 685 0002 01       		.byte	0x1
+ 686 0003 25       		.uleb128 0x25
+ 687 0004 0E       		.uleb128 0xe
+ 688 0005 13       		.uleb128 0x13
+ 689 0006 0B       		.uleb128 0xb
+ 690 0007 03       		.uleb128 0x3
+ 691 0008 0E       		.uleb128 0xe
+ 692 0009 1B       		.uleb128 0x1b
+ 693 000a 0E       		.uleb128 0xe
+ 694 000b 55       		.uleb128 0x55
+ 695 000c 17       		.uleb128 0x17
+ 696 000d 11       		.uleb128 0x11
+ 697 000e 01       		.uleb128 0x1
+ 698 000f 10       		.uleb128 0x10
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 24
+
+
+ 699 0010 17       		.uleb128 0x17
+ 700 0011 00       		.byte	0
+ 701 0012 00       		.byte	0
+ 702 0013 02       		.uleb128 0x2
+ 703 0014 24       		.uleb128 0x24
+ 704 0015 00       		.byte	0
+ 705 0016 0B       		.uleb128 0xb
+ 706 0017 0B       		.uleb128 0xb
+ 707 0018 3E       		.uleb128 0x3e
+ 708 0019 0B       		.uleb128 0xb
+ 709 001a 03       		.uleb128 0x3
+ 710 001b 0E       		.uleb128 0xe
+ 711 001c 00       		.byte	0
+ 712 001d 00       		.byte	0
+ 713 001e 03       		.uleb128 0x3
+ 714 001f 24       		.uleb128 0x24
+ 715 0020 00       		.byte	0
+ 716 0021 0B       		.uleb128 0xb
+ 717 0022 0B       		.uleb128 0xb
+ 718 0023 3E       		.uleb128 0x3e
+ 719 0024 0B       		.uleb128 0xb
+ 720 0025 03       		.uleb128 0x3
+ 721 0026 08       		.uleb128 0x8
+ 722 0027 00       		.byte	0
+ 723 0028 00       		.byte	0
+ 724 0029 04       		.uleb128 0x4
+ 725 002a 16       		.uleb128 0x16
+ 726 002b 00       		.byte	0
+ 727 002c 03       		.uleb128 0x3
+ 728 002d 0E       		.uleb128 0xe
+ 729 002e 3A       		.uleb128 0x3a
+ 730 002f 0B       		.uleb128 0xb
+ 731 0030 3B       		.uleb128 0x3b
+ 732 0031 05       		.uleb128 0x5
+ 733 0032 49       		.uleb128 0x49
+ 734 0033 13       		.uleb128 0x13
+ 735 0034 00       		.byte	0
+ 736 0035 00       		.byte	0
+ 737 0036 05       		.uleb128 0x5
+ 738 0037 35       		.uleb128 0x35
+ 739 0038 00       		.byte	0
+ 740 0039 49       		.uleb128 0x49
+ 741 003a 13       		.uleb128 0x13
+ 742 003b 00       		.byte	0
+ 743 003c 00       		.byte	0
+ 744 003d 06       		.uleb128 0x6
+ 745 003e 13       		.uleb128 0x13
+ 746 003f 01       		.byte	0x1
+ 747 0040 0B       		.uleb128 0xb
+ 748 0041 0B       		.uleb128 0xb
+ 749 0042 3A       		.uleb128 0x3a
+ 750 0043 0B       		.uleb128 0xb
+ 751 0044 3B       		.uleb128 0x3b
+ 752 0045 0B       		.uleb128 0xb
+ 753 0046 01       		.uleb128 0x1
+ 754 0047 13       		.uleb128 0x13
+ 755 0048 00       		.byte	0
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 25
+
+
+ 756 0049 00       		.byte	0
+ 757 004a 07       		.uleb128 0x7
+ 758 004b 0D       		.uleb128 0xd
+ 759 004c 00       		.byte	0
+ 760 004d 03       		.uleb128 0x3
+ 761 004e 0E       		.uleb128 0xe
+ 762 004f 3A       		.uleb128 0x3a
+ 763 0050 0B       		.uleb128 0xb
+ 764 0051 3B       		.uleb128 0x3b
+ 765 0052 0B       		.uleb128 0xb
+ 766 0053 49       		.uleb128 0x49
+ 767 0054 13       		.uleb128 0x13
+ 768 0055 38       		.uleb128 0x38
+ 769 0056 0B       		.uleb128 0xb
+ 770 0057 00       		.byte	0
+ 771 0058 00       		.byte	0
+ 772 0059 08       		.uleb128 0x8
+ 773 005a 16       		.uleb128 0x16
+ 774 005b 00       		.byte	0
+ 775 005c 03       		.uleb128 0x3
+ 776 005d 0E       		.uleb128 0xe
+ 777 005e 3A       		.uleb128 0x3a
+ 778 005f 0B       		.uleb128 0xb
+ 779 0060 3B       		.uleb128 0x3b
+ 780 0061 0B       		.uleb128 0xb
+ 781 0062 49       		.uleb128 0x49
+ 782 0063 13       		.uleb128 0x13
+ 783 0064 00       		.byte	0
+ 784 0065 00       		.byte	0
+ 785 0066 09       		.uleb128 0x9
+ 786 0067 2E       		.uleb128 0x2e
+ 787 0068 00       		.byte	0
+ 788 0069 3F       		.uleb128 0x3f
+ 789 006a 19       		.uleb128 0x19
+ 790 006b 03       		.uleb128 0x3
+ 791 006c 0E       		.uleb128 0xe
+ 792 006d 3A       		.uleb128 0x3a
+ 793 006e 0B       		.uleb128 0xb
+ 794 006f 3B       		.uleb128 0x3b
+ 795 0070 0B       		.uleb128 0xb
+ 796 0071 27       		.uleb128 0x27
+ 797 0072 19       		.uleb128 0x19
+ 798 0073 11       		.uleb128 0x11
+ 799 0074 01       		.uleb128 0x1
+ 800 0075 12       		.uleb128 0x12
+ 801 0076 06       		.uleb128 0x6
+ 802 0077 40       		.uleb128 0x40
+ 803 0078 18       		.uleb128 0x18
+ 804 0079 9642     		.uleb128 0x2116
+ 805 007b 19       		.uleb128 0x19
+ 806 007c 00       		.byte	0
+ 807 007d 00       		.byte	0
+ 808 007e 0A       		.uleb128 0xa
+ 809 007f 2E       		.uleb128 0x2e
+ 810 0080 00       		.byte	0
+ 811 0081 3F       		.uleb128 0x3f
+ 812 0082 19       		.uleb128 0x19
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 26
+
+
+ 813 0083 03       		.uleb128 0x3
+ 814 0084 0E       		.uleb128 0xe
+ 815 0085 3A       		.uleb128 0x3a
+ 816 0086 0B       		.uleb128 0xb
+ 817 0087 3B       		.uleb128 0x3b
+ 818 0088 0B       		.uleb128 0xb
+ 819 0089 27       		.uleb128 0x27
+ 820 008a 19       		.uleb128 0x19
+ 821 008b 11       		.uleb128 0x11
+ 822 008c 01       		.uleb128 0x1
+ 823 008d 12       		.uleb128 0x12
+ 824 008e 06       		.uleb128 0x6
+ 825 008f 40       		.uleb128 0x40
+ 826 0090 18       		.uleb128 0x18
+ 827 0091 9742     		.uleb128 0x2117
+ 828 0093 19       		.uleb128 0x19
+ 829 0094 00       		.byte	0
+ 830 0095 00       		.byte	0
+ 831 0096 0B       		.uleb128 0xb
+ 832 0097 2E       		.uleb128 0x2e
+ 833 0098 01       		.byte	0x1
+ 834 0099 3F       		.uleb128 0x3f
+ 835 009a 19       		.uleb128 0x19
+ 836 009b 03       		.uleb128 0x3
+ 837 009c 0E       		.uleb128 0xe
+ 838 009d 3A       		.uleb128 0x3a
+ 839 009e 0B       		.uleb128 0xb
+ 840 009f 3B       		.uleb128 0x3b
+ 841 00a0 0B       		.uleb128 0xb
+ 842 00a1 27       		.uleb128 0x27
+ 843 00a2 19       		.uleb128 0x19
+ 844 00a3 11       		.uleb128 0x11
+ 845 00a4 01       		.uleb128 0x1
+ 846 00a5 12       		.uleb128 0x12
+ 847 00a6 06       		.uleb128 0x6
+ 848 00a7 40       		.uleb128 0x40
+ 849 00a8 18       		.uleb128 0x18
+ 850 00a9 9642     		.uleb128 0x2116
+ 851 00ab 19       		.uleb128 0x19
+ 852 00ac 01       		.uleb128 0x1
+ 853 00ad 13       		.uleb128 0x13
+ 854 00ae 00       		.byte	0
+ 855 00af 00       		.byte	0
+ 856 00b0 0C       		.uleb128 0xc
+ 857 00b1 05       		.uleb128 0x5
+ 858 00b2 00       		.byte	0
+ 859 00b3 03       		.uleb128 0x3
+ 860 00b4 0E       		.uleb128 0xe
+ 861 00b5 3A       		.uleb128 0x3a
+ 862 00b6 0B       		.uleb128 0xb
+ 863 00b7 3B       		.uleb128 0x3b
+ 864 00b8 0B       		.uleb128 0xb
+ 865 00b9 49       		.uleb128 0x49
+ 866 00ba 13       		.uleb128 0x13
+ 867 00bb 02       		.uleb128 0x2
+ 868 00bc 18       		.uleb128 0x18
+ 869 00bd 00       		.byte	0
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 27
+
+
+ 870 00be 00       		.byte	0
+ 871 00bf 0D       		.uleb128 0xd
+ 872 00c0 34       		.uleb128 0x34
+ 873 00c1 00       		.byte	0
+ 874 00c2 03       		.uleb128 0x3
+ 875 00c3 0E       		.uleb128 0xe
+ 876 00c4 3A       		.uleb128 0x3a
+ 877 00c5 0B       		.uleb128 0xb
+ 878 00c6 3B       		.uleb128 0x3b
+ 879 00c7 0B       		.uleb128 0xb
+ 880 00c8 49       		.uleb128 0x49
+ 881 00c9 13       		.uleb128 0x13
+ 882 00ca 02       		.uleb128 0x2
+ 883 00cb 18       		.uleb128 0x18
+ 884 00cc 00       		.byte	0
+ 885 00cd 00       		.byte	0
+ 886 00ce 0E       		.uleb128 0xe
+ 887 00cf 2E       		.uleb128 0x2e
+ 888 00d0 00       		.byte	0
+ 889 00d1 3F       		.uleb128 0x3f
+ 890 00d2 19       		.uleb128 0x19
+ 891 00d3 03       		.uleb128 0x3
+ 892 00d4 0E       		.uleb128 0xe
+ 893 00d5 3A       		.uleb128 0x3a
+ 894 00d6 0B       		.uleb128 0xb
+ 895 00d7 3B       		.uleb128 0x3b
+ 896 00d8 05       		.uleb128 0x5
+ 897 00d9 27       		.uleb128 0x27
+ 898 00da 19       		.uleb128 0x19
+ 899 00db 49       		.uleb128 0x49
+ 900 00dc 13       		.uleb128 0x13
+ 901 00dd 11       		.uleb128 0x11
+ 902 00de 01       		.uleb128 0x1
+ 903 00df 12       		.uleb128 0x12
+ 904 00e0 06       		.uleb128 0x6
+ 905 00e1 40       		.uleb128 0x40
+ 906 00e2 18       		.uleb128 0x18
+ 907 00e3 9742     		.uleb128 0x2117
+ 908 00e5 19       		.uleb128 0x19
+ 909 00e6 00       		.byte	0
+ 910 00e7 00       		.byte	0
+ 911 00e8 0F       		.uleb128 0xf
+ 912 00e9 2E       		.uleb128 0x2e
+ 913 00ea 01       		.byte	0x1
+ 914 00eb 3F       		.uleb128 0x3f
+ 915 00ec 19       		.uleb128 0x19
+ 916 00ed 03       		.uleb128 0x3
+ 917 00ee 0E       		.uleb128 0xe
+ 918 00ef 3A       		.uleb128 0x3a
+ 919 00f0 0B       		.uleb128 0xb
+ 920 00f1 3B       		.uleb128 0x3b
+ 921 00f2 05       		.uleb128 0x5
+ 922 00f3 27       		.uleb128 0x27
+ 923 00f4 19       		.uleb128 0x19
+ 924 00f5 11       		.uleb128 0x11
+ 925 00f6 01       		.uleb128 0x1
+ 926 00f7 12       		.uleb128 0x12
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 28
+
+
+ 927 00f8 06       		.uleb128 0x6
+ 928 00f9 40       		.uleb128 0x40
+ 929 00fa 18       		.uleb128 0x18
+ 930 00fb 9742     		.uleb128 0x2117
+ 931 00fd 19       		.uleb128 0x19
+ 932 00fe 01       		.uleb128 0x1
+ 933 00ff 13       		.uleb128 0x13
+ 934 0100 00       		.byte	0
+ 935 0101 00       		.byte	0
+ 936 0102 10       		.uleb128 0x10
+ 937 0103 05       		.uleb128 0x5
+ 938 0104 00       		.byte	0
+ 939 0105 03       		.uleb128 0x3
+ 940 0106 0E       		.uleb128 0xe
+ 941 0107 3A       		.uleb128 0x3a
+ 942 0108 0B       		.uleb128 0xb
+ 943 0109 3B       		.uleb128 0x3b
+ 944 010a 05       		.uleb128 0x5
+ 945 010b 49       		.uleb128 0x49
+ 946 010c 13       		.uleb128 0x13
+ 947 010d 02       		.uleb128 0x2
+ 948 010e 18       		.uleb128 0x18
+ 949 010f 00       		.byte	0
+ 950 0110 00       		.byte	0
+ 951 0111 11       		.uleb128 0x11
+ 952 0112 34       		.uleb128 0x34
+ 953 0113 00       		.byte	0
+ 954 0114 03       		.uleb128 0x3
+ 955 0115 0E       		.uleb128 0xe
+ 956 0116 3A       		.uleb128 0x3a
+ 957 0117 0B       		.uleb128 0xb
+ 958 0118 3B       		.uleb128 0x3b
+ 959 0119 0B       		.uleb128 0xb
+ 960 011a 49       		.uleb128 0x49
+ 961 011b 13       		.uleb128 0x13
+ 962 011c 3F       		.uleb128 0x3f
+ 963 011d 19       		.uleb128 0x19
+ 964 011e 02       		.uleb128 0x2
+ 965 011f 18       		.uleb128 0x18
+ 966 0120 00       		.byte	0
+ 967 0121 00       		.byte	0
+ 968 0122 00       		.byte	0
+ 969              		.section	.debug_aranges,"",%progbits
+ 970 0000 5C000000 		.4byte	0x5c
+ 971 0004 0200     		.2byte	0x2
+ 972 0006 00000000 		.4byte	.Ldebug_info0
+ 973 000a 04       		.byte	0x4
+ 974 000b 00       		.byte	0
+ 975 000c 0000     		.2byte	0
+ 976 000e 0000     		.2byte	0
+ 977 0010 00000000 		.4byte	.LFB0
+ 978 0014 24000000 		.4byte	.LFE0-.LFB0
+ 979 0018 00000000 		.4byte	.LFB1
+ 980 001c 20000000 		.4byte	.LFE1-.LFB1
+ 981 0020 00000000 		.4byte	.LFB2
+ 982 0024 24000000 		.4byte	.LFE2-.LFB2
+ 983 0028 00000000 		.4byte	.LFB3
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 29
+
+
+ 984 002c 20000000 		.4byte	.LFE3-.LFB3
+ 985 0030 00000000 		.4byte	.LFB4
+ 986 0034 54000000 		.4byte	.LFE4-.LFB4
+ 987 0038 00000000 		.4byte	.LFB5
+ 988 003c 18000000 		.4byte	.LFE5-.LFB5
+ 989 0040 00000000 		.4byte	.LFB6
+ 990 0044 20000000 		.4byte	.LFE6-.LFB6
+ 991 0048 00000000 		.4byte	.LFB7
+ 992 004c 18000000 		.4byte	.LFE7-.LFB7
+ 993 0050 00000000 		.4byte	.LFB8
+ 994 0054 20000000 		.4byte	.LFE8-.LFB8
+ 995 0058 00000000 		.4byte	0
+ 996 005c 00000000 		.4byte	0
+ 997              		.section	.debug_ranges,"",%progbits
+ 998              	.Ldebug_ranges0:
+ 999 0000 00000000 		.4byte	.LFB0
+ 1000 0004 24000000 		.4byte	.LFE0
+ 1001 0008 00000000 		.4byte	.LFB1
+ 1002 000c 20000000 		.4byte	.LFE1
+ 1003 0010 00000000 		.4byte	.LFB2
+ 1004 0014 24000000 		.4byte	.LFE2
+ 1005 0018 00000000 		.4byte	.LFB3
+ 1006 001c 20000000 		.4byte	.LFE3
+ 1007 0020 00000000 		.4byte	.LFB4
+ 1008 0024 54000000 		.4byte	.LFE4
+ 1009 0028 00000000 		.4byte	.LFB5
+ 1010 002c 18000000 		.4byte	.LFE5
+ 1011 0030 00000000 		.4byte	.LFB6
+ 1012 0034 20000000 		.4byte	.LFE6
+ 1013 0038 00000000 		.4byte	.LFB7
+ 1014 003c 18000000 		.4byte	.LFE7
+ 1015 0040 00000000 		.4byte	.LFB8
+ 1016 0044 20000000 		.4byte	.LFE8
+ 1017 0048 00000000 		.4byte	0
+ 1018 004c 00000000 		.4byte	0
+ 1019              		.section	.debug_line,"",%progbits
+ 1020              	.Ldebug_line0:
+ 1021 0000 08010000 		.section	.debug_str,"MS",%progbits,1
+ 1021      02004900 
+ 1021      00000201 
+ 1021      FB0E0D00 
+ 1021      01010101 
+ 1022              	.LASF34:
+ 1023 0000 47656E65 		.ascii	"Generated_Source\\PSoC5\\PRS.c\000"
+ 1023      72617465 
+ 1023      645F536F 
+ 1023      75726365 
+ 1023      5C50536F 
+ 1024              	.LASF21:
+ 1025 001d 5052535F 		.ascii	"PRS_Init\000"
+ 1025      496E6974 
+ 1025      00
+ 1026              	.LASF33:
+ 1027 0026 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1027      43313120 
+ 1027      352E342E 
+ 1027      31203230 
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 30
+
+
+ 1027      31363036 
+ 1028 0059 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1028      20726576 
+ 1028      6973696F 
+ 1028      6E203233 
+ 1028      37373135 
+ 1029 008c 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1029      66756E63 
+ 1029      74696F6E 
+ 1029      2D736563 
+ 1029      74696F6E 
+ 1030              	.LASF3:
+ 1031 00b4 73686F72 		.ascii	"short unsigned int\000"
+ 1031      7420756E 
+ 1031      7369676E 
+ 1031      65642069 
+ 1031      6E7400
+ 1032              	.LASF32:
+ 1033 00c7 5052535F 		.ascii	"PRS_backup\000"
+ 1033      6261636B 
+ 1033      757000
+ 1034              	.LASF23:
+ 1035 00d2 5052535F 		.ascii	"PRS_Start\000"
+ 1035      53746172 
+ 1035      7400
+ 1036              	.LASF11:
+ 1037 00dc 666C6F61 		.ascii	"float\000"
+ 1037      7400
+ 1038              	.LASF1:
+ 1039 00e2 756E7369 		.ascii	"unsigned char\000"
+ 1039      676E6564 
+ 1039      20636861 
+ 1039      7200
+ 1040              	.LASF14:
+ 1041 00f0 72656738 		.ascii	"reg8\000"
+ 1041      00
+ 1042              	.LASF5:
+ 1043 00f5 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1043      20756E73 
+ 1043      69676E65 
+ 1043      6420696E 
+ 1043      7400
+ 1044              	.LASF9:
+ 1045 0107 75696E74 		.ascii	"uint8\000"
+ 1045      3800
+ 1046              	.LASF24:
+ 1047 010d 5052535F 		.ascii	"PRS_Stop\000"
+ 1047      53746F70 
+ 1047      00
+ 1048              	.LASF28:
+ 1049 0116 5052535F 		.ascii	"PRS_ReadPolynomial\000"
+ 1049      52656164 
+ 1049      506F6C79 
+ 1049      6E6F6D69 
+ 1049      616C00
+ 1050              	.LASF36:
+ 1051 0129 656E6162 		.ascii	"enableInterrupts\000"
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 31
+
+
+ 1051      6C65496E 
+ 1051      74657272 
+ 1051      75707473 
+ 1051      00
+ 1052              	.LASF12:
+ 1053 013a 646F7562 		.ascii	"double\000"
+ 1053      6C6500
+ 1054              	.LASF30:
+ 1055 0141 706F6C79 		.ascii	"polynomial\000"
+ 1055      6E6F6D69 
+ 1055      616C00
+ 1056              	.LASF27:
+ 1057 014c 5052535F 		.ascii	"PRS_Read\000"
+ 1057      52656164 
+ 1057      00
+ 1058              	.LASF10:
+ 1059 0155 75696E74 		.ascii	"uint16\000"
+ 1059      313600
+ 1060              	.LASF19:
+ 1061 015c 73656564 		.ascii	"seed\000"
+ 1061      00
+ 1062              	.LASF8:
+ 1063 0161 756E7369 		.ascii	"unsigned int\000"
+ 1063      676E6564 
+ 1063      20696E74 
+ 1063      00
+ 1064              	.LASF7:
+ 1065 016e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1065      206C6F6E 
+ 1065      6720756E 
+ 1065      7369676E 
+ 1065      65642069 
+ 1066              	.LASF31:
+ 1067 0185 5052535F 		.ascii	"PRS_initVar\000"
+ 1067      696E6974 
+ 1067      56617200 
+ 1068              	.LASF17:
+ 1069 0191 73697A65 		.ascii	"sizetype\000"
+ 1069      74797065 
+ 1069      00
+ 1070              	.LASF22:
+ 1071 019a 5052535F 		.ascii	"PRS_Enable\000"
+ 1071      456E6162 
+ 1071      6C6500
+ 1072              	.LASF6:
+ 1073 01a5 6C6F6E67 		.ascii	"long long int\000"
+ 1073      206C6F6E 
+ 1073      6720696E 
+ 1073      7400
+ 1074              	.LASF26:
+ 1075 01b3 5052535F 		.ascii	"PRS_WriteSeed\000"
+ 1075      57726974 
+ 1075      65536565 
+ 1075      6400
+ 1076              	.LASF13:
+ 1077 01c1 63686172 		.ascii	"char\000"
+ 1077      00
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8ymHUx.s 			page 32
+
+
+ 1078              	.LASF35:
+ 1079 01c6 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\Twelve"
+ 1079      73657273 
+ 1079      5C6D6572 
+ 1079      63655C44 
+ 1079      6F63756D 
+ 1080 01f3 2D626974 		.ascii	"-bit-4-chan-59\\ScopePSoC\\Scope-CY8CKIT-59.cydsn\000"
+ 1080      2D342D63 
+ 1080      68616E2D 
+ 1080      35395C53 
+ 1080      636F7065 
+ 1081              	.LASF2:
+ 1082 0223 73686F72 		.ascii	"short int\000"
+ 1082      7420696E 
+ 1082      7400
+ 1083              	.LASF15:
+ 1084 022d 72656731 		.ascii	"reg16\000"
+ 1084      3600
+ 1085              	.LASF29:
+ 1086 0233 5052535F 		.ascii	"PRS_WritePolynomial\000"
+ 1086      57726974 
+ 1086      65506F6C 
+ 1086      796E6F6D 
+ 1086      69616C00 
+ 1087              	.LASF4:
+ 1088 0247 6C6F6E67 		.ascii	"long int\000"
+ 1088      20696E74 
+ 1088      00
+ 1089              	.LASF18:
+ 1090 0250 656E6162 		.ascii	"enableState\000"
+ 1090      6C655374 
+ 1090      61746500 
+ 1091              	.LASF20:
+ 1092 025c 5052535F 		.ascii	"PRS_BACKUP_STRUCT\000"
+ 1092      4241434B 
+ 1092      55505F53 
+ 1092      54525543 
+ 1092      5400
+ 1093              	.LASF16:
+ 1094 026e 6C6F6E67 		.ascii	"long double\000"
+ 1094      20646F75 
+ 1094      626C6500 
+ 1095              	.LASF0:
+ 1096 027a 7369676E 		.ascii	"signed char\000"
+ 1096      65642063 
+ 1096      68617200 
+ 1097              	.LASF25:
+ 1098 0286 5052535F 		.ascii	"PRS_ResetSeedInit\000"
+ 1098      52657365 
+ 1098      74536565 
+ 1098      64496E69 
+ 1098      7400
+ 1099              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

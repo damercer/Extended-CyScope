@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\Pins">
+<ExpandedNodeIds>
+<v>Scope-CY8CKIT-59</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\TopDesign</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\Pins</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\Analog</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\Clocks</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\Interrupts</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\DMA</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\System</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\Directives</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\Flash Security</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\EEPROM</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Header Files</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Header Files\device.h</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Source Files</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Source Files\main.c</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Generated_Source</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Generated_Source\PSoC5</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Scope-CY8CKIT-59</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\TopDesign</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\Pins</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\Analog</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\Clocks</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\Interrupts</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\DMA</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\System</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\Directives</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\Flash Security</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.cydwr\EEPROM</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Header Files</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Header Files\device.h</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Source Files</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Source Files\main.c</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Generated_Source</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Generated_Source\PSoC5</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Generated_Source\PSoC5\ADC_1</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Generated_Source\PSoC5\ADC_1_Bypass</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Generated_Source\PSoC5\ADC_1_IRQ</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Generated_Source\PSoC5\ADC_2</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Generated_Source\PSoC5\ADC_2_Bypass</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Generated_Source\PSoC5\ADC_2_IRQ</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Generated_Source\PSoC5\ADCClock</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Generated_Source\PSoC5\AMux_1</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Generated_Source\PSoC5\AMux_2</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Generated_Source\PSoC5\Amux_Trigger</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Generated_Source\PSoC5\AuxDAC_1</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Scope-CY8CKIT-59">
+<ExpandedNodeIds>
+<v>Scope-CY8CKIT-59</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\TopDesign</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Scope-CY8CKIT-59</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\TopDesign</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Scope-CY8CKIT-59">
+<ExpandedNodeIds>
+<v>Scope-CY8CKIT-59</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_1.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_1_Bypass.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_1_INT.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_1_IRQ.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_1_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_2.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_2_Bypass.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_2_INT.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_2_IRQ.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_2_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADCClock.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AMux_1.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AMux_2.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Amux_Trigger.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AuxDAC_1.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AuxDAC_1_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AuxDAC_Buf.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AuxDAC_Buf_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AuxDAC_Out.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AWC1.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AWC2.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Button.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\CyTriggerClock.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\DigIn_0.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\DigIn_1.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\DigIn_2.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\DigIn_3.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\DigIn_4.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Digital_Input_Status.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Digital_Out_Control.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Digital_Out_Control_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Digital_PWM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Digital_PWM_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\DigOut_0.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\DigOut_1.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\DigOut_2.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\DigOut_3.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\DigOut_4.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\DMA_Channel_1_dma.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\DMA_Channel_2_dma.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\External_Trigger.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\LED.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\NoiseA_Clock.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\PRS.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\PRS_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_Clock.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_Sample_Buffer.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_Sample_Buffer_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\PWMOut_0.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\PWMOutB_0.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\SampleClock.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Scope_A.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Scope_B.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Scope_C.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Scope_D.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ScopeA_Buf.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ScopeA_Buf_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ScopeB_Buf.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ScopeB_Buf_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ScopeC_Buf.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ScopeC_Buf_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ScopeD_Buf.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ScopeD_Buf_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Trig_Out.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Trigger_Comp.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Trigger_Comp_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Trigger_Control.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Trigger_Control_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Trigger_Status.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\USBUART.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\USBUART_audio.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\USBUART_boot.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\USBUART_cdc.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\USBUART_cls.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\USBUART_descr.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\USBUART_Dm.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\USBUART_Dp.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\USBUART_drv.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\USBUART_episr.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\USBUART_hid.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\USBUART_midi.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\USBUART_msc.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\USBUART_pm.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\USBUART_std.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\USBUART_vnd.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\VRef_Buf.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\VRef_Buf_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\VRef_Out.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Vtrigger.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Vtrigger_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Wave_Control.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Wave_Control_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveA_Buf.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveA_Buf_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveA_Clock.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveA_DAC.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveA_DAC_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveA_DAC_VDAC8.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveA_DAC_VDAC8_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveA_DAC_Wave1_DMA_dma.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveA_DAC_Wave2_DMA_dma.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveA_Out.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveB_Buf.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveB_Buf_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveB_DAC.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveB_DAC_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveB_DAC_VDAC8.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveB_DAC_VDAC8_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveB_DAC_Wave1_DMA_dma.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveB_DAC_Wave2_DMA_dma.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveB_Out.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Scope-CY8CKIT-59.elf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Scope-CY8CKIT-59.hex</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Scope-CY8CKIT-59.map</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.gpdsc</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59.rpt</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Scope-CY8CKIT-59_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Scope-CY8CKIT-59</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_1.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_1_Bypass.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_1_INT.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_1_IRQ.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_1_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_2.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_2_Bypass.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_2_INT.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_2_IRQ.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_2_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\ADCClock.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AMux_1.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AMux_2.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Amux_Trigger.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AuxDAC_1.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AuxDAC_1_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AuxDAC_Buf.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AuxDAC_Buf_PM.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AuxDAC_Out.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AWC1.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\AWC2.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Button.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Scope-CY8CKIT-59">
+<ExpandedNodeIds>
+<v>Scope-CY8CKIT-59</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\PSoC 5LP Architecture TRM</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CY8C58LP Family Datasheet</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\System Reference Guides</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\System Reference Guides\cy_boot_v6_10</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\ADC_SAR_v3_10</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\ADC_SAR_v3_10\ADC_SAR_v3_10.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\AMux_v1_80</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\AMux_v1_80\AMux_v1_80.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\and_v1_0</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\and_v1_0\and_v1_0.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Comp_v2_0.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_clock_v2_20</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_constant_v1_0</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_dma_v1_70</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_dma_v1_70\cy_dma_v1_70.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_pins_v2_20</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_srff_v1_0</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_srff_v1_0\cy_srff_v1_0.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_sync_v1_0</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_sync_v1_0\cy_sync_v1_0.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_vref_v1_70.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CyControlReg_v1_80</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CyControlReg_v1_80\CyControlReg_v1_80.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cydff_v1_30</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cydff_v1_30\cydff_v1_30.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CyStatusReg_v1_90</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CyStatusReg_v1_90\CyStatusReg_v1_90.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\EdgeDetect_v1_0</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\EdgeDetect_v1_0\EdgeDetect_v1_0.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\FreqDiv_v1_0.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\LUT_v1_60.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\mux_v1_10.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\not_v1_0</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\not_v1_0\not_v1_0.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\OneTerminal.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\OpAmp_v1_90</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\OpAmp_v1_90\OpAmp_v1_90.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\or_v1_0.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\PGA_v2_0</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\PGA_v2_0\PGA_v2_0.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\PRS_v2_40.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\PWM_v3_30</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\PWM_v3_30\PWM_v3_30.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\USBFS_v3_20.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\VDAC8_v1_90</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\VDAC8_v1_90\VDAC8_v1_90.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\WaveDAC8_v2_10</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\WaveDAC8_v2_10\WaveDAC8_v2_10.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\xor_v1_0</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\xor_v1_0\xor_v1_0.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\ZeroTerminal</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\ZeroTerminal\ZeroTerminal.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Scope-CY8CKIT-59</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\PSoC 5LP Architecture TRM</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CY8C58LP Family Datasheet</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\System Reference Guides</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\System Reference Guides\cy_boot_v6_10</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\ADC_SAR_v3_10</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\ADC_SAR_v3_10\ADC_SAR_v3_10.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\AMux_v1_80</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\AMux_v1_80\AMux_v1_80.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\and_v1_0</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\and_v1_0\and_v1_0.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\Comp_v2_0.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_clock_v2_20</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_constant_v1_0</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_dma_v1_70</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_dma_v1_70\cy_dma_v1_70.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_pins_v2_20</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_srff_v1_0</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_srff_v1_0\cy_srff_v1_0.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_sync_v1_0</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_sync_v1_0\cy_sync_v1_0.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cy_vref_v1_70.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CyControlReg_v1_80</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\CyControlReg_v1_80\CyControlReg_v1_80.pdf</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cydff_v1_30</v>
+<v>Scope-CY8CKIT-59\Scope-CY8CKIT-59\cydff_v1_30\cydff_v1_30.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\Scope-CY8CKIT-59.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Scope-CY8CKIT-59.cydsn\Scope-CY8CKIT-59.cydwr" />
+<name v=".\Scope-CY8CKIT-59.cydsn\main.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1093, 559" SelectedTabbedMdiWindow="a6736cb7-af17-4099-b42b-3dce5b17db1d"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="aa75662b-ac27-4f8f-96f8-5c874a6bb0c8" /><ToolWindow Key="CyNoticeWindow:44d3d453-9474-4f2b-b928-4356f496bef0:Notice Window" Guid="c483ba54-e4e0-40fb-b922-cec61c0dc7f0" /><DocumentWindow Key="C:\Users\merce\Documents\scope\CyScope\Twelve-bit-4-chan-59\ScopePSoC\Scope-CY8CKIT-59.cydsn\TopDesign\TopDesign.cysch" Guid="596fbfca-a63b-4566-86be-5c07bfa6ea89" /><DocumentWindow Key="C:\Users\merce\Documents\scope\CyScope\Twelve-bit-4-chan-59\ScopePSoC\Scope-CY8CKIT-59.cydsn\Scope-CY8CKIT-59.cydwr" Guid="a6736cb7-af17-4099-b42b-3dce5b17db1d" /><DocumentWindow Key="C:\Users\merce\Documents\scope\CyScope\Twelve-bit-4-chan-59\ScopePSoC\Scope-CY8CKIT-59.cydsn\main.c" Guid="56a04c84-0f67-4498-ab53-4bce55c8d2b8" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
