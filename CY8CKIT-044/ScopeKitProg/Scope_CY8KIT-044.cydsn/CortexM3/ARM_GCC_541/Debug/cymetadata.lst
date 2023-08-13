@@ -1,0 +1,2138 @@
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"cymetadata.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	cy_meta_loadable
+  20              		.section	.cyloadablemeta,"a",%progbits
+  21              		.align	2
+  22              		.type	cy_meta_loadable, %object
+  23              		.size	cy_meta_loadable, 64
+  24              	cy_meta_loadable:
+  25 0000 00000000 		.space	64
+  25      00000000 
+  25      00000000 
+  25      00000000 
+  25      00000000 
+  26              		.global	cy_meta_configecc
+  27              		.section	.cyconfigecc,"a",%progbits
+  28              		.align	2
+  29              		.type	cy_meta_configecc, %object
+  30              		.size	cy_meta_configecc, 1664
+  31              	cy_meta_configecc:
+  32 0000 01       		.byte	1
+  33 0001 45       		.byte	69
+  34 0002 00       		.byte	0
+  35 0003 40       		.byte	64
+  36 0004 03       		.byte	3
+  37 0005 52       		.byte	82
+  38 0006 00       		.byte	0
+  39 0007 40       		.byte	64
+  40 0008 02       		.byte	2
+  41 0009 5A       		.byte	90
+  42 000a 00       		.byte	0
+  43 000b 40       		.byte	64
+  44 000c 02       		.byte	2
+  45 000d 5B       		.byte	91
+  46 000e 00       		.byte	0
+  47 000f 40       		.byte	64
+  48 0010 01       		.byte	1
+  49 0011 64       		.byte	100
+  50 0012 00       		.byte	0
+  51 0013 40       		.byte	64
+  52 0014 01       		.byte	1
+  53 0015 65       		.byte	101
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 2
+
+
+  54 0016 00       		.byte	0
+  55 0017 40       		.byte	64
+  56 0018 03       		.byte	3
+  57 0019 03       		.byte	3
+  58 001a 01       		.byte	1
+  59 001b 40       		.byte	64
+  60 001c 38       		.byte	56
+  61 001d 04       		.byte	4
+  62 001e 01       		.byte	1
+  63 001f 40       		.byte	64
+  64 0020 2D       		.byte	45
+  65 0021 05       		.byte	5
+  66 0022 01       		.byte	1
+  67 0023 40       		.byte	64
+  68 0024 23       		.byte	35
+  69 0025 06       		.byte	6
+  70 0026 01       		.byte	1
+  71 0027 40       		.byte	64
+  72 0028 2C       		.byte	44
+  73 0029 07       		.byte	7
+  74 002a 01       		.byte	1
+  75 002b 40       		.byte	64
+  76 002c 2A       		.byte	42
+  77 002d 08       		.byte	8
+  78 002e 01       		.byte	1
+  79 002f 40       		.byte	64
+  80 0030 1C       		.byte	28
+  81 0031 09       		.byte	9
+  82 0032 01       		.byte	1
+  83 0033 40       		.byte	64
+  84 0034 03       		.byte	3
+  85 0035 0B       		.byte	11
+  86 0036 01       		.byte	1
+  87 0037 40       		.byte	64
+  88 0038 02       		.byte	2
+  89 0039 0D       		.byte	13
+  90 003a 01       		.byte	1
+  91 003b 40       		.byte	64
+  92 003c 01       		.byte	1
+  93 003d 0F       		.byte	15
+  94 003e 01       		.byte	1
+  95 003f 40       		.byte	64
+  96 0040 53       		.byte	83
+  97 0041 14       		.byte	20
+  98 0042 01       		.byte	1
+  99 0043 40       		.byte	64
+ 100 0044 35       		.byte	53
+ 101 0045 15       		.byte	21
+ 102 0046 01       		.byte	1
+ 103 0047 40       		.byte	64
+ 104 0048 44       		.byte	68
+ 105 0049 16       		.byte	22
+ 106 004a 01       		.byte	1
+ 107 004b 40       		.byte	64
+ 108 004c 3A       		.byte	58
+ 109 004d 17       		.byte	23
+ 110 004e 01       		.byte	1
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 3
+
+
+ 111 004f 40       		.byte	64
+ 112 0050 23       		.byte	35
+ 113 0051 18       		.byte	24
+ 114 0052 01       		.byte	1
+ 115 0053 40       		.byte	64
+ 116 0054 0F       		.byte	15
+ 117 0055 19       		.byte	25
+ 118 0056 01       		.byte	1
+ 119 0057 40       		.byte	64
+ 120 0058 04       		.byte	4
+ 121 0059 1B       		.byte	27
+ 122 005a 01       		.byte	1
+ 123 005b 40       		.byte	64
+ 124 005c 0C       		.byte	12
+ 125 005d 40       		.byte	64
+ 126 005e 01       		.byte	1
+ 127 005f 40       		.byte	64
+ 128 0060 11       		.byte	17
+ 129 0061 41       		.byte	65
+ 130 0062 01       		.byte	1
+ 131 0063 40       		.byte	64
+ 132 0064 0D       		.byte	13
+ 133 0065 42       		.byte	66
+ 134 0066 01       		.byte	1
+ 135 0067 40       		.byte	64
+ 136 0068 0D       		.byte	13
+ 137 0069 43       		.byte	67
+ 138 006a 01       		.byte	1
+ 139 006b 40       		.byte	64
+ 140 006c 04       		.byte	4
+ 141 006d 44       		.byte	68
+ 142 006e 01       		.byte	1
+ 143 006f 40       		.byte	64
+ 144 0070 06       		.byte	6
+ 145 0071 45       		.byte	69
+ 146 0072 01       		.byte	1
+ 147 0073 40       		.byte	64
+ 148 0074 08       		.byte	8
+ 149 0075 46       		.byte	70
+ 150 0076 01       		.byte	1
+ 151 0077 40       		.byte	64
+ 152 0078 12       		.byte	18
+ 153 0079 47       		.byte	71
+ 154 007a 01       		.byte	1
+ 155 007b 40       		.byte	64
+ 156 007c 07       		.byte	7
+ 157 007d 48       		.byte	72
+ 158 007e 01       		.byte	1
+ 159 007f 40       		.byte	64
+ 160 0080 0F       		.byte	15
+ 161 0081 49       		.byte	73
+ 162 0082 01       		.byte	1
+ 163 0083 40       		.byte	64
+ 164 0084 0B       		.byte	11
+ 165 0085 4C       		.byte	76
+ 166 0086 01       		.byte	1
+ 167 0087 40       		.byte	64
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 4
+
+
+ 168 0088 09       		.byte	9
+ 169 0089 4D       		.byte	77
+ 170 008a 01       		.byte	1
+ 171 008b 40       		.byte	64
+ 172 008c 0A       		.byte	10
+ 173 008d 50       		.byte	80
+ 174 008e 01       		.byte	1
+ 175 008f 40       		.byte	64
+ 176 0090 04       		.byte	4
+ 177 0091 51       		.byte	81
+ 178 0092 01       		.byte	1
+ 179 0093 40       		.byte	64
+ 180 0094 7E       		.byte	126
+ 181 0095 02       		.byte	2
+ 182 0096 60       		.byte	96
+ 183 0097 45       		.byte	69
+ 184 0098 61       		.byte	97
+ 185 0099 C4       		.byte	-60
+ 186 009a 7C       		.byte	124
+ 187 009b 40       		.byte	64
+ 188 009c 8F       		.byte	-113
+ 189 009d 01       		.byte	1
+ 190 009e 97       		.byte	-105
+ 191 009f 01       		.byte	1
+ 192 00a0 27       		.byte	39
+ 193 00a1 84       		.byte	-124
+ 194 00a2 2F       		.byte	47
+ 195 00a3 84       		.byte	-124
+ 196 00a4 88       		.byte	-120
+ 197 00a5 0D       		.byte	13
+ 198 00a6 85       		.byte	-123
+ 199 00a7 0D       		.byte	13
+ 200 00a8 80       		.byte	-128
+ 201 00a9 01       		.byte	1
+ 202 00aa 85       		.byte	-123
+ 203 00ab 04       		.byte	4
+ 204 00ac EA       		.byte	-22
+ 205 00ad 04       		.byte	4
+ 206 00ae 06       		.byte	6
+ 207 00af 02       		.byte	2
+ 208 00b0 0C       		.byte	12
+ 209 00b1 04       		.byte	4
+ 210 00b2 0E       		.byte	14
+ 211 00b3 01       		.byte	1
+ 212 00b4 1C       		.byte	28
+ 213 00b5 08       		.byte	8
+ 214 00b6 22       		.byte	34
+ 215 00b7 08       		.byte	8
+ 216 00b8 2A       		.byte	42
+ 217 00b9 05       		.byte	5
+ 218 00ba 30       		.byte	48
+ 219 00bb 02       		.byte	2
+ 220 00bc 32       		.byte	50
+ 221 00bd 01       		.byte	1
+ 222 00be 34       		.byte	52
+ 223 00bf 04       		.byte	4
+ 224 00c0 36       		.byte	54
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 5
+
+
+ 225 00c1 08       		.byte	8
+ 226 00c2 3E       		.byte	62
+ 227 00c3 54       		.byte	84
+ 228 00c4 56       		.byte	86
+ 229 00c5 08       		.byte	8
+ 230 00c6 58       		.byte	88
+ 231 00c7 04       		.byte	4
+ 232 00c8 5B       		.byte	91
+ 233 00c9 04       		.byte	4
+ 234 00ca 5C       		.byte	92
+ 235 00cb 05       		.byte	5
+ 236 00cc 5D       		.byte	93
+ 237 00cd 20       		.byte	32
+ 238 00ce 5F       		.byte	95
+ 239 00cf 01       		.byte	1
+ 240 00d0 80       		.byte	-128
+ 241 00d1 04       		.byte	4
+ 242 00d2 82       		.byte	-126
+ 243 00d3 2A       		.byte	42
+ 244 00d4 83       		.byte	-125
+ 245 00d5 08       		.byte	8
+ 246 00d6 84       		.byte	-124
+ 247 00d7 04       		.byte	4
+ 248 00d8 85       		.byte	-123
+ 249 00d9 04       		.byte	4
+ 250 00da 86       		.byte	-122
+ 251 00db BA       		.byte	-70
+ 252 00dc 8A       		.byte	-118
+ 253 00dd FE       		.byte	-2
+ 254 00de 8C       		.byte	-116
+ 255 00df 03       		.byte	3
+ 256 00e0 8E       		.byte	-114
+ 257 00e1 04       		.byte	4
+ 258 00e2 93       		.byte	-109
+ 259 00e3 3F       		.byte	63
+ 260 00e4 97       		.byte	-105
+ 261 00e5 1F       		.byte	31
+ 262 00e6 98       		.byte	-104
+ 263 00e7 04       		.byte	4
+ 264 00e8 9A       		.byte	-102
+ 265 00e9 FA       		.byte	-6
+ 266 00ea 9B       		.byte	-101
+ 267 00eb 0F       		.byte	15
+ 268 00ec 9C       		.byte	-100
+ 269 00ed 0A       		.byte	10
+ 270 00ee 9E       		.byte	-98
+ 271 00ef D4       		.byte	-44
+ 272 00f0 A0       		.byte	-96
+ 273 00f1 01       		.byte	1
+ 274 00f2 A2       		.byte	-94
+ 275 00f3 FC       		.byte	-4
+ 276 00f4 A8       		.byte	-88
+ 277 00f5 2A       		.byte	42
+ 278 00f6 AA       		.byte	-86
+ 279 00f7 14       		.byte	20
+ 280 00f8 AB       		.byte	-85
+ 281 00f9 02       		.byte	2
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 6
+
+
+ 282 00fa AD       		.byte	-83
+ 283 00fb 01       		.byte	1
+ 284 00fc B0       		.byte	-80
+ 285 00fd 18       		.byte	24
+ 286 00fe B1       		.byte	-79
+ 287 00ff 0F       		.byte	15
+ 288 0100 B2       		.byte	-78
+ 289 0101 80       		.byte	-128
+ 290 0102 B3       		.byte	-77
+ 291 0103 10       		.byte	16
+ 292 0104 B4       		.byte	-76
+ 293 0105 60       		.byte	96
+ 294 0106 B5       		.byte	-75
+ 295 0107 20       		.byte	32
+ 296 0108 B6       		.byte	-74
+ 297 0109 07       		.byte	7
+ 298 010a B9       		.byte	-71
+ 299 010b 80       		.byte	-128
+ 300 010c BA       		.byte	-70
+ 301 010d AA       		.byte	-86
+ 302 010e BB       		.byte	-69
+ 303 010f 2A       		.byte	42
+ 304 0110 D6       		.byte	-42
+ 305 0111 08       		.byte	8
+ 306 0112 D8       		.byte	-40
+ 307 0113 04       		.byte	4
+ 308 0114 D9       		.byte	-39
+ 309 0115 04       		.byte	4
+ 310 0116 DB       		.byte	-37
+ 311 0117 04       		.byte	4
+ 312 0118 DC       		.byte	-36
+ 313 0119 33       		.byte	51
+ 314 011a DD       		.byte	-35
+ 315 011b 20       		.byte	32
+ 316 011c DF       		.byte	-33
+ 317 011d 01       		.byte	1
+ 318 011e 03       		.byte	3
+ 319 011f 12       		.byte	18
+ 320 0120 04       		.byte	4
+ 321 0121 44       		.byte	68
+ 322 0122 05       		.byte	5
+ 323 0123 41       		.byte	65
+ 324 0124 07       		.byte	7
+ 325 0125 04       		.byte	4
+ 326 0126 09       		.byte	9
+ 327 0127 80       		.byte	-128
+ 328 0128 0E       		.byte	14
+ 329 0129 0A       		.byte	10
+ 330 012a 10       		.byte	16
+ 331 012b 48       		.byte	72
+ 332 012c 12       		.byte	18
+ 333 012d 48       		.byte	72
+ 334 012e 14       		.byte	20
+ 335 012f 04       		.byte	4
+ 336 0130 17       		.byte	23
+ 337 0131 02       		.byte	2
+ 338 0132 18       		.byte	24
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 7
+
+
+ 339 0133 11       		.byte	17
+ 340 0134 1A       		.byte	26
+ 341 0135 04       		.byte	4
+ 342 0136 1B       		.byte	27
+ 343 0137 02       		.byte	2
+ 344 0138 1C       		.byte	28
+ 345 0139 04       		.byte	4
+ 346 013a 1D       		.byte	29
+ 347 013b 41       		.byte	65
+ 348 013c 1E       		.byte	30
+ 349 013d 40       		.byte	64
+ 350 013e 1F       		.byte	31
+ 351 013f 08       		.byte	8
+ 352 0140 25       		.byte	37
+ 353 0141 01       		.byte	1
+ 354 0142 26       		.byte	38
+ 355 0143 05       		.byte	5
+ 356 0144 27       		.byte	39
+ 357 0145 26       		.byte	38
+ 358 0146 2C       		.byte	44
+ 359 0147 04       		.byte	4
+ 360 0148 2E       		.byte	46
+ 361 0149 40       		.byte	64
+ 362 014a 2F       		.byte	47
+ 363 014b 08       		.byte	8
+ 364 014c 37       		.byte	55
+ 365 014d 26       		.byte	38
+ 366 014e 3C       		.byte	60
+ 367 014f 04       		.byte	4
+ 368 0150 3D       		.byte	61
+ 369 0151 02       		.byte	2
+ 370 0152 58       		.byte	88
+ 371 0153 40       		.byte	64
+ 372 0154 5C       		.byte	92
+ 373 0155 40       		.byte	64
+ 374 0156 61       		.byte	97
+ 375 0157 80       		.byte	-128
+ 376 0158 66       		.byte	102
+ 377 0159 40       		.byte	64
+ 378 015a 80       		.byte	-128
+ 379 015b 10       		.byte	16
+ 380 015c 85       		.byte	-123
+ 381 015d 10       		.byte	16
+ 382 015e 8A       		.byte	-118
+ 383 015f 04       		.byte	4
+ 384 0160 94       		.byte	-108
+ 385 0161 02       		.byte	2
+ 386 0162 95       		.byte	-107
+ 387 0163 08       		.byte	8
+ 388 0164 C0       		.byte	-64
+ 389 0165 F5       		.byte	-11
+ 390 0166 C2       		.byte	-62
+ 391 0167 C1       		.byte	-63
+ 392 0168 C4       		.byte	-60
+ 393 0169 5A       		.byte	90
+ 394 016a CA       		.byte	-54
+ 395 016b 30       		.byte	48
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 8
+
+
+ 396 016c CC       		.byte	-52
+ 397 016d E0       		.byte	-32
+ 398 016e CE       		.byte	-50
+ 399 016f C0       		.byte	-64
+ 400 0170 D6       		.byte	-42
+ 401 0171 18       		.byte	24
+ 402 0172 D8       		.byte	-40
+ 403 0173 18       		.byte	24
+ 404 0174 E4       		.byte	-28
+ 405 0175 08       		.byte	8
+ 406 0176 E6       		.byte	-26
+ 407 0177 24       		.byte	36
+ 408 0178 02       		.byte	2
+ 409 0179 03       		.byte	3
+ 410 017a 0A       		.byte	10
+ 411 017b 03       		.byte	3
+ 412 017c 10       		.byte	16
+ 413 017d 01       		.byte	1
+ 414 017e 30       		.byte	48
+ 415 017f 02       		.byte	2
+ 416 0180 32       		.byte	50
+ 417 0181 01       		.byte	1
+ 418 0182 3E       		.byte	62
+ 419 0183 04       		.byte	4
+ 420 0184 56       		.byte	86
+ 421 0185 08       		.byte	8
+ 422 0186 58       		.byte	88
+ 423 0187 04       		.byte	4
+ 424 0188 5B       		.byte	91
+ 425 0189 04       		.byte	4
+ 426 018a 5D       		.byte	93
+ 427 018b 80       		.byte	-128
+ 428 018c 5F       		.byte	95
+ 429 018d 21       		.byte	33
+ 430 018e 85       		.byte	-123
+ 431 018f 04       		.byte	4
+ 432 0190 86       		.byte	-122
+ 433 0191 02       		.byte	2
+ 434 0192 87       		.byte	-121
+ 435 0193 02       		.byte	2
+ 436 0194 8A       		.byte	-118
+ 437 0195 0D       		.byte	13
+ 438 0196 8B       		.byte	-117
+ 439 0197 06       		.byte	6
+ 440 0198 8F       		.byte	-113
+ 441 0199 01       		.byte	1
+ 442 019a 96       		.byte	-106
+ 443 019b 08       		.byte	8
+ 444 019c 98       		.byte	-104
+ 445 019d 06       		.byte	6
+ 446 019e AE       		.byte	-82
+ 447 019f 01       		.byte	1
+ 448 01a0 B1       		.byte	-79
+ 449 01a1 04       		.byte	4
+ 450 01a2 B2       		.byte	-78
+ 451 01a3 06       		.byte	6
+ 452 01a4 B3       		.byte	-77
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 9
+
+
+ 453 01a5 02       		.byte	2
+ 454 01a6 B4       		.byte	-76
+ 455 01a7 08       		.byte	8
+ 456 01a8 B5       		.byte	-75
+ 457 01a9 01       		.byte	1
+ 458 01aa B6       		.byte	-74
+ 459 01ab 01       		.byte	1
+ 460 01ac BE       		.byte	-66
+ 461 01ad 50       		.byte	80
+ 462 01ae BF       		.byte	-65
+ 463 01af 05       		.byte	5
+ 464 01b0 D6       		.byte	-42
+ 465 01b1 08       		.byte	8
+ 466 01b2 D8       		.byte	-40
+ 467 01b3 04       		.byte	4
+ 468 01b4 D9       		.byte	-39
+ 469 01b5 04       		.byte	4
+ 470 01b6 DB       		.byte	-37
+ 471 01b7 04       		.byte	4
+ 472 01b8 DC       		.byte	-36
+ 473 01b9 60       		.byte	96
+ 474 01ba DD       		.byte	-35
+ 475 01bb 90       		.byte	-112
+ 476 01bc DF       		.byte	-33
+ 477 01bd 01       		.byte	1
+ 478 01be 00       		.byte	0
+ 479 01bf 18       		.byte	24
+ 480 01c0 05       		.byte	5
+ 481 01c1 11       		.byte	17
+ 482 01c2 09       		.byte	9
+ 483 01c3 20       		.byte	32
+ 484 01c4 0A       		.byte	10
+ 485 01c5 20       		.byte	32
+ 486 01c6 0E       		.byte	14
+ 487 01c7 80       		.byte	-128
+ 488 01c8 10       		.byte	16
+ 489 01c9 02       		.byte	2
+ 490 01ca 18       		.byte	24
+ 491 01cb 1A       		.byte	26
+ 492 01cc 1E       		.byte	30
+ 493 01cd A0       		.byte	-96
+ 494 01ce 20       		.byte	32
+ 495 01cf 04       		.byte	4
+ 496 01d0 21       		.byte	33
+ 497 01d1 04       		.byte	4
+ 498 01d2 23       		.byte	35
+ 499 01d3 40       		.byte	64
+ 500 01d4 38       		.byte	56
+ 501 01d5 04       		.byte	4
+ 502 01d6 39       		.byte	57
+ 503 01d7 70       		.byte	112
+ 504 01d8 42       		.byte	66
+ 505 01d9 02       		.byte	2
+ 506 01da 43       		.byte	67
+ 507 01db 40       		.byte	64
+ 508 01dc 5B       		.byte	91
+ 509 01dd 40       		.byte	64
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 10
+
+
+ 510 01de 5C       		.byte	92
+ 511 01df 40       		.byte	64
+ 512 01e0 5E       		.byte	94
+ 513 01e1 10       		.byte	16
+ 514 01e2 60       		.byte	96
+ 515 01e3 02       		.byte	2
+ 516 01e4 64       		.byte	100
+ 517 01e5 08       		.byte	8
+ 518 01e6 67       		.byte	103
+ 519 01e7 02       		.byte	2
+ 520 01e8 69       		.byte	105
+ 521 01e9 40       		.byte	64
+ 522 01ea 6B       		.byte	107
+ 523 01eb 10       		.byte	16
+ 524 01ec 7E       		.byte	126
+ 525 01ed 10       		.byte	16
+ 526 01ee 80       		.byte	-128
+ 527 01ef 06       		.byte	6
+ 528 01f0 82       		.byte	-126
+ 529 01f1 12       		.byte	18
+ 530 01f2 8B       		.byte	-117
+ 531 01f3 40       		.byte	64
+ 532 01f4 94       		.byte	-108
+ 533 01f5 02       		.byte	2
+ 534 01f6 95       		.byte	-107
+ 535 01f7 18       		.byte	24
+ 536 01f8 9C       		.byte	-100
+ 537 01f9 08       		.byte	8
+ 538 01fa 9F       		.byte	-97
+ 539 01fb 10       		.byte	16
+ 540 01fc A4       		.byte	-92
+ 541 01fd 08       		.byte	8
+ 542 01fe B4       		.byte	-76
+ 543 01ff 09       		.byte	9
+ 544 0200 B6       		.byte	-74
+ 545 0201 08       		.byte	8
+ 546 0202 C0       		.byte	-64
+ 547 0203 56       		.byte	86
+ 548 0204 C2       		.byte	-62
+ 549 0205 16       		.byte	22
+ 550 0206 C4       		.byte	-60
+ 551 0207 01       		.byte	1
+ 552 0208 CE       		.byte	-50
+ 553 0209 0E       		.byte	14
+ 554 020a D6       		.byte	-42
+ 555 020b 38       		.byte	56
+ 556 020c D8       		.byte	-40
+ 557 020d 38       		.byte	56
+ 558 020e DE       		.byte	-34
+ 559 020f 40       		.byte	64
+ 560 0210 E2       		.byte	-30
+ 561 0211 26       		.byte	38
+ 562 0212 E6       		.byte	-26
+ 563 0213 04       		.byte	4
+ 564 0214 EA       		.byte	-22
+ 565 0215 40       		.byte	64
+ 566 0216 0B       		.byte	11
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 11
+
+
+ 567 0217 01       		.byte	1
+ 568 0218 16       		.byte	22
+ 569 0219 05       		.byte	5
+ 570 021a 1E       		.byte	30
+ 571 021b 04       		.byte	4
+ 572 021c 21       		.byte	33
+ 573 021d 01       		.byte	1
+ 574 021e 26       		.byte	38
+ 575 021f 09       		.byte	9
+ 576 0220 2E       		.byte	46
+ 577 0221 02       		.byte	2
+ 578 0222 30       		.byte	48
+ 579 0223 01       		.byte	1
+ 580 0224 32       		.byte	50
+ 581 0225 02       		.byte	2
+ 582 0226 34       		.byte	52
+ 583 0227 04       		.byte	4
+ 584 0228 36       		.byte	54
+ 585 0229 08       		.byte	8
+ 586 022a 37       		.byte	55
+ 587 022b 01       		.byte	1
+ 588 022c 3E       		.byte	62
+ 589 022d 10       		.byte	16
+ 590 022e 40       		.byte	64
+ 591 022f 30       		.byte	48
+ 592 0230 41       		.byte	65
+ 593 0231 04       		.byte	4
+ 594 0232 45       		.byte	69
+ 595 0233 D0       		.byte	-48
+ 596 0234 46       		.byte	70
+ 597 0235 10       		.byte	16
+ 598 0236 47       		.byte	71
+ 599 0237 20       		.byte	32
+ 600 0238 48       		.byte	72
+ 601 0239 2A       		.byte	42
+ 602 023a 49       		.byte	73
+ 603 023b FF       		.byte	-1
+ 604 023c 4A       		.byte	74
+ 605 023d FF       		.byte	-1
+ 606 023e 4B       		.byte	75
+ 607 023f FF       		.byte	-1
+ 608 0240 4D       		.byte	77
+ 609 0241 A0       		.byte	-96
+ 610 0242 4F       		.byte	79
+ 611 0243 04       		.byte	4
+ 612 0244 50       		.byte	80
+ 613 0245 18       		.byte	24
+ 614 0246 52       		.byte	82
+ 615 0247 80       		.byte	-128
+ 616 0248 54       		.byte	84
+ 617 0249 05       		.byte	5
+ 618 024a 58       		.byte	88
+ 619 024b 04       		.byte	4
+ 620 024c 59       		.byte	89
+ 621 024d 04       		.byte	4
+ 622 024e 5A       		.byte	90
+ 623 024f 04       		.byte	4
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 12
+
+
+ 624 0250 5B       		.byte	91
+ 625 0251 04       		.byte	4
+ 626 0252 5C       		.byte	92
+ 627 0253 11       		.byte	17
+ 628 0254 5D       		.byte	93
+ 629 0255 11       		.byte	17
+ 630 0256 5F       		.byte	95
+ 631 0257 01       		.byte	1
+ 632 0258 60       		.byte	96
+ 633 0259 40       		.byte	64
+ 634 025a 62       		.byte	98
+ 635 025b C0       		.byte	-64
+ 636 025c 64       		.byte	100
+ 637 025d 40       		.byte	64
+ 638 025e 65       		.byte	101
+ 639 025f 40       		.byte	64
+ 640 0260 66       		.byte	102
+ 641 0261 C0       		.byte	-64
+ 642 0262 68       		.byte	104
+ 643 0263 C0       		.byte	-64
+ 644 0264 6A       		.byte	106
+ 645 0265 C0       		.byte	-64
+ 646 0266 6C       		.byte	108
+ 647 0267 C0       		.byte	-64
+ 648 0268 6E       		.byte	110
+ 649 0269 C0       		.byte	-64
+ 650 026a 0E       		.byte	14
+ 651 026b 20       		.byte	32
+ 652 026c 0F       		.byte	15
+ 653 026d 02       		.byte	2
+ 654 026e 16       		.byte	22
+ 655 026f 20       		.byte	32
+ 656 0270 17       		.byte	23
+ 657 0271 40       		.byte	64
+ 658 0272 1D       		.byte	29
+ 659 0273 09       		.byte	9
+ 660 0274 1E       		.byte	30
+ 661 0275 28       		.byte	40
+ 662 0276 1F       		.byte	31
+ 663 0277 40       		.byte	64
+ 664 0278 26       		.byte	38
+ 665 0279 40       		.byte	64
+ 666 027a 2F       		.byte	47
+ 667 027b 40       		.byte	64
+ 668 027c 3E       		.byte	62
+ 669 027d 20       		.byte	32
+ 670 027e 45       		.byte	69
+ 671 027f 0A       		.byte	10
+ 672 0280 4F       		.byte	79
+ 673 0281 01       		.byte	1
+ 674 0282 55       		.byte	85
+ 675 0283 02       		.byte	2
+ 676 0284 56       		.byte	86
+ 677 0285 20       		.byte	32
+ 678 0286 57       		.byte	87
+ 679 0287 01       		.byte	1
+ 680 0288 5E       		.byte	94
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 13
+
+
+ 681 0289 88       		.byte	-120
+ 682 028a 5F       		.byte	95
+ 683 028b 01       		.byte	1
+ 684 028c 77       		.byte	119
+ 685 028d 40       		.byte	64
+ 686 028e 9D       		.byte	-99
+ 687 028f 01       		.byte	1
+ 688 0290 C2       		.byte	-62
+ 689 0291 A0       		.byte	-96
+ 690 0292 C4       		.byte	-60
+ 691 0293 A0       		.byte	-96
+ 692 0294 CA       		.byte	-54
+ 693 0295 80       		.byte	-128
+ 694 0296 CE       		.byte	-50
+ 695 0297 20       		.byte	32
+ 696 0298 D0       		.byte	-48
+ 697 0299 C0       		.byte	-64
+ 698 029a D6       		.byte	-42
+ 699 029b D0       		.byte	-48
+ 700 029c E2       		.byte	-30
+ 701 029d 06       		.byte	6
+ 702 029e E6       		.byte	-26
+ 703 029f 04       		.byte	4
+ 704 02a0 EC       		.byte	-20
+ 705 02a1 50       		.byte	80
+ 706 02a2 9D       		.byte	-99
+ 707 02a3 01       		.byte	1
+ 708 02a4 E4       		.byte	-28
+ 709 02a5 08       		.byte	8
+ 710 02a6 E6       		.byte	-26
+ 711 02a7 04       		.byte	4
+ 712 02a8 9D       		.byte	-99
+ 713 02a9 01       		.byte	1
+ 714 02aa EA       		.byte	-22
+ 715 02ab 04       		.byte	4
+ 716 02ac 8D       		.byte	-115
+ 717 02ad 01       		.byte	1
+ 718 02ae 03       		.byte	3
+ 719 02af 03       		.byte	3
+ 720 02b0 0B       		.byte	11
+ 721 02b1 0A       		.byte	10
+ 722 02b2 0F       		.byte	15
+ 723 02b3 05       		.byte	5
+ 724 02b4 1A       		.byte	26
+ 725 02b5 01       		.byte	1
+ 726 02b6 1B       		.byte	27
+ 727 02b7 05       		.byte	5
+ 728 02b8 1D       		.byte	29
+ 729 02b9 01       		.byte	1
+ 730 02ba 2D       		.byte	45
+ 731 02bb 02       		.byte	2
+ 732 02bc 2F       		.byte	47
+ 733 02bd 08       		.byte	8
+ 734 02be 32       		.byte	50
+ 735 02bf 01       		.byte	1
+ 736 02c0 33       		.byte	51
+ 737 02c1 03       		.byte	3
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 14
+
+
+ 738 02c2 35       		.byte	53
+ 739 02c3 08       		.byte	8
+ 740 02c4 37       		.byte	55
+ 741 02c5 04       		.byte	4
+ 742 02c6 3D       		.byte	61
+ 743 02c7 08       		.byte	8
+ 744 02c8 40       		.byte	64
+ 745 02c9 35       		.byte	53
+ 746 02ca 41       		.byte	65
+ 747 02cb 04       		.byte	4
+ 748 02cc 49       		.byte	73
+ 749 02cd FF       		.byte	-1
+ 750 02ce 4A       		.byte	74
+ 751 02cf FF       		.byte	-1
+ 752 02d0 4B       		.byte	75
+ 753 02d1 FF       		.byte	-1
+ 754 02d2 4D       		.byte	77
+ 755 02d3 A0       		.byte	-96
+ 756 02d4 4F       		.byte	79
+ 757 02d5 04       		.byte	4
+ 758 02d6 50       		.byte	80
+ 759 02d7 18       		.byte	24
+ 760 02d8 52       		.byte	82
+ 761 02d9 80       		.byte	-128
+ 762 02da 58       		.byte	88
+ 763 02db 04       		.byte	4
+ 764 02dc 59       		.byte	89
+ 765 02dd 0B       		.byte	11
+ 766 02de 5A       		.byte	90
+ 767 02df 0B       		.byte	11
+ 768 02e0 5B       		.byte	91
+ 769 02e1 0B       		.byte	11
+ 770 02e2 5C       		.byte	92
+ 771 02e3 90       		.byte	-112
+ 772 02e4 5D       		.byte	93
+ 773 02e5 99       		.byte	-103
+ 774 02e6 5F       		.byte	95
+ 775 02e7 01       		.byte	1
+ 776 02e8 60       		.byte	96
+ 777 02e9 40       		.byte	64
+ 778 02ea 62       		.byte	98
+ 779 02eb C0       		.byte	-64
+ 780 02ec 64       		.byte	100
+ 781 02ed 40       		.byte	64
+ 782 02ee 65       		.byte	101
+ 783 02ef 40       		.byte	64
+ 784 02f0 66       		.byte	102
+ 785 02f1 C0       		.byte	-64
+ 786 02f2 68       		.byte	104
+ 787 02f3 C0       		.byte	-64
+ 788 02f4 6A       		.byte	106
+ 789 02f5 C0       		.byte	-64
+ 790 02f6 6C       		.byte	108
+ 791 02f7 C0       		.byte	-64
+ 792 02f8 6E       		.byte	110
+ 793 02f9 C0       		.byte	-64
+ 794 02fa 88       		.byte	-120
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 15
+
+
+ 795 02fb 01       		.byte	1
+ 796 02fc 8A       		.byte	-118
+ 797 02fd 0A       		.byte	10
+ 798 02fe 9B       		.byte	-101
+ 799 02ff 01       		.byte	1
+ 800 0300 9C       		.byte	-100
+ 801 0301 06       		.byte	6
+ 802 0302 A4       		.byte	-92
+ 803 0303 01       		.byte	1
+ 804 0304 A6       		.byte	-90
+ 805 0305 14       		.byte	20
+ 806 0306 AA       		.byte	-86
+ 807 0307 18       		.byte	24
+ 808 0308 AF       		.byte	-81
+ 809 0309 01       		.byte	1
+ 810 030a B0       		.byte	-80
+ 811 030b 06       		.byte	6
+ 812 030c B2       		.byte	-78
+ 813 030d 18       		.byte	24
+ 814 030e B5       		.byte	-75
+ 815 030f 01       		.byte	1
+ 816 0310 B6       		.byte	-74
+ 817 0311 01       		.byte	1
+ 818 0312 B8       		.byte	-72
+ 819 0313 80       		.byte	-128
+ 820 0314 BC       		.byte	-68
+ 821 0315 02       		.byte	2
+ 822 0316 BF       		.byte	-65
+ 823 0317 10       		.byte	16
+ 824 0318 C0       		.byte	-64
+ 825 0319 24       		.byte	36
+ 826 031a C1       		.byte	-63
+ 827 031b 05       		.byte	5
+ 828 031c C5       		.byte	-59
+ 829 031d D0       		.byte	-48
+ 830 031e C6       		.byte	-58
+ 831 031f 10       		.byte	16
+ 832 0320 C7       		.byte	-57
+ 833 0321 20       		.byte	32
+ 834 0322 C8       		.byte	-56
+ 835 0323 3A       		.byte	58
+ 836 0324 C9       		.byte	-55
+ 837 0325 FF       		.byte	-1
+ 838 0326 CA       		.byte	-54
+ 839 0327 FF       		.byte	-1
+ 840 0328 CB       		.byte	-53
+ 841 0329 FF       		.byte	-1
+ 842 032a CD       		.byte	-51
+ 843 032b AF       		.byte	-81
+ 844 032c CE       		.byte	-50
+ 845 032d 0F       		.byte	15
+ 846 032e CF       		.byte	-49
+ 847 032f 04       		.byte	4
+ 848 0330 D0       		.byte	-48
+ 849 0331 18       		.byte	24
+ 850 0332 D4       		.byte	-44
+ 851 0333 05       		.byte	5
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 16
+
+
+ 852 0334 D8       		.byte	-40
+ 853 0335 0B       		.byte	11
+ 854 0336 D9       		.byte	-39
+ 855 0337 04       		.byte	4
+ 856 0338 DA       		.byte	-38
+ 857 0339 0B       		.byte	11
+ 858 033a DB       		.byte	-37
+ 859 033b 0B       		.byte	11
+ 860 033c DC       		.byte	-36
+ 861 033d 09       		.byte	9
+ 862 033e DD       		.byte	-35
+ 863 033f 99       		.byte	-103
+ 864 0340 DF       		.byte	-33
+ 865 0341 05       		.byte	5
+ 866 0342 E0       		.byte	-32
+ 867 0343 40       		.byte	64
+ 868 0344 E2       		.byte	-30
+ 869 0345 C0       		.byte	-64
+ 870 0346 E4       		.byte	-28
+ 871 0347 40       		.byte	64
+ 872 0348 E5       		.byte	-27
+ 873 0349 40       		.byte	64
+ 874 034a E6       		.byte	-26
+ 875 034b C0       		.byte	-64
+ 876 034c E8       		.byte	-24
+ 877 034d C0       		.byte	-64
+ 878 034e EA       		.byte	-22
+ 879 034f C0       		.byte	-64
+ 880 0350 EC       		.byte	-20
+ 881 0351 C0       		.byte	-64
+ 882 0352 EE       		.byte	-18
+ 883 0353 C0       		.byte	-64
+ 884 0354 06       		.byte	6
+ 885 0355 08       		.byte	8
+ 886 0356 09       		.byte	9
+ 887 0357 20       		.byte	32
+ 888 0358 0E       		.byte	14
+ 889 0359 02       		.byte	2
+ 890 035a 16       		.byte	22
+ 891 035b 20       		.byte	32
+ 892 035c 17       		.byte	23
+ 893 035d 20       		.byte	32
+ 894 035e 19       		.byte	25
+ 895 035f 08       		.byte	8
+ 896 0360 1D       		.byte	29
+ 897 0361 04       		.byte	4
+ 898 0362 1E       		.byte	30
+ 899 0363 42       		.byte	66
+ 900 0364 20       		.byte	32
+ 901 0365 10       		.byte	16
+ 902 0366 21       		.byte	33
+ 903 0367 A0       		.byte	-96
+ 904 0368 23       		.byte	35
+ 905 0369 20       		.byte	32
+ 906 036a 27       		.byte	39
+ 907 036b 08       		.byte	8
+ 908 036c 2B       		.byte	43
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 17
+
+
+ 909 036d 02       		.byte	2
+ 910 036e 2F       		.byte	47
+ 911 036f 02       		.byte	2
+ 912 0370 31       		.byte	49
+ 913 0371 90       		.byte	-112
+ 914 0372 37       		.byte	55
+ 915 0373 20       		.byte	32
+ 916 0374 38       		.byte	56
+ 917 0375 52       		.byte	82
+ 918 0376 40       		.byte	64
+ 919 0377 10       		.byte	16
+ 920 0378 43       		.byte	67
+ 921 0379 02       		.byte	2
+ 922 037a 44       		.byte	68
+ 923 037b 80       		.byte	-128
+ 924 037c 46       		.byte	70
+ 925 037d 40       		.byte	64
+ 926 037e 47       		.byte	71
+ 927 037f 20       		.byte	32
+ 928 0380 48       		.byte	72
+ 929 0381 01       		.byte	1
+ 930 0382 4C       		.byte	76
+ 931 0383 02       		.byte	2
+ 932 0384 4F       		.byte	79
+ 933 0385 01       		.byte	1
+ 934 0386 54       		.byte	84
+ 935 0387 02       		.byte	2
+ 936 0388 56       		.byte	86
+ 937 0389 28       		.byte	40
+ 938 038a 57       		.byte	87
+ 939 038b 02       		.byte	2
+ 940 038c 5E       		.byte	94
+ 941 038d 40       		.byte	64
+ 942 038e 5F       		.byte	95
+ 943 038f 09       		.byte	9
+ 944 0390 70       		.byte	112
+ 945 0391 01       		.byte	1
+ 946 0392 78       		.byte	120
+ 947 0393 82       		.byte	-126
+ 948 0394 7C       		.byte	124
+ 949 0395 82       		.byte	-126
+ 950 0396 90       		.byte	-112
+ 951 0397 40       		.byte	64
+ 952 0398 98       		.byte	-104
+ 953 0399 02       		.byte	2
+ 954 039a 99       		.byte	-103
+ 955 039b 10       		.byte	16
+ 956 039c 9A       		.byte	-102
+ 957 039d 40       		.byte	64
+ 958 039e 9D       		.byte	-99
+ 959 039f 0C       		.byte	12
+ 960 03a0 A0       		.byte	-96
+ 961 03a1 01       		.byte	1
+ 962 03a2 A5       		.byte	-91
+ 963 03a3 20       		.byte	32
+ 964 03a4 AD       		.byte	-83
+ 965 03a5 10       		.byte	16
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 18
+
+
+ 966 03a6 C0       		.byte	-64
+ 967 03a7 40       		.byte	64
+ 968 03a8 C2       		.byte	-62
+ 969 03a9 82       		.byte	-126
+ 970 03aa C4       		.byte	-60
+ 971 03ab 60       		.byte	96
+ 972 03ac CA       		.byte	-54
+ 973 03ad 18       		.byte	24
+ 974 03ae CC       		.byte	-52
+ 975 03af 2C       		.byte	44
+ 976 03b0 CE       		.byte	-50
+ 977 03b1 0D       		.byte	13
+ 978 03b2 D0       		.byte	-48
+ 979 03b3 A3       		.byte	-93
+ 980 03b4 D2       		.byte	-46
+ 981 03b5 18       		.byte	24
+ 982 03b6 D6       		.byte	-42
+ 983 03b7 D0       		.byte	-48
+ 984 03b8 DE       		.byte	-34
+ 985 03b9 99       		.byte	-103
+ 986 03ba EA       		.byte	-22
+ 987 03bb 40       		.byte	64
+ 988 03bc EC       		.byte	-20
+ 989 03bd 20       		.byte	32
+ 990 03be 00       		.byte	0
+ 991 03bf 1F       		.byte	31
+ 992 03c0 01       		.byte	1
+ 993 03c1 7F       		.byte	127
+ 994 03c2 03       		.byte	3
+ 995 03c3 80       		.byte	-128
+ 996 03c4 04       		.byte	4
+ 997 03c5 C0       		.byte	-64
+ 998 03c6 05       		.byte	5
+ 999 03c7 94       		.byte	-108
+ 1000 03c8 07       		.byte	7
+ 1001 03c9 6B       		.byte	107
+ 1002 03ca 09       		.byte	9
+ 1003 03cb 52       		.byte	82
+ 1004 03cc 0A       		.byte	10
+ 1005 03cd 80       		.byte	-128
+ 1006 03ce 0B       		.byte	11
+ 1007 03cf 2D       		.byte	45
+ 1008 03d0 0C       		.byte	12
+ 1009 03d1 09       		.byte	9
+ 1010 03d2 0E       		.byte	14
+ 1011 03d3 16       		.byte	22
+ 1012 03d4 10       		.byte	16
+ 1013 03d5 07       		.byte	7
+ 1014 03d6 11       		.byte	17
+ 1015 03d7 36       		.byte	54
+ 1016 03d8 12       		.byte	18
+ 1017 03d9 18       		.byte	24
+ 1018 03da 13       		.byte	19
+ 1019 03db 49       		.byte	73
+ 1020 03dc 14       		.byte	20
+ 1021 03dd 1A       		.byte	26
+ 1022 03de 15       		.byte	21
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 19
+
+
+ 1023 03df 01       		.byte	1
+ 1024 03e0 16       		.byte	22
+ 1025 03e1 05       		.byte	5
+ 1026 03e2 17       		.byte	23
+ 1027 03e3 7E       		.byte	126
+ 1028 03e4 18       		.byte	24
+ 1029 03e5 40       		.byte	64
+ 1030 03e6 1B       		.byte	27
+ 1031 03e7 80       		.byte	-128
+ 1032 03e8 22       		.byte	34
+ 1033 03e9 20       		.byte	32
+ 1034 03ea 24       		.byte	36
+ 1035 03eb 1F       		.byte	31
+ 1036 03ec 28       		.byte	40
+ 1037 03ed 14       		.byte	20
+ 1038 03ee 2A       		.byte	42
+ 1039 03ef 0B       		.byte	11
+ 1040 03f0 2D       		.byte	45
+ 1041 03f1 0E       		.byte	14
+ 1042 03f2 2F       		.byte	47
+ 1043 03f3 71       		.byte	113
+ 1044 03f4 30       		.byte	48
+ 1045 03f5 3F       		.byte	63
+ 1046 03f6 34       		.byte	52
+ 1047 03f7 C0       		.byte	-64
+ 1048 03f8 37       		.byte	55
+ 1049 03f9 FF       		.byte	-1
+ 1050 03fa 3E       		.byte	62
+ 1051 03fb 01       		.byte	1
+ 1052 03fc 3F       		.byte	63
+ 1053 03fd 40       		.byte	64
+ 1054 03fe 52       		.byte	82
+ 1055 03ff CF       		.byte	-49
+ 1056 0400 54       		.byte	84
+ 1057 0401 06       		.byte	6
+ 1058 0402 56       		.byte	86
+ 1059 0403 10       		.byte	16
+ 1060 0404 58       		.byte	88
+ 1061 0405 04       		.byte	4
+ 1062 0406 59       		.byte	89
+ 1063 0407 04       		.byte	4
+ 1064 0408 5B       		.byte	91
+ 1065 0409 04       		.byte	4
+ 1066 040a 5C       		.byte	92
+ 1067 040b 09       		.byte	9
+ 1068 040c 5F       		.byte	95
+ 1069 040d 01       		.byte	1
+ 1070 040e 80       		.byte	-128
+ 1071 040f 09       		.byte	9
+ 1072 0410 82       		.byte	-126
+ 1073 0411 26       		.byte	38
+ 1074 0412 8C       		.byte	-116
+ 1075 0413 20       		.byte	32
+ 1076 0414 8E       		.byte	-114
+ 1077 0415 02       		.byte	2
+ 1078 0416 94       		.byte	-108
+ 1079 0417 0C       		.byte	12
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 20
+
+
+ 1080 0418 99       		.byte	-103
+ 1081 0419 01       		.byte	1
+ 1082 041a 9B       		.byte	-101
+ 1083 041b 02       		.byte	2
+ 1084 041c 9C       		.byte	-100
+ 1085 041d 05       		.byte	5
+ 1086 041e 9E       		.byte	-98
+ 1087 041f 2A       		.byte	42
+ 1088 0420 A2       		.byte	-94
+ 1089 0421 1C       		.byte	28
+ 1090 0422 A5       		.byte	-91
+ 1091 0423 02       		.byte	2
+ 1092 0424 AA       		.byte	-86
+ 1093 0425 01       		.byte	1
+ 1094 0426 B0       		.byte	-80
+ 1095 0427 0F       		.byte	15
+ 1096 0428 B2       		.byte	-78
+ 1097 0429 10       		.byte	16
+ 1098 042a B3       		.byte	-77
+ 1099 042b 01       		.byte	1
+ 1100 042c B4       		.byte	-76
+ 1101 042d 28       		.byte	40
+ 1102 042e B5       		.byte	-75
+ 1103 042f 02       		.byte	2
+ 1104 0430 B6       		.byte	-74
+ 1105 0431 06       		.byte	6
+ 1106 0432 B8       		.byte	-72
+ 1107 0433 20       		.byte	32
+ 1108 0434 BA       		.byte	-70
+ 1109 0435 82       		.byte	-126
+ 1110 0436 BF       		.byte	-65
+ 1111 0437 10       		.byte	16
+ 1112 0438 D6       		.byte	-42
+ 1113 0439 08       		.byte	8
+ 1114 043a D8       		.byte	-40
+ 1115 043b 04       		.byte	4
+ 1116 043c D9       		.byte	-39
+ 1117 043d 04       		.byte	4
+ 1118 043e DB       		.byte	-37
+ 1119 043f 04       		.byte	4
+ 1120 0440 DC       		.byte	-36
+ 1121 0441 09       		.byte	9
+ 1122 0442 DD       		.byte	-35
+ 1123 0443 90       		.byte	-112
+ 1124 0444 DF       		.byte	-33
+ 1125 0445 01       		.byte	1
+ 1126 0446 00       		.byte	0
+ 1127 0447 40       		.byte	64
+ 1128 0448 01       		.byte	1
+ 1129 0449 02       		.byte	2
+ 1130 044a 05       		.byte	5
+ 1131 044b 14       		.byte	20
+ 1132 044c 07       		.byte	7
+ 1133 044d 41       		.byte	65
+ 1134 044e 0A       		.byte	10
+ 1135 044f 22       		.byte	34
+ 1136 0450 0E       		.byte	14
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 21
+
+
+ 1137 0451 54       		.byte	84
+ 1138 0452 10       		.byte	16
+ 1139 0453 08       		.byte	8
+ 1140 0454 12       		.byte	18
+ 1141 0455 80       		.byte	-128
+ 1142 0456 17       		.byte	23
+ 1143 0457 16       		.byte	22
+ 1144 0458 19       		.byte	25
+ 1145 0459 02       		.byte	2
+ 1146 045a 1A       		.byte	26
+ 1147 045b 26       		.byte	38
+ 1148 045c 1C       		.byte	28
+ 1149 045d 40       		.byte	64
+ 1150 045e 1D       		.byte	29
+ 1151 045f 11       		.byte	17
+ 1152 0460 23       		.byte	35
+ 1153 0461 28       		.byte	40
+ 1154 0462 27       		.byte	39
+ 1155 0463 02       		.byte	2
+ 1156 0464 29       		.byte	41
+ 1157 0465 08       		.byte	8
+ 1158 0466 2E       		.byte	46
+ 1159 0467 40       		.byte	64
+ 1160 0468 2F       		.byte	47
+ 1161 0469 01       		.byte	1
+ 1162 046a 31       		.byte	49
+ 1163 046b 20       		.byte	32
+ 1164 046c 34       		.byte	52
+ 1165 046d 08       		.byte	8
+ 1166 046e 37       		.byte	55
+ 1167 046f 25       		.byte	37
+ 1168 0470 3D       		.byte	61
+ 1169 0471 0A       		.byte	10
+ 1170 0472 3E       		.byte	62
+ 1171 0473 10       		.byte	16
+ 1172 0474 5A       		.byte	90
+ 1173 0475 80       		.byte	-128
+ 1174 0476 5E       		.byte	94
+ 1175 0477 20       		.byte	32
+ 1176 0478 5F       		.byte	95
+ 1177 0479 88       		.byte	-120
+ 1178 047a 62       		.byte	98
+ 1179 047b 80       		.byte	-128
+ 1180 047c 6D       		.byte	109
+ 1181 047d 0A       		.byte	10
+ 1182 047e 6E       		.byte	110
+ 1183 047f 10       		.byte	16
+ 1184 0480 6F       		.byte	111
+ 1185 0481 51       		.byte	81
+ 1186 0482 74       		.byte	116
+ 1187 0483 0D       		.byte	13
+ 1188 0484 76       		.byte	118
+ 1189 0485 40       		.byte	64
+ 1190 0486 92       		.byte	-110
+ 1191 0487 80       		.byte	-128
+ 1192 0488 93       		.byte	-109
+ 1193 0489 02       		.byte	2
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 22
+
+
+ 1194 048a 95       		.byte	-107
+ 1195 048b 20       		.byte	32
+ 1196 048c 98       		.byte	-104
+ 1197 048d 0A       		.byte	10
+ 1198 048e 9B       		.byte	-101
+ 1199 048f 80       		.byte	-128
+ 1200 0490 9D       		.byte	-99
+ 1201 0491 11       		.byte	17
+ 1202 0492 A2       		.byte	-94
+ 1203 0493 10       		.byte	16
+ 1204 0494 A4       		.byte	-92
+ 1205 0495 04       		.byte	4
+ 1206 0496 A5       		.byte	-91
+ 1207 0497 20       		.byte	32
+ 1208 0498 A8       		.byte	-88
+ 1209 0499 48       		.byte	72
+ 1210 049a AA       		.byte	-86
+ 1211 049b 10       		.byte	16
+ 1212 049c AB       		.byte	-85
+ 1213 049d 80       		.byte	-128
+ 1214 049e B4       		.byte	-76
+ 1215 049f 08       		.byte	8
+ 1216 04a0 B6       		.byte	-74
+ 1217 04a1 40       		.byte	64
+ 1218 04a2 C0       		.byte	-64
+ 1219 04a3 F9       		.byte	-7
+ 1220 04a4 C2       		.byte	-62
+ 1221 04a5 75       		.byte	117
+ 1222 04a6 C4       		.byte	-60
+ 1223 04a7 7A       		.byte	122
+ 1224 04a8 CA       		.byte	-54
+ 1225 04a9 12       		.byte	18
+ 1226 04aa CC       		.byte	-52
+ 1227 04ab E4       		.byte	-28
+ 1228 04ac CE       		.byte	-50
+ 1229 04ad E0       		.byte	-32
+ 1230 04ae D6       		.byte	-42
+ 1231 04af 78       		.byte	120
+ 1232 04b0 D8       		.byte	-40
+ 1233 04b1 08       		.byte	8
+ 1234 04b2 E2       		.byte	-30
+ 1235 04b3 04       		.byte	4
+ 1236 04b4 E8       		.byte	-24
+ 1237 04b5 10       		.byte	16
+ 1238 04b6 EA       		.byte	-22
+ 1239 04b7 01       		.byte	1
+ 1240 04b8 EC       		.byte	-20
+ 1241 04b9 10       		.byte	16
+ 1242 04ba 40       		.byte	64
+ 1243 04bb 04       		.byte	4
+ 1244 04bc 49       		.byte	73
+ 1245 04bd FF       		.byte	-1
+ 1246 04be 4A       		.byte	74
+ 1247 04bf FF       		.byte	-1
+ 1248 04c0 4B       		.byte	75
+ 1249 04c1 FF       		.byte	-1
+ 1250 04c2 4C       		.byte	76
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 23
+
+
+ 1251 04c3 02       		.byte	2
+ 1252 04c4 4D       		.byte	77
+ 1253 04c5 0C       		.byte	12
+ 1254 04c6 4E       		.byte	78
+ 1255 04c7 F8       		.byte	-8
+ 1256 04c8 5A       		.byte	90
+ 1257 04c9 0C       		.byte	12
+ 1258 04ca 5B       		.byte	91
+ 1259 04cb 04       		.byte	4
+ 1260 04cc 5D       		.byte	93
+ 1261 04cd 04       		.byte	4
+ 1262 04ce 5F       		.byte	95
+ 1263 04cf 01       		.byte	1
+ 1264 04d0 62       		.byte	98
+ 1265 04d1 48       		.byte	72
+ 1266 04d2 63       		.byte	99
+ 1267 04d3 A1       		.byte	-95
+ 1268 04d4 68       		.byte	104
+ 1269 04d5 F0       		.byte	-16
+ 1270 04d6 6A       		.byte	106
+ 1271 04d7 F0       		.byte	-16
+ 1272 04d8 6C       		.byte	108
+ 1273 04d9 F0       		.byte	-16
+ 1274 04da 6E       		.byte	110
+ 1275 04db F0       		.byte	-16
+ 1276 04dc C0       		.byte	-64
+ 1277 04dd 05       		.byte	5
+ 1278 04de C9       		.byte	-55
+ 1279 04df FF       		.byte	-1
+ 1280 04e0 CA       		.byte	-54
+ 1281 04e1 FF       		.byte	-1
+ 1282 04e2 CB       		.byte	-53
+ 1283 04e3 FF       		.byte	-1
+ 1284 04e4 CC       		.byte	-52
+ 1285 04e5 03       		.byte	3
+ 1286 04e6 CD       		.byte	-51
+ 1287 04e7 0C       		.byte	12
+ 1288 04e8 CE       		.byte	-50
+ 1289 04e9 F4       		.byte	-12
+ 1290 04ea D2       		.byte	-46
+ 1291 04eb 01       		.byte	1
+ 1292 04ec DA       		.byte	-38
+ 1293 04ed 0C       		.byte	12
+ 1294 04ee DB       		.byte	-37
+ 1295 04ef 04       		.byte	4
+ 1296 04f0 DD       		.byte	-35
+ 1297 04f1 44       		.byte	68
+ 1298 04f2 DF       		.byte	-33
+ 1299 04f3 01       		.byte	1
+ 1300 04f4 E2       		.byte	-30
+ 1301 04f5 48       		.byte	72
+ 1302 04f6 E3       		.byte	-29
+ 1303 04f7 A1       		.byte	-95
+ 1304 04f8 E8       		.byte	-24
+ 1305 04f9 F0       		.byte	-16
+ 1306 04fa EA       		.byte	-22
+ 1307 04fb F0       		.byte	-16
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 24
+
+
+ 1308 04fc EC       		.byte	-20
+ 1309 04fd F0       		.byte	-16
+ 1310 04fe EE       		.byte	-18
+ 1311 04ff F0       		.byte	-16
+ 1312 0500 47       		.byte	71
+ 1313 0501 02       		.byte	2
+ 1314 0502 48       		.byte	72
+ 1315 0503 01       		.byte	1
+ 1316 0504 68       		.byte	104
+ 1317 0505 01       		.byte	1
+ 1318 0506 69       		.byte	105
+ 1319 0507 40       		.byte	64
+ 1320 0508 6B       		.byte	107
+ 1321 0509 02       		.byte	2
+ 1322 050a 6C       		.byte	108
+ 1323 050b 1A       		.byte	26
+ 1324 050c 6F       		.byte	111
+ 1325 050d 80       		.byte	-128
+ 1326 050e 79       		.byte	121
+ 1327 050f 40       		.byte	64
+ 1328 0510 7D       		.byte	125
+ 1329 0511 40       		.byte	64
+ 1330 0512 80       		.byte	-128
+ 1331 0513 18       		.byte	24
+ 1332 0514 D0       		.byte	-48
+ 1333 0515 80       		.byte	-128
+ 1334 0516 D2       		.byte	-46
+ 1335 0517 08       		.byte	8
+ 1336 0518 DE       		.byte	-34
+ 1337 0519 18       		.byte	24
+ 1338 051a E0       		.byte	-32
+ 1339 051b 01       		.byte	1
+ 1340 051c EA       		.byte	-22
+ 1341 051d 01       		.byte	1
+ 1342 051e B4       		.byte	-76
+ 1343 051f 02       		.byte	2
+ 1344 0520 B7       		.byte	-73
+ 1345 0521 80       		.byte	-128
+ 1346 0522 EA       		.byte	-22
+ 1347 0523 40       		.byte	64
+ 1348 0524 EC       		.byte	-20
+ 1349 0525 20       		.byte	32
+ 1350 0526 12       		.byte	18
+ 1351 0527 20       		.byte	32
+ 1352 0528 32       		.byte	50
+ 1353 0529 82       		.byte	-126
+ 1354 052a 36       		.byte	54
+ 1355 052b 08       		.byte	8
+ 1356 052c 37       		.byte	55
+ 1357 052d 10       		.byte	16
+ 1358 052e 39       		.byte	57
+ 1359 052f 40       		.byte	64
+ 1360 0530 3B       		.byte	59
+ 1361 0531 02       		.byte	2
+ 1362 0532 3C       		.byte	60
+ 1363 0533 18       		.byte	24
+ 1364 0534 41       		.byte	65
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 25
+
+
+ 1365 0535 20       		.byte	32
+ 1366 0536 C4       		.byte	-60
+ 1367 0537 10       		.byte	16
+ 1368 0538 CC       		.byte	-52
+ 1369 0539 F0       		.byte	-16
+ 1370 053a CE       		.byte	-50
+ 1371 053b F0       		.byte	-16
+ 1372 053c D0       		.byte	-48
+ 1373 053d 10       		.byte	16
+ 1374 053e 38       		.byte	56
+ 1375 053f 08       		.byte	8
+ 1376 0540 3D       		.byte	61
+ 1377 0541 80       		.byte	-128
+ 1378 0542 83       		.byte	-125
+ 1379 0543 01       		.byte	1
+ 1380 0544 85       		.byte	-123
+ 1381 0545 20       		.byte	32
+ 1382 0546 94       		.byte	-108
+ 1383 0547 10       		.byte	16
+ 1384 0548 95       		.byte	-107
+ 1385 0549 40       		.byte	64
+ 1386 054a 97       		.byte	-105
+ 1387 054b 02       		.byte	2
+ 1388 054c 9F       		.byte	-97
+ 1389 054d 10       		.byte	16
+ 1390 054e A2       		.byte	-94
+ 1391 054f 20       		.byte	32
+ 1392 0550 A4       		.byte	-92
+ 1393 0551 04       		.byte	4
+ 1394 0552 A5       		.byte	-91
+ 1395 0553 20       		.byte	32
+ 1396 0554 A6       		.byte	-90
+ 1397 0555 82       		.byte	-126
+ 1398 0556 AA       		.byte	-86
+ 1399 0557 08       		.byte	8
+ 1400 0558 CE       		.byte	-50
+ 1401 0559 60       		.byte	96
+ 1402 055a E2       		.byte	-30
+ 1403 055b 10       		.byte	16
+ 1404 055c E6       		.byte	-26
+ 1405 055d 20       		.byte	32
+ 1406 055e EA       		.byte	-22
+ 1407 055f 20       		.byte	32
+ 1408 0560 57       		.byte	87
+ 1409 0561 04       		.byte	4
+ 1410 0562 80       		.byte	-128
+ 1411 0563 04       		.byte	4
+ 1412 0564 81       		.byte	-127
+ 1413 0565 40       		.byte	64
+ 1414 0566 89       		.byte	-119
+ 1415 0567 40       		.byte	64
+ 1416 0568 94       		.byte	-108
+ 1417 0569 18       		.byte	24
+ 1418 056a 95       		.byte	-107
+ 1419 056b 40       		.byte	64
+ 1420 056c 9F       		.byte	-97
+ 1421 056d 10       		.byte	16
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 26
+
+
+ 1422 056e A2       		.byte	-94
+ 1423 056f 20       		.byte	32
+ 1424 0570 A4       		.byte	-92
+ 1425 0571 04       		.byte	4
+ 1426 0572 A5       		.byte	-91
+ 1427 0573 40       		.byte	64
+ 1428 0574 A6       		.byte	-90
+ 1429 0575 82       		.byte	-126
+ 1430 0576 D4       		.byte	-44
+ 1431 0577 40       		.byte	64
+ 1432 0578 E6       		.byte	-26
+ 1433 0579 A0       		.byte	-96
+ 1434 057a 80       		.byte	-128
+ 1435 057b 10       		.byte	16
+ 1436 057c 82       		.byte	-126
+ 1437 057d 80       		.byte	-128
+ 1438 057e 83       		.byte	-125
+ 1439 057f 10       		.byte	16
+ 1440 0580 86       		.byte	-122
+ 1441 0581 02       		.byte	2
+ 1442 0582 88       		.byte	-120
+ 1443 0583 04       		.byte	4
+ 1444 0584 94       		.byte	-108
+ 1445 0585 10       		.byte	16
+ 1446 0586 9F       		.byte	-97
+ 1447 0587 10       		.byte	16
+ 1448 0588 A2       		.byte	-94
+ 1449 0589 20       		.byte	32
+ 1450 058a A4       		.byte	-92
+ 1451 058b 04       		.byte	4
+ 1452 058c A6       		.byte	-90
+ 1453 058d 82       		.byte	-126
+ 1454 058e B7       		.byte	-73
+ 1455 058f 04       		.byte	4
+ 1456 0590 E2       		.byte	-30
+ 1457 0591 60       		.byte	96
+ 1458 0592 E6       		.byte	-26
+ 1459 0593 A0       		.byte	-96
+ 1460 0594 72       		.byte	114
+ 1461 0595 20       		.byte	32
+ 1462 0596 8E       		.byte	-114
+ 1463 0597 20       		.byte	32
+ 1464 0598 DC       		.byte	-36
+ 1465 0599 01       		.byte	1
+ 1466 059a E4       		.byte	-28
+ 1467 059b 02       		.byte	2
+ 1468 059c 10       		.byte	16
+ 1469 059d 20       		.byte	32
+ 1470 059e 33       		.byte	51
+ 1471 059f 20       		.byte	32
+ 1472 05a0 A7       		.byte	-89
+ 1473 05a1 40       		.byte	64
+ 1474 05a2 AB       		.byte	-85
+ 1475 05a3 40       		.byte	64
+ 1476 05a4 C4       		.byte	-60
+ 1477 05a5 08       		.byte	8
+ 1478 05a6 CC       		.byte	-52
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 27
+
+
+ 1479 05a7 08       		.byte	8
+ 1480 05a8 18       		.byte	24
+ 1481 05a9 20       		.byte	32
+ 1482 05aa 30       		.byte	48
+ 1483 05ab 80       		.byte	-128
+ 1484 05ac 83       		.byte	-125
+ 1485 05ad 01       		.byte	1
+ 1486 05ae 87       		.byte	-121
+ 1487 05af 20       		.byte	32
+ 1488 05b0 A0       		.byte	-96
+ 1489 05b1 20       		.byte	32
+ 1490 05b2 A7       		.byte	-89
+ 1491 05b3 60       		.byte	96
+ 1492 05b4 C6       		.byte	-58
+ 1493 05b5 08       		.byte	8
+ 1494 05b6 CC       		.byte	-52
+ 1495 05b7 08       		.byte	8
+ 1496 05b8 09       		.byte	9
+ 1497 05b9 02       		.byte	2
+ 1498 05ba 0B       		.byte	11
+ 1499 05bb 02       		.byte	2
+ 1500 05bc 0F       		.byte	15
+ 1501 05bd 80       		.byte	-128
+ 1502 05be 42       		.byte	66
+ 1503 05bf 30       		.byte	48
+ 1504 05c0 44       		.byte	68
+ 1505 05c1 01       		.byte	1
+ 1506 05c2 80       		.byte	-128
+ 1507 05c3 10       		.byte	16
+ 1508 05c4 83       		.byte	-125
+ 1509 05c5 80       		.byte	-128
+ 1510 05c6 85       		.byte	-123
+ 1511 05c7 02       		.byte	2
+ 1512 05c8 90       		.byte	-112
+ 1513 05c9 20       		.byte	32
+ 1514 05ca 92       		.byte	-110
+ 1515 05cb 10       		.byte	16
+ 1516 05cc 97       		.byte	-105
+ 1517 05cd 02       		.byte	2
+ 1518 05ce A0       		.byte	-96
+ 1519 05cf 20       		.byte	32
+ 1520 05d0 A7       		.byte	-89
+ 1521 05d1 40       		.byte	64
+ 1522 05d2 B4       		.byte	-76
+ 1523 05d3 80       		.byte	-128
+ 1524 05d4 B6       		.byte	-74
+ 1525 05d5 10       		.byte	16
+ 1526 05d6 C2       		.byte	-62
+ 1527 05d7 0E       		.byte	14
+ 1528 05d8 D0       		.byte	-48
+ 1529 05d9 06       		.byte	6
+ 1530 05da EC       		.byte	-20
+ 1531 05db 0A       		.byte	10
+ 1532 05dc 25       		.byte	37
+ 1533 05dd 02       		.byte	2
+ 1534 05de 82       		.byte	-126
+ 1535 05df 20       		.byte	32
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 28
+
+
+ 1536 05e0 94       		.byte	-108
+ 1537 05e1 01       		.byte	1
+ 1538 05e2 B4       		.byte	-76
+ 1539 05e3 01       		.byte	1
+ 1540 05e4 B6       		.byte	-74
+ 1541 05e5 20       		.byte	32
+ 1542 05e6 C8       		.byte	-56
+ 1543 05e7 80       		.byte	-128
+ 1544 05e8 E2       		.byte	-30
+ 1545 05e9 20       		.byte	32
+ 1546 05ea 20       		.byte	32
+ 1547 05eb 01       		.byte	1
+ 1548 05ec 25       		.byte	37
+ 1549 05ed 40       		.byte	64
+ 1550 05ee 72       		.byte	114
+ 1551 05ef 20       		.byte	32
+ 1552 05f0 75       		.byte	117
+ 1553 05f1 08       		.byte	8
+ 1554 05f2 94       		.byte	-108
+ 1555 05f3 01       		.byte	1
+ 1556 05f4 99       		.byte	-103
+ 1557 05f5 08       		.byte	8
+ 1558 05f6 9A       		.byte	-102
+ 1559 05f7 20       		.byte	32
+ 1560 05f8 A5       		.byte	-91
+ 1561 05f9 40       		.byte	64
+ 1562 05fa AD       		.byte	-83
+ 1563 05fb 40       		.byte	64
+ 1564 05fc B1       		.byte	-79
+ 1565 05fd 02       		.byte	2
+ 1566 05fe B5       		.byte	-75
+ 1567 05ff 08       		.byte	8
+ 1568 0600 C8       		.byte	-56
+ 1569 0601 30       		.byte	48
+ 1570 0602 DC       		.byte	-36
+ 1571 0603 80       		.byte	-128
+ 1572 0604 DE       		.byte	-34
+ 1573 0605 20       		.byte	32
+ 1574 0606 E8       		.byte	-24
+ 1575 0607 40       		.byte	64
+ 1576 0608 1F       		.byte	31
+ 1577 0609 80       		.byte	-128
+ 1578 060a 34       		.byte	52
+ 1579 060b 01       		.byte	1
+ 1580 060c 3A       		.byte	58
+ 1581 060d 20       		.byte	32
+ 1582 060e 82       		.byte	-126
+ 1583 060f 02       		.byte	2
+ 1584 0610 9A       		.byte	-102
+ 1585 0611 20       		.byte	32
+ 1586 0612 9C       		.byte	-100
+ 1587 0613 01       		.byte	1
+ 1588 0614 A7       		.byte	-89
+ 1589 0615 80       		.byte	-128
+ 1590 0616 A8       		.byte	-88
+ 1591 0617 20       		.byte	32
+ 1592 0618 C6       		.byte	-58
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 29
+
+
+ 1593 0619 01       		.byte	1
+ 1594 061a CC       		.byte	-52
+ 1595 061b 01       		.byte	1
+ 1596 061c CE       		.byte	-50
+ 1597 061d 08       		.byte	8
+ 1598 061e 7B       		.byte	123
+ 1599 061f 02       		.byte	2
+ 1600 0620 7E       		.byte	126
+ 1601 0621 02       		.byte	2
+ 1602 0622 A2       		.byte	-94
+ 1603 0623 02       		.byte	2
+ 1604 0624 A3       		.byte	-93
+ 1605 0625 02       		.byte	2
+ 1606 0626 B0       		.byte	-80
+ 1607 0627 01       		.byte	1
+ 1608 0628 B7       		.byte	-73
+ 1609 0629 02       		.byte	2
+ 1610 062a DC       		.byte	-36
+ 1611 062b 01       		.byte	1
+ 1612 062c DE       		.byte	-34
+ 1613 062d 04       		.byte	4
+ 1614 062e EC       		.byte	-20
+ 1615 062f 06       		.byte	6
+ 1616 0630 00       		.byte	0
+ 1617 0631 6F       		.byte	111
+ 1618 0632 01       		.byte	1
+ 1619 0633 01       		.byte	1
+ 1620 0634 0A       		.byte	10
+ 1621 0635 6D       		.byte	109
+ 1622 0636 0B       		.byte	11
+ 1623 0637 01       		.byte	1
+ 1624 0638 0C       		.byte	12
+ 1625 0639 02       		.byte	2
+ 1626 063a 10       		.byte	16
+ 1627 063b 11       		.byte	17
+ 1628 063c 11       		.byte	17
+ 1629 063d 01       		.byte	1
+ 1630 063e 1A       		.byte	26
+ 1631 063f 01       		.byte	1
+ 1632 0640 1B       		.byte	27
+ 1633 0641 01       		.byte	1
+ 1634 0642 1C       		.byte	28
+ 1635 0643 10       		.byte	16
+ 1636 0644 00       		.byte	0
+ 1637 0645 AF       		.byte	-81
+ 1638 0646 01       		.byte	1
+ 1639 0647 02       		.byte	2
+ 1640 0648 10       		.byte	16
+ 1641 0649 AA       		.byte	-86
+ 1642 064a 11       		.byte	17
+ 1643 064b 0A       		.byte	10
+ 1644 064c 00       		.byte	0
+ 1645 064d 00       		.byte	0
+ 1646 064e 00       		.byte	0
+ 1647 064f 00       		.byte	0
+ 1648 0650 00       		.byte	0
+ 1649 0651 00       		.byte	0
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 30
+
+
+ 1650 0652 17       		.byte	23
+ 1651 0653 00       		.byte	0
+ 1652 0654 00       		.byte	0
+ 1653 0655 E7       		.byte	-25
+ 1654 0656 E7       		.byte	-25
+ 1655 0657 00       		.byte	0
+ 1656 0658 E7       		.byte	-25
+ 1657 0659 00       		.byte	0
+ 1658 065a 00       		.byte	0
+ 1659 065b 00       		.byte	0
+ 1660 065c 40       		.byte	64
+ 1661 065d 00       		.byte	0
+ 1662 065e 00       		.byte	0
+ 1663 065f 00       		.byte	0
+ 1664 0660 00       		.byte	0
+ 1665 0661 00       		.byte	0
+ 1666 0662 00       		.byte	0
+ 1667 0663 00       		.byte	0
+ 1668 0664 C0       		.byte	-64
+ 1669 0665 00       		.byte	0
+ 1670 0666 00       		.byte	0
+ 1671 0667 00       		.byte	0
+ 1672 0668 00       		.byte	0
+ 1673 0669 00       		.byte	0
+ 1674 066a 00       		.byte	0
+ 1675 066b 00       		.byte	0
+ 1676 066c 00       		.byte	0
+ 1677 066d 00       		.byte	0
+ 1678 066e 04       		.byte	4
+ 1679 066f 00       		.byte	0
+ 1680 0670 00       		.byte	0
+ 1681 0671 00       		.byte	0
+ 1682 0672 00       		.byte	0
+ 1683 0673 00       		.byte	0
+ 1684 0674 00       		.byte	0
+ 1685 0675 00       		.byte	0
+ 1686 0676 20       		.byte	32
+ 1687 0677 00       		.byte	0
+ 1688 0678 00       		.byte	0
+ 1689 0679 00       		.byte	0
+ 1690 067a 00       		.byte	0
+ 1691 067b 00       		.byte	0
+ 1692 067c 00       		.byte	0
+ 1693 067d 00       		.byte	0
+ 1694 067e E1       		.byte	-31
+ 1695 067f 00       		.byte	0
+ 1696              		.text
+ 1697              	.Letext0:
+ 1698              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 1699              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 1700              		.file 3 "Generated_Source\\PSoC5\\cymetadata.c"
+ 1701              		.section	.debug_info,"",%progbits
+ 1702              	.Ldebug_info0:
+ 1703 0000 CF000000 		.4byte	0xcf
+ 1704 0004 0400     		.2byte	0x4
+ 1705 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 1706 000a 04       		.byte	0x4
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 31
+
+
+ 1707 000b 01       		.uleb128 0x1
+ 1708 000c 0A000000 		.4byte	.LASF14
+ 1709 0010 0C       		.byte	0xc
+ 1710 0011 AA010000 		.4byte	.LASF15
+ 1711 0015 CB000000 		.4byte	.LASF16
+ 1712 0019 00000000 		.4byte	.Ldebug_line0
+ 1713 001d 02       		.uleb128 0x2
+ 1714 001e 01       		.byte	0x1
+ 1715 001f 06       		.byte	0x6
+ 1716 0020 9E010000 		.4byte	.LASF0
+ 1717 0024 03       		.uleb128 0x3
+ 1718 0025 00000000 		.4byte	.LASF9
+ 1719 0029 01       		.byte	0x1
+ 1720 002a 1D       		.byte	0x1d
+ 1721 002b 2F000000 		.4byte	0x2f
+ 1722 002f 02       		.uleb128 0x2
+ 1723 0030 01       		.byte	0x1
+ 1724 0031 08       		.byte	0x8
+ 1725 0032 98000000 		.4byte	.LASF1
+ 1726 0036 02       		.uleb128 0x2
+ 1727 0037 02       		.byte	0x2
+ 1728 0038 05       		.byte	0x5
+ 1729 0039 8B010000 		.4byte	.LASF2
+ 1730 003d 02       		.uleb128 0x2
+ 1731 003e 02       		.byte	0x2
+ 1732 003f 07       		.byte	0x7
+ 1733 0040 B8000000 		.4byte	.LASF3
+ 1734 0044 02       		.uleb128 0x2
+ 1735 0045 04       		.byte	0x4
+ 1736 0046 05       		.byte	0x5
+ 1737 0047 95010000 		.4byte	.LASF4
+ 1738 004b 02       		.uleb128 0x2
+ 1739 004c 04       		.byte	0x4
+ 1740 004d 07       		.byte	0x7
+ 1741 004e A6000000 		.4byte	.LASF5
+ 1742 0052 02       		.uleb128 0x2
+ 1743 0053 08       		.byte	0x8
+ 1744 0054 05       		.byte	0x5
+ 1745 0055 7D010000 		.4byte	.LASF6
+ 1746 0059 02       		.uleb128 0x2
+ 1747 005a 08       		.byte	0x8
+ 1748 005b 07       		.byte	0x7
+ 1749 005c 44010000 		.4byte	.LASF7
+ 1750 0060 04       		.uleb128 0x4
+ 1751 0061 04       		.byte	0x4
+ 1752 0062 05       		.byte	0x5
+ 1753 0063 696E7400 		.ascii	"int\000"
+ 1754 0067 02       		.uleb128 0x2
+ 1755 0068 04       		.byte	0x4
+ 1756 0069 07       		.byte	0x7
+ 1757 006a 37010000 		.4byte	.LASF8
+ 1758 006e 03       		.uleb128 0x3
+ 1759 006f 5B010000 		.4byte	.LASF10
+ 1760 0073 02       		.byte	0x2
+ 1761 0074 18       		.byte	0x18
+ 1762 0075 24000000 		.4byte	0x24
+ 1763 0079 05       		.uleb128 0x5
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 32
+
+
+ 1764 007a 90000000 		.4byte	0x90
+ 1765 007e 89000000 		.4byte	0x89
+ 1766 0082 06       		.uleb128 0x6
+ 1767 0083 89000000 		.4byte	0x89
+ 1768 0087 3F       		.byte	0x3f
+ 1769 0088 00       		.byte	0
+ 1770 0089 02       		.uleb128 0x2
+ 1771 008a 04       		.byte	0x4
+ 1772 008b 07       		.byte	0x7
+ 1773 008c 74010000 		.4byte	.LASF11
+ 1774 0090 07       		.uleb128 0x7
+ 1775 0091 6E000000 		.4byte	0x6e
+ 1776 0095 08       		.uleb128 0x8
+ 1777 0096 63010000 		.4byte	.LASF12
+ 1778 009a 03       		.byte	0x3
+ 1779 009b 1F       		.byte	0x1f
+ 1780 009c A6000000 		.4byte	0xa6
+ 1781 00a0 05       		.uleb128 0x5
+ 1782 00a1 03       		.byte	0x3
+ 1783 00a2 00000000 		.4byte	cy_meta_loadable
+ 1784 00a6 07       		.uleb128 0x7
+ 1785 00a7 79000000 		.4byte	0x79
+ 1786 00ab 05       		.uleb128 0x5
+ 1787 00ac 90000000 		.4byte	0x90
+ 1788 00b0 BC000000 		.4byte	0xbc
+ 1789 00b4 09       		.uleb128 0x9
+ 1790 00b5 89000000 		.4byte	0x89
+ 1791 00b9 7F06     		.2byte	0x67f
+ 1792 00bb 00       		.byte	0
+ 1793 00bc 08       		.uleb128 0x8
+ 1794 00bd 25010000 		.4byte	.LASF13
+ 1795 00c1 03       		.byte	0x3
+ 1796 00c2 34       		.byte	0x34
+ 1797 00c3 CD000000 		.4byte	0xcd
+ 1798 00c7 05       		.uleb128 0x5
+ 1799 00c8 03       		.byte	0x3
+ 1800 00c9 00000000 		.4byte	cy_meta_configecc
+ 1801 00cd 07       		.uleb128 0x7
+ 1802 00ce AB000000 		.4byte	0xab
+ 1803 00d2 00       		.byte	0
+ 1804              		.section	.debug_abbrev,"",%progbits
+ 1805              	.Ldebug_abbrev0:
+ 1806 0000 01       		.uleb128 0x1
+ 1807 0001 11       		.uleb128 0x11
+ 1808 0002 01       		.byte	0x1
+ 1809 0003 25       		.uleb128 0x25
+ 1810 0004 0E       		.uleb128 0xe
+ 1811 0005 13       		.uleb128 0x13
+ 1812 0006 0B       		.uleb128 0xb
+ 1813 0007 03       		.uleb128 0x3
+ 1814 0008 0E       		.uleb128 0xe
+ 1815 0009 1B       		.uleb128 0x1b
+ 1816 000a 0E       		.uleb128 0xe
+ 1817 000b 10       		.uleb128 0x10
+ 1818 000c 17       		.uleb128 0x17
+ 1819 000d 00       		.byte	0
+ 1820 000e 00       		.byte	0
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 33
+
+
+ 1821 000f 02       		.uleb128 0x2
+ 1822 0010 24       		.uleb128 0x24
+ 1823 0011 00       		.byte	0
+ 1824 0012 0B       		.uleb128 0xb
+ 1825 0013 0B       		.uleb128 0xb
+ 1826 0014 3E       		.uleb128 0x3e
+ 1827 0015 0B       		.uleb128 0xb
+ 1828 0016 03       		.uleb128 0x3
+ 1829 0017 0E       		.uleb128 0xe
+ 1830 0018 00       		.byte	0
+ 1831 0019 00       		.byte	0
+ 1832 001a 03       		.uleb128 0x3
+ 1833 001b 16       		.uleb128 0x16
+ 1834 001c 00       		.byte	0
+ 1835 001d 03       		.uleb128 0x3
+ 1836 001e 0E       		.uleb128 0xe
+ 1837 001f 3A       		.uleb128 0x3a
+ 1838 0020 0B       		.uleb128 0xb
+ 1839 0021 3B       		.uleb128 0x3b
+ 1840 0022 0B       		.uleb128 0xb
+ 1841 0023 49       		.uleb128 0x49
+ 1842 0024 13       		.uleb128 0x13
+ 1843 0025 00       		.byte	0
+ 1844 0026 00       		.byte	0
+ 1845 0027 04       		.uleb128 0x4
+ 1846 0028 24       		.uleb128 0x24
+ 1847 0029 00       		.byte	0
+ 1848 002a 0B       		.uleb128 0xb
+ 1849 002b 0B       		.uleb128 0xb
+ 1850 002c 3E       		.uleb128 0x3e
+ 1851 002d 0B       		.uleb128 0xb
+ 1852 002e 03       		.uleb128 0x3
+ 1853 002f 08       		.uleb128 0x8
+ 1854 0030 00       		.byte	0
+ 1855 0031 00       		.byte	0
+ 1856 0032 05       		.uleb128 0x5
+ 1857 0033 01       		.uleb128 0x1
+ 1858 0034 01       		.byte	0x1
+ 1859 0035 49       		.uleb128 0x49
+ 1860 0036 13       		.uleb128 0x13
+ 1861 0037 01       		.uleb128 0x1
+ 1862 0038 13       		.uleb128 0x13
+ 1863 0039 00       		.byte	0
+ 1864 003a 00       		.byte	0
+ 1865 003b 06       		.uleb128 0x6
+ 1866 003c 21       		.uleb128 0x21
+ 1867 003d 00       		.byte	0
+ 1868 003e 49       		.uleb128 0x49
+ 1869 003f 13       		.uleb128 0x13
+ 1870 0040 2F       		.uleb128 0x2f
+ 1871 0041 0B       		.uleb128 0xb
+ 1872 0042 00       		.byte	0
+ 1873 0043 00       		.byte	0
+ 1874 0044 07       		.uleb128 0x7
+ 1875 0045 26       		.uleb128 0x26
+ 1876 0046 00       		.byte	0
+ 1877 0047 49       		.uleb128 0x49
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 34
+
+
+ 1878 0048 13       		.uleb128 0x13
+ 1879 0049 00       		.byte	0
+ 1880 004a 00       		.byte	0
+ 1881 004b 08       		.uleb128 0x8
+ 1882 004c 34       		.uleb128 0x34
+ 1883 004d 00       		.byte	0
+ 1884 004e 03       		.uleb128 0x3
+ 1885 004f 0E       		.uleb128 0xe
+ 1886 0050 3A       		.uleb128 0x3a
+ 1887 0051 0B       		.uleb128 0xb
+ 1888 0052 3B       		.uleb128 0x3b
+ 1889 0053 0B       		.uleb128 0xb
+ 1890 0054 49       		.uleb128 0x49
+ 1891 0055 13       		.uleb128 0x13
+ 1892 0056 3F       		.uleb128 0x3f
+ 1893 0057 19       		.uleb128 0x19
+ 1894 0058 02       		.uleb128 0x2
+ 1895 0059 18       		.uleb128 0x18
+ 1896 005a 00       		.byte	0
+ 1897 005b 00       		.byte	0
+ 1898 005c 09       		.uleb128 0x9
+ 1899 005d 21       		.uleb128 0x21
+ 1900 005e 00       		.byte	0
+ 1901 005f 49       		.uleb128 0x49
+ 1902 0060 13       		.uleb128 0x13
+ 1903 0061 2F       		.uleb128 0x2f
+ 1904 0062 05       		.uleb128 0x5
+ 1905 0063 00       		.byte	0
+ 1906 0064 00       		.byte	0
+ 1907 0065 00       		.byte	0
+ 1908              		.section	.debug_aranges,"",%progbits
+ 1909 0000 14000000 		.4byte	0x14
+ 1910 0004 0200     		.2byte	0x2
+ 1911 0006 00000000 		.4byte	.Ldebug_info0
+ 1912 000a 04       		.byte	0x4
+ 1913 000b 00       		.byte	0
+ 1914 000c 0000     		.2byte	0
+ 1915 000e 0000     		.2byte	0
+ 1916 0010 00000000 		.4byte	0
+ 1917 0014 00000000 		.4byte	0
+ 1918              		.section	.debug_line,"",%progbits
+ 1919              	.Ldebug_line0:
+ 1920 0000 3D010000 		.section	.debug_str,"MS",%progbits,1
+ 1920      02003701 
+ 1920      00000201 
+ 1920      FB0E0D00 
+ 1920      01010101 
+ 1921              	.LASF9:
+ 1922 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 1922      6E74385F 
+ 1922      7400
+ 1923              	.LASF14:
+ 1924 000a 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1924      43313120 
+ 1924      352E342E 
+ 1924      31203230 
+ 1924      31363036 
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 35
+
+
+ 1925 003d 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1925      20726576 
+ 1925      6973696F 
+ 1925      6E203233 
+ 1925      37373135 
+ 1926 0070 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1926      66756E63 
+ 1926      74696F6E 
+ 1926      2D736563 
+ 1926      74696F6E 
+ 1927              	.LASF1:
+ 1928 0098 756E7369 		.ascii	"unsigned char\000"
+ 1928      676E6564 
+ 1928      20636861 
+ 1928      7200
+ 1929              	.LASF5:
+ 1930 00a6 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1930      20756E73 
+ 1930      69676E65 
+ 1930      6420696E 
+ 1930      7400
+ 1931              	.LASF3:
+ 1932 00b8 73686F72 		.ascii	"short unsigned int\000"
+ 1932      7420756E 
+ 1932      7369676E 
+ 1932      65642069 
+ 1932      6E7400
+ 1933              	.LASF16:
+ 1934 00cb 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\Twelve"
+ 1934      73657273 
+ 1934      5C6D6572 
+ 1934      63655C44 
+ 1934      6F63756D 
+ 1935 00f8 2D626974 		.ascii	"-bit-4-chan\\ScopeKitProg\\Scope_KitProg.cydsn\000"
+ 1935      2D342D63 
+ 1935      68616E5C 
+ 1935      53636F70 
+ 1935      654B6974 
+ 1936              	.LASF13:
+ 1937 0125 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 1937      6574615F 
+ 1937      636F6E66 
+ 1937      69676563 
+ 1937      6300
+ 1938              	.LASF8:
+ 1939 0137 756E7369 		.ascii	"unsigned int\000"
+ 1939      676E6564 
+ 1939      20696E74 
+ 1939      00
+ 1940              	.LASF7:
+ 1941 0144 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1941      206C6F6E 
+ 1941      6720756E 
+ 1941      7369676E 
+ 1941      65642069 
+ 1942              	.LASF10:
+ 1943 015b 75696E74 		.ascii	"uint8_t\000"
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccoCehZM.s 			page 36
+
+
+ 1943      385F7400 
+ 1944              	.LASF12:
+ 1945 0163 63795F6D 		.ascii	"cy_meta_loadable\000"
+ 1945      6574615F 
+ 1945      6C6F6164 
+ 1945      61626C65 
+ 1945      00
+ 1946              	.LASF11:
+ 1947 0174 73697A65 		.ascii	"sizetype\000"
+ 1947      74797065 
+ 1947      00
+ 1948              	.LASF6:
+ 1949 017d 6C6F6E67 		.ascii	"long long int\000"
+ 1949      206C6F6E 
+ 1949      6720696E 
+ 1949      7400
+ 1950              	.LASF2:
+ 1951 018b 73686F72 		.ascii	"short int\000"
+ 1951      7420696E 
+ 1951      7400
+ 1952              	.LASF4:
+ 1953 0195 6C6F6E67 		.ascii	"long int\000"
+ 1953      20696E74 
+ 1953      00
+ 1954              	.LASF0:
+ 1955 019e 7369676E 		.ascii	"signed char\000"
+ 1955      65642063 
+ 1955      68617200 
+ 1956              	.LASF15:
+ 1957 01aa 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 1957      72617465 
+ 1957      645F536F 
+ 1957      75726365 
+ 1957      5C50536F 
+ 1958              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

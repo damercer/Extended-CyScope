@@ -1,0 +1,204 @@
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/CortexM3/ARM_GCC_541/Debug/main.o : C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADCClock.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADC_1.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADC_1_Bypass.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADC_1_Bypass_aliases.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADC_1_IRQ.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADC_2.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADC_2_Bypass.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADC_2_Bypass_aliases.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADC_2_IRQ.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/AMux_1.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Amux_Trigger.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/AuxDAC_1.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/AuxDAC_Buf.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/AuxDAC_Out.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/AuxDAC_Out_aliases.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Bootloadable.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/CYDMAC.H C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/CYFITTER.H C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/CyDmac.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/CyFlash.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/CyLib.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/CySpc.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/CyTriggerClock.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/DMA_Channel_1_dma.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/DMA_Channel_2_dma.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/DPWM_Out.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/DPWM_Out_aliases.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_0.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_0_aliases.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_1.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_1_aliases.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_2.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_2_aliases.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_3.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_3_aliases.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_Reg.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_PWM.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_PWM_Clock.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Ext_Trig_out.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Ext_Trig_out_aliases.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/NoiseA_Clock.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/PRS.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/PWM_Sample_Buffer.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/SampleClock.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ScopeA_Buf.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ScopeB_Buf.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ScopeC_Buf.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Scope_A.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Scope_A_aliases.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Scope_B.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Scope_B_aliases.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Scope_C.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Scope_C_aliases.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Trigger_Comp.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Trigger_Control.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Trigger_Status.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_Dm.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_Dm_aliases.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_Dp.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_Dp_aliases.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_audio.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_cdc.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_cydmac.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_hid.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_midi.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_msc.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_pvt.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Vtrigger.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveA_Buf.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveA_Clock.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveA_DAC.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveA_DAC_VDAC8.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveA_DAC_Wave1_DMA_dma.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveA_DAC_Wave2_DMA_dma.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveA_Out.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveA_Out_aliases.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveB_Buf.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveB_Clock.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveB_DAC.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveB_DAC_VDAC8.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveB_DAC_Wave1_DMA_dma.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveB_DAC_Wave2_DMA_dma.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveB_Out.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveB_Out_aliases.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Wave_Control.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cmsis_armcc.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cmsis_compiler.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cmsis_gcc.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/core_cm3.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cyPm.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cy_em_eeprom.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cydevice.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cydevice_trm.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cydisabledsheets.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cyfitter.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cypins.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cytypes.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/project.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/device.h C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/main.c 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADCClock.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADC_1.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADC_1_Bypass.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADC_1_Bypass_aliases.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADC_1_IRQ.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADC_2.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADC_2_Bypass.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADC_2_Bypass_aliases.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ADC_2_IRQ.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/AMux_1.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Amux_Trigger.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/AuxDAC_1.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/AuxDAC_Buf.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/AuxDAC_Out.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/AuxDAC_Out_aliases.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Bootloadable.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/CYDMAC.H : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/CYFITTER.H : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/CyFlash.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/CyLib.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/CySpc.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/CyTriggerClock.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/DMA_Channel_1_dma.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/DMA_Channel_2_dma.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/DPWM_Out.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/DPWM_Out_aliases.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_0.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_0_aliases.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_1.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_1_aliases.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_2.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_2_aliases.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_3.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_3_aliases.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_Out_Reg.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_PWM.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Dig_PWM_Clock.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Ext_Trig_out.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Ext_Trig_out_aliases.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/NoiseA_Clock.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/PRS.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/PWM_Sample_Buffer.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/SampleClock.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ScopeA_Buf.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ScopeB_Buf.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/ScopeC_Buf.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Scope_A.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Scope_A_aliases.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Scope_B.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Scope_B_aliases.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Scope_C.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Scope_C_aliases.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Trigger_Comp.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Trigger_Control.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Trigger_Status.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_Dm.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_Dm_aliases.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_Dp.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_Dp_aliases.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_audio.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_cdc.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_cydmac.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_hid.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_midi.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_msc.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/USBUART_pvt.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Vtrigger.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveA_Buf.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveA_Clock.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveA_DAC.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveA_DAC_VDAC8.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveA_DAC_Wave1_DMA_dma.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveA_DAC_Wave2_DMA_dma.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveA_Out.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveA_Out_aliases.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveB_Buf.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveB_Clock.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveB_DAC.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveB_DAC_VDAC8.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveB_DAC_Wave1_DMA_dma.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveB_DAC_Wave2_DMA_dma.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveB_Out.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/WaveB_Out_aliases.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/Wave_Control.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cmsis_armcc.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cmsis_compiler.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cmsis_gcc.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/core_cm3.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cyPm.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cy_em_eeprom.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cydevice.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cydevice_trm.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cydisabledsheets.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cypins.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/cytypes.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/Generated_Source/PSoC5/project.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/device.h : 
+
+C:/Users/merce/Documents/scope/CyScope/Twelve-bit-4-chan-43/ScopeKitProg/Scope_CY8KIT-043.cydsn/main.c : 
+
