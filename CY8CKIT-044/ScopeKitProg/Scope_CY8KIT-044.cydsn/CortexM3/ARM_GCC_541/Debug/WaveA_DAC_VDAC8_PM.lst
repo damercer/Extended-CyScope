@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccXZrFcE.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
   24:Generated_Source\PSoC5/WaveA_DAC_VDAC8_PM.c **** /*******************************************************************************
   25:Generated_Source\PSoC5/WaveA_DAC_VDAC8_PM.c **** * Function Name: WaveA_DAC_VDAC8_SaveConfig
   26:Generated_Source\PSoC5/WaveA_DAC_VDAC8_PM.c **** ********************************************************************************
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 2
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccXZrFcE.s 			page 2
 
 
   27:Generated_Source\PSoC5/WaveA_DAC_VDAC8_PM.c **** * Summary:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
   69 0028 815B0040 		.word	1073765249
   70 002c 00000000 		.word	WaveA_DAC_VDAC8_backup
   71              		.cfi_endproc
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 3
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccXZrFcE.s 			page 3
 
 
   72              	.LFE0:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  105 001e 14D0     		beq	.L8
   65:Generated_Source\PSoC5/WaveA_DAC_VDAC8_PM.c ****         {
   66:Generated_Source\PSoC5/WaveA_DAC_VDAC8_PM.c ****             WaveA_DAC_VDAC8_Strobe &= (uint8)(~WaveA_DAC_VDAC8_STRB_MASK);
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 4
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccXZrFcE.s 			page 4
 
 
  106              		.loc 1 66 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  150 0064 815B0040 		.word	1073765249
  151 0068 00000000 		.word	WaveA_DAC_VDAC8_backup
  152              		.cfi_endproc
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 5
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccXZrFcE.s 			page 5
 
 
  153              	.LFE1:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  181 0012 074B     		ldr	r3, .L15+4
  182 0014 0122     		movs	r2, #1
  183 0016 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 6
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccXZrFcE.s 			page 6
 
 
  184 0018 02E0     		b	.L14
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  126:Generated_Source\PSoC5/WaveA_DAC_VDAC8_PM.c **** *
  127:Generated_Source\PSoC5/WaveA_DAC_VDAC8_PM.c **** * Global variables:
  128:Generated_Source\PSoC5/WaveA_DAC_VDAC8_PM.c **** *  WaveA_DAC_VDAC8_backup.enableState:  Is used to restore the enable state of 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 7
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccXZrFcE.s 			page 7
 
 
  129:Generated_Source\PSoC5/WaveA_DAC_VDAC8_PM.c **** *  block on wakeup from sleep mode.
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  252              	.Letext0:
  253              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
  254              		.file 3 "Generated_Source\\PSoC5\\WaveA_DAC_VDAC8.h"
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 8
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccXZrFcE.s 			page 8
 
 
  255              		.section	.debug_info,"",%progbits
@@ -431,14 +431,14 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  262 000c 00000000 		.4byte	.LASF21
  263 0010 0C       		.byte	0xc
  264 0011 16010000 		.4byte	.LASF22
- 265 0015 42010000 		.4byte	.LASF23
+ 265 0015 9B010000 		.4byte	.LASF23
  266 0019 00000000 		.4byte	.Ldebug_ranges0+0
  267 001d 00000000 		.4byte	0
  268 0021 00000000 		.4byte	.Ldebug_line0
  269 0025 02       		.uleb128 0x2
  270 0026 01       		.byte	0x1
  271 0027 06       		.byte	0x6
- 272 0028 5A020000 		.4byte	.LASF0
+ 272 0028 57020000 		.4byte	.LASF0
  273 002c 02       		.uleb128 0x2
  274 002d 01       		.byte	0x1
  275 002e 08       		.byte	0x8
@@ -446,7 +446,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  277 0033 02       		.uleb128 0x2
  278 0034 02       		.byte	0x2
  279 0035 05       		.byte	0x5
- 280 0036 1F020000 		.4byte	.LASF2
+ 280 0036 1C020000 		.4byte	.LASF2
  281 003a 02       		.uleb128 0x2
  282 003b 02       		.byte	0x2
  283 003c 07       		.byte	0x7
@@ -454,7 +454,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  285 0041 02       		.uleb128 0x2
  286 0042 04       		.byte	0x4
  287 0043 05       		.byte	0x5
- 288 0044 45020000 		.4byte	.LASF4
+ 288 0044 42020000 		.4byte	.LASF4
  289 0048 02       		.uleb128 0x2
  290 0049 04       		.byte	0x4
  291 004a 07       		.byte	0x7
@@ -462,11 +462,11 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  293 004f 02       		.uleb128 0x2
  294 0050 08       		.byte	0x8
  295 0051 05       		.byte	0x5
- 296 0052 F5010000 		.4byte	.LASF6
+ 296 0052 F2010000 		.4byte	.LASF6
  297 0056 02       		.uleb128 0x2
  298 0057 08       		.byte	0x8
  299 0058 07       		.byte	0x7
- 300 0059 A9010000 		.4byte	.LASF7
+ 300 0059 4F010000 		.4byte	.LASF7
  301 005d 03       		.uleb128 0x3
  302 005e 04       		.byte	0x4
  303 005f 05       		.byte	0x5
@@ -474,11 +474,11 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  305 0064 02       		.uleb128 0x2
  306 0065 04       		.byte	0x4
  307 0066 07       		.byte	0x7
- 308 0067 9C010000 		.4byte	.LASF8
+ 308 0067 42010000 		.4byte	.LASF8
  309 006b 04       		.uleb128 0x4
- 310 006c 3F020000 		.4byte	.LASF12
+ 310 006c 3C020000 		.4byte	.LASF12
  311 0070 02       		.byte	0x2
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 9
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccXZrFcE.s 			page 9
 
 
  312 0071 E901     		.2byte	0x1e9
@@ -494,7 +494,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  322 0085 02       		.uleb128 0x2
  323 0086 01       		.byte	0x1
  324 0087 08       		.byte	0x8
- 325 0088 03020000 		.4byte	.LASF11
+ 325 0088 00020000 		.4byte	.LASF11
  326 008c 04       		.uleb128 0x4
  327 008d E5000000 		.4byte	.LASF13
  328 0091 02       		.byte	0x2
@@ -508,7 +508,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  336 00a0 25       		.byte	0x25
  337 00a1 BE000000 		.4byte	0xbe
  338 00a5 07       		.uleb128 0x7
- 339 00a6 4E020000 		.4byte	.LASF14
+ 339 00a6 4B020000 		.4byte	.LASF14
  340 00aa 03       		.byte	0x3
  341 00ab 27       		.byte	0x27
  342 00ac 6B000000 		.4byte	0x6b
@@ -534,18 +534,18 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  362 00d8 01       		.uleb128 0x1
  363 00d9 9C       		.byte	0x9c
  364 00da 09       		.uleb128 0x9
- 365 00db C0010000 		.4byte	.LASF18
+ 365 00db 66010000 		.4byte	.LASF18
  366 00df 01       		.byte	0x1
  367 00e0 3C       		.byte	0x3c
  368 00e1 00000000 		.4byte	.LFB1
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 10
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccXZrFcE.s 			page 10
 
 
  369 00e5 6C000000 		.4byte	.LFE1-.LFB1
  370 00e9 01       		.uleb128 0x1
  371 00ea 9C       		.byte	0x9c
  372 00eb 0A       		.uleb128 0xa
- 373 00ec 29020000 		.4byte	.LASF19
+ 373 00ec 26020000 		.4byte	.LASF19
  374 00f0 01       		.byte	0x1
  375 00f1 5F       		.byte	0x5f
  376 00f2 00000000 		.4byte	.LFB2
@@ -553,7 +553,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  378 00fa 01       		.uleb128 0x1
  379 00fb 9C       		.byte	0x9c
  380 00fc 0A       		.uleb128 0xa
- 381 00fd 08020000 		.4byte	.LASF20
+ 381 00fd 05020000 		.4byte	.LASF20
  382 0101 01       		.byte	0x1
  383 0102 84       		.byte	0x84
  384 0103 00000000 		.4byte	.LFB3
@@ -561,7 +561,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  386 010b 01       		.uleb128 0x1
  387 010c 9C       		.byte	0x9c
  388 010d 0B       		.uleb128 0xb
- 389 010e DE010000 		.4byte	.LASF24
+ 389 010e 84010000 		.4byte	.LASF24
  390 0112 01       		.byte	0x1
  391 0113 15       		.byte	0x15
  392 0114 BE000000 		.4byte	0xbe
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  423 0018 3E       		.uleb128 0x3e
  424 0019 0B       		.uleb128 0xb
  425 001a 03       		.uleb128 0x3
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 11
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccXZrFcE.s 			page 11
 
 
  426 001b 0E       		.uleb128 0xe
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  480 0051 3B       		.uleb128 0x3b
  481 0052 0B       		.uleb128 0xb
  482 0053 49       		.uleb128 0x49
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 12
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccXZrFcE.s 			page 12
 
 
  483 0054 13       		.uleb128 0x13
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  537 008b 11       		.uleb128 0x11
  538 008c 01       		.uleb128 0x1
  539 008d 12       		.uleb128 0x12
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 13
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccXZrFcE.s 			page 13
 
 
  540 008e 06       		.uleb128 0x6
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  594              	.Ldebug_line0:
  595 0000 BE000000 		.section	.debug_str,"MS",%progbits,1
  595      02006400 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 14
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccXZrFcE.s 			page 14
 
 
  595      00000201 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  615      7420756E 
  615      7369676E 
  615      65642069 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 15
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccXZrFcE.s 			page 15
 
 
  615      6E7400
@@ -851,80 +851,80 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 1
  619      645F536F 
  619      75726365 
  619      5C50536F 
- 620              	.LASF23:
- 621 0142 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\Twelve"
- 621      73657273 
- 621      5C6D6572 
- 621      63655C44 
- 621      6F63756D 
- 622 016f 2D626974 		.ascii	"-bit-4-chan\\ScopeKitProg\\Scope_KitProg.cydsn\000"
- 622      2D342D63 
- 622      68616E5C 
- 622      53636F70 
- 622      654B6974 
- 623              	.LASF8:
- 624 019c 756E7369 		.ascii	"unsigned int\000"
- 624      676E6564 
- 624      20696E74 
- 624      00
- 625              	.LASF7:
- 626 01a9 6C6F6E67 		.ascii	"long long unsigned int\000"
- 626      206C6F6E 
- 626      6720756E 
- 626      7369676E 
- 626      65642069 
- 627              	.LASF18:
- 628 01c0 57617665 		.ascii	"WaveA_DAC_VDAC8_RestoreConfig\000"
- 628      415F4441 
- 628      435F5644 
- 628      4143385F 
- 628      52657374 
- 629              	.LASF24:
- 630 01de 57617665 		.ascii	"WaveA_DAC_VDAC8_backup\000"
- 630      415F4441 
- 630      435F5644 
- 630      4143385F 
- 630      6261636B 
+ 620              	.LASF8:
+ 621 0142 756E7369 		.ascii	"unsigned int\000"
+ 621      676E6564 
+ 621      20696E74 
+ 621      00
+ 622              	.LASF7:
+ 623 014f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 623      206C6F6E 
+ 623      6720756E 
+ 623      7369676E 
+ 623      65642069 
+ 624              	.LASF18:
+ 625 0166 57617665 		.ascii	"WaveA_DAC_VDAC8_RestoreConfig\000"
+ 625      415F4441 
+ 625      435F5644 
+ 625      4143385F 
+ 625      52657374 
+ 626              	.LASF24:
+ 627 0184 57617665 		.ascii	"WaveA_DAC_VDAC8_backup\000"
+ 627      415F4441 
+ 627      435F5644 
+ 627      4143385F 
+ 627      6261636B 
+ 628              	.LASF23:
+ 629 019b 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\CY8CKI"
+ 629      73657273 
+ 629      5C6D6572 
+ 629      63655C44 
+ 629      6F63756D 
+ 630 01c8 542D3034 		.ascii	"T-044\\ScopeKitProg\\Scope_CY8KIT-044.cydsn\000"
+ 630      345C5363 
+ 630      6F70654B 
+ 630      69745072 
+ 630      6F675C53 
  631              	.LASF6:
- 632 01f5 6C6F6E67 		.ascii	"long long int\000"
+ 632 01f2 6C6F6E67 		.ascii	"long long int\000"
  632      206C6F6E 
  632      6720696E 
  632      7400
  633              	.LASF11:
- 634 0203 63686172 		.ascii	"char\000"
+ 634 0200 63686172 		.ascii	"char\000"
  634      00
  635              	.LASF20:
- 636 0208 57617665 		.ascii	"WaveA_DAC_VDAC8_Wakeup\000"
+ 636 0205 57617665 		.ascii	"WaveA_DAC_VDAC8_Wakeup\000"
  636      415F4441 
  636      435F5644 
  636      4143385F 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cccIDhWy.s 			page 16
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccXZrFcE.s 			page 16
 
 
  636      57616B65 
  637              	.LASF2:
- 638 021f 73686F72 		.ascii	"short int\000"
+ 638 021c 73686F72 		.ascii	"short int\000"
  638      7420696E 
  638      7400
  639              	.LASF19:
- 640 0229 57617665 		.ascii	"WaveA_DAC_VDAC8_Sleep\000"
+ 640 0226 57617665 		.ascii	"WaveA_DAC_VDAC8_Sleep\000"
  640      415F4441 
  640      435F5644 
  640      4143385F 
  640      536C6565 
  641              	.LASF12:
- 642 023f 75696E74 		.ascii	"uint8\000"
+ 642 023c 75696E74 		.ascii	"uint8\000"
  642      3800
  643              	.LASF4:
- 644 0245 6C6F6E67 		.ascii	"long int\000"
+ 644 0242 6C6F6E67 		.ascii	"long int\000"
  644      20696E74 
  644      00
  645              	.LASF14:
- 646 024e 656E6162 		.ascii	"enableState\000"
+ 646 024b 656E6162 		.ascii	"enableState\000"
  646      6C655374 
  646      61746500 
  647              	.LASF0:
- 648 025a 7369676E 		.ascii	"signed char\000"
+ 648 0257 7369676E 		.ascii	"signed char\000"
  648      65642063 
  648      68617200 
  649              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

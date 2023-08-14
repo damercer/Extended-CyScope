@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc4ttEuF.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
   24:Generated_Source\PSoC5/ADC_2_PM.c **** static ADC_2_BACKUP_STRUCT  ADC_2_backup =
   25:Generated_Source\PSoC5/ADC_2_PM.c **** {
   26:Generated_Source\PSoC5/ADC_2_PM.c ****     ADC_2_DISABLED
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 2
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc4ttEuF.s 			page 2
 
 
   27:Generated_Source\PSoC5/ADC_2_PM.c **** };
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
   51:Generated_Source\PSoC5/ADC_2_PM.c **** * Function Name: ADC_2_RestoreConfig
   52:Generated_Source\PSoC5/ADC_2_PM.c **** ********************************************************************************
   53:Generated_Source\PSoC5/ADC_2_PM.c **** *
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 3
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc4ttEuF.s 			page 3
 
 
   54:Generated_Source\PSoC5/ADC_2_PM.c **** * Summary:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
   78:Generated_Source\PSoC5/ADC_2_PM.c **** *
   79:Generated_Source\PSoC5/ADC_2_PM.c **** * Parameters:
   80:Generated_Source\PSoC5/ADC_2_PM.c **** *  None.
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 4
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc4ttEuF.s 			page 4
 
 
   81:Generated_Source\PSoC5/ADC_2_PM.c **** *
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
  126              	.L6:
  101:Generated_Source\PSoC5/ADC_2_PM.c ****         }
  102:Generated_Source\PSoC5/ADC_2_PM.c ****         ADC_2_Stop();
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 5
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc4ttEuF.s 			page 5
 
 
  127              		.loc 1 102 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
  126:Generated_Source\PSoC5/ADC_2_PM.c **** *
  127:Generated_Source\PSoC5/ADC_2_PM.c **** * Global Variables:
  128:Generated_Source\PSoC5/ADC_2_PM.c **** *  ADC_2_backup - The structure field 'enableState' is used to
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 6
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc4ttEuF.s 			page 6
 
 
  129:Generated_Source\PSoC5/ADC_2_PM.c **** *  restore the enable state of block after wakeup from sleep mode.
@@ -358,11 +358,11 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
  195 000b 01       		.uleb128 0x1
  196 000c 14000000 		.4byte	.LASF19
  197 0010 0C       		.byte	0xc
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 7
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc4ttEuF.s 			page 7
 
 
- 198 0011 E7010000 		.4byte	.LASF20
- 199 0015 F3000000 		.4byte	.LASF21
+ 198 0011 E4010000 		.4byte	.LASF20
+ 199 0015 34010000 		.4byte	.LASF21
  200 0019 00000000 		.4byte	.Ldebug_ranges0+0
  201 001d 00000000 		.4byte	0
  202 0021 00000000 		.4byte	.Ldebug_line0
@@ -377,7 +377,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
  211 0033 02       		.uleb128 0x2
  212 0034 02       		.byte	0x2
  213 0035 05       		.byte	0x5
- 214 0036 AE010000 		.4byte	.LASF2
+ 214 0036 AB010000 		.4byte	.LASF2
  215 003a 02       		.uleb128 0x2
  216 003b 02       		.byte	0x2
  217 003c 07       		.byte	0x7
@@ -385,7 +385,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
  219 0041 02       		.uleb128 0x2
  220 0042 04       		.byte	0x4
  221 0043 05       		.byte	0x5
- 222 0044 D2010000 		.4byte	.LASF4
+ 222 0044 CF010000 		.4byte	.LASF4
  223 0048 02       		.uleb128 0x2
  224 0049 04       		.byte	0x4
  225 004a 07       		.byte	0x7
@@ -393,11 +393,11 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
  227 004f 02       		.uleb128 0x2
  228 0050 08       		.byte	0x8
  229 0051 05       		.byte	0x5
- 230 0052 8E010000 		.4byte	.LASF6
+ 230 0052 8B010000 		.4byte	.LASF6
  231 0056 02       		.uleb128 0x2
  232 0057 08       		.byte	0x8
  233 0058 07       		.byte	0x7
- 234 0059 5A010000 		.4byte	.LASF7
+ 234 0059 00010000 		.4byte	.LASF7
  235 005d 03       		.uleb128 0x3
  236 005e 04       		.byte	0x4
  237 005f 05       		.byte	0x5
@@ -405,9 +405,9 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
  239 0064 02       		.uleb128 0x2
  240 0065 04       		.byte	0x4
  241 0066 07       		.byte	0x7
- 242 0067 4D010000 		.4byte	.LASF8
+ 242 0067 F3000000 		.4byte	.LASF8
  243 006b 04       		.uleb128 0x4
- 244 006c B8010000 		.4byte	.LASF12
+ 244 006c B5010000 		.4byte	.LASF12
  245 0070 02       		.byte	0x2
  246 0071 E901     		.2byte	0x1e9
  247 0073 2C000000 		.4byte	0x2c
@@ -418,14 +418,14 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
  252 007e 02       		.uleb128 0x2
  253 007f 08       		.byte	0x8
  254 0080 04       		.byte	0x4
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 8
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc4ttEuF.s 			page 8
 
 
  255 0081 EC000000 		.4byte	.LASF10
  256 0085 02       		.uleb128 0x2
  257 0086 01       		.byte	0x1
  258 0087 08       		.byte	0x8
- 259 0088 9C010000 		.4byte	.LASF11
+ 259 0088 99010000 		.4byte	.LASF11
  260 008c 04       		.uleb128 0x4
  261 008d C2000000 		.4byte	.LASF13
  262 0091 02       		.byte	0x2
@@ -439,19 +439,19 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
  270 00a0 2A       		.byte	0x2a
  271 00a1 B2000000 		.4byte	0xb2
  272 00a5 07       		.uleb128 0x7
- 273 00a6 DB010000 		.4byte	.LASF22
+ 273 00a6 D8010000 		.4byte	.LASF22
  274 00aa 03       		.byte	0x3
  275 00ab 2C       		.byte	0x2c
  276 00ac 6B000000 		.4byte	0x6b
  277 00b0 00       		.byte	0
  278 00b1 00       		.byte	0
  279 00b2 08       		.uleb128 0x8
- 280 00b3 BE010000 		.4byte	.LASF14
+ 280 00b3 BB010000 		.4byte	.LASF14
  281 00b7 03       		.byte	0x3
  282 00b8 2D       		.byte	0x2d
  283 00b9 9D000000 		.4byte	0x9d
  284 00bd 09       		.uleb128 0x9
- 285 00be 7D010000 		.4byte	.LASF15
+ 285 00be 23010000 		.4byte	.LASF15
  286 00c2 01       		.byte	0x1
  287 00c3 2C       		.byte	0x2c
  288 00c4 00000000 		.4byte	.LFB0
@@ -467,7 +467,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
  298 00dd 01       		.uleb128 0x1
  299 00de 9C       		.byte	0x9c
  300 00df 0A       		.uleb128 0xa
- 301 00e0 71010000 		.4byte	.LASF17
+ 301 00e0 17010000 		.4byte	.LASF17
  302 00e4 01       		.byte	0x1
  303 00e5 5A       		.byte	0x5a
  304 00e6 00000000 		.4byte	.LFB2
@@ -475,10 +475,10 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
  306 00ee 01       		.uleb128 0x1
  307 00ef 9C       		.byte	0x9c
  308 00f0 0A       		.uleb128 0xa
- 309 00f1 09020000 		.4byte	.LASF18
+ 309 00f1 06020000 		.4byte	.LASF18
  310 00f5 01       		.byte	0x1
  311 00f6 84       		.byte	0x84
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 9
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc4ttEuF.s 			page 9
 
 
  312 00f7 00000000 		.4byte	.LFB3
@@ -486,7 +486,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
  314 00ff 01       		.uleb128 0x1
  315 0100 9C       		.byte	0x9c
  316 0101 0B       		.uleb128 0xb
- 317 0102 A1010000 		.4byte	.LASF23
+ 317 0102 9E010000 		.4byte	.LASF23
  318 0106 01       		.byte	0x1
  319 0107 18       		.byte	0x18
  320 0108 B2000000 		.4byte	0xb2
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
  366 0027 00       		.byte	0
  367 0028 00       		.byte	0
  368 0029 04       		.uleb128 0x4
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 10
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc4ttEuF.s 			page 10
 
 
  369 002a 16       		.uleb128 0x16
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
  423 0060 3B       		.uleb128 0x3b
  424 0061 0B       		.uleb128 0xb
  425 0062 49       		.uleb128 0x49
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 11
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc4ttEuF.s 			page 11
 
 
  426 0063 13       		.uleb128 0x13
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
  480 009b 3A       		.uleb128 0x3a
  481 009c 0B       		.uleb128 0xb
  482 009d 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 12
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc4ttEuF.s 			page 12
 
 
  483 009e 0B       		.uleb128 0xb
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
  527      352E342E 
  527      31203230 
  527      31363036 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 13
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc4ttEuF.s 			page 13
 
 
  528 0047 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
@@ -761,84 +761,84 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 1
  542              	.LASF10:
  543 00ec 646F7562 		.ascii	"double\000"
  543      6C6500
- 544              	.LASF21:
- 545 00f3 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\Twelve"
- 545      73657273 
- 545      5C6D6572 
- 545      63655C44 
- 545      6F63756D 
- 546 0120 2D626974 		.ascii	"-bit-4-chan\\ScopeKitProg\\Scope_KitProg.cydsn\000"
- 546      2D342D63 
- 546      68616E5C 
- 546      53636F70 
- 546      654B6974 
- 547              	.LASF8:
- 548 014d 756E7369 		.ascii	"unsigned int\000"
- 548      676E6564 
- 548      20696E74 
- 548      00
- 549              	.LASF7:
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 14
+ 544              	.LASF8:
+ 545 00f3 756E7369 		.ascii	"unsigned int\000"
+ 545      676E6564 
+ 545      20696E74 
+ 545      00
+ 546              	.LASF7:
+ 547 0100 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 547      206C6F6E 
+ 547      6720756E 
+ 547      7369676E 
+ 547      65642069 
+ 548              	.LASF17:
+ 549 0117 4144435F 		.ascii	"ADC_2_Sleep\000"
+ 549      325F536C 
+ 549      65657000 
+ 550              	.LASF15:
+ 551 0123 4144435F 		.ascii	"ADC_2_SaveConfig\000"
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc4ttEuF.s 			page 14
 
 
- 550 015a 6C6F6E67 		.ascii	"long long unsigned int\000"
- 550      206C6F6E 
- 550      6720756E 
- 550      7369676E 
- 550      65642069 
- 551              	.LASF17:
- 552 0171 4144435F 		.ascii	"ADC_2_Sleep\000"
- 552      325F536C 
- 552      65657000 
- 553              	.LASF15:
- 554 017d 4144435F 		.ascii	"ADC_2_SaveConfig\000"
- 554      325F5361 
- 554      7665436F 
- 554      6E666967 
- 554      00
+ 551      325F5361 
+ 551      7665436F 
+ 551      6E666967 
+ 551      00
+ 552              	.LASF21:
+ 553 0134 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\CY8CKI"
+ 553      73657273 
+ 553      5C6D6572 
+ 553      63655C44 
+ 553      6F63756D 
+ 554 0161 542D3034 		.ascii	"T-044\\ScopeKitProg\\Scope_CY8KIT-044.cydsn\000"
+ 554      345C5363 
+ 554      6F70654B 
+ 554      69745072 
+ 554      6F675C53 
  555              	.LASF6:
- 556 018e 6C6F6E67 		.ascii	"long long int\000"
+ 556 018b 6C6F6E67 		.ascii	"long long int\000"
  556      206C6F6E 
  556      6720696E 
  556      7400
  557              	.LASF11:
- 558 019c 63686172 		.ascii	"char\000"
+ 558 0199 63686172 		.ascii	"char\000"
  558      00
  559              	.LASF23:
- 560 01a1 4144435F 		.ascii	"ADC_2_backup\000"
+ 560 019e 4144435F 		.ascii	"ADC_2_backup\000"
  560      325F6261 
  560      636B7570 
  560      00
  561              	.LASF2:
- 562 01ae 73686F72 		.ascii	"short int\000"
+ 562 01ab 73686F72 		.ascii	"short int\000"
  562      7420696E 
  562      7400
  563              	.LASF12:
- 564 01b8 75696E74 		.ascii	"uint8\000"
+ 564 01b5 75696E74 		.ascii	"uint8\000"
  564      3800
  565              	.LASF14:
- 566 01be 4144435F 		.ascii	"ADC_2_BACKUP_STRUCT\000"
+ 566 01bb 4144435F 		.ascii	"ADC_2_BACKUP_STRUCT\000"
  566      325F4241 
  566      434B5550 
  566      5F535452 
  566      55435400 
  567              	.LASF4:
- 568 01d2 6C6F6E67 		.ascii	"long int\000"
+ 568 01cf 6C6F6E67 		.ascii	"long int\000"
  568      20696E74 
  568      00
  569              	.LASF22:
- 570 01db 656E6162 		.ascii	"enableState\000"
+ 570 01d8 656E6162 		.ascii	"enableState\000"
  570      6C655374 
  570      61746500 
  571              	.LASF20:
- 572 01e7 47656E65 		.ascii	"Generated_Source\\PSoC5\\ADC_2_PM.c\000"
+ 572 01e4 47656E65 		.ascii	"Generated_Source\\PSoC5\\ADC_2_PM.c\000"
  572      72617465 
  572      645F536F 
  572      75726365 
  572      5C50536F 
  573              	.LASF18:
- 574 0209 4144435F 		.ascii	"ADC_2_Wakeup\000"
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjAJjoD.s 			page 15
+ 574 0206 4144435F 		.ascii	"ADC_2_Wakeup\000"
+ARM GAS  C:\Users\merce\AppData\Local\Temp\cc4ttEuF.s 			page 15
 
 
  574      325F5761 

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 1
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccu3t1XE.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 1
   24:Generated_Source\PSoC5/WaveB_Buf_PM.c **** * Function Name: WaveB_Buf_SaveConfig
   25:Generated_Source\PSoC5/WaveB_Buf_PM.c **** ********************************************************************************
   26:Generated_Source\PSoC5/WaveB_Buf_PM.c **** *
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 2
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccu3t1XE.s 			page 2
 
 
   27:Generated_Source\PSoC5/WaveB_Buf_PM.c **** * Summary:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 1
   51:Generated_Source\PSoC5/WaveB_Buf_PM.c **** *  void
   52:Generated_Source\PSoC5/WaveB_Buf_PM.c **** *
   53:Generated_Source\PSoC5/WaveB_Buf_PM.c **** * Return:
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 3
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccu3t1XE.s 			page 3
 
 
   54:Generated_Source\PSoC5/WaveB_Buf_PM.c **** *  void
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 1
   78:Generated_Source\PSoC5/WaveB_Buf_PM.c **** *  WaveB_Buf_backup: The structure field 'enableState' is modified 
   79:Generated_Source\PSoC5/WaveB_Buf_PM.c **** *  depending on the enable state of the block before entering to sleep mode.
   80:Generated_Source\PSoC5/WaveB_Buf_PM.c **** *
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 4
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccu3t1XE.s 			page 4
 
 
   81:Generated_Source\PSoC5/WaveB_Buf_PM.c **** *******************************************************************************/
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 1
  127              	.L7:
  128              		.align	2
  129              	.L6:
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 5
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccu3t1XE.s 			page 5
 
 
  130 002c A4430040 		.word	1073759140
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 1
  156 0008 034B     		ldr	r3, .L11
  157 000a 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  158 000c 012B     		cmp	r3, #1
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 6
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccu3t1XE.s 			page 6
 
 
  159 000e 01D1     		bne	.L10
@@ -333,14 +333,14 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 1
  184 000c CC000000 		.4byte	.LASF21
  185 0010 0C       		.byte	0xc
  186 0011 A6000000 		.4byte	.LASF22
- 187 0015 CD010000 		.4byte	.LASF23
+ 187 0015 5A010000 		.4byte	.LASF23
  188 0019 00000000 		.4byte	.Ldebug_ranges0+0
  189 001d 00000000 		.4byte	0
  190 0021 00000000 		.4byte	.Ldebug_line0
  191 0025 02       		.uleb128 0x2
  192 0026 01       		.byte	0x1
  193 0027 06       		.byte	0x6
- 194 0028 B0010000 		.4byte	.LASF0
+ 194 0028 07020000 		.4byte	.LASF0
  195 002c 02       		.uleb128 0x2
  196 002d 01       		.byte	0x1
  197 002e 08       		.byte	0x8
@@ -348,17 +348,17 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 1
  199 0033 02       		.uleb128 0x2
  200 0034 02       		.byte	0x2
  201 0035 05       		.byte	0x5
- 202 0036 80010000 		.4byte	.LASF2
+ 202 0036 D7010000 		.4byte	.LASF2
  203 003a 02       		.uleb128 0x2
  204 003b 02       		.byte	0x2
  205 003c 07       		.byte	0x7
- 206 003d 9D010000 		.4byte	.LASF3
+ 206 003d F4010000 		.4byte	.LASF3
  207 0041 02       		.uleb128 0x2
  208 0042 04       		.byte	0x4
  209 0043 05       		.byte	0x5
- 210 0044 77010000 		.4byte	.LASF4
+ 210 0044 CE010000 		.4byte	.LASF4
  211 0048 02       		.uleb128 0x2
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 7
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccu3t1XE.s 			page 7
 
 
  212 0049 04       		.byte	0x4
@@ -388,17 +388,17 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 1
  236 0077 02       		.uleb128 0x2
  237 0078 04       		.byte	0x4
  238 0079 04       		.byte	0x4
- 239 007a 33020000 		.4byte	.LASF9
+ 239 007a 30020000 		.4byte	.LASF9
  240 007e 02       		.uleb128 0x2
  241 007f 08       		.byte	0x8
  242 0080 04       		.byte	0x4
- 243 0081 96010000 		.4byte	.LASF10
+ 243 0081 ED010000 		.4byte	.LASF10
  244 0085 02       		.uleb128 0x2
  245 0086 01       		.byte	0x1
  246 0087 08       		.byte	0x8
- 247 0088 72010000 		.4byte	.LASF11
+ 247 0088 C9010000 		.4byte	.LASF11
  248 008c 04       		.uleb128 0x4
- 249 008d 39020000 		.4byte	.LASF13
+ 249 008d 36020000 		.4byte	.LASF13
  250 0091 02       		.byte	0x2
  251 0092 9302     		.2byte	0x293
  252 0094 98000000 		.4byte	0x98
@@ -407,28 +407,28 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 1
  255 009d 02       		.uleb128 0x2
  256 009e 08       		.byte	0x8
  257 009f 04       		.byte	0x4
- 258 00a0 27020000 		.4byte	.LASF14
+ 258 00a0 24020000 		.4byte	.LASF14
  259 00a4 02       		.uleb128 0x2
  260 00a5 04       		.byte	0x4
  261 00a6 07       		.byte	0x7
- 262 00a7 3E020000 		.4byte	.LASF15
+ 262 00a7 3B020000 		.4byte	.LASF15
  263 00ab 06       		.uleb128 0x6
  264 00ac 01       		.byte	0x1
  265 00ad 03       		.byte	0x3
  266 00ae 26       		.byte	0x26
  267 00af C0000000 		.4byte	0xc0
  268 00b3 07       		.uleb128 0x7
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 8
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccu3t1XE.s 			page 8
 
 
- 269 00b4 8A010000 		.4byte	.LASF24
+ 269 00b4 E1010000 		.4byte	.LASF24
  270 00b8 03       		.byte	0x3
  271 00b9 28       		.byte	0x28
  272 00ba 6B000000 		.4byte	0x6b
  273 00be 00       		.byte	0
  274 00bf 00       		.byte	0
  275 00c0 08       		.uleb128 0x8
- 276 00c1 5A010000 		.4byte	.LASF16
+ 276 00c1 B1010000 		.4byte	.LASF16
  277 00c5 03       		.byte	0x3
  278 00c6 29       		.byte	0x29
  279 00c7 AB000000 		.4byte	0xab
@@ -465,7 +465,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 1
  310 010d 01       		.uleb128 0x1
  311 010e 9C       		.byte	0x9c
  312 010f 0B       		.uleb128 0xb
- 313 0110 BC010000 		.4byte	.LASF25
+ 313 0110 13020000 		.4byte	.LASF25
  314 0114 01       		.byte	0x1
  315 0115 14       		.byte	0x14
  316 0116 C0000000 		.4byte	0xc0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 1
  323 0000 01       		.uleb128 0x1
  324 0001 11       		.uleb128 0x11
  325 0002 01       		.byte	0x1
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 9
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccu3t1XE.s 			page 9
 
 
  326 0003 25       		.uleb128 0x25
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 1
  380 0039 49       		.uleb128 0x49
  381 003a 13       		.uleb128 0x13
  382 003b 00       		.byte	0
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 10
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccu3t1XE.s 			page 10
 
 
  383 003c 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 1
  437 0072 19       		.uleb128 0x19
  438 0073 11       		.uleb128 0x11
  439 0074 01       		.uleb128 0x1
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 11
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccu3t1XE.s 			page 11
 
 
  440 0075 12       		.uleb128 0x12
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 1
  494 000e 0000     		.2byte	0
  495 0010 00000000 		.4byte	.LFB0
  496 0014 0C000000 		.4byte	.LFE0-.LFB0
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 12
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccu3t1XE.s 			page 12
 
 
  497 0018 00000000 		.4byte	.LFB1
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 1
  531 004a 57617665 		.ascii	"WaveB_Buf_SaveConfig\000"
  531      425F4275 
  531      665F5361 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 13
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccu3t1XE.s 			page 13
 
 
  531      7665436F 
@@ -766,72 +766,72 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 1
  545      74696F6E 
  545      2D736563 
  545      74696F6E 
- 546              	.LASF16:
- 547 015a 57617665 		.ascii	"WaveB_Buf_BACKUP_STRUCT\000"
- 547      425F4275 
- 547      665F4241 
- 547      434B5550 
- 547      5F535452 
- 548              	.LASF11:
- 549 0172 63686172 		.ascii	"char\000"
- 549      00
- 550              	.LASF4:
- 551 0177 6C6F6E67 		.ascii	"long int\000"
- 551      20696E74 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccrqAJFD.s 			page 14
+ 546              	.LASF23:
+ 547 015a 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\CY8CKI"
+ 547      73657273 
+ 547      5C6D6572 
+ 547      63655C44 
+ 547      6F63756D 
+ 548 0187 542D3034 		.ascii	"T-044\\ScopeKitProg\\Scope_CY8KIT-044.cydsn\000"
+ 548      345C5363 
+ 548      6F70654B 
+ 548      69745072 
+ 548      6F675C53 
+ 549              	.LASF16:
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccu3t1XE.s 			page 14
 
 
- 551      00
- 552              	.LASF2:
- 553 0180 73686F72 		.ascii	"short int\000"
- 553      7420696E 
- 553      7400
- 554              	.LASF24:
- 555 018a 656E6162 		.ascii	"enableState\000"
- 555      6C655374 
- 555      61746500 
- 556              	.LASF10:
- 557 0196 646F7562 		.ascii	"double\000"
- 557      6C6500
- 558              	.LASF3:
- 559 019d 73686F72 		.ascii	"short unsigned int\000"
- 559      7420756E 
- 559      7369676E 
- 559      65642069 
- 559      6E7400
- 560              	.LASF0:
- 561 01b0 7369676E 		.ascii	"signed char\000"
- 561      65642063 
- 561      68617200 
- 562              	.LASF25:
- 563 01bc 57617665 		.ascii	"WaveB_Buf_backup\000"
- 563      425F4275 
- 563      665F6261 
- 563      636B7570 
- 563      00
- 564              	.LASF23:
- 565 01cd 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\Twelve"
- 565      73657273 
- 565      5C6D6572 
- 565      63655C44 
- 565      6F63756D 
- 566 01fa 2D626974 		.ascii	"-bit-4-chan\\ScopeKitProg\\Scope_KitProg.cydsn\000"
- 566      2D342D63 
- 566      68616E5C 
- 566      53636F70 
- 566      654B6974 
+ 550 01b1 57617665 		.ascii	"WaveB_Buf_BACKUP_STRUCT\000"
+ 550      425F4275 
+ 550      665F4241 
+ 550      434B5550 
+ 550      5F535452 
+ 551              	.LASF11:
+ 552 01c9 63686172 		.ascii	"char\000"
+ 552      00
+ 553              	.LASF4:
+ 554 01ce 6C6F6E67 		.ascii	"long int\000"
+ 554      20696E74 
+ 554      00
+ 555              	.LASF2:
+ 556 01d7 73686F72 		.ascii	"short int\000"
+ 556      7420696E 
+ 556      7400
+ 557              	.LASF24:
+ 558 01e1 656E6162 		.ascii	"enableState\000"
+ 558      6C655374 
+ 558      61746500 
+ 559              	.LASF10:
+ 560 01ed 646F7562 		.ascii	"double\000"
+ 560      6C6500
+ 561              	.LASF3:
+ 562 01f4 73686F72 		.ascii	"short unsigned int\000"
+ 562      7420756E 
+ 562      7369676E 
+ 562      65642069 
+ 562      6E7400
+ 563              	.LASF0:
+ 564 0207 7369676E 		.ascii	"signed char\000"
+ 564      65642063 
+ 564      68617200 
+ 565              	.LASF25:
+ 566 0213 57617665 		.ascii	"WaveB_Buf_backup\000"
+ 566      425F4275 
+ 566      665F6261 
+ 566      636B7570 
+ 566      00
  567              	.LASF14:
- 568 0227 6C6F6E67 		.ascii	"long double\000"
+ 568 0224 6C6F6E67 		.ascii	"long double\000"
  568      20646F75 
  568      626C6500 
  569              	.LASF9:
- 570 0233 666C6F61 		.ascii	"float\000"
+ 570 0230 666C6F61 		.ascii	"float\000"
  570      7400
  571              	.LASF13:
- 572 0239 72656738 		.ascii	"reg8\000"
+ 572 0236 72656738 		.ascii	"reg8\000"
  572      00
  573              	.LASF15:
- 574 023e 73697A65 		.ascii	"sizetype\000"
+ 574 023b 73697A65 		.ascii	"sizetype\000"
  574      74797065 
  574      00
  575              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

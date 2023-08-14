@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBV0tQc.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
   24:Generated_Source\PSoC5/ScopeC_Buf_PM.c **** * Function Name: ScopeC_Buf_SaveConfig
   25:Generated_Source\PSoC5/ScopeC_Buf_PM.c **** ********************************************************************************
   26:Generated_Source\PSoC5/ScopeC_Buf_PM.c **** *
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 2
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBV0tQc.s 			page 2
 
 
   27:Generated_Source\PSoC5/ScopeC_Buf_PM.c **** * Summary:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
   51:Generated_Source\PSoC5/ScopeC_Buf_PM.c **** *  void
   52:Generated_Source\PSoC5/ScopeC_Buf_PM.c **** *
   53:Generated_Source\PSoC5/ScopeC_Buf_PM.c **** * Return:
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 3
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBV0tQc.s 			page 3
 
 
   54:Generated_Source\PSoC5/ScopeC_Buf_PM.c **** *  void
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
   78:Generated_Source\PSoC5/ScopeC_Buf_PM.c **** *  ScopeC_Buf_backup: The structure field 'enableState' is modified 
   79:Generated_Source\PSoC5/ScopeC_Buf_PM.c **** *  depending on the enable state of the block before entering to sleep mode.
   80:Generated_Source\PSoC5/ScopeC_Buf_PM.c **** *
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 4
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBV0tQc.s 			page 4
 
 
   81:Generated_Source\PSoC5/ScopeC_Buf_PM.c **** *******************************************************************************/
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
  127              	.L7:
  128              		.align	2
  129              	.L6:
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 5
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBV0tQc.s 			page 5
 
 
  130 002c A9430040 		.word	1073759145
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
  157 000a 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  158 000c 012B     		cmp	r3, #1
  159 000e 01D1     		bne	.L10
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 6
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBV0tQc.s 			page 6
 
 
  127:Generated_Source\PSoC5/ScopeC_Buf_PM.c ****     {
@@ -329,40 +329,40 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
  181 0006 00000000 		.4byte	.Ldebug_abbrev0
  182 000a 04       		.byte	0x4
  183 000b 01       		.uleb128 0x1
- 184 000c AE000000 		.4byte	.LASF25
+ 184 000c BC000000 		.4byte	.LASF25
  185 0010 0C       		.byte	0xc
- 186 0011 39020000 		.4byte	.LASF26
- 187 0015 4F010000 		.4byte	.LASF27
+ 186 0011 36020000 		.4byte	.LASF26
+ 187 0015 4A010000 		.4byte	.LASF27
  188 0019 00000000 		.4byte	.Ldebug_ranges0+0
  189 001d 00000000 		.4byte	0
  190 0021 00000000 		.4byte	.Ldebug_line0
  191 0025 02       		.uleb128 0x2
  192 0026 01       		.byte	0x1
  193 0027 06       		.byte	0x6
- 194 0028 E8010000 		.4byte	.LASF0
+ 194 0028 E5010000 		.4byte	.LASF0
  195 002c 02       		.uleb128 0x2
  196 002d 01       		.byte	0x1
  197 002e 08       		.byte	0x8
- 198 002f 3C010000 		.4byte	.LASF1
+ 198 002f 27000000 		.4byte	.LASF1
  199 0033 02       		.uleb128 0x2
  200 0034 02       		.byte	0x2
  201 0035 05       		.byte	0x5
- 202 0036 B2010000 		.4byte	.LASF2
+ 202 0036 AF010000 		.4byte	.LASF2
  203 003a 02       		.uleb128 0x2
  204 003b 02       		.byte	0x2
  205 003c 07       		.byte	0x7
- 206 003d D5010000 		.4byte	.LASF3
+ 206 003d D2010000 		.4byte	.LASF3
  207 0041 02       		.uleb128 0x2
  208 0042 04       		.byte	0x4
  209 0043 05       		.byte	0x5
- 210 0044 A9010000 		.4byte	.LASF4
+ 210 0044 A6010000 		.4byte	.LASF4
  211 0048 02       		.uleb128 0x2
  212 0049 04       		.byte	0x4
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 7
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBV0tQc.s 			page 7
 
 
  213 004a 07       		.byte	0x7
- 214 004b BC010000 		.4byte	.LASF5
+ 214 004b B9010000 		.4byte	.LASF5
  215 004f 02       		.uleb128 0x2
  216 0050 08       		.byte	0x8
  217 0051 05       		.byte	0x5
@@ -370,7 +370,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
  219 0056 02       		.uleb128 0x2
  220 0057 08       		.byte	0x8
  221 0058 07       		.byte	0x7
- 222 0059 72000000 		.4byte	.LASF7
+ 222 0059 80000000 		.4byte	.LASF7
  223 005d 03       		.uleb128 0x3
  224 005e 04       		.byte	0x4
  225 005f 05       		.byte	0x5
@@ -380,24 +380,24 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
  229 0066 07       		.byte	0x7
  230 0067 1A000000 		.4byte	.LASF8
  231 006b 04       		.uleb128 0x4
- 232 006c 52000000 		.4byte	.LASF12
+ 232 006c 60000000 		.4byte	.LASF12
  233 0070 02       		.byte	0x2
  234 0071 E901     		.2byte	0x1e9
  235 0073 2C000000 		.4byte	0x2c
  236 0077 02       		.uleb128 0x2
  237 0078 04       		.byte	0x4
  238 0079 04       		.byte	0x4
- 239 007a A8000000 		.4byte	.LASF9
+ 239 007a B6000000 		.4byte	.LASF9
  240 007e 02       		.uleb128 0x2
  241 007f 08       		.byte	0x8
  242 0080 04       		.byte	0x4
- 243 0081 CE010000 		.4byte	.LASF10
+ 243 0081 CB010000 		.4byte	.LASF10
  244 0085 02       		.uleb128 0x2
  245 0086 01       		.byte	0x1
  246 0087 08       		.byte	0x8
- 247 0088 4A010000 		.4byte	.LASF11
+ 247 0088 A1010000 		.4byte	.LASF11
  248 008c 04       		.uleb128 0x4
- 249 008d 34020000 		.4byte	.LASF13
+ 249 008d 31020000 		.4byte	.LASF13
  250 0091 02       		.byte	0x2
  251 0092 9302     		.2byte	0x293
  252 0094 98000000 		.4byte	0x98
@@ -406,11 +406,11 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
  255 009d 02       		.uleb128 0x2
  256 009e 08       		.byte	0x8
  257 009f 04       		.byte	0x4
- 258 00a0 FD010000 		.4byte	.LASF14
+ 258 00a0 FA010000 		.4byte	.LASF14
  259 00a4 02       		.uleb128 0x2
  260 00a5 04       		.byte	0x4
  261 00a6 07       		.byte	0x7
- 262 00a7 60020000 		.4byte	.LASF15
+ 262 00a7 5D020000 		.4byte	.LASF15
  263 00ab 06       		.uleb128 0x6
  264 00ac 04       		.byte	0x4
  265 00ad 03       		.byte	0x3
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
  267 00af E4000000 		.4byte	0xe4
  268 00b3 07       		.uleb128 0x7
  269 00b4 0E000000 		.4byte	.LASF16
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 8
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBV0tQc.s 			page 8
 
 
  270 00b8 03       		.byte	0x3
@@ -426,31 +426,31 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
  272 00ba 6B000000 		.4byte	0x6b
  273 00be 00       		.byte	0
  274 00bf 07       		.uleb128 0x7
- 275 00c0 58000000 		.4byte	.LASF17
+ 275 00c0 66000000 		.4byte	.LASF17
  276 00c4 03       		.byte	0x3
  277 00c5 30       		.byte	0x30
  278 00c6 6B000000 		.4byte	0x6b
  279 00ca 01       		.byte	0x1
  280 00cb 07       		.uleb128 0x7
- 281 00cc F4010000 		.4byte	.LASF18
+ 281 00cc F1010000 		.4byte	.LASF18
  282 00d0 03       		.byte	0x3
  283 00d1 31       		.byte	0x31
  284 00d2 6B000000 		.4byte	0x6b
  285 00d6 02       		.byte	0x2
  286 00d7 07       		.uleb128 0x7
- 287 00d8 9F000000 		.4byte	.LASF19
+ 287 00d8 AD000000 		.4byte	.LASF19
  288 00dc 03       		.byte	0x3
  289 00dd 32       		.byte	0x32
  290 00de 6B000000 		.4byte	0x6b
  291 00e2 03       		.byte	0x3
  292 00e3 00       		.byte	0
  293 00e4 08       		.uleb128 0x8
- 294 00e5 27000000 		.4byte	.LASF20
+ 294 00e5 35000000 		.4byte	.LASF20
  295 00e9 03       		.byte	0x3
  296 00ea 33       		.byte	0x33
  297 00eb AB000000 		.4byte	0xab
  298 00ef 09       		.uleb128 0x9
- 299 00f0 89000000 		.4byte	.LASF21
+ 299 00f0 97000000 		.4byte	.LASF21
  300 00f4 01       		.byte	0x1
  301 00f5 25       		.byte	0x25
  302 00f6 00000000 		.4byte	.LFB0
@@ -458,7 +458,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
  304 00fe 01       		.uleb128 0x1
  305 00ff 9C       		.byte	0x9c
  306 0100 09       		.uleb128 0x9
- 307 0101 09020000 		.4byte	.LASF22
+ 307 0101 06020000 		.4byte	.LASF22
  308 0105 01       		.byte	0x1
  309 0106 39       		.byte	0x39
  310 0107 00000000 		.4byte	.LFB1
@@ -466,7 +466,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
  312 010f 01       		.uleb128 0x1
  313 0110 9C       		.byte	0x9c
  314 0111 0A       		.uleb128 0xa
- 315 0112 61000000 		.4byte	.LASF23
+ 315 0112 6F000000 		.4byte	.LASF23
  316 0116 01       		.byte	0x1
  317 0117 52       		.byte	0x52
  318 0118 00000000 		.4byte	.LFB2
@@ -474,18 +474,18 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
  320 0120 01       		.uleb128 0x1
  321 0121 9C       		.byte	0x9c
  322 0122 0A       		.uleb128 0xa
- 323 0123 40000000 		.4byte	.LASF24
+ 323 0123 4E000000 		.4byte	.LASF24
  324 0127 01       		.byte	0x1
  325 0128 79       		.byte	0x79
  326 0129 00000000 		.4byte	.LFB3
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 9
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBV0tQc.s 			page 9
 
 
  327 012d 1C000000 		.4byte	.LFE3-.LFB3
  328 0131 01       		.uleb128 0x1
  329 0132 9C       		.byte	0x9c
  330 0133 0B       		.uleb128 0xb
- 331 0134 22020000 		.4byte	.LASF28
+ 331 0134 1F020000 		.4byte	.LASF28
  332 0138 01       		.byte	0x1
  333 0139 14       		.byte	0x14
  334 013a E4000000 		.4byte	0xe4
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
  381 0028 00       		.byte	0
  382 0029 04       		.uleb128 0x4
  383 002a 16       		.uleb128 0x16
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 10
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBV0tQc.s 			page 10
 
 
  384 002b 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
  438 0061 0B       		.uleb128 0xb
  439 0062 49       		.uleb128 0x49
  440 0063 13       		.uleb128 0x13
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 11
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBV0tQc.s 			page 11
 
 
  441 0064 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
  495 009c 0B       		.uleb128 0xb
  496 009d 3B       		.uleb128 0x3b
  497 009e 0B       		.uleb128 0xb
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 12
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBV0tQc.s 			page 12
 
 
  498 009f 49       		.uleb128 0x49
@@ -718,153 +718,153 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 1
  543 001a 756E7369 		.ascii	"unsigned int\000"
  543      676E6564 
  543      20696E74 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 13
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBV0tQc.s 			page 13
 
 
  543      00
- 544              	.LASF20:
- 545 0027 53636F70 		.ascii	"ScopeC_Buf_BACKUP_STRUCT\000"
- 545      65435F42 
- 545      75665F42 
- 545      41434B55 
- 545      505F5354 
- 546              	.LASF24:
- 547 0040 53636F70 		.ascii	"ScopeC_Buf_Wakeup\000"
+ 544              	.LASF1:
+ 545 0027 756E7369 		.ascii	"unsigned char\000"
+ 545      676E6564 
+ 545      20636861 
+ 545      7200
+ 546              	.LASF20:
+ 547 0035 53636F70 		.ascii	"ScopeC_Buf_BACKUP_STRUCT\000"
  547      65435F42 
- 547      75665F57 
- 547      616B6575 
- 547      7000
- 548              	.LASF12:
- 549 0052 75696E74 		.ascii	"uint8\000"
- 549      3800
- 550              	.LASF17:
- 551 0058 73634352 		.ascii	"scCR1Reg\000"
- 551      31526567 
- 551      00
- 552              	.LASF23:
- 553 0061 53636F70 		.ascii	"ScopeC_Buf_Sleep\000"
- 553      65435F42 
- 553      75665F53 
- 553      6C656570 
+ 547      75665F42 
+ 547      41434B55 
+ 547      505F5354 
+ 548              	.LASF24:
+ 549 004e 53636F70 		.ascii	"ScopeC_Buf_Wakeup\000"
+ 549      65435F42 
+ 549      75665F57 
+ 549      616B6575 
+ 549      7000
+ 550              	.LASF12:
+ 551 0060 75696E74 		.ascii	"uint8\000"
+ 551      3800
+ 552              	.LASF17:
+ 553 0066 73634352 		.ascii	"scCR1Reg\000"
+ 553      31526567 
  553      00
- 554              	.LASF7:
- 555 0072 6C6F6E67 		.ascii	"long long unsigned int\000"
- 555      206C6F6E 
- 555      6720756E 
- 555      7369676E 
- 555      65642069 
- 556              	.LASF21:
- 557 0089 53636F70 		.ascii	"ScopeC_Buf_SaveConfig\000"
- 557      65435F42 
- 557      75665F53 
- 557      61766543 
- 557      6F6E6669 
- 558              	.LASF19:
- 559 009f 73634352 		.ascii	"scCR3Reg\000"
- 559      33526567 
- 559      00
- 560              	.LASF9:
- 561 00a8 666C6F61 		.ascii	"float\000"
- 561      7400
- 562              	.LASF25:
- 563 00ae 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 563      43313120 
- 563      352E342E 
- 563      31203230 
- 563      31363036 
- 564 00e1 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 564      20726576 
- 564      6973696F 
- 564      6E203233 
- 564      37373135 
- 565 0114 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 14
+ 554              	.LASF23:
+ 555 006f 53636F70 		.ascii	"ScopeC_Buf_Sleep\000"
+ 555      65435F42 
+ 555      75665F53 
+ 555      6C656570 
+ 555      00
+ 556              	.LASF7:
+ 557 0080 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 557      206C6F6E 
+ 557      6720756E 
+ 557      7369676E 
+ 557      65642069 
+ 558              	.LASF21:
+ 559 0097 53636F70 		.ascii	"ScopeC_Buf_SaveConfig\000"
+ 559      65435F42 
+ 559      75665F53 
+ 559      61766543 
+ 559      6F6E6669 
+ 560              	.LASF19:
+ 561 00ad 73634352 		.ascii	"scCR3Reg\000"
+ 561      33526567 
+ 561      00
+ 562              	.LASF9:
+ 563 00b6 666C6F61 		.ascii	"float\000"
+ 563      7400
+ 564              	.LASF25:
+ 565 00bc 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 565      43313120 
+ 565      352E342E 
+ 565      31203230 
+ 565      31363036 
+ 566 00ef 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBV0tQc.s 			page 14
 
 
- 565      66756E63 
- 565      74696F6E 
- 565      2D736563 
- 565      74696F6E 
- 566              	.LASF1:
- 567 013c 756E7369 		.ascii	"unsigned char\000"
- 567      676E6564 
- 567      20636861 
- 567      7200
- 568              	.LASF11:
- 569 014a 63686172 		.ascii	"char\000"
- 569      00
- 570              	.LASF27:
- 571 014f 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\Twelve"
- 571      73657273 
- 571      5C6D6572 
- 571      63655C44 
- 571      6F63756D 
- 572 017c 2D626974 		.ascii	"-bit-4-chan\\ScopeKitProg\\Scope_KitProg.cydsn\000"
- 572      2D342D63 
- 572      68616E5C 
- 572      53636F70 
- 572      654B6974 
+ 566      20726576 
+ 566      6973696F 
+ 566      6E203233 
+ 566      37373135 
+ 567 0122 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 567      66756E63 
+ 567      74696F6E 
+ 567      2D736563 
+ 567      74696F6E 
+ 568              	.LASF27:
+ 569 014a 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\CY8CKI"
+ 569      73657273 
+ 569      5C6D6572 
+ 569      63655C44 
+ 569      6F63756D 
+ 570 0177 542D3034 		.ascii	"T-044\\ScopeKitProg\\Scope_CY8KIT-044.cydsn\000"
+ 570      345C5363 
+ 570      6F70654B 
+ 570      69745072 
+ 570      6F675C53 
+ 571              	.LASF11:
+ 572 01a1 63686172 		.ascii	"char\000"
+ 572      00
  573              	.LASF4:
- 574 01a9 6C6F6E67 		.ascii	"long int\000"
+ 574 01a6 6C6F6E67 		.ascii	"long int\000"
  574      20696E74 
  574      00
  575              	.LASF2:
- 576 01b2 73686F72 		.ascii	"short int\000"
+ 576 01af 73686F72 		.ascii	"short int\000"
  576      7420696E 
  576      7400
  577              	.LASF5:
- 578 01bc 6C6F6E67 		.ascii	"long unsigned int\000"
+ 578 01b9 6C6F6E67 		.ascii	"long unsigned int\000"
  578      20756E73 
  578      69676E65 
  578      6420696E 
  578      7400
  579              	.LASF10:
- 580 01ce 646F7562 		.ascii	"double\000"
+ 580 01cb 646F7562 		.ascii	"double\000"
  580      6C6500
  581              	.LASF3:
- 582 01d5 73686F72 		.ascii	"short unsigned int\000"
+ 582 01d2 73686F72 		.ascii	"short unsigned int\000"
  582      7420756E 
  582      7369676E 
  582      65642069 
  582      6E7400
  583              	.LASF0:
- 584 01e8 7369676E 		.ascii	"signed char\000"
+ 584 01e5 7369676E 		.ascii	"signed char\000"
  584      65642063 
  584      68617200 
  585              	.LASF18:
- 586 01f4 73634352 		.ascii	"scCR2Reg\000"
+ 586 01f1 73634352 		.ascii	"scCR2Reg\000"
  586      32526567 
  586      00
  587              	.LASF14:
- 588 01fd 6C6F6E67 		.ascii	"long double\000"
+ 588 01fa 6C6F6E67 		.ascii	"long double\000"
  588      20646F75 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmIONNo.s 			page 15
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBV0tQc.s 			page 15
 
 
  588      626C6500 
  589              	.LASF22:
- 590 0209 53636F70 		.ascii	"ScopeC_Buf_RestoreConfig\000"
+ 590 0206 53636F70 		.ascii	"ScopeC_Buf_RestoreConfig\000"
  590      65435F42 
  590      75665F52 
  590      6573746F 
  590      7265436F 
  591              	.LASF28:
- 592 0222 53636F70 		.ascii	"ScopeC_Buf_backup\000"
+ 592 021f 53636F70 		.ascii	"ScopeC_Buf_backup\000"
  592      65435F42 
  592      75665F62 
  592      61636B75 
  592      7000
  593              	.LASF13:
- 594 0234 72656738 		.ascii	"reg8\000"
+ 594 0231 72656738 		.ascii	"reg8\000"
  594      00
  595              	.LASF26:
- 596 0239 47656E65 		.ascii	"Generated_Source\\PSoC5\\ScopeC_Buf_PM.c\000"
+ 596 0236 47656E65 		.ascii	"Generated_Source\\PSoC5\\ScopeC_Buf_PM.c\000"
  596      72617465 
  596      645F536F 
  596      75726365 
  596      5C50536F 
  597              	.LASF15:
- 598 0260 73697A65 		.ascii	"sizetype\000"
+ 598 025d 73697A65 		.ascii	"sizetype\000"
  598      74797065 
  598      00
  599              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

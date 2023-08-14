@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
   22:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** ********************************************************************************/
   23:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
   24:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #include "PWM_Sample_Buffer.h"
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 2
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 2
 
 
   25:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
   51              		.loc 1 61 0
   52 0010 034B     		ldr	r3, .L3
   53 0012 0122     		movs	r2, #1
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 3
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 3
 
 
   54 0014 1A70     		strb	r2, [r3]
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
   84 0002 82B0     		sub	sp, sp, #8
   85              		.cfi_def_cfa_offset 16
   86 0004 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 4
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 4
 
 
   87              		.cfi_def_cfa_register 7
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  127:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #else /* (PWM_Sample_Buffer_Resolution == 16)*/
  128:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             /* Set FIFO 0 to 1 byte register for period */
  129:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_AUX_CONTROLDP0 |= (PWM_Sample_Buffer_AUX_CTRL_FIFO0_CLR);
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 5
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 5
 
 
  100              		.loc 1 129 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  156:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
  157:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #if (PWM_Sample_Buffer_UsingFixedFunction)
  158:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         /* Globally Enable the Fixed Function Block chosen */
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 6
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 6
 
 
  159:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_GLOBAL_ENABLE |= PWM_Sample_Buffer_BLOCK_EN_MASK;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  161              	.LFE1:
  162              		.size	PWM_Sample_Buffer_Init, .-PWM_Sample_Buffer_Init
  163              		.section	.text.PWM_Sample_Buffer_Enable,"ax",%progbits
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 7
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 7
 
 
  164              		.align	2
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  188 0012 1370     		strb	r3, [r2]
  210:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #endif /* (PWM_Sample_Buffer_UseControl || PWM_Sample_Buffer_UsingFixedFunction) */
  211:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** }
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 8
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 8
 
 
  189              		.loc 1 211 0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  220              		.cfi_offset 7, -4
  221 0002 00AF     		add	r7, sp, #0
  222              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 9
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 9
 
 
  235:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #if (PWM_Sample_Buffer_UseControl || PWM_Sample_Buffer_UsingFixedFunction)
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  257:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *
  258:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         * Parameters:
  259:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *  comparemode:  The new compare mode for the PWM output. Use the compare types
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 10
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 10
 
 
  260:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *                defined in the H file as input arguments.
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  314:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *
  315:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         * Summary:
  316:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *  This function writes the Compare Mode for the pwm or pwm1 output
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 11
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 11
 
 
  317:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  371:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_CONTROL &= ((uint8)(~PWM_Sample_Buffer_CTRL_CMPMODE2_MASK)); /*Clear 
  372:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_CONTROL |= comparemodemasked;
  373:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (PWM_Sample_Buffer_UseControl) */
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 12
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 12
 
 
  374:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  275 0012 0C37     		adds	r7, r7, #12
  276              		.cfi_def_cfa_offset 4
  277 0014 BD46     		mov	sp, r7
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 13
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 13
 
 
  278              		.cfi_def_cfa_register 13
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  309              		.loc 1 430 0
  310 0004 044B     		ldr	r3, .L19
  311 0006 1B78     		ldrb	r3, [r3]
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 14
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 14
 
 
  431:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  342              		.cfi_startproc
  343              		@ args = 0, pretend = 0, frame = 0
  344              		@ frame_needed = 1, uses_anonymous_args = 0
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 15
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 15
 
 
  345 0000 80B5     		push	{r7, lr}
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  476:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *           will result in the counter remaining at zero.
  477:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
  478:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Return:
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 16
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 16
 
 
  479:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  None
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  420              	.LFB8:
  490:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
  491:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #if (PWM_Sample_Buffer_UseOneCompareMode)
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 17
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 17
 
 
  492:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  528:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #else
  529:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 CY_SET_REG16(PWM_Sample_Buffer_COMPARE2_LSB_PTR, (compare + 1u));
  530:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #endif /* (PWM_Sample_Buffer_UsingFixedFunction) */
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 18
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 18
 
 
  531:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (PWM_Sample_Buffer_PWMMode == PWM_Sample_Buffer__B_PWM__DITHER) */
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  559:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             CY_SET_REG16(PWM_Sample_Buffer_COMPARE1_LSB_PTR, (uint16)compare);
  560:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #else
  561:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             CY_SET_REG16(PWM_Sample_Buffer_COMPARE1_LSB_PTR, compare);
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 19
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 19
 
 
  562:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (PWM_Sample_Buffer_UsingFixedFunction) */
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  616:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             CY_SET_REG8(PWM_Sample_Buffer_DEADBAND_COUNT_PTR, deadtime);
  617:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #else
  618:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             /* Otherwise the data has to be masked and offset */
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 20
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 20
 
 
  619:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             /* Clear existing data */
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  673:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Summary:
  674:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  This function configures the interrupts mask control of theinterrupt
  675:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  source status register.
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 21
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 21
 
 
  676:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  507              	PWM_Sample_Buffer_ReadStatusRegister:
  508              	.LFB10:
  688:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 22
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 22
 
 
  689:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  537              	.LFE10:
  538              		.size	PWM_Sample_Buffer_ReadStatusRegister, .-PWM_Sample_Buffer_ReadStatusRegister
  539              		.section	.text.PWM_Sample_Buffer_ReadControlRegister,"ax",%progbits
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 23
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 23
 
 
  540              		.align	2
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  565              		.loc 1 743 0
  566 000e 1846     		mov	r0, r3
  567 0010 0C37     		adds	r7, r7, #12
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 24
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 24
 
 
  568              		.cfi_def_cfa_offset 4
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  599 0002 83B0     		sub	sp, sp, #12
  600              		.cfi_def_cfa_offset 16
  601 0004 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 25
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 25
 
 
  602              		.cfi_def_cfa_register 7
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  788:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
  789:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *******************************************************************************/
  790:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     uint16 PWM_Sample_Buffer_ReadCapture(void) 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 26
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 26
 
 
  791:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  807:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  set to Dither mode, Center Aligned mode, or One Output mode.
  808:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
  809:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Parameters:
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 27
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 27
 
 
  810:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  None
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  826:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
  827:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
  828:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /*******************************************************************************
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 28
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 28
 
 
  829:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Function Name: PWM_Sample_Buffer_ReadCompare1
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  883:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *******************************************************************************/
  884:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** uint16 PWM_Sample_Buffer_ReadPeriod(void) 
  885:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** {
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 29
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 29
 
 
  711              		.loc 1 885 0
@@ -1729,46 +1729,46 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  750 000b 01       		.uleb128 0x1
  751 000c 06000000 		.4byte	.LASF41
  752 0010 0C       		.byte	0xc
- 753 0011 86030000 		.4byte	.LASF42
- 754 0015 2C020000 		.4byte	.LASF43
+ 753 0011 83030000 		.4byte	.LASF42
+ 754 0015 E8020000 		.4byte	.LASF43
  755 0019 00000000 		.4byte	.Ldebug_ranges0+0
  756 001d 00000000 		.4byte	0
  757 0021 00000000 		.4byte	.Ldebug_line0
  758 0025 02       		.uleb128 0x2
  759 0026 01       		.byte	0x1
  760 0027 06       		.byte	0x6
- 761 0028 19040000 		.4byte	.LASF0
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 30
+ 761 0028 16040000 		.4byte	.LASF0
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 30
 
 
  762 002c 02       		.uleb128 0x2
  763 002d 01       		.byte	0x1
  764 002e 08       		.byte	0x8
- 765 002f CB010000 		.4byte	.LASF1
+ 765 002f C4010000 		.4byte	.LASF1
  766 0033 02       		.uleb128 0x2
  767 0034 02       		.byte	0x2
  768 0035 05       		.byte	0x5
- 769 0036 B1030000 		.4byte	.LASF2
+ 769 0036 AE030000 		.4byte	.LASF2
  770 003a 02       		.uleb128 0x2
  771 003b 02       		.byte	0x2
  772 003c 07       		.byte	0x7
- 773 003d 25010000 		.4byte	.LASF3
+ 773 003d 1E010000 		.4byte	.LASF3
  774 0041 02       		.uleb128 0x2
  775 0042 04       		.byte	0x4
  776 0043 05       		.byte	0x5
- 777 0044 1C010000 		.4byte	.LASF4
+ 777 0044 15010000 		.4byte	.LASF4
  778 0048 02       		.uleb128 0x2
  779 0049 04       		.byte	0x4
  780 004a 07       		.byte	0x7
- 781 004b DE010000 		.4byte	.LASF5
+ 781 004b D7010000 		.4byte	.LASF5
  782 004f 02       		.uleb128 0x2
  783 0050 08       		.byte	0x8
  784 0051 05       		.byte	0x5
- 785 0052 4B030000 		.4byte	.LASF6
+ 785 0052 48030000 		.4byte	.LASF6
  786 0056 02       		.uleb128 0x2
  787 0057 08       		.byte	0x8
  788 0058 07       		.byte	0x7
- 789 0059 EE020000 		.4byte	.LASF7
+ 789 0059 A7020000 		.4byte	.LASF7
  790 005d 03       		.uleb128 0x3
  791 005e 04       		.byte	0x4
  792 005f 05       		.byte	0x5
@@ -1776,34 +1776,34 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  794 0064 02       		.uleb128 0x2
  795 0065 04       		.byte	0x4
  796 0066 07       		.byte	0x7
- 797 0067 E1020000 		.4byte	.LASF8
+ 797 0067 9A020000 		.4byte	.LASF8
  798 006b 04       		.uleb128 0x4
- 799 006c F0010000 		.4byte	.LASF9
+ 799 006c E9010000 		.4byte	.LASF9
  800 0070 02       		.byte	0x2
  801 0071 E901     		.2byte	0x1e9
  802 0073 2C000000 		.4byte	0x2c
  803 0077 04       		.uleb128 0x4
- 804 0078 A5020000 		.4byte	.LASF10
+ 804 0078 5E020000 		.4byte	.LASF10
  805 007c 02       		.byte	0x2
  806 007d EA01     		.2byte	0x1ea
  807 007f 3A000000 		.4byte	0x3a
  808 0083 02       		.uleb128 0x2
  809 0084 04       		.byte	0x4
  810 0085 04       		.byte	0x4
- 811 0086 BD010000 		.4byte	.LASF11
+ 811 0086 B6010000 		.4byte	.LASF11
  812 008a 02       		.uleb128 0x2
  813 008b 08       		.byte	0x8
  814 008c 04       		.byte	0x4
- 815 008d 25020000 		.4byte	.LASF12
+ 815 008d 1E020000 		.4byte	.LASF12
  816 0091 02       		.uleb128 0x2
  817 0092 01       		.byte	0x1
  818 0093 08       		.byte	0x8
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 31
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 31
 
 
- 819 0094 08040000 		.4byte	.LASF13
+ 819 0094 05040000 		.4byte	.LASF13
  820 0098 04       		.uleb128 0x4
- 821 0099 D9010000 		.4byte	.LASF14
+ 821 0099 D2010000 		.4byte	.LASF14
  822 009d 02       		.byte	0x2
  823 009e 9302     		.2byte	0x293
  824 00a0 A4000000 		.4byte	0xa4
@@ -1819,13 +1819,13 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  834 00ba 02       		.uleb128 0x2
  835 00bb 08       		.byte	0x8
  836 00bc 04       		.byte	0x4
- 837 00bd 0D040000 		.4byte	.LASF16
+ 837 00bd 0A040000 		.4byte	.LASF16
  838 00c1 02       		.uleb128 0x2
  839 00c2 04       		.byte	0x4
  840 00c3 07       		.byte	0x7
- 841 00c4 42030000 		.4byte	.LASF17
+ 841 00c4 3F030000 		.4byte	.LASF17
  842 00c8 06       		.uleb128 0x6
- 843 00c9 9B000000 		.4byte	.LASF20
+ 843 00c9 94000000 		.4byte	.LASF20
  844 00cd 01       		.byte	0x1
  845 00ce 37       		.byte	0x37
  846 00cf 00000000 		.4byte	.LFB0
@@ -1833,7 +1833,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  848 00d7 01       		.uleb128 0x1
  849 00d8 9C       		.byte	0x9c
  850 00d9 07       		.uleb128 0x7
- 851 00da AC020000 		.4byte	.LASF23
+ 851 00da 65020000 		.4byte	.LASF23
  852 00de 01       		.byte	0x1
  853 00df 54       		.byte	0x54
  854 00e0 00000000 		.4byte	.LFB1
@@ -1842,7 +1842,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  857 00e9 9C       		.byte	0x9c
  858 00ea 0B010000 		.4byte	0x10b
  859 00ee 08       		.uleb128 0x8
- 860 00ef 3D030000 		.4byte	.LASF18
+ 860 00ef E3020000 		.4byte	.LASF18
  861 00f3 01       		.byte	0x1
  862 00f4 57       		.byte	0x57
  863 00f5 6B000000 		.4byte	0x6b
@@ -1850,7 +1850,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  865 00fa 91       		.byte	0x91
  866 00fb 77       		.sleb128 -9
  867 00fc 08       		.uleb128 0x8
- 868 00fd 54010000 		.4byte	.LASF19
+ 868 00fd 4D010000 		.4byte	.LASF19
  869 0101 01       		.byte	0x1
  870 0102 5D       		.byte	0x5d
  871 0103 6B000000 		.4byte	0x6b
@@ -1858,11 +1858,11 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  873 0108 91       		.byte	0x91
  874 0109 76       		.sleb128 -10
  875 010a 00       		.byte	0
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 32
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 32
 
 
  876 010b 09       		.uleb128 0x9
- 877 010c EF030000 		.4byte	.LASF21
+ 877 010c EC030000 		.4byte	.LASF21
  878 0110 01       		.byte	0x1
  879 0111 C7       		.byte	0xc7
  880 0112 00000000 		.4byte	.LFB2
@@ -1870,7 +1870,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  882 011a 01       		.uleb128 0x1
  883 011b 9C       		.byte	0x9c
  884 011c 09       		.uleb128 0x9
- 885 011d D8030000 		.4byte	.LASF22
+ 885 011d D5030000 		.4byte	.LASF22
  886 0121 01       		.byte	0x1
  887 0122 E9       		.byte	0xe9
  888 0123 00000000 		.4byte	.LFB3
@@ -1878,7 +1878,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  890 012b 01       		.uleb128 0x1
  891 012c 9C       		.byte	0x9c
  892 012d 0A       		.uleb128 0xa
- 893 012e 59030000 		.4byte	.LASF24
+ 893 012e 56030000 		.4byte	.LASF24
  894 0132 01       		.byte	0x1
  895 0133 9301     		.2byte	0x193
  896 0135 00000000 		.4byte	.LFB4
@@ -1887,7 +1887,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  899 013e 9C       		.byte	0x9c
  900 013f 53010000 		.4byte	0x153
  901 0143 0B       		.uleb128 0xb
- 902 0144 C3010000 		.4byte	.LASF27
+ 902 0144 BC010000 		.4byte	.LASF27
  903 0148 01       		.byte	0x1
  904 0149 9301     		.2byte	0x193
  905 014b 77000000 		.4byte	0x77
@@ -1896,7 +1896,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  908 0151 76       		.sleb128 -10
  909 0152 00       		.byte	0
  910 0153 0C       		.uleb128 0xc
- 911 0154 F7000000 		.4byte	.LASF33
+ 911 0154 F0000000 		.4byte	.LASF33
  912 0158 01       		.byte	0x1
  913 0159 A901     		.2byte	0x1a9
  914 015b 77000000 		.4byte	0x77
@@ -1905,7 +1905,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  917 0167 01       		.uleb128 0x1
  918 0168 9C       		.byte	0x9c
  919 0169 0D       		.uleb128 0xd
- 920 016a 38010000 		.4byte	.LASF25
+ 920 016a 31010000 		.4byte	.LASF25
  921 016e 01       		.byte	0x1
  922 016f C501     		.2byte	0x1c5
  923 0171 00000000 		.4byte	.LFB6
@@ -1913,19 +1913,19 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  925 0179 01       		.uleb128 0x1
  926 017a 9C       		.byte	0x9c
  927 017b 0A       		.uleb128 0xa
- 928 017c 1F030000 		.4byte	.LASF26
+ 928 017c C5020000 		.4byte	.LASF26
  929 0180 01       		.byte	0x1
  930 0181 E201     		.2byte	0x1e2
  931 0183 00000000 		.4byte	.LFB7
  932 0187 20000000 		.4byte	.LFE7-.LFB7
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 33
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 33
 
 
  933 018b 01       		.uleb128 0x1
  934 018c 9C       		.byte	0x9c
  935 018d A1010000 		.4byte	0x1a1
  936 0191 0B       		.uleb128 0xb
- 937 0192 15010000 		.4byte	.LASF28
+ 937 0192 0E010000 		.4byte	.LASF28
  938 0196 01       		.byte	0x1
  939 0197 E201     		.2byte	0x1e2
  940 0199 77000000 		.4byte	0x77
@@ -1934,7 +1934,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  943 019f 76       		.sleb128 -10
  944 01a0 00       		.byte	0
  945 01a1 0A       		.uleb128 0xa
- 946 01a2 86020000 		.4byte	.LASF29
+ 946 01a2 3F020000 		.4byte	.LASF29
  947 01a6 01       		.byte	0x1
  948 01a7 0402     		.2byte	0x204
  949 01a9 00000000 		.4byte	.LFB8
@@ -1943,7 +1943,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  952 01b2 9C       		.byte	0x9c
  953 01b3 C7010000 		.4byte	0x1c7
  954 01b7 0B       		.uleb128 0xb
- 955 01b8 25040000 		.4byte	.LASF30
+ 955 01b8 22040000 		.4byte	.LASF30
  956 01bc 01       		.byte	0x1
  957 01bd 0402     		.2byte	0x204
  958 01bf 77000000 		.4byte	0x77
@@ -1952,7 +1952,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  961 01c5 76       		.sleb128 -10
  962 01c6 00       		.byte	0
  963 01c7 0A       		.uleb128 0xa
- 964 01c8 9A010000 		.4byte	.LASF31
+ 964 01c8 93010000 		.4byte	.LASF31
  965 01cc 01       		.byte	0x1
  966 01cd AC02     		.2byte	0x2ac
  967 01cf 00000000 		.4byte	.LFB9
@@ -1961,7 +1961,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  970 01d8 9C       		.byte	0x9c
  971 01d9 ED010000 		.4byte	0x1ed
  972 01dd 0B       		.uleb128 0xb
- 973 01de 78030000 		.4byte	.LASF32
+ 973 01de 75030000 		.4byte	.LASF32
  974 01e2 01       		.byte	0x1
  975 01e3 AC02     		.2byte	0x2ac
  976 01e5 6B000000 		.4byte	0x6b
@@ -1970,7 +1970,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  979 01eb 77       		.sleb128 -9
  980 01ec 00       		.byte	0
  981 01ed 0C       		.uleb128 0xc
- 982 01ee 75010000 		.4byte	.LASF34
+ 982 01ee 6E010000 		.4byte	.LASF34
  983 01f2 01       		.byte	0x1
  984 01f3 C702     		.2byte	0x2c7
  985 01f5 6B000000 		.4byte	0x6b
@@ -1978,11 +1978,11 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  987 01fd 18000000 		.4byte	.LFE10-.LFB10
  988 0201 01       		.uleb128 0x1
  989 0202 9C       		.byte	0x9c
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 34
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 34
 
 
  990 0203 0E       		.uleb128 0xe
- 991 0204 D1000000 		.4byte	.LASF44
+ 991 0204 CA000000 		.4byte	.LASF44
  992 0208 01       		.byte	0x1
  993 0209 E102     		.2byte	0x2e1
  994 020b 6B000000 		.4byte	0x6b
@@ -1992,7 +1992,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  998 0218 9C       		.byte	0x9c
  999 0219 2D020000 		.4byte	0x22d
  1000 021d 0F       		.uleb128 0xf
- 1001 021e 94000000 		.4byte	.LASF35
+ 1001 021e BE020000 		.4byte	.LASF35
  1002 0222 01       		.byte	0x1
  1003 0223 E302     		.2byte	0x2e3
  1004 0225 6B000000 		.4byte	0x6b
@@ -2001,7 +2001,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  1007 022b 77       		.sleb128 -9
  1008 022c 00       		.byte	0
  1009 022d 0A       		.uleb128 0xa
- 1010 022e FE010000 		.4byte	.LASF36
+ 1010 022e F7010000 		.4byte	.LASF36
  1011 0232 01       		.byte	0x1
  1012 0233 FD02     		.2byte	0x2fd
  1013 0235 00000000 		.4byte	.LFB12
@@ -2010,7 +2010,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  1016 023e 9C       		.byte	0x9c
  1017 023f 53020000 		.4byte	0x253
  1018 0243 0B       		.uleb128 0xb
- 1019 0244 F6010000 		.4byte	.LASF37
+ 1019 0244 EF010000 		.4byte	.LASF37
  1020 0248 01       		.byte	0x1
  1021 0249 FD02     		.2byte	0x2fd
  1022 024b 6B000000 		.4byte	0x6b
@@ -2019,7 +2019,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  1025 0251 77       		.sleb128 -9
  1026 0252 00       		.byte	0
  1027 0253 0C       		.uleb128 0xc
- 1028 0254 C3020000 		.4byte	.LASF38
+ 1028 0254 7C020000 		.4byte	.LASF38
  1029 0258 01       		.byte	0x1
  1030 0259 1603     		.2byte	0x316
  1031 025b 77000000 		.4byte	0x77
@@ -2028,7 +2028,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  1034 0267 01       		.uleb128 0x1
  1035 0268 9C       		.byte	0x9c
  1036 0269 0C       		.uleb128 0xc
- 1037 026a B3000000 		.4byte	.LASF39
+ 1037 026a AC000000 		.4byte	.LASF39
  1038 026e 01       		.byte	0x1
  1039 026f 3003     		.2byte	0x330
  1040 0271 77000000 		.4byte	0x77
@@ -2037,8 +2037,8 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  1043 027d 01       		.uleb128 0x1
  1044 027e 9C       		.byte	0x9c
  1045 027f 0C       		.uleb128 0xc
- 1046 0280 BB030000 		.4byte	.LASF40
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 35
+ 1046 0280 B8030000 		.4byte	.LASF40
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 35
 
 
  1047 0284 01       		.byte	0x1
@@ -2049,7 +2049,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  1052 0293 01       		.uleb128 0x1
  1053 0294 9C       		.byte	0x9c
  1054 0295 10       		.uleb128 0x10
- 1055 0296 05030000 		.4byte	.LASF45
+ 1055 0296 25020000 		.4byte	.LASF45
  1056 029a 01       		.byte	0x1
  1057 029b 20       		.byte	0x20
  1058 029c 6B000000 		.4byte	0x6b
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  1101 0024 0B       		.uleb128 0xb
  1102 0025 03       		.uleb128 0x3
  1103 0026 08       		.uleb128 0x8
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 36
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 36
 
 
  1104 0027 00       		.byte	0
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  1158 005e 3B       		.uleb128 0x3b
  1159 005f 0B       		.uleb128 0xb
  1160 0060 27       		.uleb128 0x27
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 37
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 37
 
 
  1161 0061 19       		.uleb128 0x19
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  1215 0099 3F       		.uleb128 0x3f
  1216 009a 19       		.uleb128 0x19
  1217 009b 03       		.uleb128 0x3
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 38
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 38
 
 
  1218 009c 0E       		.uleb128 0xe
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  1272 00d3 18       		.uleb128 0x18
  1273 00d4 9742     		.uleb128 0x2117
  1274 00d6 19       		.uleb128 0x19
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 39
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 39
 
 
  1275 00d7 00       		.byte	0
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  1329 010f 00       		.byte	0
  1330 0110 03       		.uleb128 0x3
  1331 0111 0E       		.uleb128 0xe
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 40
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 40
 
 
  1332 0112 3A       		.uleb128 0x3a
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  1386 0058 00000000 		.4byte	.LFB9
  1387 005c 20000000 		.4byte	.LFE9-.LFB9
  1388 0060 00000000 		.4byte	.LFB10
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 41
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 41
 
 
  1389 0064 18000000 		.4byte	.LFE10-.LFB10
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  1440      FB0E0D00 
  1440      01010101 
  1441              	.LASF15:
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 42
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 42
 
 
  1442 0000 72656731 		.ascii	"reg16\000"
@@ -2479,235 +2479,235 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 1
  1446      74696F6E 
  1446      2D736563 
  1446      74696F6E 
- 1447              	.LASF35:
- 1448 0094 72657375 		.ascii	"result\000"
- 1448      6C7400
- 1449              	.LASF20:
- 1450 009b 50574D5F 		.ascii	"PWM_Sample_Buffer_Start\000"
+ 1447              	.LASF20:
+ 1448 0094 50574D5F 		.ascii	"PWM_Sample_Buffer_Start\000"
+ 1448      53616D70 
+ 1448      6C655F42 
+ 1448      75666665 
+ 1448      725F5374 
+ 1449              	.LASF39:
+ 1450 00ac 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadCompare\000"
  1450      53616D70 
  1450      6C655F42 
  1450      75666665 
- 1450      725F5374 
- 1451              	.LASF39:
- 1452 00b3 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadCompare\000"
+ 1450      725F5265 
+ 1451              	.LASF44:
+ 1452 00ca 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadControlRegister\000"
  1452      53616D70 
  1452      6C655F42 
  1452      75666665 
  1452      725F5265 
- 1453              	.LASF44:
- 1454 00d1 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadControlRegister\000"
+ 1453              	.LASF33:
+ 1454 00f0 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadCounter\000"
  1454      53616D70 
  1454      6C655F42 
  1454      75666665 
  1454      725F5265 
- 1455              	.LASF33:
- 1456 00f7 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadCounter\000"
- 1456      53616D70 
- 1456      6C655F42 
- 1456      75666665 
- 1456      725F5265 
- 1457              	.LASF28:
- 1458 0115 70657269 		.ascii	"period\000"
- 1458      6F6400
- 1459              	.LASF4:
- 1460 011c 6C6F6E67 		.ascii	"long int\000"
- 1460      20696E74 
- 1460      00
- 1461              	.LASF3:
- 1462 0125 73686F72 		.ascii	"short unsigned int\000"
- 1462      7420756E 
- 1462      7369676E 
- 1462      65642069 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 43
+ 1455              	.LASF28:
+ 1456 010e 70657269 		.ascii	"period\000"
+ 1456      6F6400
+ 1457              	.LASF4:
+ 1458 0115 6C6F6E67 		.ascii	"long int\000"
+ 1458      20696E74 
+ 1458      00
+ 1459              	.LASF3:
+ 1460 011e 73686F72 		.ascii	"short unsigned int\000"
+ 1460      7420756E 
+ 1460      7369676E 
+ 1460      65642069 
+ 1460      6E7400
+ 1461              	.LASF25:
+ 1462 0131 50574D5F 		.ascii	"PWM_Sample_Buffer_ClearFIFO\000"
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 43
 
 
- 1462      6E7400
- 1463              	.LASF25:
- 1464 0138 50574D5F 		.ascii	"PWM_Sample_Buffer_ClearFIFO\000"
+ 1462      53616D70 
+ 1462      6C655F42 
+ 1462      75666665 
+ 1462      725F436C 
+ 1463              	.LASF19:
+ 1464 014d 50574D5F 		.ascii	"PWM_Sample_Buffer_interruptState\000"
  1464      53616D70 
  1464      6C655F42 
  1464      75666665 
- 1464      725F436C 
- 1465              	.LASF19:
- 1466 0154 50574D5F 		.ascii	"PWM_Sample_Buffer_interruptState\000"
+ 1464      725F696E 
+ 1465              	.LASF34:
+ 1466 016e 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadStatusRegister\000"
  1466      53616D70 
  1466      6C655F42 
  1466      75666665 
- 1466      725F696E 
- 1467              	.LASF34:
- 1468 0175 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadStatusRegister\000"
+ 1466      725F5265 
+ 1467              	.LASF31:
+ 1468 0193 50574D5F 		.ascii	"PWM_Sample_Buffer_SetInterruptMode\000"
  1468      53616D70 
  1468      6C655F42 
  1468      75666665 
- 1468      725F5265 
- 1469              	.LASF31:
- 1470 019a 50574D5F 		.ascii	"PWM_Sample_Buffer_SetInterruptMode\000"
- 1470      53616D70 
- 1470      6C655F42 
- 1470      75666665 
- 1470      725F5365 
- 1471              	.LASF11:
- 1472 01bd 666C6F61 		.ascii	"float\000"
- 1472      7400
- 1473              	.LASF27:
- 1474 01c3 636F756E 		.ascii	"counter\000"
- 1474      74657200 
- 1475              	.LASF1:
- 1476 01cb 756E7369 		.ascii	"unsigned char\000"
- 1476      676E6564 
- 1476      20636861 
- 1476      7200
- 1477              	.LASF14:
- 1478 01d9 72656738 		.ascii	"reg8\000"
- 1478      00
- 1479              	.LASF5:
- 1480 01de 6C6F6E67 		.ascii	"long unsigned int\000"
- 1480      20756E73 
- 1480      69676E65 
- 1480      6420696E 
- 1480      7400
- 1481              	.LASF9:
- 1482 01f0 75696E74 		.ascii	"uint8\000"
- 1482      3800
- 1483              	.LASF37:
- 1484 01f6 636F6E74 		.ascii	"control\000"
- 1484      726F6C00 
- 1485              	.LASF36:
- 1486 01fe 50574D5F 		.ascii	"PWM_Sample_Buffer_WriteControlRegister\000"
- 1486      53616D70 
- 1486      6C655F42 
- 1486      75666665 
- 1486      725F5772 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 44
+ 1468      725F5365 
+ 1469              	.LASF11:
+ 1470 01b6 666C6F61 		.ascii	"float\000"
+ 1470      7400
+ 1471              	.LASF27:
+ 1472 01bc 636F756E 		.ascii	"counter\000"
+ 1472      74657200 
+ 1473              	.LASF1:
+ 1474 01c4 756E7369 		.ascii	"unsigned char\000"
+ 1474      676E6564 
+ 1474      20636861 
+ 1474      7200
+ 1475              	.LASF14:
+ 1476 01d2 72656738 		.ascii	"reg8\000"
+ 1476      00
+ 1477              	.LASF5:
+ 1478 01d7 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1478      20756E73 
+ 1478      69676E65 
+ 1478      6420696E 
+ 1478      7400
+ 1479              	.LASF9:
+ 1480 01e9 75696E74 		.ascii	"uint8\000"
+ 1480      3800
+ 1481              	.LASF37:
+ 1482 01ef 636F6E74 		.ascii	"control\000"
+ 1482      726F6C00 
+ 1483              	.LASF36:
+ 1484 01f7 50574D5F 		.ascii	"PWM_Sample_Buffer_WriteControlRegister\000"
+ 1484      53616D70 
+ 1484      6C655F42 
+ 1484      75666665 
+ 1484      725F5772 
+ 1485              	.LASF12:
+ 1486 021e 646F7562 		.ascii	"double\000"
+ 1486      6C6500
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 44
 
 
- 1487              	.LASF12:
- 1488 0225 646F7562 		.ascii	"double\000"
- 1488      6C6500
- 1489              	.LASF43:
- 1490 022c 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\Twelve"
- 1490      73657273 
- 1490      5C6D6572 
- 1490      63655C44 
- 1490      6F63756D 
- 1491 0259 2D626974 		.ascii	"-bit-4-chan\\ScopeKitProg\\Scope_KitProg.cydsn\000"
- 1491      2D342D63 
- 1491      68616E5C 
- 1491      53636F70 
- 1491      654B6974 
- 1492              	.LASF29:
- 1493 0286 50574D5F 		.ascii	"PWM_Sample_Buffer_WriteCompare\000"
- 1493      53616D70 
- 1493      6C655F42 
- 1493      75666665 
- 1493      725F5772 
- 1494              	.LASF10:
- 1495 02a5 75696E74 		.ascii	"uint16\000"
- 1495      313600
- 1496              	.LASF23:
- 1497 02ac 50574D5F 		.ascii	"PWM_Sample_Buffer_Init\000"
- 1497      53616D70 
- 1497      6C655F42 
- 1497      75666665 
- 1497      725F496E 
- 1498              	.LASF38:
- 1499 02c3 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadCapture\000"
- 1499      53616D70 
- 1499      6C655F42 
- 1499      75666665 
- 1499      725F5265 
- 1500              	.LASF8:
- 1501 02e1 756E7369 		.ascii	"unsigned int\000"
- 1501      676E6564 
- 1501      20696E74 
- 1501      00
- 1502              	.LASF7:
- 1503 02ee 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1503      206C6F6E 
- 1503      6720756E 
- 1503      7369676E 
- 1503      65642069 
- 1504              	.LASF45:
- 1505 0305 50574D5F 		.ascii	"PWM_Sample_Buffer_initVar\000"
- 1505      53616D70 
- 1505      6C655F42 
- 1505      75666665 
- 1505      725F696E 
- 1506              	.LASF26:
- 1507 031f 50574D5F 		.ascii	"PWM_Sample_Buffer_WritePeriod\000"
- 1507      53616D70 
- 1507      6C655F42 
- 1507      75666665 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 45
+ 1487              	.LASF45:
+ 1488 0225 50574D5F 		.ascii	"PWM_Sample_Buffer_initVar\000"
+ 1488      53616D70 
+ 1488      6C655F42 
+ 1488      75666665 
+ 1488      725F696E 
+ 1489              	.LASF29:
+ 1490 023f 50574D5F 		.ascii	"PWM_Sample_Buffer_WriteCompare\000"
+ 1490      53616D70 
+ 1490      6C655F42 
+ 1490      75666665 
+ 1490      725F5772 
+ 1491              	.LASF10:
+ 1492 025e 75696E74 		.ascii	"uint16\000"
+ 1492      313600
+ 1493              	.LASF23:
+ 1494 0265 50574D5F 		.ascii	"PWM_Sample_Buffer_Init\000"
+ 1494      53616D70 
+ 1494      6C655F42 
+ 1494      75666665 
+ 1494      725F496E 
+ 1495              	.LASF38:
+ 1496 027c 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadCapture\000"
+ 1496      53616D70 
+ 1496      6C655F42 
+ 1496      75666665 
+ 1496      725F5265 
+ 1497              	.LASF8:
+ 1498 029a 756E7369 		.ascii	"unsigned int\000"
+ 1498      676E6564 
+ 1498      20696E74 
+ 1498      00
+ 1499              	.LASF7:
+ 1500 02a7 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1500      206C6F6E 
+ 1500      6720756E 
+ 1500      7369676E 
+ 1500      65642069 
+ 1501              	.LASF35:
+ 1502 02be 72657375 		.ascii	"result\000"
+ 1502      6C7400
+ 1503              	.LASF26:
+ 1504 02c5 50574D5F 		.ascii	"PWM_Sample_Buffer_WritePeriod\000"
+ 1504      53616D70 
+ 1504      6C655F42 
+ 1504      75666665 
+ 1504      725F5772 
+ 1505              	.LASF18:
+ 1506 02e3 6374726C 		.ascii	"ctrl\000"
+ 1506      00
+ 1507              	.LASF43:
+ 1508 02e8 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\CY8CKI"
+ 1508      73657273 
+ 1508      5C6D6572 
+ 1508      63655C44 
+ 1508      6F63756D 
+ 1509 0315 542D3034 		.ascii	"T-044\\ScopeKitProg\\Scope_CY8KIT-044.cydsn\000"
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 45
 
 
- 1507      725F5772 
- 1508              	.LASF18:
- 1509 033d 6374726C 		.ascii	"ctrl\000"
- 1509      00
+ 1509      345C5363 
+ 1509      6F70654B 
+ 1509      69745072 
+ 1509      6F675C53 
  1510              	.LASF17:
- 1511 0342 73697A65 		.ascii	"sizetype\000"
+ 1511 033f 73697A65 		.ascii	"sizetype\000"
  1511      74797065 
  1511      00
  1512              	.LASF6:
- 1513 034b 6C6F6E67 		.ascii	"long long int\000"
+ 1513 0348 6C6F6E67 		.ascii	"long long int\000"
  1513      206C6F6E 
  1513      6720696E 
  1513      7400
  1514              	.LASF24:
- 1515 0359 50574D5F 		.ascii	"PWM_Sample_Buffer_WriteCounter\000"
+ 1515 0356 50574D5F 		.ascii	"PWM_Sample_Buffer_WriteCounter\000"
  1515      53616D70 
  1515      6C655F42 
  1515      75666665 
  1515      725F5772 
  1516              	.LASF32:
- 1517 0378 696E7465 		.ascii	"interruptMode\000"
+ 1517 0375 696E7465 		.ascii	"interruptMode\000"
  1517      72727570 
  1517      744D6F64 
  1517      6500
  1518              	.LASF42:
- 1519 0386 47656E65 		.ascii	"Generated_Source\\PSoC5\\PWM_Sample_Buffer.c\000"
+ 1519 0383 47656E65 		.ascii	"Generated_Source\\PSoC5\\PWM_Sample_Buffer.c\000"
  1519      72617465 
  1519      645F536F 
  1519      75726365 
  1519      5C50536F 
  1520              	.LASF2:
- 1521 03b1 73686F72 		.ascii	"short int\000"
+ 1521 03ae 73686F72 		.ascii	"short int\000"
  1521      7420696E 
  1521      7400
  1522              	.LASF40:
- 1523 03bb 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadPeriod\000"
+ 1523 03b8 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadPeriod\000"
  1523      53616D70 
  1523      6C655F42 
  1523      75666665 
  1523      725F5265 
  1524              	.LASF22:
- 1525 03d8 50574D5F 		.ascii	"PWM_Sample_Buffer_Stop\000"
+ 1525 03d5 50574D5F 		.ascii	"PWM_Sample_Buffer_Stop\000"
  1525      53616D70 
  1525      6C655F42 
  1525      75666665 
  1525      725F5374 
  1526              	.LASF21:
- 1527 03ef 50574D5F 		.ascii	"PWM_Sample_Buffer_Enable\000"
+ 1527 03ec 50574D5F 		.ascii	"PWM_Sample_Buffer_Enable\000"
  1527      53616D70 
  1527      6C655F42 
  1527      75666665 
  1527      725F456E 
  1528              	.LASF13:
- 1529 0408 63686172 		.ascii	"char\000"
+ 1529 0405 63686172 		.ascii	"char\000"
  1529      00
  1530              	.LASF16:
- 1531 040d 6C6F6E67 		.ascii	"long double\000"
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccOqTtJT.s 			page 46
+ 1531 040a 6C6F6E67 		.ascii	"long double\000"
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccZtxNZO.s 			page 46
 
 
  1531      20646F75 
  1531      626C6500 
  1532              	.LASF0:
- 1533 0419 7369676E 		.ascii	"signed char\000"
+ 1533 0416 7369676E 		.ascii	"signed char\000"
  1533      65642063 
  1533      68617200 
  1534              	.LASF30:
- 1535 0425 636F6D70 		.ascii	"compare\000"
+ 1535 0422 636F6D70 		.ascii	"compare\000"
  1535      61726500 
  1536              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

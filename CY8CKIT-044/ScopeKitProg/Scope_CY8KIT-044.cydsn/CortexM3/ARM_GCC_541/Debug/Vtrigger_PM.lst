@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBBd1dl.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
   24:Generated_Source\PSoC5/Vtrigger_PM.c **** /*******************************************************************************
   25:Generated_Source\PSoC5/Vtrigger_PM.c **** * Function Name: Vtrigger_SaveConfig
   26:Generated_Source\PSoC5/Vtrigger_PM.c **** ********************************************************************************
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 2
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBBd1dl.s 			page 2
 
 
   27:Generated_Source\PSoC5/Vtrigger_PM.c **** * Summary:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
   69 0028 805B0040 		.word	1073765248
   70 002c 00000000 		.word	Vtrigger_backup
   71              		.cfi_endproc
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 3
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBBd1dl.s 			page 3
 
 
   72              	.LFE0:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  105 001e 14D0     		beq	.L8
   65:Generated_Source\PSoC5/Vtrigger_PM.c ****         {
   66:Generated_Source\PSoC5/Vtrigger_PM.c ****             Vtrigger_Strobe &= (uint8)(~Vtrigger_STRB_MASK);
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 4
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBBd1dl.s 			page 4
 
 
  106              		.loc 1 66 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  150 0064 805B0040 		.word	1073765248
  151 0068 00000000 		.word	Vtrigger_backup
  152              		.cfi_endproc
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 5
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBBd1dl.s 			page 5
 
 
  153              	.LFE1:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  181 0012 074B     		ldr	r3, .L15+4
  182 0014 0122     		movs	r2, #1
  183 0016 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 6
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBBd1dl.s 			page 6
 
 
  184 0018 02E0     		b	.L14
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  126:Generated_Source\PSoC5/Vtrigger_PM.c **** *
  127:Generated_Source\PSoC5/Vtrigger_PM.c **** * Global variables:
  128:Generated_Source\PSoC5/Vtrigger_PM.c **** *  Vtrigger_backup.enableState:  Is used to restore the enable state of 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 7
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBBd1dl.s 			page 7
 
 
  129:Generated_Source\PSoC5/Vtrigger_PM.c **** *  block on wakeup from sleep mode.
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  252              	.Letext0:
  253              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
  254              		.file 3 "Generated_Source\\PSoC5\\Vtrigger.h"
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 8
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBBd1dl.s 			page 8
 
 
  255              		.section	.debug_info,"",%progbits
@@ -430,15 +430,15 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  261 000b 01       		.uleb128 0x1
  262 000c 00000000 		.4byte	.LASF21
  263 0010 0C       		.byte	0xc
- 264 0011 10020000 		.4byte	.LASF22
- 265 0015 29010000 		.4byte	.LASF23
+ 264 0011 0D020000 		.4byte	.LASF22
+ 265 0015 63010000 		.4byte	.LASF23
  266 0019 00000000 		.4byte	.Ldebug_ranges0+0
  267 001d 00000000 		.4byte	0
  268 0021 00000000 		.4byte	.Ldebug_line0
  269 0025 02       		.uleb128 0x2
  270 0026 01       		.byte	0x1
  271 0027 06       		.byte	0x6
- 272 0028 04020000 		.4byte	.LASF0
+ 272 0028 01020000 		.4byte	.LASF0
  273 002c 02       		.uleb128 0x2
  274 002d 01       		.byte	0x1
  275 002e 08       		.byte	0x8
@@ -446,7 +446,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  277 0033 02       		.uleb128 0x2
  278 0034 02       		.byte	0x2
  279 0035 05       		.byte	0x5
- 280 0036 D0010000 		.4byte	.LASF2
+ 280 0036 CD010000 		.4byte	.LASF2
  281 003a 02       		.uleb128 0x2
  282 003b 02       		.byte	0x2
  283 003c 07       		.byte	0x7
@@ -454,7 +454,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  285 0041 02       		.uleb128 0x2
  286 0042 04       		.byte	0x4
  287 0043 05       		.byte	0x5
- 288 0044 EF010000 		.4byte	.LASF4
+ 288 0044 EC010000 		.4byte	.LASF4
  289 0048 02       		.uleb128 0x2
  290 0049 04       		.byte	0x4
  291 004a 07       		.byte	0x7
@@ -462,11 +462,11 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  293 004f 02       		.uleb128 0x2
  294 0050 08       		.byte	0x8
  295 0051 05       		.byte	0x5
- 296 0052 BD010000 		.4byte	.LASF6
+ 296 0052 BA010000 		.4byte	.LASF6
  297 0056 02       		.uleb128 0x2
  298 0057 08       		.byte	0x8
  299 0058 07       		.byte	0x7
- 300 0059 A6010000 		.4byte	.LASF7
+ 300 0059 4C010000 		.4byte	.LASF7
  301 005d 03       		.uleb128 0x3
  302 005e 04       		.byte	0x4
  303 005f 05       		.byte	0x5
@@ -474,11 +474,11 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  305 0064 02       		.uleb128 0x2
  306 0065 04       		.byte	0x4
  307 0066 07       		.byte	0x7
- 308 0067 99010000 		.4byte	.LASF8
+ 308 0067 3F010000 		.4byte	.LASF8
  309 006b 04       		.uleb128 0x4
- 310 006c DA010000 		.4byte	.LASF12
+ 310 006c D7010000 		.4byte	.LASF12
  311 0070 02       		.byte	0x2
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 9
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBBd1dl.s 			page 9
 
 
  312 0071 E901     		.2byte	0x1e9
@@ -494,7 +494,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  322 0085 02       		.uleb128 0x2
  323 0086 01       		.byte	0x1
  324 0087 08       		.byte	0x8
- 325 0088 CB010000 		.4byte	.LASF11
+ 325 0088 C8010000 		.4byte	.LASF11
  326 008c 04       		.uleb128 0x4
  327 008d E8000000 		.4byte	.LASF13
  328 0091 02       		.byte	0x2
@@ -508,7 +508,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  336 00a0 25       		.byte	0x25
  337 00a1 BE000000 		.4byte	0xbe
  338 00a5 07       		.uleb128 0x7
- 339 00a6 F8010000 		.4byte	.LASF14
+ 339 00a6 F5010000 		.4byte	.LASF14
  340 00aa 03       		.byte	0x3
  341 00ab 27       		.byte	0x27
  342 00ac 6B000000 		.4byte	0x6b
@@ -521,7 +521,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  349 00bc 01       		.byte	0x1
  350 00bd 00       		.byte	0
  351 00be 08       		.uleb128 0x8
- 352 00bf 83010000 		.4byte	.LASF16
+ 352 00bf 29010000 		.4byte	.LASF16
  353 00c3 03       		.byte	0x3
  354 00c4 29       		.byte	0x29
  355 00c5 9D000000 		.4byte	0x9d
@@ -538,14 +538,14 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  366 00df 01       		.byte	0x1
  367 00e0 3C       		.byte	0x3c
  368 00e1 00000000 		.4byte	.LFB1
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 10
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBBd1dl.s 			page 10
 
 
  369 00e5 6C000000 		.4byte	.LFE1-.LFB1
  370 00e9 01       		.uleb128 0x1
  371 00ea 9C       		.byte	0x9c
  372 00eb 0A       		.uleb128 0xa
- 373 00ec E0010000 		.4byte	.LASF19
+ 373 00ec DD010000 		.4byte	.LASF19
  374 00f0 01       		.byte	0x1
  375 00f1 5F       		.byte	0x5f
  376 00f2 00000000 		.4byte	.LFB2
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  423 0018 3E       		.uleb128 0x3e
  424 0019 0B       		.uleb128 0xb
  425 001a 03       		.uleb128 0x3
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 11
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBBd1dl.s 			page 11
 
 
  426 001b 0E       		.uleb128 0xe
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  480 0051 3B       		.uleb128 0x3b
  481 0052 0B       		.uleb128 0xb
  482 0053 49       		.uleb128 0x49
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 12
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBBd1dl.s 			page 12
 
 
  483 0054 13       		.uleb128 0x13
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  537 008b 11       		.uleb128 0x11
  538 008c 01       		.uleb128 0x1
  539 008d 12       		.uleb128 0x12
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 13
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBBd1dl.s 			page 13
 
 
  540 008e 06       		.uleb128 0x6
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  594              	.Ldebug_line0:
  595 0000 B0000000 		.section	.debug_str,"MS",%progbits,1
  595      02005600 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 14
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBBd1dl.s 			page 14
 
 
  595      00000201 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  615      69676E65 
  615      6420696E 
  615      7400
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 15
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBBd1dl.s 			page 15
 
 
  616              	.LASF3:
@@ -855,71 +855,71 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 1
  620              	.LASF10:
  621 0122 646F7562 		.ascii	"double\000"
  621      6C6500
- 622              	.LASF23:
- 623 0129 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\Twelve"
- 623      73657273 
- 623      5C6D6572 
- 623      63655C44 
- 623      6F63756D 
- 624 0156 2D626974 		.ascii	"-bit-4-chan\\ScopeKitProg\\Scope_KitProg.cydsn\000"
- 624      2D342D63 
- 624      68616E5C 
- 624      53636F70 
- 624      654B6974 
- 625              	.LASF16:
- 626 0183 56747269 		.ascii	"Vtrigger_backupStruct\000"
- 626      67676572 
- 626      5F626163 
- 626      6B757053 
- 626      74727563 
- 627              	.LASF8:
- 628 0199 756E7369 		.ascii	"unsigned int\000"
- 628      676E6564 
- 628      20696E74 
- 628      00
- 629              	.LASF7:
- 630 01a6 6C6F6E67 		.ascii	"long long unsigned int\000"
- 630      206C6F6E 
- 630      6720756E 
- 630      7369676E 
- 630      65642069 
+ 622              	.LASF16:
+ 623 0129 56747269 		.ascii	"Vtrigger_backupStruct\000"
+ 623      67676572 
+ 623      5F626163 
+ 623      6B757053 
+ 623      74727563 
+ 624              	.LASF8:
+ 625 013f 756E7369 		.ascii	"unsigned int\000"
+ 625      676E6564 
+ 625      20696E74 
+ 625      00
+ 626              	.LASF7:
+ 627 014c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 627      206C6F6E 
+ 627      6720756E 
+ 627      7369676E 
+ 627      65642069 
+ 628              	.LASF23:
+ 629 0163 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\CY8CKI"
+ 629      73657273 
+ 629      5C6D6572 
+ 629      63655C44 
+ 629      6F63756D 
+ 630 0190 542D3034 		.ascii	"T-044\\ScopeKitProg\\Scope_CY8KIT-044.cydsn\000"
+ 630      345C5363 
+ 630      6F70654B 
+ 630      69745072 
+ 630      6F675C53 
  631              	.LASF6:
- 632 01bd 6C6F6E67 		.ascii	"long long int\000"
+ 632 01ba 6C6F6E67 		.ascii	"long long int\000"
  632      206C6F6E 
  632      6720696E 
  632      7400
  633              	.LASF11:
- 634 01cb 63686172 		.ascii	"char\000"
+ 634 01c8 63686172 		.ascii	"char\000"
  634      00
  635              	.LASF2:
- 636 01d0 73686F72 		.ascii	"short int\000"
+ 636 01cd 73686F72 		.ascii	"short int\000"
  636      7420696E 
  636      7400
  637              	.LASF12:
- 638 01da 75696E74 		.ascii	"uint8\000"
+ 638 01d7 75696E74 		.ascii	"uint8\000"
  638      3800
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccE12Wqs.s 			page 16
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccBBd1dl.s 			page 16
 
 
  639              	.LASF19:
- 640 01e0 56747269 		.ascii	"Vtrigger_Sleep\000"
+ 640 01dd 56747269 		.ascii	"Vtrigger_Sleep\000"
  640      67676572 
  640      5F536C65 
  640      657000
  641              	.LASF4:
- 642 01ef 6C6F6E67 		.ascii	"long int\000"
+ 642 01ec 6C6F6E67 		.ascii	"long int\000"
  642      20696E74 
  642      00
  643              	.LASF14:
- 644 01f8 656E6162 		.ascii	"enableState\000"
+ 644 01f5 656E6162 		.ascii	"enableState\000"
  644      6C655374 
  644      61746500 
  645              	.LASF0:
- 646 0204 7369676E 		.ascii	"signed char\000"
+ 646 0201 7369676E 		.ascii	"signed char\000"
  646      65642063 
  646      68617200 
  647              	.LASF22:
- 648 0210 47656E65 		.ascii	"Generated_Source\\PSoC5\\Vtrigger_PM.c\000"
+ 648 020d 47656E65 		.ascii	"Generated_Source\\PSoC5\\Vtrigger_PM.c\000"
  648      72617465 
  648      645F536F 
  648      75726365 

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
   29:Generated_Source\PSoC5/cyfitter_cfg.c **** #if defined(__GNUC__) || defined(__ARMCC_VERSION)
   30:Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CYPACKED 
   31:Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CYPACKED_ATTR __attribute__ ((packed))
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 2
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 2
 
 
   32:Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CYALIGNED __attribute__ ((aligned))
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
   86:Generated_Source\PSoC5/cyfitter_cfg.c **** {
   27              		.loc 1 86 0
   28              		.cfi_startproc
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 3
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 3
 
 
   29              		@ args = 0, pretend = 0, frame = 8
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
   76 0006 F860     		str	r0, [r7, #12]
   77 0008 B960     		str	r1, [r7, #8]
   78 000a 7A60     		str	r2, [r7, #4]
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 4
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 4
 
 
   94:Generated_Source\PSoC5/cyfitter_cfg.c **** 	(void)memcpy(dest, src, n);
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  124 0018 1037     		adds	r7, r7, #16
  125              		.cfi_def_cfa_offset 8
  126 001a BD46     		mov	sp, r7
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 5
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 5
 
 
  127              		.cfi_def_cfa_register 13
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  147              		.cfi_offset 7, -4
  148 0002 83B0     		sub	sp, sp, #12
  149              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 6
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 6
 
 
  150 0004 00AF     		add	r7, sp, #0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  174:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_7 Address: CYREG_PRT12_DM0 Size (bytes): 8 */
  175:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_7_VAL ((const uint8 CYFAR *)(0x48000654u + CYAPP_ECC_OFFSET))
  176:Generated_Source\PSoC5/cyfitter_cfg.c **** 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 7
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 7
 
 
  177:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_8 Address: CYREG_PRT15_DR Size (bytes): 10 */
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  188              	.L10:
  189              	.LBB2:
  210:Generated_Source\PSoC5/cyfitter_cfg.c **** 	{
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 8
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 8
 
 
  211:Generated_Source\PSoC5/cyfitter_cfg.c **** 		uint32 baseAddr = addr_table[i];
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  235 005c E7D1     		bne	.L9
  236              	.LBE2:
  209:Generated_Source\PSoC5/cyfitter_cfg.c **** 	{
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 9
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 9
 
 
  237              		.loc 1 209 0 discriminator 2
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  267              		.loc 1 241 0
  268              		.cfi_startproc
  269              		@ args = 0, pretend = 0, frame = 8
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 10
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 10
 
 
  270              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  255:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG16((void CYFAR *)(CYREG_CLKDIST_DCFG4_CFG0), 0x008Fu);
  311              		.loc 1 255 0
  312 0036 3E4B     		ldr	r3, .L16+32
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 11
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 11
 
 
  313 0038 8F22     		movs	r2, #143
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  352 0076 1A80     		strh	r2, [r3]	@ movhi
  271:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG16((void CYFAR *)(CYREG_FASTCLK_PLL_CFG0), 0x1251u);
  353              		.loc 1 271 0
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 12
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 12
 
 
  354 0078 384B     		ldr	r3, .L16+76
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  396 00c0 7B68     		ldr	r3, [r7, #4]
  397 00c2 002B     		cmp	r3, #0
  398 00c4 02D1     		bne	.L15
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 13
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 13
 
 
  281:Generated_Source\PSoC5/cyfitter_cfg.c **** 	{
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  437 0104 DBB2     		uxtb	r3, r3
  438 0106 1370     		strb	r3, [r2]
  297:Generated_Source\PSoC5/cyfitter_cfg.c **** }
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 14
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 14
 
 
  439              		.loc 1 297 0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  304:Generated_Source\PSoC5/cyfitter_cfg.c **** * Function Name: AnalogSetDefault
  305:Generated_Source\PSoC5/cyfitter_cfg.c **** ********************************************************************************
  306:Generated_Source\PSoC5/cyfitter_cfg.c **** *
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 15
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 15
 
 
  307:Generated_Source\PSoC5/cyfitter_cfg.c **** * Summary:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  522 002c 1370     		strb	r3, [r2]
  326:Generated_Source\PSoC5/cyfitter_cfg.c **** 	/* Disable PRES while setting up SAR voltage reference */
  327:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_RESET_CR4), (cr4 | 0x03u));
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 16
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 16
 
 
  523              		.loc 1 327 0
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  567              		.loc 1 337 0
  568 0078 2D4B     		ldr	r3, .L19+52
  569 007a 0122     		movs	r2, #1
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 17
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 17
 
 
  570 007c 1A70     		strb	r2, [r3]
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  613 00bc 2022     		movs	r2, #32
  614 00be 1A70     		strb	r2, [r3]
  349:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG16((void CYFAR *)CYREG_OPAMP0_MX, 0x0106u);
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 18
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 18
 
 
  615              		.loc 1 349 0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  661 010c 6F580040 		.word	1073764463
  662 0110 1D510040 		.word	1073762589
  663 0114 2D510040 		.word	1073762605
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 19
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 19
 
 
  664 0118 3C510040 		.word	1073762620
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  377:Generated_Source\PSoC5/cyfitter_cfg.c **** void SetAnalogRoutingPumps(uint8 enabled)
  378:Generated_Source\PSoC5/cyfitter_cfg.c **** {
  699              		.loc 1 378 0
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 20
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 20
 
 
  700              		.cfi_startproc
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  743 0034 80BC     		pop	{r7}
  744              		.cfi_restore 7
  745              		.cfi_def_cfa_offset 0
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 21
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 21
 
 
  746 0036 7047     		bx	lr
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  409:Generated_Source\PSoC5/cyfitter_cfg.c **** ********************************************************************************
  410:Generated_Source\PSoC5/cyfitter_cfg.c **** * Summary:
  411:Generated_Source\PSoC5/cyfitter_cfg.c **** *  This function is used to set a particular channel as active on the AMux.
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 22
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 22
 
 
  412:Generated_Source\PSoC5/cyfitter_cfg.c **** *
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  820 0038 0133     		adds	r3, r3, #1
  821 003a FB71     		strb	r3, [r7, #7]
  427:Generated_Source\PSoC5/cyfitter_cfg.c **** 		*AMux_1__addrTable[channel] |= AMux_1__maskTable[channel];
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 23
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 23
 
 
  822              		.loc 1 427 0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  440:Generated_Source\PSoC5/cyfitter_cfg.c **** *
  441:Generated_Source\PSoC5/cyfitter_cfg.c **** * Return:
  442:Generated_Source\PSoC5/cyfitter_cfg.c **** *   void
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 24
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 24
 
 
  443:Generated_Source\PSoC5/cyfitter_cfg.c **** *
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  908 0040 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
  909 0042 0A4A     		ldr	r2, .L34
  910 0044 52F82330 		ldr	r3, [r2, r3, lsl #2]
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 25
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 25
 
 
  911 0048 FA79     		ldrb	r2, [r7, #7]	@ zero_extendqisi2
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  963              		.align	2
  964              		.global	AMux_2_Set
  965              		.thumb
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 26
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 26
 
 
  966              		.thumb_func
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  487:Generated_Source\PSoC5/cyfitter_cfg.c **** 		channel += channel;
  988              		.loc 1 487 0
  989 0010 FA79     		ldrb	r2, [r7, #7]
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 27
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 27
 
 
  990 0012 FB79     		ldrb	r3, [r7, #7]
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1039              	.L39:
  1040 0064 00000000 		.word	AMux_2__addrTable
  1041 0068 00000000 		.word	AMux_2__maskTable
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 28
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 28
 
 
  1042              		.cfi_endproc
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  513:Generated_Source\PSoC5/cyfitter_cfg.c **** 		*AMux_2__addrTable[channel] &= (uint8)~AMux_2__maskTable[channel];
  1076              		.loc 1 513 0
  1077 0018 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 29
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 29
 
 
  1078 001a 144A     		ldr	r2, .L44
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1128 0070 00000000 		.word	AMux_2__maskTable
  1129              		.cfi_endproc
  1130              	.LFE11:
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 30
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 30
 
 
  1131              		.size	AMux_2_Unset, .-AMux_2_Unset
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  540:Generated_Source\PSoC5/cyfitter_cfg.c **** *
  541:Generated_Source\PSoC5/cyfitter_cfg.c **** * Parameters:  
  542:Generated_Source\PSoC5/cyfitter_cfg.c **** *   channel - The mux channel input to set as active
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 31
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 31
 
 
  543:Generated_Source\PSoC5/cyfitter_cfg.c **** *
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1204              		.loc 1 555 0
  1205 003c FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
  1206 003e 094A     		ldr	r2, .L49
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 32
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 32
 
 
  1207 0040 52F82330 		ldr	r3, [r2, r3, lsl #2]
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  571:Generated_Source\PSoC5/cyfitter_cfg.c **** *
  572:Generated_Source\PSoC5/cyfitter_cfg.c **** *******************************************************************************/
  573:Generated_Source\PSoC5/cyfitter_cfg.c **** void Amux_Trigger_Unset(uint8 channel)
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 33
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 33
 
 
  574:Generated_Source\PSoC5/cyfitter_cfg.c **** {
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1293 0048 FA79     		ldrb	r2, [r7, #7]	@ zero_extendqisi2
  1294 004a 0849     		ldr	r1, .L54
  1295 004c 51F82220 		ldr	r2, [r1, r2, lsl #2]
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 34
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 34
 
 
  1296 0050 1178     		ldrb	r1, [r2]	@ zero_extendqisi2
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  598:Generated_Source\PSoC5/cyfitter_cfg.c **** * Return:
  599:Generated_Source\PSoC5/cyfitter_cfg.c **** *   void
  600:Generated_Source\PSoC5/cyfitter_cfg.c **** *
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 35
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 35
 
 
  601:Generated_Source\PSoC5/cyfitter_cfg.c **** *******************************************************************************/
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1357              	.L58:
  1358              	.LBB4:
  631:Generated_Source\PSoC5/cyfitter_cfg.c **** 		{
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 36
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 36
 
 
  632:Generated_Source\PSoC5/cyfitter_cfg.c **** 			const cfg_memset_t CYCODE * CYDATA ms = &cfg_memset_list[i];
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1402 005c 0421     		movs	r1, #4
  1403 005e 4A48     		ldr	r0, .L59+12
  1404 0060 FFF7FEFF 		bl	CYMEMZERO
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 37
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 37
 
 
  641:Generated_Source\PSoC5/cyfitter_cfg.c **** 		CYMEMZERO((void CYFAR *)(CYREG_PHUB_CFGMEM1_CFG0), 4u);
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1447 00b8 DBB2     		uxtb	r3, r3
  1448 00ba 1370     		strb	r3, [r2]
  653:Generated_Source\PSoC5/cyfitter_cfg.c **** 		CY_SET_XTND_REG8((void CYFAR *)CYREG_PM_AVAIL_CR2, CY_GET_XTND_REG8((void CYFAR *)CYREG_PM_AVAIL_
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 38
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 38
 
 
  1449              		.loc 1 653 0
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1494 0126 0822     		movs	r2, #8
  1495 0128 1946     		mov	r1, r3
  1496 012a 2548     		ldr	r0, .L59+68
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 39
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 39
 
 
  1497 012c FFF7FEFF 		bl	CYCONFIGCPY
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1534              		.cfi_def_cfa_offset 8
  1535 0176 BD46     		mov	sp, r7
  1536              		.cfi_def_cfa_register 13
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 40
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 40
 
 
  1537              		@ sp needed
@@ -2398,14 +2398,14 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1591 0004 0400     		.2byte	0x4
  1592 0006 00000000 		.4byte	.Ldebug_abbrev0
  1593 000a 04       		.byte	0x4
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 41
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 41
 
 
  1594 000b 01       		.uleb128 0x1
- 1595 000c 2B000000 		.4byte	.LASF62
+ 1595 000c 82000000 		.4byte	.LASF62
  1596 0010 0C       		.byte	0xc
- 1597 0011 BD030000 		.4byte	.LASF63
- 1598 0015 74010000 		.4byte	.LASF64
+ 1597 0011 BA030000 		.4byte	.LASF63
+ 1598 0015 10000000 		.4byte	.LASF64
  1599 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1600 001d 00000000 		.4byte	0
  1601 0021 00000000 		.4byte	.Ldebug_line0
@@ -2414,65 +2414,65 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1604 0027 05       		.byte	0x5
  1605 0028 696E7400 		.ascii	"int\000"
  1606 002c 03       		.uleb128 0x3
- 1607 002d 10000000 		.4byte	.LASF12
+ 1607 002d 67000000 		.4byte	.LASF12
  1608 0031 02       		.byte	0x2
  1609 0032 D8       		.byte	0xd8
  1610 0033 37000000 		.4byte	0x37
  1611 0037 04       		.uleb128 0x4
  1612 0038 04       		.byte	0x4
  1613 0039 07       		.byte	0x7
- 1614 003a DD010000 		.4byte	.LASF0
+ 1614 003a DA010000 		.4byte	.LASF0
  1615 003e 04       		.uleb128 0x4
  1616 003f 08       		.byte	0x8
  1617 0040 05       		.byte	0x5
- 1618 0041 05010000 		.4byte	.LASF1
+ 1618 0041 5C010000 		.4byte	.LASF1
  1619 0045 04       		.uleb128 0x4
  1620 0046 08       		.byte	0x8
  1621 0047 04       		.byte	0x4
- 1622 0048 70020000 		.4byte	.LASF2
+ 1622 0048 6D020000 		.4byte	.LASF2
  1623 004c 04       		.uleb128 0x4
  1624 004d 01       		.byte	0x1
  1625 004e 06       		.byte	0x6
- 1626 004f 13010000 		.4byte	.LASF3
+ 1626 004f 6A010000 		.4byte	.LASF3
  1627 0053 04       		.uleb128 0x4
  1628 0054 01       		.byte	0x1
  1629 0055 08       		.byte	0x8
- 1630 0056 08030000 		.4byte	.LASF4
+ 1630 0056 05030000 		.4byte	.LASF4
  1631 005a 04       		.uleb128 0x4
  1632 005b 02       		.byte	0x2
  1633 005c 05       		.byte	0x5
- 1634 005d 16030000 		.4byte	.LASF5
+ 1634 005d 13030000 		.4byte	.LASF5
  1635 0061 04       		.uleb128 0x4
  1636 0062 02       		.byte	0x2
  1637 0063 07       		.byte	0x7
- 1638 0064 1B020000 		.4byte	.LASF6
+ 1638 0064 18020000 		.4byte	.LASF6
  1639 0068 04       		.uleb128 0x4
  1640 0069 04       		.byte	0x4
  1641 006a 05       		.byte	0x5
- 1642 006b 3E010000 		.4byte	.LASF7
+ 1642 006b 95010000 		.4byte	.LASF7
  1643 006f 04       		.uleb128 0x4
  1644 0070 04       		.byte	0x4
  1645 0071 07       		.byte	0x7
- 1646 0072 EA010000 		.4byte	.LASF8
+ 1646 0072 E7010000 		.4byte	.LASF8
  1647 0076 04       		.uleb128 0x4
  1648 0077 08       		.byte	0x8
  1649 0078 07       		.byte	0x7
- 1650 0079 C4000000 		.4byte	.LASF9
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 42
+ 1650 0079 1B010000 		.4byte	.LASF9
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 42
 
 
  1651 007d 04       		.uleb128 0x4
  1652 007e 04       		.byte	0x4
  1653 007f 07       		.byte	0x7
- 1654 0080 67020000 		.4byte	.LASF10
+ 1654 0080 64020000 		.4byte	.LASF10
  1655 0084 05       		.uleb128 0x5
  1656 0085 04       		.byte	0x4
  1657 0086 04       		.uleb128 0x4
  1658 0087 01       		.byte	0x1
  1659 0088 08       		.byte	0x8
- 1660 0089 43030000 		.4byte	.LASF11
+ 1660 0089 40030000 		.4byte	.LASF11
  1661 008d 06       		.uleb128 0x6
- 1662 008e 4D010000 		.4byte	.LASF13
+ 1662 008e A4010000 		.4byte	.LASF13
  1663 0092 03       		.byte	0x3
  1664 0093 E901     		.2byte	0x1e9
  1665 0095 53000000 		.4byte	0x53
@@ -2482,34 +2482,34 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1669 009f EA01     		.2byte	0x1ea
  1670 00a1 61000000 		.4byte	0x61
  1671 00a5 06       		.uleb128 0x6
- 1672 00a6 67010000 		.4byte	.LASF15
+ 1672 00a6 BE010000 		.4byte	.LASF15
  1673 00aa 03       		.byte	0x3
  1674 00ab EB01     		.2byte	0x1eb
  1675 00ad 6F000000 		.4byte	0x6f
  1676 00b1 04       		.uleb128 0x4
  1677 00b2 04       		.byte	0x4
  1678 00b3 04       		.byte	0x4
- 1679 00b4 FD020000 		.4byte	.LASF16
+ 1679 00b4 FA020000 		.4byte	.LASF16
  1680 00b8 04       		.uleb128 0x4
  1681 00b9 08       		.byte	0x8
  1682 00ba 04       		.byte	0x4
- 1683 00bb 53010000 		.4byte	.LASF17
+ 1683 00bb AA010000 		.4byte	.LASF17
  1684 00bf 06       		.uleb128 0x6
- 1685 00c0 03030000 		.4byte	.LASF18
+ 1685 00c0 00030000 		.4byte	.LASF18
  1686 00c4 03       		.byte	0x3
  1687 00c5 9302     		.2byte	0x293
  1688 00c7 CB000000 		.4byte	0xcb
  1689 00cb 07       		.uleb128 0x7
  1690 00cc 8D000000 		.4byte	0x8d
  1691 00d0 06       		.uleb128 0x6
- 1692 00d1 47010000 		.4byte	.LASF19
+ 1692 00d1 9E010000 		.4byte	.LASF19
  1693 00d5 03       		.byte	0x3
  1694 00d6 9402     		.2byte	0x294
  1695 00d8 DC000000 		.4byte	0xdc
  1696 00dc 07       		.uleb128 0x7
  1697 00dd 99000000 		.4byte	0x99
  1698 00e1 06       		.uleb128 0x6
- 1699 00e2 3F020000 		.4byte	.LASF20
+ 1699 00e2 3C020000 		.4byte	.LASF20
  1700 00e6 03       		.byte	0x3
  1701 00e7 9502     		.2byte	0x295
  1702 00e9 ED000000 		.4byte	0xed
@@ -2518,31 +2518,31 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1705 00f2 08       		.uleb128 0x8
  1706 00f3 02       		.byte	0x2
  1707 00f4 01       		.byte	0x1
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 43
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 43
 
 
  1708 00f5 A2       		.byte	0xa2
  1709 00f6 13010000 		.4byte	0x113
  1710 00fa 09       		.uleb128 0x9
- 1711 00fb 6B030000 		.4byte	.LASF21
+ 1711 00fb 68030000 		.4byte	.LASF21
  1712 00ff 01       		.byte	0x1
  1713 0100 A4       		.byte	0xa4
  1714 0101 8D000000 		.4byte	0x8d
  1715 0105 00       		.byte	0
  1716 0106 09       		.uleb128 0x9
- 1717 0107 D7010000 		.4byte	.LASF22
+ 1717 0107 D4010000 		.4byte	.LASF22
  1718 010b 01       		.byte	0x1
  1719 010c A5       		.byte	0xa5
  1720 010d 8D000000 		.4byte	0x8d
  1721 0111 01       		.byte	0x1
  1722 0112 00       		.byte	0
  1723 0113 03       		.uleb128 0x3
- 1724 0114 30030000 		.4byte	.LASF23
+ 1724 0114 2D030000 		.4byte	.LASF23
  1725 0118 01       		.byte	0x1
  1726 0119 A6       		.byte	0xa6
  1727 011a F2000000 		.4byte	0xf2
  1728 011e 0A       		.uleb128 0xa
- 1729 011f 1F010000 		.4byte	.LASF24
+ 1729 011f 76010000 		.4byte	.LASF24
  1730 0123 01       		.byte	0x1
  1731 0124 55       		.byte	0x55
  1732 0125 00000000 		.4byte	.LFB0
@@ -2568,7 +2568,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1752 014a 70       		.sleb128 -16
  1753 014b 00       		.byte	0
  1754 014c 0A       		.uleb128 0xa
- 1755 014d 9F030000 		.4byte	.LASF25
+ 1755 014d 9C030000 		.4byte	.LASF25
  1756 0151 01       		.byte	0x1
  1757 0152 5C       		.byte	0x5c
  1758 0153 00000000 		.4byte	.LFB1
@@ -2577,8 +2577,8 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1761 015c 9C       		.byte	0x9c
  1762 015d 8A010000 		.4byte	0x18a
  1763 0161 0C       		.uleb128 0xc
- 1764 0162 F8020000 		.4byte	.LASF26
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 44
+ 1764 0162 F5020000 		.4byte	.LASF26
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 44
 
 
  1765 0166 01       		.byte	0x1
@@ -2609,7 +2609,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1790 018c 90010000 		.4byte	0x190
  1791 0190 0E       		.uleb128 0xe
  1792 0191 0A       		.uleb128 0xa
- 1793 0192 45020000 		.4byte	.LASF27
+ 1793 0192 42020000 		.4byte	.LASF27
  1794 0196 01       		.byte	0x1
  1795 0197 63       		.byte	0x63
  1796 0198 00000000 		.4byte	.LFB2
@@ -2618,7 +2618,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1799 01a1 9C       		.byte	0x9c
  1800 01a2 CF010000 		.4byte	0x1cf
  1801 01a6 0C       		.uleb128 0xc
- 1802 01a7 F8020000 		.4byte	.LASF26
+ 1802 01a7 F5020000 		.4byte	.LASF26
  1803 01ab 01       		.byte	0x1
  1804 01ac 63       		.byte	0x63
  1805 01ad 84000000 		.4byte	0x84
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1819 01c5 01       		.byte	0x1
  1820 01c6 63       		.byte	0x63
  1821 01c7 2C000000 		.4byte	0x2c
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 45
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 45
 
 
  1822 01cb 02       		.uleb128 0x2
@@ -2646,7 +2646,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1824 01cd 6C       		.sleb128 -20
  1825 01ce 00       		.byte	0
  1826 01cf 0F       		.uleb128 0xf
- 1827 01d0 17000000 		.4byte	.LASF28
+ 1827 01d0 6E000000 		.4byte	.LASF28
  1828 01d4 01       		.byte	0x1
  1829 01d5 87       		.byte	0x87
  1830 01d6 00000000 		.4byte	.LFB3
@@ -2655,7 +2655,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1833 01df 9C       		.byte	0x9c
  1834 01e0 F3010000 		.4byte	0x1f3
  1835 01e4 0C       		.uleb128 0xc
- 1836 01e5 34010000 		.4byte	.LASF29
+ 1836 01e5 8B010000 		.4byte	.LASF29
  1837 01e9 01       		.byte	0x1
  1838 01ea 87       		.byte	0x87
  1839 01eb 8D000000 		.4byte	0x8d
@@ -2664,7 +2664,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1842 01f1 77       		.sleb128 -9
  1843 01f2 00       		.byte	0
  1844 01f3 0F       		.uleb128 0xf
- 1845 01f4 04020000 		.4byte	.LASF30
+ 1845 01f4 01020000 		.4byte	.LASF30
  1846 01f8 01       		.byte	0x1
  1847 01f9 CD       		.byte	0xcd
  1848 01fa 00000000 		.4byte	.LFB4
@@ -2673,7 +2673,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1851 0203 9C       		.byte	0x9c
  1852 0204 63020000 		.4byte	0x263
  1853 0208 0C       		.uleb128 0xc
- 1854 0209 DB000000 		.4byte	.LASF31
+ 1854 0209 32010000 		.4byte	.LASF31
  1855 020d 01       		.byte	0x1
  1856 020e CD       		.byte	0xcd
  1857 020f 63020000 		.4byte	0x263
@@ -2681,7 +2681,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1859 0214 91       		.byte	0x91
  1860 0215 64       		.sleb128 -28
  1861 0216 0C       		.uleb128 0xc
- 1862 0217 B9000000 		.4byte	.LASF32
+ 1862 0217 10010000 		.4byte	.LASF32
  1863 021b 01       		.byte	0x1
  1864 021c CD       		.byte	0xcd
  1865 021d 6E020000 		.4byte	0x26e
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1876 022f 74       		.sleb128 -12
  1877 0230 10       		.uleb128 0x10
  1878 0231 6A00     		.ascii	"j\000"
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 46
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 46
 
 
  1879 0233 01       		.byte	0x1
@@ -2719,7 +2719,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1894 0251 91       		.byte	0x91
  1895 0252 68       		.sleb128 -24
  1896 0253 12       		.uleb128 0x12
- 1897 0254 6E010000 		.4byte	.LASF34
+ 1897 0254 C5010000 		.4byte	.LASF34
  1898 0258 01       		.byte	0x1
  1899 0259 D4       		.byte	0xd4
  1900 025a 8D000000 		.4byte	0x8d
@@ -2739,7 +2739,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1914 0274 13       		.uleb128 0x13
  1915 0275 13010000 		.4byte	0x113
  1916 0279 0A       		.uleb128 0xa
- 1917 027a 29010000 		.4byte	.LASF35
+ 1917 027a 80010000 		.4byte	.LASF35
  1918 027e 01       		.byte	0x1
  1919 027f F0       		.byte	0xf0
  1920 0280 00000000 		.4byte	.LFB5
@@ -2748,7 +2748,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1923 0289 9C       		.byte	0x9c
  1924 028a AB020000 		.4byte	0x2ab
  1925 028e 12       		.uleb128 0x12
- 1926 028f FC010000 		.4byte	.LASF36
+ 1926 028f F9010000 		.4byte	.LASF36
  1927 0293 01       		.byte	0x1
  1928 0294 F2       		.byte	0xf2
  1929 0295 A5000000 		.4byte	0xa5
@@ -2756,9 +2756,9 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1931 029a 91       		.byte	0x91
  1932 029b 74       		.sleb128 -12
  1933 029c 12       		.uleb128 0x12
- 1934 029d 20030000 		.4byte	.LASF37
+ 1934 029d 1D030000 		.4byte	.LASF37
  1935 02a1 01       		.byte	0x1
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 47
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 47
 
 
  1936 02a2 F3       		.byte	0xf3
@@ -2768,7 +2768,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1940 02a9 73       		.sleb128 -13
  1941 02aa 00       		.byte	0
  1942 02ab 14       		.uleb128 0x14
- 1943 02ac E6000000 		.4byte	.LASF38
+ 1943 02ac 3D010000 		.4byte	.LASF38
  1944 02b0 01       		.byte	0x1
  1945 02b1 3F01     		.2byte	0x13f
  1946 02b3 00000000 		.4byte	.LFB6
@@ -2777,7 +2777,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1949 02bc 9C       		.byte	0x9c
  1950 02bd EF020000 		.4byte	0x2ef
  1951 02c1 15       		.uleb128 0x15
- 1952 02c2 A6020000 		.4byte	.LASF39
+ 1952 02c2 A3020000 		.4byte	.LASF39
  1953 02c6 01       		.byte	0x1
  1954 02c7 4101     		.2byte	0x141
  1955 02c9 8D000000 		.4byte	0x8d
@@ -2802,7 +2802,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1974 02ed 75       		.sleb128 -11
  1975 02ee 00       		.byte	0
  1976 02ef 17       		.uleb128 0x17
- 1977 02f0 55030000 		.4byte	.LASF42
+ 1977 02f0 52030000 		.4byte	.LASF42
  1978 02f4 01       		.byte	0x1
  1979 02f5 7901     		.2byte	0x179
  1980 02f7 00000000 		.4byte	.LFB7
@@ -2811,18 +2811,18 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  1983 0300 9C       		.byte	0x9c
  1984 0301 24030000 		.4byte	0x324
  1985 0305 18       		.uleb128 0x18
- 1986 0306 72030000 		.4byte	.LASF40
+ 1986 0306 6F030000 		.4byte	.LASF40
  1987 030a 01       		.byte	0x1
  1988 030b 7901     		.2byte	0x179
  1989 030d 8D000000 		.4byte	0x8d
  1990 0311 02       		.uleb128 0x2
  1991 0312 91       		.byte	0x91
  1992 0313 6F       		.sleb128 -17
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 48
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 48
 
 
  1993 0314 15       		.uleb128 0x15
- 1994 0315 CE010000 		.4byte	.LASF41
+ 1994 0315 CB010000 		.4byte	.LASF41
  1995 0319 01       		.byte	0x1
  1996 031a 7B01     		.2byte	0x17b
  1997 031c 8D000000 		.4byte	0x8d
@@ -2831,7 +2831,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2000 0322 77       		.sleb128 -9
  2001 0323 00       		.byte	0
  2002 0324 17       		.uleb128 0x17
- 2003 0325 EB030000 		.4byte	.LASF43
+ 2003 0325 E8030000 		.4byte	.LASF43
  2004 0329 01       		.byte	0x1
  2005 032a A401     		.2byte	0x1a4
  2006 032c 00000000 		.4byte	.LFB8
@@ -2840,7 +2840,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2009 0335 9C       		.byte	0x9c
  2010 0336 4A030000 		.4byte	0x34a
  2011 033a 18       		.uleb128 0x18
- 2012 033b 28030000 		.4byte	.LASF44
+ 2012 033b 25030000 		.4byte	.LASF44
  2013 033f 01       		.byte	0x1
  2014 0340 A401     		.2byte	0x1a4
  2015 0342 8D000000 		.4byte	0x8d
@@ -2849,7 +2849,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2018 0348 77       		.sleb128 -9
  2019 0349 00       		.byte	0
  2020 034a 17       		.uleb128 0x17
- 2021 034b 5A010000 		.4byte	.LASF45
+ 2021 034b B1010000 		.4byte	.LASF45
  2022 034f 01       		.byte	0x1
  2023 0350 BD01     		.2byte	0x1bd
  2024 0352 00000000 		.4byte	.LFB9
@@ -2858,7 +2858,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2027 035b 9C       		.byte	0x9c
  2028 035c 70030000 		.4byte	0x370
  2029 0360 18       		.uleb128 0x18
- 2030 0361 28030000 		.4byte	.LASF44
+ 2030 0361 25030000 		.4byte	.LASF44
  2031 0365 01       		.byte	0x1
  2032 0366 BD01     		.2byte	0x1bd
  2033 0368 8D000000 		.4byte	0x8d
@@ -2867,7 +2867,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2036 036e 77       		.sleb128 -9
  2037 036f 00       		.byte	0
  2038 0370 17       		.uleb128 0x17
- 2039 0371 DD020000 		.4byte	.LASF46
+ 2039 0371 DA020000 		.4byte	.LASF46
  2040 0375 01       		.byte	0x1
  2041 0376 E301     		.2byte	0x1e3
  2042 0378 00000000 		.4byte	.LFB10
@@ -2876,9 +2876,9 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2045 0381 9C       		.byte	0x9c
  2046 0382 96030000 		.4byte	0x396
  2047 0386 18       		.uleb128 0x18
- 2048 0387 28030000 		.4byte	.LASF44
+ 2048 0387 25030000 		.4byte	.LASF44
  2049 038b 01       		.byte	0x1
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 49
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 49
 
 
  2050 038c E301     		.2byte	0x1e3
@@ -2888,7 +2888,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2054 0394 77       		.sleb128 -9
  2055 0395 00       		.byte	0
  2056 0396 17       		.uleb128 0x17
- 2057 0397 48030000 		.4byte	.LASF47
+ 2057 0397 45030000 		.4byte	.LASF47
  2058 039b 01       		.byte	0x1
  2059 039c FC01     		.2byte	0x1fc
  2060 039e 00000000 		.4byte	.LFB11
@@ -2897,7 +2897,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2063 03a7 9C       		.byte	0x9c
  2064 03a8 BC030000 		.4byte	0x3bc
  2065 03ac 18       		.uleb128 0x18
- 2066 03ad 28030000 		.4byte	.LASF44
+ 2066 03ad 25030000 		.4byte	.LASF44
  2067 03b1 01       		.byte	0x1
  2068 03b2 FC01     		.2byte	0x1fc
  2069 03b4 8D000000 		.4byte	0x8d
@@ -2906,7 +2906,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2072 03ba 77       		.sleb128 -9
  2073 03bb 00       		.byte	0
  2074 03bc 17       		.uleb128 0x17
- 2075 03bd 2E020000 		.4byte	.LASF48
+ 2075 03bd 2B020000 		.4byte	.LASF48
  2076 03c1 01       		.byte	0x1
  2077 03c2 2402     		.2byte	0x224
  2078 03c4 00000000 		.4byte	.LFB12
@@ -2915,7 +2915,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2081 03cd 9C       		.byte	0x9c
  2082 03ce E2030000 		.4byte	0x3e2
  2083 03d2 18       		.uleb128 0x18
- 2084 03d3 28030000 		.4byte	.LASF44
+ 2084 03d3 25030000 		.4byte	.LASF44
  2085 03d7 01       		.byte	0x1
  2086 03d8 2402     		.2byte	0x224
  2087 03da 8D000000 		.4byte	0x8d
@@ -2924,7 +2924,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2090 03e0 77       		.sleb128 -9
  2091 03e1 00       		.byte	0
  2092 03e2 17       		.uleb128 0x17
- 2093 03e3 7A030000 		.4byte	.LASF49
+ 2093 03e3 77030000 		.4byte	.LASF49
  2094 03e7 01       		.byte	0x1
  2095 03e8 3D02     		.2byte	0x23d
  2096 03ea 00000000 		.4byte	.LFB13
@@ -2933,19 +2933,19 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2099 03f3 9C       		.byte	0x9c
  2100 03f4 08040000 		.4byte	0x408
  2101 03f8 18       		.uleb128 0x18
- 2102 03f9 28030000 		.4byte	.LASF44
+ 2102 03f9 25030000 		.4byte	.LASF44
  2103 03fd 01       		.byte	0x1
  2104 03fe 3D02     		.2byte	0x23d
  2105 0400 8D000000 		.4byte	0x8d
  2106 0404 02       		.uleb128 0x2
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 50
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 50
 
 
  2107 0405 91       		.byte	0x91
  2108 0406 77       		.sleb128 -9
  2109 0407 00       		.byte	0
  2110 0408 19       		.uleb128 0x19
- 2111 0409 F6030000 		.4byte	.LASF50
+ 2111 0409 F3030000 		.4byte	.LASF50
  2112 040d 01       		.byte	0x1
  2113 040e 5B02     		.2byte	0x25b
  2114 0410 00000000 		.4byte	.LFB14
@@ -2962,20 +2962,20 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2125 042a 6402     		.2byte	0x264
  2126 042c 4B040000 		.4byte	0x44b
  2127 0430 1B       		.uleb128 0x1b
- 2128 0431 E3030000 		.4byte	.LASF51
+ 2128 0431 E0030000 		.4byte	.LASF51
  2129 0435 01       		.byte	0x1
  2130 0436 6502     		.2byte	0x265
  2131 0438 84000000 		.4byte	0x84
  2132 043c 00       		.byte	0
  2133 043d 1B       		.uleb128 0x1b
- 2134 043e 16020000 		.4byte	.LASF52
+ 2134 043e 13020000 		.4byte	.LASF52
  2135 0442 01       		.byte	0x1
  2136 0443 6602     		.2byte	0x266
  2137 0445 99000000 		.4byte	0x99
  2138 0449 04       		.byte	0x4
  2139 044a 00       		.byte	0
  2140 044b 06       		.uleb128 0x6
- 2141 044c B8020000 		.4byte	.LASF53
+ 2141 044c B5020000 		.4byte	.LASF53
  2142 0450 01       		.byte	0x1
  2143 0451 6702     		.2byte	0x267
  2144 0453 27040000 		.4byte	0x427
@@ -2989,7 +2989,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2152 0467 13       		.uleb128 0x13
  2153 0468 4B040000 		.4byte	0x44b
  2154 046c 15       		.uleb128 0x15
- 2155 046d E8020000 		.4byte	.LASF54
+ 2155 046d E5020000 		.4byte	.LASF54
  2156 0471 01       		.byte	0x1
  2157 0472 6902     		.2byte	0x269
  2158 0474 7E040000 		.4byte	0x47e
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2161 047a 48000000 		.4byte	cfg_memset_list.5058
  2162 047e 13       		.uleb128 0x13
  2163 047f 57040000 		.4byte	0x457
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 51
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 51
 
 
  2164 0483 16       		.uleb128 0x16
@@ -3039,7 +3039,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2199 04c6 13       		.uleb128 0x13
  2200 04c7 C0040000 		.4byte	0x4c0
  2201 04cb 1E       		.uleb128 0x1e
- 2202 04cc 94020000 		.4byte	.LASF55
+ 2202 04cc 91020000 		.4byte	.LASF55
  2203 04d0 01       		.byte	0x1
  2204 04d1 8B01     		.2byte	0x18b
  2205 04d3 DD040000 		.4byte	0x4dd
@@ -3058,10 +3058,10 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2218 04f2 13       		.uleb128 0x13
  2219 04f3 8D000000 		.4byte	0x8d
  2220 04f7 1E       		.uleb128 0x1e
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 52
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 52
 
 
- 2221 04f8 55020000 		.4byte	.LASF56
+ 2221 04f8 52020000 		.4byte	.LASF56
  2222 04fc 01       		.byte	0x1
  2223 04fd 9201     		.2byte	0x192
  2224 04ff 09050000 		.4byte	0x509
@@ -3071,7 +3071,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2228 0509 13       		.uleb128 0x13
  2229 050a E2040000 		.4byte	0x4e2
  2230 050e 1E       		.uleb128 0x1e
- 2231 050f AB030000 		.4byte	.LASF57
+ 2231 050f A8030000 		.4byte	.LASF57
  2232 0513 01       		.byte	0x1
  2233 0514 CA01     		.2byte	0x1ca
  2234 0516 20050000 		.4byte	0x520
@@ -3081,7 +3081,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2238 0520 13       		.uleb128 0x13
  2239 0521 B0040000 		.4byte	0x4b0
  2240 0525 1E       		.uleb128 0x1e
- 2241 0526 8D030000 		.4byte	.LASF58
+ 2241 0526 8A030000 		.4byte	.LASF58
  2242 052a 01       		.byte	0x1
  2243 052b D101     		.2byte	0x1d1
  2244 052d 37050000 		.4byte	0x537
@@ -3098,7 +3098,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2255 054a 05       		.byte	0x5
  2256 054b 00       		.byte	0
  2257 054c 1E       		.uleb128 0x1e
- 2258 054d C5020000 		.4byte	.LASF59
+ 2258 054d C2020000 		.4byte	.LASF59
  2259 0551 01       		.byte	0x1
  2260 0552 0902     		.2byte	0x209
  2261 0554 5E050000 		.4byte	0x55e
@@ -3115,10 +3115,10 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2272 0571 05       		.byte	0x5
  2273 0572 00       		.byte	0
  2274 0573 1E       		.uleb128 0x1e
- 2275 0574 7C020000 		.4byte	.LASF60
+ 2275 0574 79020000 		.4byte	.LASF60
  2276 0578 01       		.byte	0x1
  2277 0579 1102     		.2byte	0x211
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 53
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 53
 
 
  2278 057b 85050000 		.4byte	0x585
@@ -3128,7 +3128,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2282 0585 13       		.uleb128 0x13
  2283 0586 63050000 		.4byte	0x563
  2284 058a 1F       		.uleb128 0x1f
- 2285 058b F7000000 		.4byte	.LASF61
+ 2285 058b 4E010000 		.4byte	.LASF61
  2286 058f 01       		.byte	0x1
  2287 0590 4E       		.byte	0x4e
  2288 0591 25000000 		.4byte	0x25
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2332 0028 13       		.uleb128 0x13
  2333 0029 00       		.byte	0
  2334 002a 00       		.byte	0
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 54
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 54
 
 
  2335 002b 04       		.uleb128 0x4
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2389 0061 03       		.uleb128 0x3
  2390 0062 0E       		.uleb128 0xe
  2391 0063 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 55
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 55
 
 
  2392 0064 0B       		.uleb128 0xb
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2446 009b 3B       		.uleb128 0x3b
  2447 009c 0B       		.uleb128 0xb
  2448 009d 49       		.uleb128 0x49
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 56
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 56
 
 
  2449 009e 13       		.uleb128 0x13
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2503 00d5 18       		.uleb128 0x18
  2504 00d6 00       		.byte	0
  2505 00d7 00       		.byte	0
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 57
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 57
 
 
  2506 00d8 11       		.uleb128 0x11
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2560 010f 15       		.uleb128 0x15
  2561 0110 34       		.uleb128 0x34
  2562 0111 00       		.byte	0
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 58
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 58
 
 
  2563 0112 03       		.uleb128 0x3
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2617 0149 00       		.byte	0
  2618 014a 03       		.uleb128 0x3
  2619 014b 0E       		.uleb128 0xe
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 59
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 59
 
 
  2620 014c 3A       		.uleb128 0x3a
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2674 0183 0B       		.uleb128 0xb
  2675 0184 3B       		.uleb128 0x3b
  2676 0185 05       		.uleb128 0x5
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 60
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 60
 
 
  2677 0186 49       		.uleb128 0x49
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2731 01bc 3C       		.uleb128 0x3c
  2732 01bd 19       		.uleb128 0x19
  2733 01be 00       		.byte	0
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 61
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 61
 
 
  2734 01bf 00       		.byte	0
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2788 0028 00000000 		.4byte	.LFB5
  2789 002c 7C010000 		.4byte	.LFE5
  2790 0030 00000000 		.4byte	.LFB6
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 62
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 62
 
 
  2791 0034 78010000 		.4byte	.LFE6
@@ -3694,151 +3694,151 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2816 0007 62617365 		.ascii	"baseAddr\000"
  2816      41646472 
  2816      00
- 2817              	.LASF12:
- 2818 0010 73697A65 		.ascii	"size_t\000"
- 2818      5F7400
- 2819              	.LASF28:
- 2820 0017 4379436C 		.ascii	"CyClockStartupError\000"
- 2820      6F636B53 
- 2820      74617274 
- 2820      75704572 
- 2820      726F7200 
- 2821              	.LASF62:
- 2822 002b 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 2822      43313120 
- 2822      352E342E 
- 2822      31203230 
- 2822      31363036 
- 2823 005e 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 2823      20726576 
- 2823      6973696F 
- 2823      6E203233 
- 2823      37373135 
- 2824 0091 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 2824      66756E63 
- 2824      74696F6E 
- 2824      2D736563 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 63
+ 2817              	.LASF64:
+ 2818 0010 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\CY8CKI"
+ 2818      73657273 
+ 2818      5C6D6572 
+ 2818      63655C44 
+ 2818      6F63756D 
+ 2819 003d 542D3034 		.ascii	"T-044\\ScopeKitProg\\Scope_CY8KIT-044.cydsn\000"
+ 2819      345C5363 
+ 2819      6F70654B 
+ 2819      69745072 
+ 2819      6F675C53 
+ 2820              	.LASF12:
+ 2821 0067 73697A65 		.ascii	"size_t\000"
+ 2821      5F7400
+ 2822              	.LASF28:
+ 2823 006e 4379436C 		.ascii	"CyClockStartupError\000"
+ 2823      6F636B53 
+ 2823      74617274 
+ 2823      75704572 
+ 2823      726F7200 
+ 2824              	.LASF62:
+ 2825 0082 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 2825      43313120 
+ 2825      352E342E 
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 63
 
 
- 2824      74696F6E 
- 2825              	.LASF32:
- 2826 00b9 64617461 		.ascii	"data_table\000"
- 2826      5F746162 
- 2826      6C6500
- 2827              	.LASF9:
- 2828 00c4 6C6F6E67 		.ascii	"long long unsigned int\000"
- 2828      206C6F6E 
- 2828      6720756E 
- 2828      7369676E 
- 2828      65642069 
- 2829              	.LASF31:
- 2830 00db 61646472 		.ascii	"addr_table\000"
- 2830      5F746162 
- 2830      6C6500
- 2831              	.LASF38:
- 2832 00e6 416E616C 		.ascii	"AnalogSetDefault\000"
- 2832      6F675365 
- 2832      74446566 
- 2832      61756C74 
- 2832      00
- 2833              	.LASF61:
- 2834 00f7 43595F45 		.ascii	"CY_ECC_OFFSET\000"
- 2834      43435F4F 
- 2834      46465345 
- 2834      5400
- 2835              	.LASF1:
- 2836 0105 6C6F6E67 		.ascii	"long long int\000"
- 2836      206C6F6E 
- 2836      6720696E 
- 2836      7400
- 2837              	.LASF3:
- 2838 0113 7369676E 		.ascii	"signed char\000"
- 2838      65642063 
- 2838      68617200 
- 2839              	.LASF24:
- 2840 011f 43594D45 		.ascii	"CYMEMZERO\000"
- 2840      4D5A4552 
- 2840      4F00
- 2841              	.LASF35:
- 2842 0129 436C6F63 		.ascii	"ClockSetup\000"
- 2842      6B536574 
- 2842      757000
- 2843              	.LASF29:
- 2844 0134 6572726F 		.ascii	"errorCode\000"
- 2844      72436F64 
- 2844      6500
- 2845              	.LASF7:
- 2846 013e 6C6F6E67 		.ascii	"long int\000"
- 2846      20696E74 
- 2846      00
- 2847              	.LASF19:
- 2848 0147 72656731 		.ascii	"reg16\000"
- 2848      3600
- 2849              	.LASF13:
- 2850 014d 75696E74 		.ascii	"uint8\000"
- 2850      3800
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 64
+ 2825      31203230 
+ 2825      31363036 
+ 2826 00b5 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 2826      20726576 
+ 2826      6973696F 
+ 2826      6E203233 
+ 2826      37373135 
+ 2827 00e8 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 2827      66756E63 
+ 2827      74696F6E 
+ 2827      2D736563 
+ 2827      74696F6E 
+ 2828              	.LASF32:
+ 2829 0110 64617461 		.ascii	"data_table\000"
+ 2829      5F746162 
+ 2829      6C6500
+ 2830              	.LASF9:
+ 2831 011b 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2831      206C6F6E 
+ 2831      6720756E 
+ 2831      7369676E 
+ 2831      65642069 
+ 2832              	.LASF31:
+ 2833 0132 61646472 		.ascii	"addr_table\000"
+ 2833      5F746162 
+ 2833      6C6500
+ 2834              	.LASF38:
+ 2835 013d 416E616C 		.ascii	"AnalogSetDefault\000"
+ 2835      6F675365 
+ 2835      74446566 
+ 2835      61756C74 
+ 2835      00
+ 2836              	.LASF61:
+ 2837 014e 43595F45 		.ascii	"CY_ECC_OFFSET\000"
+ 2837      43435F4F 
+ 2837      46465345 
+ 2837      5400
+ 2838              	.LASF1:
+ 2839 015c 6C6F6E67 		.ascii	"long long int\000"
+ 2839      206C6F6E 
+ 2839      6720696E 
+ 2839      7400
+ 2840              	.LASF3:
+ 2841 016a 7369676E 		.ascii	"signed char\000"
+ 2841      65642063 
+ 2841      68617200 
+ 2842              	.LASF24:
+ 2843 0176 43594D45 		.ascii	"CYMEMZERO\000"
+ 2843      4D5A4552 
+ 2843      4F00
+ 2844              	.LASF35:
+ 2845 0180 436C6F63 		.ascii	"ClockSetup\000"
+ 2845      6B536574 
+ 2845      757000
+ 2846              	.LASF29:
+ 2847 018b 6572726F 		.ascii	"errorCode\000"
+ 2847      72436F64 
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 64
 
 
- 2851              	.LASF17:
- 2852 0153 646F7562 		.ascii	"double\000"
- 2852      6C6500
- 2853              	.LASF45:
- 2854 015a 414D7578 		.ascii	"AMux_1_Unset\000"
- 2854      5F315F55 
- 2854      6E736574 
- 2854      00
- 2855              	.LASF15:
- 2856 0167 75696E74 		.ascii	"uint32\000"
- 2856      333200
- 2857              	.LASF34:
- 2858 016e 636F756E 		.ascii	"count\000"
- 2858      7400
- 2859              	.LASF64:
- 2860 0174 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\Twelve"
- 2860      73657273 
- 2860      5C6D6572 
- 2860      63655C44 
- 2860      6F63756D 
- 2861 01a1 2D626974 		.ascii	"-bit-4-chan\\ScopeKitProg\\Scope_KitProg.cydsn\000"
- 2861      2D342D63 
- 2861      68616E5C 
- 2861      53636F70 
- 2861      654B6974 
+ 2847      6500
+ 2848              	.LASF7:
+ 2849 0195 6C6F6E67 		.ascii	"long int\000"
+ 2849      20696E74 
+ 2849      00
+ 2850              	.LASF19:
+ 2851 019e 72656731 		.ascii	"reg16\000"
+ 2851      3600
+ 2852              	.LASF13:
+ 2853 01a4 75696E74 		.ascii	"uint8\000"
+ 2853      3800
+ 2854              	.LASF17:
+ 2855 01aa 646F7562 		.ascii	"double\000"
+ 2855      6C6500
+ 2856              	.LASF45:
+ 2857 01b1 414D7578 		.ascii	"AMux_1_Unset\000"
+ 2857      5F315F55 
+ 2857      6E736574 
+ 2857      00
+ 2858              	.LASF15:
+ 2859 01be 75696E74 		.ascii	"uint32\000"
+ 2859      333200
+ 2860              	.LASF34:
+ 2861 01c5 636F756E 		.ascii	"count\000"
+ 2861      7400
  2862              	.LASF41:
- 2863 01ce 72656756 		.ascii	"regValue\000"
+ 2863 01cb 72656756 		.ascii	"regValue\000"
  2863      616C7565 
  2863      00
  2864              	.LASF22:
- 2865 01d7 76616C75 		.ascii	"value\000"
+ 2865 01d4 76616C75 		.ascii	"value\000"
  2865      6500
  2866              	.LASF0:
- 2867 01dd 756E7369 		.ascii	"unsigned int\000"
+ 2867 01da 756E7369 		.ascii	"unsigned int\000"
  2867      676E6564 
  2867      20696E74 
  2867      00
  2868              	.LASF8:
- 2869 01ea 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2869 01e7 6C6F6E67 		.ascii	"long unsigned int\000"
  2869      20756E73 
  2869      69676E65 
  2869      6420696E 
  2869      7400
  2870              	.LASF36:
- 2871 01fc 74696D65 		.ascii	"timeout\000"
+ 2871 01f9 74696D65 		.ascii	"timeout\000"
  2871      6F757400 
  2872              	.LASF30:
- 2873 0204 6366675F 		.ascii	"cfg_write_bytes32\000"
+ 2873 0201 6366675F 		.ascii	"cfg_write_bytes32\000"
  2873      77726974 
  2873      655F6279 
  2873      74657333 
  2873      3200
  2874              	.LASF52:
- 2875 0216 73697A65 		.ascii	"size\000"
+ 2875 0213 73697A65 		.ascii	"size\000"
  2875      00
  2876              	.LASF6:
- 2877 021b 73686F72 		.ascii	"short unsigned int\000"
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 65
+ 2877 0218 73686F72 		.ascii	"short unsigned int\000"
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 65
 
 
  2877      7420756E 
@@ -3846,59 +3846,59 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2877      65642069 
  2877      6E7400
  2878              	.LASF48:
- 2879 022e 416D7578 		.ascii	"Amux_Trigger_Set\000"
+ 2879 022b 416D7578 		.ascii	"Amux_Trigger_Set\000"
  2879      5F547269 
  2879      67676572 
  2879      5F536574 
  2879      00
  2880              	.LASF20:
- 2881 023f 72656733 		.ascii	"reg32\000"
+ 2881 023c 72656733 		.ascii	"reg32\000"
  2881      3200
  2882              	.LASF27:
- 2883 0245 4359434F 		.ascii	"CYCONFIGCPYCODE\000"
+ 2883 0242 4359434F 		.ascii	"CYCONFIGCPYCODE\000"
  2883      4E464947 
  2883      43505943 
  2883      4F444500 
  2884              	.LASF56:
- 2885 0255 414D7578 		.ascii	"AMux_1__maskTable\000"
+ 2885 0252 414D7578 		.ascii	"AMux_1__maskTable\000"
  2885      5F315F5F 
  2885      6D61736B 
  2885      5461626C 
  2885      6500
  2886              	.LASF10:
- 2887 0267 73697A65 		.ascii	"sizetype\000"
+ 2887 0264 73697A65 		.ascii	"sizetype\000"
  2887      74797065 
  2887      00
  2888              	.LASF2:
- 2889 0270 6C6F6E67 		.ascii	"long double\000"
+ 2889 026d 6C6F6E67 		.ascii	"long double\000"
  2889      20646F75 
  2889      626C6500 
  2890              	.LASF60:
- 2891 027c 416D7578 		.ascii	"Amux_Trigger__maskTable\000"
+ 2891 0279 416D7578 		.ascii	"Amux_Trigger__maskTable\000"
  2891      5F547269 
  2891      67676572 
  2891      5F5F6D61 
  2891      736B5461 
  2892              	.LASF55:
- 2893 0294 414D7578 		.ascii	"AMux_1__addrTable\000"
+ 2893 0291 414D7578 		.ascii	"AMux_1__addrTable\000"
  2893      5F315F5F 
  2893      61646472 
  2893      5461626C 
  2893      6500
  2894              	.LASF39:
- 2895 02a6 62675F78 		.ascii	"bg_xover_inl_trim\000"
+ 2895 02a3 62675F78 		.ascii	"bg_xover_inl_trim\000"
  2895      6F766572 
  2895      5F696E6C 
  2895      5F747269 
  2895      6D00
  2896              	.LASF53:
- 2897 02b8 6366675F 		.ascii	"cfg_memset_t\000"
+ 2897 02b5 6366675F 		.ascii	"cfg_memset_t\000"
  2897      6D656D73 
  2897      65745F74 
  2897      00
  2898              	.LASF59:
- 2899 02c5 416D7578 		.ascii	"Amux_Trigger__addrTable\000"
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 66
+ 2899 02c2 416D7578 		.ascii	"Amux_Trigger__addrTable\000"
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 66
 
 
  2899      5F547269 
@@ -3906,104 +3906,104 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 1
  2899      5F5F6164 
  2899      64725461 
  2900              	.LASF46:
- 2901 02dd 414D7578 		.ascii	"AMux_2_Set\000"
+ 2901 02da 414D7578 		.ascii	"AMux_2_Set\000"
  2901      5F325F53 
  2901      657400
  2902              	.LASF54:
- 2903 02e8 6366675F 		.ascii	"cfg_memset_list\000"
+ 2903 02e5 6366675F 		.ascii	"cfg_memset_list\000"
  2903      6D656D73 
  2903      65745F6C 
  2903      69737400 
  2904              	.LASF26:
- 2905 02f8 64657374 		.ascii	"dest\000"
+ 2905 02f5 64657374 		.ascii	"dest\000"
  2905      00
  2906              	.LASF16:
- 2907 02fd 666C6F61 		.ascii	"float\000"
+ 2907 02fa 666C6F61 		.ascii	"float\000"
  2907      7400
  2908              	.LASF18:
- 2909 0303 72656738 		.ascii	"reg8\000"
+ 2909 0300 72656738 		.ascii	"reg8\000"
  2909      00
  2910              	.LASF4:
- 2911 0308 756E7369 		.ascii	"unsigned char\000"
+ 2911 0305 756E7369 		.ascii	"unsigned char\000"
  2911      676E6564 
  2911      20636861 
  2911      7200
  2912              	.LASF5:
- 2913 0316 73686F72 		.ascii	"short int\000"
+ 2913 0313 73686F72 		.ascii	"short int\000"
  2913      7420696E 
  2913      7400
  2914              	.LASF37:
- 2915 0320 706C6C4C 		.ascii	"pllLock\000"
+ 2915 031d 706C6C4C 		.ascii	"pllLock\000"
  2915      6F636B00 
  2916              	.LASF44:
- 2917 0328 6368616E 		.ascii	"channel\000"
+ 2917 0325 6368616E 		.ascii	"channel\000"
  2917      6E656C00 
  2918              	.LASF23:
- 2919 0330 63795F63 		.ascii	"cy_cfg_addrvalue_t\000"
+ 2919 032d 63795F63 		.ascii	"cy_cfg_addrvalue_t\000"
  2919      66675F61 
  2919      64647276 
  2919      616C7565 
  2919      5F7400
  2920              	.LASF11:
- 2921 0343 63686172 		.ascii	"char\000"
+ 2921 0340 63686172 		.ascii	"char\000"
  2921      00
  2922              	.LASF47:
- 2923 0348 414D7578 		.ascii	"AMux_2_Unset\000"
+ 2923 0345 414D7578 		.ascii	"AMux_2_Unset\000"
  2923      5F325F55 
  2923      6E736574 
  2923      00
  2924              	.LASF42:
- 2925 0355 53657441 		.ascii	"SetAnalogRoutingPumps\000"
+ 2925 0352 53657441 		.ascii	"SetAnalogRoutingPumps\000"
  2925      6E616C6F 
  2925      67526F75 
  2925      74696E67 
  2925      50756D70 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccjxN8dW.s 			page 67
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccmeI71X.s 			page 67
 
 
  2926              	.LASF21:
- 2927 036b 6F666673 		.ascii	"offset\000"
+ 2927 0368 6F666673 		.ascii	"offset\000"
  2927      657400
  2928              	.LASF40:
- 2929 0372 656E6162 		.ascii	"enabled\000"
+ 2929 036f 656E6162 		.ascii	"enabled\000"
  2929      6C656400 
  2930              	.LASF49:
- 2931 037a 416D7578 		.ascii	"Amux_Trigger_Unset\000"
+ 2931 0377 416D7578 		.ascii	"Amux_Trigger_Unset\000"
  2931      5F547269 
  2931      67676572 
  2931      5F556E73 
  2931      657400
  2932              	.LASF58:
- 2933 038d 414D7578 		.ascii	"AMux_2__maskTable\000"
+ 2933 038a 414D7578 		.ascii	"AMux_2__maskTable\000"
  2933      5F325F5F 
  2933      6D61736B 
  2933      5461626C 
  2933      6500
  2934              	.LASF25:
- 2935 039f 4359434F 		.ascii	"CYCONFIGCPY\000"
+ 2935 039c 4359434F 		.ascii	"CYCONFIGCPY\000"
  2935      4E464947 
  2935      43505900 
  2936              	.LASF57:
- 2937 03ab 414D7578 		.ascii	"AMux_2__addrTable\000"
+ 2937 03a8 414D7578 		.ascii	"AMux_2__addrTable\000"
  2937      5F325F5F 
  2937      61646472 
  2937      5461626C 
  2937      6500
  2938              	.LASF63:
- 2939 03bd 47656E65 		.ascii	"Generated_Source\\PSoC5\\cyfitter_cfg.c\000"
+ 2939 03ba 47656E65 		.ascii	"Generated_Source\\PSoC5\\cyfitter_cfg.c\000"
  2939      72617465 
  2939      645F536F 
  2939      75726365 
  2939      5C50536F 
  2940              	.LASF51:
- 2941 03e3 61646472 		.ascii	"address\000"
+ 2941 03e0 61646472 		.ascii	"address\000"
  2941      65737300 
  2942              	.LASF43:
- 2943 03eb 414D7578 		.ascii	"AMux_1_Set\000"
+ 2943 03e8 414D7578 		.ascii	"AMux_1_Set\000"
  2943      5F315F53 
  2943      657400
  2944              	.LASF50:
- 2945 03f6 63796669 		.ascii	"cyfitter_cfg\000"
+ 2945 03f3 63796669 		.ascii	"cyfitter_cfg\000"
  2945      74746572 
  2945      5F636667 
  2945      00

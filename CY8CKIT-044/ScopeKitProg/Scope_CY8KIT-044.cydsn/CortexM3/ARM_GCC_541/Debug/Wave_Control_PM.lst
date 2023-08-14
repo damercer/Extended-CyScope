@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccffmLmD.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
   24:Generated_Source\PSoC5/Wave_Control_PM.c **** 
   25:Generated_Source\PSoC5/Wave_Control_PM.c ****     
   26:Generated_Source\PSoC5/Wave_Control_PM.c **** /*******************************************************************************
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 2
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccffmLmD.s 			page 2
 
 
   27:Generated_Source\PSoC5/Wave_Control_PM.c **** * Function Name: Wave_Control_SaveConfig
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
   69              		.thumb_func
   70              		.type	Wave_Control_RestoreConfig, %function
   71              	Wave_Control_RestoreConfig:
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 3
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccffmLmD.s 			page 3
 
 
   72              	.LFB1:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
  105              		.section	.text.Wave_Control_Sleep,"ax",%progbits
  106              		.align	2
  107              		.global	Wave_Control_Sleep
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 4
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccffmLmD.s 			page 4
 
 
  108              		.thumb
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
   88:Generated_Source\PSoC5/Wave_Control_PM.c **** * Function Name: Wave_Control_Wakeup
   89:Generated_Source\PSoC5/Wave_Control_PM.c **** ********************************************************************************
   90:Generated_Source\PSoC5/Wave_Control_PM.c **** *
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 5
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccffmLmD.s 			page 5
 
 
   91:Generated_Source\PSoC5/Wave_Control_PM.c **** * Summary:
@@ -286,26 +286,26 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
  167 000b 01       		.uleb128 0x1
  168 000c 1B000000 		.4byte	.LASF19
  169 0010 0C       		.byte	0xc
- 170 0011 84010000 		.4byte	.LASF20
- 171 0015 2A010000 		.4byte	.LASF21
+ 170 0011 2A010000 		.4byte	.LASF20
+ 171 0015 8A010000 		.4byte	.LASF21
  172 0019 00000000 		.4byte	.Ldebug_ranges0+0
  173 001d 00000000 		.4byte	0
  174 0021 00000000 		.4byte	.Ldebug_line0
  175 0025 02       		.uleb128 0x2
  176 0026 01       		.byte	0x1
  177 0027 06       		.byte	0x6
- 178 0028 24020000 		.4byte	.LASF0
+ 178 0028 21020000 		.4byte	.LASF0
  179 002c 02       		.uleb128 0x2
  180 002d 01       		.byte	0x1
  181 002e 08       		.byte	0x8
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 6
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccffmLmD.s 			page 6
 
 
  182 002f DE000000 		.4byte	.LASF1
  183 0033 02       		.uleb128 0x2
  184 0034 02       		.byte	0x2
  185 0035 05       		.byte	0x5
- 186 0036 F7010000 		.4byte	.LASF2
+ 186 0036 F4010000 		.4byte	.LASF2
  187 003a 02       		.uleb128 0x2
  188 003b 02       		.byte	0x2
  189 003c 07       		.byte	0x7
@@ -313,7 +313,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
  191 0041 02       		.uleb128 0x2
  192 0042 04       		.byte	0x4
  193 0043 05       		.byte	0x5
- 194 0044 1B020000 		.4byte	.LASF4
+ 194 0044 18020000 		.4byte	.LASF4
  195 0048 02       		.uleb128 0x2
  196 0049 04       		.byte	0x4
  197 004a 07       		.byte	0x7
@@ -321,11 +321,11 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
  199 004f 02       		.uleb128 0x2
  200 0050 08       		.byte	0x8
  201 0051 05       		.byte	0x5
- 202 0052 E4010000 		.4byte	.LASF6
+ 202 0052 E1010000 		.4byte	.LASF6
  203 0056 02       		.uleb128 0x2
  204 0057 08       		.byte	0x8
  205 0058 07       		.byte	0x7
- 206 0059 BA010000 		.4byte	.LASF7
+ 206 0059 60010000 		.4byte	.LASF7
  207 005d 03       		.uleb128 0x3
  208 005e 04       		.byte	0x4
  209 005f 05       		.byte	0x5
@@ -333,9 +333,9 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
  211 0064 02       		.uleb128 0x2
  212 0065 04       		.byte	0x4
  213 0066 07       		.byte	0x7
- 214 0067 AD010000 		.4byte	.LASF8
+ 214 0067 53010000 		.4byte	.LASF8
  215 006b 04       		.uleb128 0x4
- 216 006c 01020000 		.4byte	.LASF12
+ 216 006c FE010000 		.4byte	.LASF12
  217 0070 02       		.byte	0x2
  218 0071 E901     		.2byte	0x1e9
  219 0073 2C000000 		.4byte	0x2c
@@ -350,7 +350,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
  228 0085 02       		.uleb128 0x2
  229 0086 01       		.byte	0x1
  230 0087 08       		.byte	0x8
- 231 0088 F2010000 		.4byte	.LASF11
+ 231 0088 EF010000 		.4byte	.LASF11
  232 008c 04       		.uleb128 0x4
  233 008d EC000000 		.4byte	.LASF13
  234 0091 02       		.byte	0x2
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
  236 0094 98000000 		.4byte	0x98
  237 0098 05       		.uleb128 0x5
  238 0099 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 7
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccffmLmD.s 			page 7
 
 
  239 009d 06       		.uleb128 0x6
@@ -379,7 +379,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
  254 00b8 28       		.byte	0x28
  255 00b9 9D000000 		.4byte	0x9d
  256 00bd 09       		.uleb128 0x9
- 257 00be 30020000 		.4byte	.LASF15
+ 257 00be 2D020000 		.4byte	.LASF15
  258 00c2 01       		.byte	0x1
  259 00c3 28       		.byte	0x28
  260 00c4 00000000 		.4byte	.LFB0
@@ -395,7 +395,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
  270 00dd 01       		.uleb128 0x1
  271 00de 9C       		.byte	0x9c
  272 00df 0A       		.uleb128 0xa
- 273 00e0 D1010000 		.4byte	.LASF17
+ 273 00e0 77010000 		.4byte	.LASF17
  274 00e4 01       		.byte	0x1
  275 00e5 51       		.byte	0x51
  276 00e6 00000000 		.4byte	.LFB2
@@ -411,14 +411,14 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
  286 00ff 01       		.uleb128 0x1
  287 0100 9C       		.byte	0x9c
  288 0101 0B       		.uleb128 0xb
- 289 0102 07020000 		.4byte	.LASF23
+ 289 0102 04020000 		.4byte	.LASF23
  290 0106 01       		.byte	0x1
  291 0107 17       		.byte	0x17
  292 0108 B2000000 		.4byte	0xb2
  293 010c 05       		.uleb128 0x5
  294 010d 03       		.byte	0x3
  295 010e 00000000 		.4byte	Wave_Control_backup
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 8
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccffmLmD.s 			page 8
 
 
  296 0112 00       		.byte	0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
  350 0033 13       		.uleb128 0x13
  351 0034 00       		.byte	0
  352 0035 00       		.byte	0
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 9
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccffmLmD.s 			page 9
 
 
  353 0036 05       		.uleb128 0x5
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
  407 006c 0E       		.uleb128 0xe
  408 006d 3A       		.uleb128 0x3a
  409 006e 0B       		.uleb128 0xb
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 10
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccffmLmD.s 			page 10
 
 
  410 006f 3B       		.uleb128 0x3b
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
  464 0000 34000000 		.4byte	0x34
  465 0004 0200     		.2byte	0x2
  466 0006 00000000 		.4byte	.Ldebug_info0
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 11
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccffmLmD.s 			page 11
 
 
  467 000a 04       		.byte	0x4
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
  501      74696F6E 
  502              	.LASF16:
  503 00a9 57617665 		.ascii	"Wave_Control_RestoreConfig\000"
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 12
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccffmLmD.s 			page 12
 
 
  503      5F436F6E 
@@ -702,74 +702,74 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 1
  518              	.LASF10:
  519 0123 646F7562 		.ascii	"double\000"
  519      6C6500
- 520              	.LASF21:
- 521 012a 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\Twelve"
- 521      73657273 
- 521      5C6D6572 
- 521      63655C44 
- 521      6F63756D 
- 522 0157 2D626974 		.ascii	"-bit-4-chan\\ScopeKitProg\\Scope_KitProg.cydsn\000"
- 522      2D342D63 
- 522      68616E5C 
- 522      53636F70 
- 522      654B6974 
- 523              	.LASF20:
- 524 0184 47656E65 		.ascii	"Generated_Source\\PSoC5\\Wave_Control_PM.c\000"
- 524      72617465 
- 524      645F536F 
- 524      75726365 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cca35wOF.s 			page 13
+ 520              	.LASF20:
+ 521 012a 47656E65 		.ascii	"Generated_Source\\PSoC5\\Wave_Control_PM.c\000"
+ 521      72617465 
+ 521      645F536F 
+ 521      75726365 
+ 521      5C50536F 
+ 522              	.LASF8:
+ 523 0153 756E7369 		.ascii	"unsigned int\000"
+ 523      676E6564 
+ 523      20696E74 
+ 523      00
+ 524              	.LASF7:
+ 525 0160 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 525      206C6F6E 
+ 525      6720756E 
+ 525      7369676E 
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccffmLmD.s 			page 13
 
 
- 524      5C50536F 
- 525              	.LASF8:
- 526 01ad 756E7369 		.ascii	"unsigned int\000"
- 526      676E6564 
- 526      20696E74 
- 526      00
- 527              	.LASF7:
- 528 01ba 6C6F6E67 		.ascii	"long long unsigned int\000"
- 528      206C6F6E 
- 528      6720756E 
- 528      7369676E 
- 528      65642069 
- 529              	.LASF17:
- 530 01d1 57617665 		.ascii	"Wave_Control_Sleep\000"
- 530      5F436F6E 
- 530      74726F6C 
- 530      5F536C65 
- 530      657000
+ 525      65642069 
+ 526              	.LASF17:
+ 527 0177 57617665 		.ascii	"Wave_Control_Sleep\000"
+ 527      5F436F6E 
+ 527      74726F6C 
+ 527      5F536C65 
+ 527      657000
+ 528              	.LASF21:
+ 529 018a 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\CY8CKI"
+ 529      73657273 
+ 529      5C6D6572 
+ 529      63655C44 
+ 529      6F63756D 
+ 530 01b7 542D3034 		.ascii	"T-044\\ScopeKitProg\\Scope_CY8KIT-044.cydsn\000"
+ 530      345C5363 
+ 530      6F70654B 
+ 530      69745072 
+ 530      6F675C53 
  531              	.LASF6:
- 532 01e4 6C6F6E67 		.ascii	"long long int\000"
+ 532 01e1 6C6F6E67 		.ascii	"long long int\000"
  532      206C6F6E 
  532      6720696E 
  532      7400
  533              	.LASF11:
- 534 01f2 63686172 		.ascii	"char\000"
+ 534 01ef 63686172 		.ascii	"char\000"
  534      00
  535              	.LASF2:
- 536 01f7 73686F72 		.ascii	"short int\000"
+ 536 01f4 73686F72 		.ascii	"short int\000"
  536      7420696E 
  536      7400
  537              	.LASF12:
- 538 0201 75696E74 		.ascii	"uint8\000"
+ 538 01fe 75696E74 		.ascii	"uint8\000"
  538      3800
  539              	.LASF23:
- 540 0207 57617665 		.ascii	"Wave_Control_backup\000"
+ 540 0204 57617665 		.ascii	"Wave_Control_backup\000"
  540      5F436F6E 
  540      74726F6C 
  540      5F626163 
  540      6B757000 
  541              	.LASF4:
- 542 021b 6C6F6E67 		.ascii	"long int\000"
+ 542 0218 6C6F6E67 		.ascii	"long int\000"
  542      20696E74 
  542      00
  543              	.LASF0:
- 544 0224 7369676E 		.ascii	"signed char\000"
+ 544 0221 7369676E 		.ascii	"signed char\000"
  544      65642063 
  544      68617200 
  545              	.LASF15:
- 546 0230 57617665 		.ascii	"Wave_Control_SaveConfig\000"
+ 546 022d 57617665 		.ascii	"Wave_Control_SaveConfig\000"
  546      5F436F6E 
  546      74726F6C 
  546      5F536176 

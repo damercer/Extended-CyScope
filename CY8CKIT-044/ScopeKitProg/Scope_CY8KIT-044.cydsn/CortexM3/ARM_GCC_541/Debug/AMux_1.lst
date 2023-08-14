@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccnmv9Bt.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
   23:Generated_Source\PSoC5/AMux_1.c **** /*******************************************************************************
   24:Generated_Source\PSoC5/AMux_1.c **** * Function Name: AMux_1_Start
   25:Generated_Source\PSoC5/AMux_1.c **** ********************************************************************************
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 2
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccnmv9Bt.s 			page 2
 
 
   26:Generated_Source\PSoC5/AMux_1.c **** * Summary:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
   48:Generated_Source\PSoC5/AMux_1.c ****     }
   49:Generated_Source\PSoC5/AMux_1.c **** 
   50:Generated_Source\PSoC5/AMux_1.c ****     AMux_1_lastChannel = AMux_1_NULL_CHANNEL;
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 3
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccnmv9Bt.s 			page 3
 
 
   63              		.loc 1 50 0 is_stmt 1
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
   78:Generated_Source\PSoC5/AMux_1.c **** /*******************************************************************************
   79:Generated_Source\PSoC5/AMux_1.c **** * Function Name: AMux_1_FastSelect
   80:Generated_Source\PSoC5/AMux_1.c **** ********************************************************************************
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 4
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccnmv9Bt.s 			page 4
 
 
   81:Generated_Source\PSoC5/AMux_1.c **** * Summary:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  106:Generated_Source\PSoC5/AMux_1.c ****     AMux_1_CYAMUXSIDE_A_Set(channel);
  107:Generated_Source\PSoC5/AMux_1.c ****     AMux_1_CYAMUXSIDE_B_Set(channel);
  108:Generated_Source\PSoC5/AMux_1.c **** #endif
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 5
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccnmv9Bt.s 			page 5
 
 
  109:Generated_Source\PSoC5/AMux_1.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  136:Generated_Source\PSoC5/AMux_1.c **** 
  137:Generated_Source\PSoC5/AMux_1.c **** /*******************************************************************************
  138:Generated_Source\PSoC5/AMux_1.c **** * Function Name: AMux_1_Disconnect
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 6
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccnmv9Bt.s 			page 6
 
 
  139:Generated_Source\PSoC5/AMux_1.c **** ********************************************************************************
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  162 000c 044B     		ldr	r3, .L13
  163 000e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  164 0010 1846     		mov	r0, r3
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 7
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccnmv9Bt.s 			page 7
 
 
  165 0012 FFF7FEFF 		bl	AMux_1_Unset
@@ -393,14 +393,14 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  191 000c 08000000 		.4byte	.LASF16
  192 0010 0C       		.byte	0xc
  193 0011 96000000 		.4byte	.LASF17
- 194 0015 08010000 		.4byte	.LASF18
+ 194 0015 53010000 		.4byte	.LASF18
  195 0019 00000000 		.4byte	.Ldebug_ranges0+0
  196 001d 00000000 		.4byte	0
  197 0021 00000000 		.4byte	.Ldebug_line0
  198 0025 02       		.uleb128 0x2
  199 0026 01       		.byte	0x1
  200 0027 06       		.byte	0x6
- 201 0028 D9010000 		.4byte	.LASF0
+ 201 0028 D6010000 		.4byte	.LASF0
  202 002c 02       		.uleb128 0x2
  203 002d 01       		.byte	0x1
  204 002e 08       		.byte	0x8
@@ -408,7 +408,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  206 0033 02       		.uleb128 0x2
  207 0034 02       		.byte	0x2
  208 0035 05       		.byte	0x5
- 209 0036 C0010000 		.4byte	.LASF2
+ 209 0036 BD010000 		.4byte	.LASF2
  210 003a 02       		.uleb128 0x2
  211 003b 02       		.byte	0x2
  212 003c 07       		.byte	0x7
@@ -416,9 +416,9 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  214 0041 02       		.uleb128 0x2
  215 0042 04       		.byte	0x4
  216 0043 05       		.byte	0x5
- 217 0044 D0010000 		.4byte	.LASF4
+ 217 0044 CD010000 		.4byte	.LASF4
  218 0048 02       		.uleb128 0x2
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 8
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccnmv9Bt.s 			page 8
 
 
  219 0049 04       		.byte	0x4
@@ -427,11 +427,11 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  222 004f 02       		.uleb128 0x2
  223 0050 08       		.byte	0x8
  224 0051 05       		.byte	0x5
- 225 0052 AD010000 		.4byte	.LASF6
+ 225 0052 AA010000 		.4byte	.LASF6
  226 0056 02       		.uleb128 0x2
  227 0057 08       		.byte	0x8
  228 0058 07       		.byte	0x7
- 229 0059 91010000 		.4byte	.LASF7
+ 229 0059 37010000 		.4byte	.LASF7
  230 005d 03       		.uleb128 0x3
  231 005e 04       		.byte	0x4
  232 005f 05       		.byte	0x5
@@ -439,9 +439,9 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  234 0064 02       		.uleb128 0x2
  235 0065 04       		.byte	0x4
  236 0066 07       		.byte	0x7
- 237 0067 84010000 		.4byte	.LASF8
+ 237 0067 2A010000 		.4byte	.LASF8
  238 006b 04       		.uleb128 0x4
- 239 006c CA010000 		.4byte	.LASF19
+ 239 006c C7010000 		.4byte	.LASF19
  240 0070 02       		.byte	0x2
  241 0071 E901     		.2byte	0x1e9
  242 0073 2C000000 		.4byte	0x2c
@@ -456,9 +456,9 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  251 0085 02       		.uleb128 0x2
  252 0086 01       		.byte	0x1
  253 0087 08       		.byte	0x8
- 254 0088 BB010000 		.4byte	.LASF11
+ 254 0088 B8010000 		.4byte	.LASF11
  255 008c 05       		.uleb128 0x5
- 256 008d 62010000 		.4byte	.LASF12
+ 256 008d 08010000 		.4byte	.LASF12
  257 0091 01       		.byte	0x1
  258 0092 24       		.byte	0x24
  259 0093 00000000 		.4byte	.LFB0
@@ -467,7 +467,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  262 009c 9C       		.byte	0x9c
  263 009d B0000000 		.4byte	0xb0
  264 00a1 06       		.uleb128 0x6
- 265 00a2 A8010000 		.4byte	.LASF14
+ 265 00a2 4E010000 		.4byte	.LASF14
  266 00a6 01       		.byte	0x1
  267 00a7 26       		.byte	0x26
  268 00a8 6B000000 		.4byte	0x6b
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  273 00b0 05       		.uleb128 0x5
  274 00b1 CA000000 		.4byte	.LASF13
  275 00b5 01       		.byte	0x1
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 9
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccnmv9Bt.s 			page 9
 
 
  276 00b6 5E       		.byte	0x5e
@@ -497,7 +497,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  289 00d2 77       		.sleb128 -9
  290 00d3 00       		.byte	0
  291 00d4 08       		.uleb128 0x8
- 292 00d5 6F010000 		.4byte	.LASF21
+ 292 00d5 15010000 		.4byte	.LASF21
  293 00d9 01       		.byte	0x1
  294 00da AC       		.byte	0xac
  295 00db 00000000 		.4byte	.LFB2
@@ -505,7 +505,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  297 00e3 01       		.uleb128 0x1
  298 00e4 9C       		.byte	0x9c
  299 00e5 06       		.uleb128 0x6
- 300 00e6 E5010000 		.4byte	.LASF15
+ 300 00e6 E2010000 		.4byte	.LASF15
  301 00ea 01       		.byte	0x1
  302 00eb 14       		.byte	0x14
  303 00ec 6B000000 		.4byte	0x6b
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  330 0014 24       		.uleb128 0x24
  331 0015 00       		.byte	0
  332 0016 0B       		.uleb128 0xb
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 10
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccnmv9Bt.s 			page 10
 
 
  333 0017 0B       		.uleb128 0xb
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  387 004e 00       		.byte	0
  388 004f 00       		.byte	0
  389 0050 06       		.uleb128 0x6
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 11
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccnmv9Bt.s 			page 11
 
 
  390 0051 34       		.uleb128 0x34
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  444 0000 2C000000 		.4byte	0x2c
  445 0004 0200     		.2byte	0x2
  446 0006 00000000 		.4byte	.Ldebug_info0
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 12
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccnmv9Bt.s 			page 12
 
 
  447 000a 04       		.byte	0x4
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  480              	.LASF9:
  481 00b6 666C6F61 		.ascii	"float\000"
  481      7400
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 13
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccnmv9Bt.s 			page 13
 
 
  482              	.LASF1:
@@ -747,70 +747,70 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 1
  490              	.LASF10:
  491 0101 646F7562 		.ascii	"double\000"
  491      6C6500
- 492              	.LASF18:
- 493 0108 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\Twelve"
- 493      73657273 
- 493      5C6D6572 
- 493      63655C44 
- 493      6F63756D 
- 494 0135 2D626974 		.ascii	"-bit-4-chan\\ScopeKitProg\\Scope_KitProg.cydsn\000"
- 494      2D342D63 
- 494      68616E5C 
- 494      53636F70 
- 494      654B6974 
- 495              	.LASF12:
- 496 0162 414D7578 		.ascii	"AMux_1_Start\000"
- 496      5F315F53 
- 496      74617274 
- 496      00
- 497              	.LASF21:
- 498 016f 414D7578 		.ascii	"AMux_1_DisconnectAll\000"
- 498      5F315F44 
- 498      6973636F 
- 498      6E6E6563 
- 498      74416C6C 
- 499              	.LASF8:
- 500 0184 756E7369 		.ascii	"unsigned int\000"
- 500      676E6564 
- 500      20696E74 
- 500      00
- 501              	.LASF7:
- 502 0191 6C6F6E67 		.ascii	"long long unsigned int\000"
- 502      206C6F6E 
- 502      6720756E 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\ccau0lGG.s 			page 14
+ 492              	.LASF12:
+ 493 0108 414D7578 		.ascii	"AMux_1_Start\000"
+ 493      5F315F53 
+ 493      74617274 
+ 493      00
+ 494              	.LASF21:
+ 495 0115 414D7578 		.ascii	"AMux_1_DisconnectAll\000"
+ 495      5F315F44 
+ 495      6973636F 
+ 495      6E6E6563 
+ 495      74416C6C 
+ 496              	.LASF8:
+ 497 012a 756E7369 		.ascii	"unsigned int\000"
+ 497      676E6564 
+ 497      20696E74 
+ 497      00
+ 498              	.LASF7:
+ 499 0137 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 499      206C6F6E 
+ 499      6720756E 
+ 499      7369676E 
+ 499      65642069 
+ 500              	.LASF14:
+ 501 014e 6368616E 		.ascii	"chan\000"
+ 501      00
+ 502              	.LASF18:
+ 503 0153 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\CY8CKI"
+ 503      73657273 
+ 503      5C6D6572 
+ 503      63655C44 
+ 503      6F63756D 
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccnmv9Bt.s 			page 14
 
 
- 502      7369676E 
- 502      65642069 
- 503              	.LASF14:
- 504 01a8 6368616E 		.ascii	"chan\000"
- 504      00
+ 504 0180 542D3034 		.ascii	"T-044\\ScopeKitProg\\Scope_CY8KIT-044.cydsn\000"
+ 504      345C5363 
+ 504      6F70654B 
+ 504      69745072 
+ 504      6F675C53 
  505              	.LASF6:
- 506 01ad 6C6F6E67 		.ascii	"long long int\000"
+ 506 01aa 6C6F6E67 		.ascii	"long long int\000"
  506      206C6F6E 
  506      6720696E 
  506      7400
  507              	.LASF11:
- 508 01bb 63686172 		.ascii	"char\000"
+ 508 01b8 63686172 		.ascii	"char\000"
  508      00
  509              	.LASF2:
- 510 01c0 73686F72 		.ascii	"short int\000"
+ 510 01bd 73686F72 		.ascii	"short int\000"
  510      7420696E 
  510      7400
  511              	.LASF19:
- 512 01ca 75696E74 		.ascii	"uint8\000"
+ 512 01c7 75696E74 		.ascii	"uint8\000"
  512      3800
  513              	.LASF4:
- 514 01d0 6C6F6E67 		.ascii	"long int\000"
+ 514 01cd 6C6F6E67 		.ascii	"long int\000"
  514      20696E74 
  514      00
  515              	.LASF0:
- 516 01d9 7369676E 		.ascii	"signed char\000"
+ 516 01d6 7369676E 		.ascii	"signed char\000"
  516      65642063 
  516      68617200 
  517              	.LASF15:
- 518 01e5 414D7578 		.ascii	"AMux_1_lastChannel\000"
+ 518 01e2 414D7578 		.ascii	"AMux_1_lastChannel\000"
  518      5F315F6C 
  518      61737443 
  518      68616E6E 
