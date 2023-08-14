@@ -725,7 +725,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>Dig_Out_Reg</name>
+      <name>Digital_Out_Control</name>
       <description>No description available</description>
       <baseAddress>0x0</baseAddress>
       <addressBlock>
@@ -735,7 +735,7 @@
       </addressBlock>
       <registers>
         <register>
-          <name>Dig_Out_Reg_CONTROL_REG</name>
+          <name>Digital_Out_Control_CONTROL_REG</name>
           <description>No description available</description>
           <addressOffset>0x40006578</addressOffset>
           <size>8</size>

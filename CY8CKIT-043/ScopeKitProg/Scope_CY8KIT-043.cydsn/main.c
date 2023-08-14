@@ -112,11 +112,11 @@ uint8 WaveformB_Temp_Buffer[WAVEFORM_BUFFER_SIZE];
 uint8 waveb_gain = 0;
 uint8 waveb_offset = 0;
 
-//GJL
+//
 // Buffer for noise output after applying amplitude and offset
 uint8 Noise_Adjusted;
 
-//GJL
+//
 //// digital input last state variable
 //uint8 Digital_Input_Status_Last;
 uint8 Digital_AutoUpdate;
@@ -132,7 +132,7 @@ int main()
 	uint8 status;
 	uint16 ending_offset;
 	char * psz;
-	uint16 avar, bvar, i;
+	uint16 avar, bvar, i, ulen;
 	uint32 phase_int;
     uint32 pwm_div;
     uint32 uaddr;
@@ -146,7 +146,7 @@ int main()
     {
 		CommandCheck();
 		
-		//GJL Adjust amplitude and offset for noise output
+		//Adjust amplitude and offset for noise output
 		wave_temp = (uint8) *PRS_SEED_PTR;
 		wave_temp = (((float) wave_temp) * ((float)wavea_gain)/255.0) + ((float)wavea_offset);
 		if(wave_temp > 255.0)
@@ -161,7 +161,7 @@ int main()
 			if(*psz == 'i')
 			{
 				// it all started here.  NOTE!  \n\r THE ORDER MATTERS!
-				PutString("*CyScope V1.0\n\r");
+				PutString("*CyScope V1.43\n\r");
 			}
 //DM
 			else if(*psz == 'D')
@@ -175,7 +175,7 @@ int main()
 					// D O N, where N is the output byte value as an ascii 8 bit number
 					psz = strtok(0, " ");
 					sscanf(psz,"%hu", &avar);
-					Dig_Out_Reg_Write((uint8) avar);
+					Digital_Out_Control_Write((uint8) avar);
 				}
 				//else if(*psz == 'I')
 				//{
@@ -224,37 +224,37 @@ int main()
 					Dig_PWM_WriteCompare((uint8) avar);
 					//Dig_PWM_WriteCompare2((uint8) avar);
 				}
-//				else if(*psz == '!')
-//				{
-//					// interrupt line configuration.  not implemented yet
-//					// sends back a '!' character when the interrupt condition is met
-//					// D ! M where M is the mode:
-//					// M = D : Disable
-//					// M = R : Rising Edge
-//					// M = F : Falling Edge
-//					// M = H : High Level
-//					// M = L : Low Level
-//					psz = strtok(0, " ");
-//					
-//					if(*psz == 'D')
-//					{
-//					}
-//					else if(*psz == 'R')
-//					{
-//					}
-//					else if(*psz == 'F')
-//					{
-//					}
-//					else if(*psz == 'H')
-//					{
-//					}
-//					else if(*psz == 'L')
-//					{
-//					}
-//					
-//					// if trigger condition is met, send back the '!' character
-//					//PutChar('!');
-//				}
+				else if(*psz == '!')
+				{
+					// interrupt line configuration.  not implemented yet
+					// sends back a '!' character when the interrupt condition is met
+					// D ! M where M is the mode:
+					// M = D : Disable
+					// M = R : Rising Edge
+					// M = F : Falling Edge
+					// M = H : High Level
+					// M = L : Low Level
+					psz = strtok(0, " ");
+					
+					if(*psz == 'D')
+					{
+					}
+					else if(*psz == 'R')
+					{
+					}
+					else if(*psz == 'F')
+					{
+					}
+					else if(*psz == 'H')
+					{
+					}
+					else if(*psz == 'L')
+					{
+					}
+					
+					// if trigger condition is met, send back the '!' character
+					//PutChar('!');
+				}
 			}
 			else if(*psz == 'W')
 			{
@@ -311,7 +311,7 @@ int main()
 					
 					for(i = 0; i < WAVEFORM_BUFFER_SIZE; i++)
 					{
-						// GJL - add offset and max checking
+						// Add offset and max checking
                         wave_temp = (((float) WaveformA_Temp_Buffer[i]) * ((float)wavea_gain)/255.0) + ((float)wavea_offset);
                         if(wave_temp > 255.0)
                         {
@@ -321,7 +321,7 @@ int main()
 					}              
                     
 				}
-				// GJL - add offset functionality
+				// Add offset functionality
                 else if(*psz == 'O') // Upper Case for AWG A
                 {
                     // set waveform offset
@@ -336,7 +336,7 @@ int main()
 					
 					for(i = 0; i < WAVEFORM_BUFFER_SIZE; i++)
 					{
-						// GJL temp - add offset
+						// Add offset
                         wave_temp = (((float) WaveformA_Temp_Buffer[i]) * ((float)wavea_gain)/255.0) + ((float)wavea_offset);
                         if(wave_temp > 255.0)
                         {
@@ -401,6 +401,30 @@ int main()
                     NoiseA_Clock_SetDividerValue((uint16) phase_int);
 					
 				}
+                else if(*psz == 'L') // Set AWG Buffer Length Upper Case for AWG A
+                {
+                    psz = strtok(0, " ");
+					sscanf(psz,"%hu", &avar); // Upper Byte
+                    ulen = ((uint32) avar)*256;
+					//
+					psz = strtok(0, " ");
+					sscanf(psz,"%hu", &avar); // Lower Byte
+                    ulen = ulen + avar;
+                    //got the Length
+                    WaveA_DAC_Wave1Setup(&WaveformA_Buffer[0], ulen);
+                }
+                else if(*psz == 'l') // Set AWG Buffer Length Lower Case for AWG B
+                {
+                    psz = strtok(0, " ");
+					sscanf(psz,"%hu", &avar); // Upper Byte
+                    ulen = ((uint32) avar)*256;
+					//
+					psz = strtok(0, " ");
+					sscanf(psz,"%hu", &avar); // Lower Byte
+                    ulen = ulen + avar;
+                    //got the Length
+                    WaveB_DAC_Wave1Setup(&WaveformB_Buffer[0], ulen);
+                }
 				else if(*psz == 's') // Lower Case for AWG B
 				{
 					// sample data into the buffer
@@ -952,15 +976,15 @@ void Hardware_Config(void)
 	waveb_gain = 0;
     
 	PRS_Start();
-    // GJL
+    //
     // Change noise output to use value adjusted for amplitude/offset
 	//Wave_DAC_Wave2Setup((uint8 *) PRS_SEED_PTR, 1);
     WaveA_DAC_Wave2Setup(&Noise_Adjusted, 1);
     WaveB_DAC_Wave2Setup(&Noise_Adjusted, 1);
-    //GJL
+    //
 //	// digital IO initializations
 //	Digital_Input_Status_Last = 0;
-	Dig_Out_Reg_Write(0);
+	Digital_Out_Control_Write(0);
 	Digital_AutoUpdate = 0;
 //	
 	Dig_PWM_Start();

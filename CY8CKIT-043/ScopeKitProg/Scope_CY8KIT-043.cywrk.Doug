@@ -128,11 +128,11 @@
 <v>Scope_CY8KIT-043\Scope_CY8KIT-043\CortexM3\ARM_GCC_541\Debug\Listing Files\Dig_Out_1.lst</v>
 <v>Scope_CY8KIT-043\Scope_CY8KIT-043\CortexM3\ARM_GCC_541\Debug\Listing Files\Dig_Out_2.lst</v>
 <v>Scope_CY8KIT-043\Scope_CY8KIT-043\CortexM3\ARM_GCC_541\Debug\Listing Files\Dig_Out_3.lst</v>
-<v>Scope_CY8KIT-043\Scope_CY8KIT-043\CortexM3\ARM_GCC_541\Debug\Listing Files\Dig_Out_Reg.lst</v>
-<v>Scope_CY8KIT-043\Scope_CY8KIT-043\CortexM3\ARM_GCC_541\Debug\Listing Files\Dig_Out_Reg_PM.lst</v>
 <v>Scope_CY8KIT-043\Scope_CY8KIT-043\CortexM3\ARM_GCC_541\Debug\Listing Files\Dig_PWM.lst</v>
 <v>Scope_CY8KIT-043\Scope_CY8KIT-043\CortexM3\ARM_GCC_541\Debug\Listing Files\Dig_PWM_Clock.lst</v>
 <v>Scope_CY8KIT-043\Scope_CY8KIT-043\CortexM3\ARM_GCC_541\Debug\Listing Files\Dig_PWM_PM.lst</v>
+<v>Scope_CY8KIT-043\Scope_CY8KIT-043\CortexM3\ARM_GCC_541\Debug\Listing Files\Digital_Out_Control.lst</v>
+<v>Scope_CY8KIT-043\Scope_CY8KIT-043\CortexM3\ARM_GCC_541\Debug\Listing Files\Digital_Out_Control_PM.lst</v>
 <v>Scope_CY8KIT-043\Scope_CY8KIT-043\CortexM3\ARM_GCC_541\Debug\Listing Files\DMA_Channel_1_dma.lst</v>
 <v>Scope_CY8KIT-043\Scope_CY8KIT-043\CortexM3\ARM_GCC_541\Debug\Listing Files\DMA_Channel_2_dma.lst</v>
 <v>Scope_CY8KIT-043\Scope_CY8KIT-043\CortexM3\ARM_GCC_541\Debug\Listing Files\DPWM_Out.lst</v>

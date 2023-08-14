@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 1
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccUTVB5W.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 1
   24:Generated_Source\PSoC5/WaveB_DAC_PM.c **** *
   25:Generated_Source\PSoC5/WaveB_DAC_PM.c **** * Summary:
   26:Generated_Source\PSoC5/WaveB_DAC_PM.c **** *  Stops the component and saves its configuration. Should be called 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 2
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccUTVB5W.s 			page 2
 
 
   27:Generated_Source\PSoC5/WaveB_DAC_PM.c **** *  just prior to entering sleep.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 1
   49:Generated_Source\PSoC5/WaveB_DAC_PM.c **** 	
   50:Generated_Source\PSoC5/WaveB_DAC_PM.c **** 	WaveB_DAC_Stop();
   60              		.loc 1 50 0 is_stmt 1 discriminator 4
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 3
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccUTVB5W.s 			page 3
 
 
   61 001c FFF7FEFF 		bl	WaveB_DAC_Stop
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 1
   87 0000 80B5     		push	{r7, lr}
   88              		.cfi_def_cfa_offset 8
   89              		.cfi_offset 7, -8
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 4
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccUTVB5W.s 			page 4
 
 
   90              		.cfi_offset 14, -4
@@ -222,40 +222,40 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 1
  121 0006 00000000 		.4byte	.Ldebug_abbrev0
  122 000a 04       		.byte	0x4
  123 000b 01       		.uleb128 0x1
- 124 000c F9000000 		.4byte	.LASF19
+ 124 000c A5000000 		.4byte	.LASF19
  125 0010 0C       		.byte	0xc
- 126 0011 27000000 		.4byte	.LASF20
- 127 0015 99000000 		.4byte	.LASF21
+ 126 0011 33000000 		.4byte	.LASF20
+ 127 0015 8C010000 		.4byte	.LASF21
  128 0019 00000000 		.4byte	.Ldebug_ranges0+0
  129 001d 00000000 		.4byte	0
  130 0021 00000000 		.4byte	.Ldebug_line0
  131 0025 02       		.uleb128 0x2
  132 0026 01       		.byte	0x1
  133 0027 06       		.byte	0x6
- 134 0028 E0010000 		.4byte	.LASF0
+ 134 0028 27000000 		.4byte	.LASF0
  135 002c 02       		.uleb128 0x2
  136 002d 01       		.byte	0x1
  137 002e 08       		.byte	0x8
- 138 002f 87010000 		.4byte	.LASF1
+ 138 002f 33010000 		.4byte	.LASF1
  139 0033 02       		.uleb128 0x2
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 5
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccUTVB5W.s 			page 5
 
 
  140 0034 02       		.byte	0x2
  141 0035 05       		.byte	0x5
- 142 0036 01020000 		.4byte	.LASF2
+ 142 0036 F8010000 		.4byte	.LASF2
  143 003a 02       		.uleb128 0x2
  144 003b 02       		.byte	0x2
  145 003c 07       		.byte	0x7
- 146 003d CD010000 		.4byte	.LASF3
+ 146 003d 79010000 		.4byte	.LASF3
  147 0041 02       		.uleb128 0x2
  148 0042 04       		.byte	0x4
  149 0043 05       		.byte	0x5
- 150 0044 9A010000 		.4byte	.LASF4
+ 150 0044 46010000 		.4byte	.LASF4
  151 0048 02       		.uleb128 0x2
  152 0049 04       		.byte	0x4
  153 004a 07       		.byte	0x7
- 154 004b A3010000 		.4byte	.LASF5
+ 154 004b 4F010000 		.4byte	.LASF5
  155 004f 02       		.uleb128 0x2
  156 0050 08       		.byte	0x8
  157 0051 05       		.byte	0x5
@@ -263,7 +263,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 1
  159 0056 02       		.uleb128 0x2
  160 0057 08       		.byte	0x8
  161 0058 07       		.byte	0x7
- 162 0059 6B000000 		.4byte	.LASF7
+ 162 0059 77000000 		.4byte	.LASF7
  163 005d 03       		.uleb128 0x3
  164 005e 04       		.byte	0x4
  165 005f 05       		.byte	0x5
@@ -273,24 +273,24 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 1
  169 0066 07       		.byte	0x7
  170 0067 1A000000 		.4byte	.LASF8
  171 006b 04       		.uleb128 0x4
- 172 006c 4D000000 		.4byte	.LASF12
+ 172 006c 59000000 		.4byte	.LASF12
  173 0070 02       		.byte	0x2
  174 0071 E901     		.2byte	0x1e9
  175 0073 2C000000 		.4byte	0x2c
  176 0077 02       		.uleb128 0x2
  177 0078 04       		.byte	0x4
  178 0079 04       		.byte	0x4
- 179 007a 93000000 		.4byte	.LASF9
+ 179 007a 9F000000 		.4byte	.LASF9
  180 007e 02       		.uleb128 0x2
  181 007f 08       		.byte	0x8
  182 0080 04       		.byte	0x4
- 183 0081 B5010000 		.4byte	.LASF10
+ 183 0081 61010000 		.4byte	.LASF10
  184 0085 02       		.uleb128 0x2
  185 0086 01       		.byte	0x1
  186 0087 08       		.byte	0x8
- 187 0088 95010000 		.4byte	.LASF11
+ 187 0088 41010000 		.4byte	.LASF11
  188 008c 04       		.uleb128 0x4
- 189 008d 0B020000 		.4byte	.LASF13
+ 189 008d 02020000 		.4byte	.LASF13
  190 0091 02       		.byte	0x2
  191 0092 9302     		.2byte	0x293
  192 0094 98000000 		.4byte	0x98
@@ -298,15 +298,15 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 1
  194 0099 6B000000 		.4byte	0x6b
  195 009d 02       		.uleb128 0x2
  196 009e 08       		.byte	0x8
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 6
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccUTVB5W.s 			page 6
 
 
  197 009f 04       		.byte	0x4
- 198 00a0 EC010000 		.4byte	.LASF14
+ 198 00a0 E3010000 		.4byte	.LASF14
  199 00a4 02       		.uleb128 0x2
  200 00a5 04       		.byte	0x4
  201 00a6 07       		.byte	0x7
- 202 00a7 F8010000 		.4byte	.LASF15
+ 202 00a7 EF010000 		.4byte	.LASF15
  203 00ab 06       		.uleb128 0x6
  204 00ac 01       		.byte	0x1
  205 00ad 03       		.byte	0x3
@@ -320,12 +320,12 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 1
  213 00be 00       		.byte	0
  214 00bf 00       		.byte	0
  215 00c0 08       		.uleb128 0x8
- 216 00c1 53000000 		.4byte	.LASF16
+ 216 00c1 5F000000 		.4byte	.LASF16
  217 00c5 03       		.byte	0x3
  218 00c6 60       		.byte	0x60
  219 00c7 AB000000 		.4byte	0xab
  220 00cb 09       		.uleb128 0x9
- 221 00cc 10020000 		.4byte	.LASF17
+ 221 00cc 07020000 		.4byte	.LASF17
  222 00d0 01       		.byte	0x1
  223 00d1 2B       		.byte	0x2b
  224 00d2 00000000 		.4byte	.LFB0
@@ -333,7 +333,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 1
  226 00da 01       		.uleb128 0x1
  227 00db 9C       		.byte	0x9c
  228 00dc 09       		.uleb128 0x9
- 229 00dd BC010000 		.4byte	.LASF18
+ 229 00dd 68010000 		.4byte	.LASF18
  230 00e1 01       		.byte	0x1
  231 00e2 4D       		.byte	0x4d
  232 00e3 00000000 		.4byte	.LFB1
@@ -341,7 +341,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 1
  234 00eb 01       		.uleb128 0x1
  235 00ec 9C       		.byte	0x9c
  236 00ed 0A       		.uleb128 0xa
- 237 00ee 82000000 		.4byte	.LASF23
+ 237 00ee 8E000000 		.4byte	.LASF23
  238 00f2 01       		.byte	0x1
  239 00f3 12       		.byte	0x12
  240 00f4 C0000000 		.4byte	0xc0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 1
  251 0004 0E       		.uleb128 0xe
  252 0005 13       		.uleb128 0x13
  253 0006 0B       		.uleb128 0xb
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 7
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccUTVB5W.s 			page 7
 
 
  254 0007 03       		.uleb128 0x3
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 1
  308 003d 06       		.uleb128 0x6
  309 003e 13       		.uleb128 0x13
  310 003f 01       		.byte	0x1
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 8
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccUTVB5W.s 			page 8
 
 
  311 0040 0B       		.uleb128 0xb
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 1
  365 0076 06       		.uleb128 0x6
  366 0077 40       		.uleb128 0x40
  367 0078 18       		.uleb128 0x18
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 9
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccUTVB5W.s 			page 9
 
 
  368 0079 9642     		.uleb128 0x2116
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 1
  415              	.LASF22:
  416 000e 656E6162 		.ascii	"enableState\000"
  416      6C655374 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 10
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccUTVB5W.s 			page 10
 
 
  416      61746500 
@@ -547,125 +547,124 @@ ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 1
  418      676E6564 
  418      20696E74 
  418      00
- 419              	.LASF20:
- 420 0027 47656E65 		.ascii	"Generated_Source\\PSoC5\\WaveB_DAC_PM.c\000"
- 420      72617465 
- 420      645F536F 
- 420      75726365 
- 420      5C50536F 
- 421              	.LASF12:
- 422 004d 75696E74 		.ascii	"uint8\000"
- 422      3800
- 423              	.LASF16:
- 424 0053 57617665 		.ascii	"WaveB_DAC_BACKUP_STRUCT\000"
- 424      425F4441 
- 424      435F4241 
- 424      434B5550 
- 424      5F535452 
- 425              	.LASF7:
- 426 006b 6C6F6E67 		.ascii	"long long unsigned int\000"
- 426      206C6F6E 
- 426      6720756E 
- 426      7369676E 
- 426      65642069 
- 427              	.LASF23:
- 428 0082 57617665 		.ascii	"WaveB_DAC_backup\000"
- 428      425F4441 
- 428      435F6261 
- 428      636B7570 
- 428      00
- 429              	.LASF9:
- 430 0093 666C6F61 		.ascii	"float\000"
- 430      7400
- 431              	.LASF21:
- 432 0099 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\Twelve"
- 432      73657273 
- 432      5C6D6572 
- 432      63655C44 
- 432      6F63756D 
- 433 00c6 2D626974 		.ascii	"-bit-4-chan-43\\ScopeKitProg\\Scope_CY8KIT-043.cyds"
- 433      2D342D63 
- 433      68616E2D 
- 433      34335C53 
- 433      636F7065 
- 434 00f7 6E00     		.ascii	"n\000"
- 435              	.LASF19:
- 436 00f9 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 436      43313120 
- 436      352E342E 
- 436      31203230 
- 436      31363036 
- 437 012c 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 437      20726576 
- 437      6973696F 
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 11
+ 419              	.LASF0:
+ 420 0027 7369676E 		.ascii	"signed char\000"
+ 420      65642063 
+ 420      68617200 
+ 421              	.LASF20:
+ 422 0033 47656E65 		.ascii	"Generated_Source\\PSoC5\\WaveB_DAC_PM.c\000"
+ 422      72617465 
+ 422      645F536F 
+ 422      75726365 
+ 422      5C50536F 
+ 423              	.LASF12:
+ 424 0059 75696E74 		.ascii	"uint8\000"
+ 424      3800
+ 425              	.LASF16:
+ 426 005f 57617665 		.ascii	"WaveB_DAC_BACKUP_STRUCT\000"
+ 426      425F4441 
+ 426      435F4241 
+ 426      434B5550 
+ 426      5F535452 
+ 427              	.LASF7:
+ 428 0077 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 428      206C6F6E 
+ 428      6720756E 
+ 428      7369676E 
+ 428      65642069 
+ 429              	.LASF23:
+ 430 008e 57617665 		.ascii	"WaveB_DAC_backup\000"
+ 430      425F4441 
+ 430      435F6261 
+ 430      636B7570 
+ 430      00
+ 431              	.LASF9:
+ 432 009f 666C6F61 		.ascii	"float\000"
+ 432      7400
+ 433              	.LASF19:
+ 434 00a5 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 434      43313120 
+ 434      352E342E 
+ 434      31203230 
+ 434      31363036 
+ 435 00d8 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 435      20726576 
+ 435      6973696F 
+ 435      6E203233 
+ 435      37373135 
+ 436 010b 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 436      66756E63 
+ 436      74696F6E 
+ 436      2D736563 
+ 436      74696F6E 
+ 437              	.LASF1:
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccUTVB5W.s 			page 11
 
 
- 437      6E203233 
- 437      37373135 
- 438 015f 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 438      66756E63 
- 438      74696F6E 
- 438      2D736563 
- 438      74696F6E 
- 439              	.LASF1:
- 440 0187 756E7369 		.ascii	"unsigned char\000"
- 440      676E6564 
- 440      20636861 
- 440      7200
- 441              	.LASF11:
- 442 0195 63686172 		.ascii	"char\000"
+ 438 0133 756E7369 		.ascii	"unsigned char\000"
+ 438      676E6564 
+ 438      20636861 
+ 438      7200
+ 439              	.LASF11:
+ 440 0141 63686172 		.ascii	"char\000"
+ 440      00
+ 441              	.LASF4:
+ 442 0146 6C6F6E67 		.ascii	"long int\000"
+ 442      20696E74 
  442      00
- 443              	.LASF4:
- 444 019a 6C6F6E67 		.ascii	"long int\000"
- 444      20696E74 
- 444      00
- 445              	.LASF5:
- 446 01a3 6C6F6E67 		.ascii	"long unsigned int\000"
- 446      20756E73 
- 446      69676E65 
- 446      6420696E 
- 446      7400
- 447              	.LASF10:
- 448 01b5 646F7562 		.ascii	"double\000"
- 448      6C6500
- 449              	.LASF18:
- 450 01bc 57617665 		.ascii	"WaveB_DAC_Wakeup\000"
- 450      425F4441 
- 450      435F5761 
- 450      6B657570 
- 450      00
- 451              	.LASF3:
- 452 01cd 73686F72 		.ascii	"short unsigned int\000"
- 452      7420756E 
- 452      7369676E 
- 452      65642069 
- 452      6E7400
- 453              	.LASF0:
- 454 01e0 7369676E 		.ascii	"signed char\000"
- 454      65642063 
- 454      68617200 
- 455              	.LASF14:
- 456 01ec 6C6F6E67 		.ascii	"long double\000"
- 456      20646F75 
- 456      626C6500 
- 457              	.LASF15:
- 458 01f8 73697A65 		.ascii	"sizetype\000"
- 458      74797065 
- 458      00
- 459              	.LASF2:
- 460 0201 73686F72 		.ascii	"short int\000"
- 460      7420696E 
- 460      7400
- 461              	.LASF13:
-ARM GAS  C:\Users\merce\AppData\Local\Temp\cc8uKieX.s 			page 12
+ 443              	.LASF5:
+ 444 014f 6C6F6E67 		.ascii	"long unsigned int\000"
+ 444      20756E73 
+ 444      69676E65 
+ 444      6420696E 
+ 444      7400
+ 445              	.LASF10:
+ 446 0161 646F7562 		.ascii	"double\000"
+ 446      6C6500
+ 447              	.LASF18:
+ 448 0168 57617665 		.ascii	"WaveB_DAC_Wakeup\000"
+ 448      425F4441 
+ 448      435F5761 
+ 448      6B657570 
+ 448      00
+ 449              	.LASF3:
+ 450 0179 73686F72 		.ascii	"short unsigned int\000"
+ 450      7420756E 
+ 450      7369676E 
+ 450      65642069 
+ 450      6E7400
+ 451              	.LASF21:
+ 452 018c 433A5C55 		.ascii	"C:\\Users\\merce\\Documents\\scope\\CyScope\\CY8CKI"
+ 452      73657273 
+ 452      5C6D6572 
+ 452      63655C44 
+ 452      6F63756D 
+ 453 01b9 542D3034 		.ascii	"T-043\\ScopeKitProg\\Scope_CY8KIT-043.cydsn\000"
+ 453      335C5363 
+ 453      6F70654B 
+ 453      69745072 
+ 453      6F675C53 
+ 454              	.LASF14:
+ 455 01e3 6C6F6E67 		.ascii	"long double\000"
+ 455      20646F75 
+ 455      626C6500 
+ 456              	.LASF15:
+ 457 01ef 73697A65 		.ascii	"sizetype\000"
+ 457      74797065 
+ 457      00
+ 458              	.LASF2:
+ 459 01f8 73686F72 		.ascii	"short int\000"
+ 459      7420696E 
+ 459      7400
+ 460              	.LASF13:
+ 461 0202 72656738 		.ascii	"reg8\000"
+ARM GAS  C:\Users\merce\AppData\Local\Temp\ccUTVB5W.s 			page 12
 
 
- 462 020b 72656738 		.ascii	"reg8\000"
- 462      00
- 463              	.LASF17:
- 464 0210 57617665 		.ascii	"WaveB_DAC_Sleep\000"
- 464      425F4441 
- 464      435F536C 
- 464      65657000 
- 465              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 461      00
+ 462              	.LASF17:
+ 463 0207 57617665 		.ascii	"WaveB_DAC_Sleep\000"
+ 463      425F4441 
+ 463      435F536C 
+ 463      65657000 
+ 464              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

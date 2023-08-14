@@ -52,6 +52,8 @@ Archive member included to satisfy reference by file (symbol)
                               .\CortexM3\ARM_GCC_541\Debug\main.o (PRS_Start)
 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
                               .\CortexM3\ARM_GCC_541\Debug\main.o (Wave_Control_Write)
+.\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Digital_Out_Control.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (Digital_Out_Control_Write)
 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
                               .\CortexM3\ARM_GCC_541\Debug\main.o (AuxDAC_Buf_Start)
 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
@@ -90,8 +92,6 @@ Archive member included to satisfy reference by file (symbol)
                               .\CortexM3\ARM_GCC_541\Debug\main.o (Dig_PWM_Start)
 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
                               .\CortexM3\ARM_GCC_541\Debug\main.o (Dig_PWM_Clock_Start)
-.\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_Out_Reg.o)
-                              .\CortexM3\ARM_GCC_541\Debug\main.o (Dig_Out_Reg_Write)
 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
                               .\CortexM3\ARM_GCC_541\Debug\main.o (ScopeC_Buf_SetGain)
 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AMux_1.o)
@@ -776,6 +776,11 @@ Discarded input sections
  .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
  .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
  .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Digital_Out_Control.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Digital_Out_Control.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Digital_Out_Control.o)
+ .text.Digital_Out_Control_Read
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Digital_Out_Control.o)
  .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
  .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
  .text.AuxDAC_Buf_Stop
@@ -930,11 +935,6 @@ Discarded input sections
                 0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
  .text.Dig_PWM_Clock_SetSourceRegister
                 0x00000000       0xc4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
- .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_Out_Reg.o)
- .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_Out_Reg.o)
- .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_Out_Reg.o)
- .text.Dig_Out_Reg_Read
-                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_Out_Reg.o)
  .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
  .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
  .text.ScopeC_Buf_Stop
@@ -1294,7 +1294,7 @@ END GROUP
                 0x00000800                ee_size = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?(CY_EE_SIZE / CY_APPL_MAX):CY_EE_SIZE
                 0x00000640                PROVIDE (CY_ECC_OFFSET, ecc_offset)
 
-.text           0x00003200     0x87ca
+.text           0x00003200     0x88b2
  CREATE_OBJECT_SYMBOLS
                 0x00003200                PROVIDE (__cy_interrupt_vector, RomVectors)
  *(.romvectors)
@@ -1312,967 +1312,966 @@ END GROUP
  *(.text .text.* .gnu.linkonce.t.*)
  .text          0x00003218       0x5c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
  *fill*         0x00003274        0x4 
- .text.main     0x00003278     0x1110 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .text.main     0x00003278     0x11f8 .\CortexM3\ARM_GCC_541\Debug\main.o
                 0x00003278                main
  .text.Hardware_Config
-                0x00004388      0x150 .\CortexM3\ARM_GCC_541\Debug\main.o
-                0x00004388                Hardware_Config
+                0x00004470      0x150 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x00004470                Hardware_Config
  .text.DMA_Config
-                0x000044d8      0x130 .\CortexM3\ARM_GCC_541\Debug\main.o
-                0x000044d8                DMA_Config
+                0x000045c0      0x130 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x000045c0                DMA_Config
  .text.GetLastSampleIndex
-                0x00004608       0x60 .\CortexM3\ARM_GCC_541\Debug\main.o
-                0x00004608                GetLastSampleIndex
+                0x000046f0       0x60 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x000046f0                GetLastSampleIndex
  .text.CommandCheck
-                0x00004668      0x180 .\CortexM3\ARM_GCC_541\Debug\main.o
-                0x00004668                CommandCheck
+                0x00004750      0x180 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x00004750                CommandCheck
  .text.PutString
-                0x000047e8       0x24 .\CortexM3\ARM_GCC_541\Debug\main.o
-                0x000047e8                PutString
- .text.PutChar  0x0000480c       0x28 .\CortexM3\ARM_GCC_541\Debug\main.o
-                0x0000480c                PutChar
+                0x000048d0       0x24 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x000048d0                PutString
+ .text.PutChar  0x000048f4       0x28 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x000048f4                PutChar
  .text.CYMEMZERO
-                0x00004834       0x1c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x0000491c       0x1c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.CYCONFIGCPY
-                0x00004850       0x20 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00004938       0x20 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.CyClockStartupError
-                0x00004870        0xc .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00004958        0xc .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.cfg_write_bytes32
-                0x0000487c       0x74 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00004964       0x74 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.ClockSetup
-                0x000048f0      0x17c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x000049d8      0x17c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.AnalogSetDefault
-                0x00004a6c      0x16c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00004b54      0x16c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.AMux_1_Set
-                0x00004bd8       0x6c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
-                0x00004bd8                AMux_1_Set
+                0x00004cc0       0x6c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00004cc0                AMux_1_Set
  .text.AMux_1_Unset
-                0x00004c44       0x74 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
-                0x00004c44                AMux_1_Unset
+                0x00004d2c       0x74 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00004d2c                AMux_1_Unset
  .text.Amux_Trigger_Set
-                0x00004cb8       0x40 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
-                0x00004cb8                Amux_Trigger_Set
+                0x00004da0       0x40 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00004da0                Amux_Trigger_Set
  .text.Amux_Trigger_Unset
-                0x00004cf8       0x44 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
-                0x00004cf8                Amux_Trigger_Unset
+                0x00004de0       0x44 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00004de0                Amux_Trigger_Unset
  .text.cyfitter_cfg
-                0x00004d3c      0x1a4 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
-                0x00004d3c                cyfitter_cfg
+                0x00004e24      0x1a4 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00004e24                cyfitter_cfg
  .text.IntDefaultHandler
-                0x00004ee0       0x14 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                0x00004ee0                IntDefaultHandler
- .text._sbrk    0x00004ef4       0x50 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                0x00004ef4                _sbrk
- .text.Start_c  0x00004f44       0x98 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                0x00004f44                Start_c
+                0x00004fc8       0x14 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00004fc8                IntDefaultHandler
+ .text._sbrk    0x00004fdc       0x50 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00004fdc                _sbrk
+ .text.Start_c  0x0000502c       0x98 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x0000502c                Start_c
  .text.initialize_psoc
-                0x00004fdc       0x94 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                0x00004fdc                initialize_psoc
+                0x000050c4       0x94 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x000050c4                initialize_psoc
  .text.CyDmacConfigure
-                0x00005070       0x5c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
-                0x00005070                CyDmacConfigure
+                0x00005158       0x5c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
+                0x00005158                CyDmacConfigure
  .text.CyDmaChEnable
-                0x000050cc       0x8c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
-                0x000050cc                CyDmaChEnable
+                0x000051b4       0x8c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
+                0x000051b4                CyDmaChEnable
  .text.CyDmaChPriority
-                0x00005158       0x64 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
-                0x00005158                CyDmaChPriority
+                0x00005240       0x64 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
+                0x00005240                CyDmaChPriority
  .text.CyDmaChSetExtendedAddress
-                0x000051bc       0x78 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
-                0x000051bc                CyDmaChSetExtendedAddress
+                0x000052a4       0x78 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
+                0x000052a4                CyDmaChSetExtendedAddress
  .text.CyDmaChSetInitialTd
-                0x00005234       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
-                0x00005234                CyDmaChSetInitialTd
+                0x0000531c       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
+                0x0000531c                CyDmaChSetInitialTd
  .text.CyDmaChSetRequest
-                0x00005270       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
-                0x00005270                CyDmaChSetRequest
+                0x00005358       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
+                0x00005358                CyDmaChSetRequest
  .text.CyDmaChSetConfiguration
-                0x000052c8       0xa0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
-                0x000052c8                CyDmaChSetConfiguration
+                0x000053b0       0xa0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
+                0x000053b0                CyDmaChSetConfiguration
  .text.CyDmaTdAllocate
-                0x00005368       0x5c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
-                0x00005368                CyDmaTdAllocate
+                0x00005450       0x5c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
+                0x00005450                CyDmaTdAllocate
  .text.CyDmaTdSetConfiguration
-                0x000053c4       0x80 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
-                0x000053c4                CyDmaTdSetConfiguration
+                0x000054ac       0x80 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
+                0x000054ac                CyDmaTdSetConfiguration
  .text.CyDmaTdSetAddress
-                0x00005444       0x5c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
-                0x00005444                CyDmaTdSetAddress
+                0x0000552c       0x5c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
+                0x0000552c                CyDmaTdSetAddress
  .text.CyDmaChRoundRobin
-                0x000054a0       0x70 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
-                0x000054a0                CyDmaChRoundRobin
- .text.CyHalt   0x00005510       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyLib.o)
-                0x00005510                CyHalt
+                0x00005588       0x70 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
+                0x00005588                CyDmaChRoundRobin
+ .text.CyHalt   0x000055f8       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyLib.o)
+                0x000055f8                CyHalt
  .text.CyDelayUs
-                0x00005528       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyLib.o)
-                0x00005528                CyDelayUs
+                0x00005610       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyLib.o)
+                0x00005610                CyDelayUs
  .text.CyIntSetVector
-                0x00005550       0x50 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyLib.o)
-                0x00005550                CyIntSetVector
+                0x00005638       0x50 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyLib.o)
+                0x00005638                CyIntSetVector
  .text.CyIntSetPriority
-                0x000055a0       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyLib.o)
-                0x000055a0                CyIntSetPriority
+                0x00005688       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyLib.o)
+                0x00005688                CyIntSetPriority
  .text.CyGetUniqueId
-                0x000055e8       0xc4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyLib.o)
-                0x000055e8                CyGetUniqueId
+                0x000056d0       0xc4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyLib.o)
+                0x000056d0                CyGetUniqueId
  .text.ADC_2_Start
-                0x000056ac       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2.o)
-                0x000056ac                ADC_2_Start
+                0x00005794       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2.o)
+                0x00005794                ADC_2_Start
  .text.ADC_2_Init
-                0x000056d0       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2.o)
-                0x000056d0                ADC_2_Init
+                0x000057b8       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2.o)
+                0x000057b8                ADC_2_Init
  .text.ADC_2_Enable
-                0x00005710       0xcc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2.o)
-                0x00005710                ADC_2_Enable
+                0x000057f8       0xcc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2.o)
+                0x000057f8                ADC_2_Enable
  .text.ADC_2_SetResolution
-                0x000057dc       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2.o)
-                0x000057dc                ADC_2_SetResolution
+                0x000058c4       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2.o)
+                0x000058c4                ADC_2_SetResolution
  .text.ADC_2_CalcGain
-                0x00005830       0x80 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2.o)
+                0x00005918       0x80 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2.o)
  .text.ADC_2_ISR
-                0x000058b0        0xc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2_INT.o)
-                0x000058b0                ADC_2_ISR
+                0x00005998        0xc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2_INT.o)
+                0x00005998                ADC_2_ISR
  .text.ADC_1_Start
-                0x000058bc       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1.o)
-                0x000058bc                ADC_1_Start
+                0x000059a4       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1.o)
+                0x000059a4                ADC_1_Start
  .text.ADC_1_Init
-                0x000058e0       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1.o)
-                0x000058e0                ADC_1_Init
+                0x000059c8       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1.o)
+                0x000059c8                ADC_1_Init
  .text.ADC_1_Enable
-                0x00005920       0xcc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1.o)
-                0x00005920                ADC_1_Enable
+                0x00005a08       0xcc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1.o)
+                0x00005a08                ADC_1_Enable
  .text.ADC_1_SetResolution
-                0x000059ec       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1.o)
-                0x000059ec                ADC_1_SetResolution
+                0x00005ad4       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1.o)
+                0x00005ad4                ADC_1_SetResolution
  .text.ADC_1_CalcGain
-                0x00005a40       0x80 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1.o)
+                0x00005b28       0x80 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1.o)
  .text.ADC_1_ISR
-                0x00005ac0        0xc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1_INT.o)
-                0x00005ac0                ADC_1_ISR
+                0x00005ba8        0xc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1_INT.o)
+                0x00005ba8                ADC_1_ISR
  .text.USBUART_Start
-                0x00005acc       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
-                0x00005acc                USBUART_Start
+                0x00005bb4       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
+                0x00005bb4                USBUART_Start
  .text.USBUART_Init
-                0x00005b08      0x1a4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
-                0x00005b08                USBUART_Init
+                0x00005bf0      0x1a4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
+                0x00005bf0                USBUART_Init
  .text.USBUART_InitComponent
-                0x00005cac      0x100 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
-                0x00005cac                USBUART_InitComponent
+                0x00005d94      0x100 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
+                0x00005d94                USBUART_InitComponent
  .text.USBUART_ReInitComponent
-                0x00005dac       0x68 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
-                0x00005dac                USBUART_ReInitComponent
+                0x00005e94       0x68 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
+                0x00005e94                USBUART_ReInitComponent
  .text.USBUART_GetConfiguration
-                0x00005e14       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
-                0x00005e14                USBUART_GetConfiguration
+                0x00005efc       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
+                0x00005efc                USBUART_GetConfiguration
  .text.USBUART_GetEPState
-                0x00005e2c       0x2c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
-                0x00005e2c                USBUART_GetEPState
+                0x00005f14       0x2c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
+                0x00005f14                USBUART_GetEPState
  .text.USBUART_GetEPCount
-                0x00005e58       0x60 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
-                0x00005e58                USBUART_GetEPCount
+                0x00005f40       0x60 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
+                0x00005f40                USBUART_GetEPCount
  .text.USBUART_LoadInEP
-                0x00005eb8      0x108 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
-                0x00005eb8                USBUART_LoadInEP
+                0x00005fa0      0x108 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
+                0x00005fa0                USBUART_LoadInEP
  .text.USBUART_ReadOutEP
-                0x00005fc0       0x8c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
-                0x00005fc0                USBUART_ReadOutEP
+                0x000060a8       0x8c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
+                0x000060a8                USBUART_ReadOutEP
  .text.USBUART_EnableOutEP
-                0x0000604c       0x5c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
-                0x0000604c                USBUART_EnableOutEP
+                0x00006134       0x5c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
+                0x00006134                USBUART_EnableOutEP
  .text.USBUART_DispatchCDCClassRqst
-                0x000060a8       0xe4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
-                0x000060a8                USBUART_DispatchCDCClassRqst
+                0x00006190       0xe4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
+                0x00006190                USBUART_DispatchCDCClassRqst
  .text.USBUART_GetInterfaceComPort
-                0x0000618c       0x60 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
-                0x0000618c                USBUART_GetInterfaceComPort
+                0x00006274       0x60 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
+                0x00006274                USBUART_GetInterfaceComPort
  .text.USBUART_CDC_Init
-                0x000061ec       0xa8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
-                0x000061ec                USBUART_CDC_Init
+                0x000062d4       0xa8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
+                0x000062d4                USBUART_CDC_Init
  .text.USBUART_PutData
-                0x00006294       0x6c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
-                0x00006294                USBUART_PutData
+                0x0000637c       0x6c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
+                0x0000637c                USBUART_PutData
  .text.USBUART_StrLen
-                0x00006300       0x2c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
+                0x000063e8       0x2c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
  .text.USBUART_PutString
-                0x0000632c       0xdc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
-                0x0000632c                USBUART_PutString
+                0x00006414       0xdc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
+                0x00006414                USBUART_PutString
  .text.USBUART_PutChar
-                0x00006408       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
-                0x00006408                USBUART_PutChar
+                0x000064f0       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
+                0x000064f0                USBUART_PutChar
  .text.USBUART_GetCount
-                0x00006440       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
-                0x00006440                USBUART_GetCount
- .text.USBUART_DataIsReady
-                0x00006494       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
-                0x00006494                USBUART_DataIsReady
- .text.USBUART_CDCIsReady
-                0x000064b8       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
-                0x000064b8                USBUART_CDCIsReady
- .text.USBUART_GetAll
-                0x000064dc       0x4c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
-                0x000064dc                USBUART_GetAll
- .text.USBUART_IsLineChanged
                 0x00006528       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
-                0x00006528                USBUART_IsLineChanged
+                0x00006528                USBUART_GetCount
+ .text.USBUART_DataIsReady
+                0x0000657c       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
+                0x0000657c                USBUART_DataIsReady
+ .text.USBUART_CDCIsReady
+                0x000065a0       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
+                0x000065a0                USBUART_CDCIsReady
+ .text.USBUART_GetAll
+                0x000065c4       0x4c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
+                0x000065c4                USBUART_GetAll
+ .text.USBUART_IsLineChanged
+                0x00006610       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
+                0x00006610                USBUART_IsLineChanged
  .text.USBUART_Cdc_EpInit
-                0x0000657c       0x90 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
-                0x0000657c                USBUART_Cdc_EpInit
+                0x00006664       0x90 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
+                0x00006664                USBUART_Cdc_EpInit
  .text.USBUART_EP_0_ISR
-                0x0000660c       0xf8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
-                0x0000660c                USBUART_EP_0_ISR
+                0x000066f4       0xf8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+                0x000066f4                USBUART_EP_0_ISR
  .text.USBUART_HandleSetup
-                0x00006704       0x88 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
-                0x00006704                USBUART_HandleSetup
+                0x000067ec       0x88 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+                0x000067ec                USBUART_HandleSetup
  .text.USBUART_HandleIN
-                0x0000678c       0x4c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
-                0x0000678c                USBUART_HandleIN
+                0x00006874       0x4c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+                0x00006874                USBUART_HandleIN
  .text.USBUART_HandleOUT
-                0x000067d8       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
-                0x000067d8                USBUART_HandleOUT
+                0x000068c0       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+                0x000068c0                USBUART_HandleOUT
  .text.USBUART_LoadEP0
-                0x00006830       0xd0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
-                0x00006830                USBUART_LoadEP0
+                0x00006918       0xd0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+                0x00006918                USBUART_LoadEP0
  .text.USBUART_InitControlRead
-                0x00006900       0x70 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
-                0x00006900                USBUART_InitControlRead
+                0x000069e8       0x70 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+                0x000069e8                USBUART_InitControlRead
  .text.USBUART_InitZeroLengthControlTransfer
-                0x00006970       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
-                0x00006970                USBUART_InitZeroLengthControlTransfer
+                0x00006a58       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+                0x00006a58                USBUART_InitZeroLengthControlTransfer
  .text.USBUART_ControlReadDataStage
-                0x000069b0        0xc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
-                0x000069b0                USBUART_ControlReadDataStage
+                0x00006a98        0xc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+                0x00006a98                USBUART_ControlReadDataStage
  .text.USBUART_ControlReadStatusStage
-                0x000069bc       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
-                0x000069bc                USBUART_ControlReadStatusStage
+                0x00006aa4       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+                0x00006aa4                USBUART_ControlReadStatusStage
  .text.USBUART_InitControlWrite
-                0x000069fc       0x64 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
-                0x000069fc                USBUART_InitControlWrite
+                0x00006ae4       0x64 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+                0x00006ae4                USBUART_InitControlWrite
  .text.USBUART_ControlWriteDataStage
-                0x00006a60       0xb4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
-                0x00006a60                USBUART_ControlWriteDataStage
+                0x00006b48       0xb4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+                0x00006b48                USBUART_ControlWriteDataStage
  .text.USBUART_ControlWriteStatusStage
-                0x00006b14       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
-                0x00006b14                USBUART_ControlWriteStatusStage
+                0x00006bfc       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+                0x00006bfc                USBUART_ControlWriteStatusStage
  .text.USBUART_InitNoDataControlTransfer
-                0x00006b38       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
-                0x00006b38                USBUART_InitNoDataControlTransfer
+                0x00006c20       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+                0x00006c20                USBUART_InitNoDataControlTransfer
  .text.USBUART_NoDataControlStatusStage
-                0x00006b70       0x4c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
-                0x00006b70                USBUART_NoDataControlStatusStage
+                0x00006c58       0x4c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+                0x00006c58                USBUART_NoDataControlStatusStage
  .text.USBUART_UpdateStatusBlock
-                0x00006bbc       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
-                0x00006bbc                USBUART_UpdateStatusBlock
+                0x00006ca4       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+                0x00006ca4                USBUART_UpdateStatusBlock
  .text.USBUART_InitializeStatusBlock
-                0x00006bfc       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
-                0x00006bfc                USBUART_InitializeStatusBlock
+                0x00006ce4       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+                0x00006ce4                USBUART_InitializeStatusBlock
  .text.USBUART_EP_1_ISR
-                0x00006c30       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_episr.o)
-                0x00006c30                USBUART_EP_1_ISR
+                0x00006d18       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_episr.o)
+                0x00006d18                USBUART_EP_1_ISR
  .text.USBUART_EP_2_ISR
-                0x00006c78       0x4c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_episr.o)
-                0x00006c78                USBUART_EP_2_ISR
+                0x00006d60       0x4c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_episr.o)
+                0x00006d60                USBUART_EP_2_ISR
  .text.USBUART_EP_3_ISR
-                0x00006cc4       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_episr.o)
-                0x00006cc4                USBUART_EP_3_ISR
+                0x00006dac       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_episr.o)
+                0x00006dac                USBUART_EP_3_ISR
  .text.USBUART_SOF_ISR
-                0x00006d18        0xc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_episr.o)
-                0x00006d18                USBUART_SOF_ISR
+                0x00006e00        0xc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_episr.o)
+                0x00006e00                USBUART_SOF_ISR
  .text.USBUART_BUS_RESET_ISR
-                0x00006d24        0xc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_episr.o)
-                0x00006d24                USBUART_BUS_RESET_ISR
+                0x00006e0c        0xc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_episr.o)
+                0x00006e0c                USBUART_BUS_RESET_ISR
  .text.USBUART_DP_ISR
-                0x00006d30        0xc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_pm.o)
-                0x00006d30                USBUART_DP_ISR
+                0x00006e18        0xc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_pm.o)
+                0x00006e18                USBUART_DP_ISR
  .text.USBUART_HandleStandardRqst
-                0x00006d3c      0x4a4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
-                0x00006d3c                USBUART_HandleStandardRqst
+                0x00006e24      0x4a4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
+                0x00006e24                USBUART_HandleStandardRqst
  .text.USBUART_ReadDieID
-                0x000071e0       0xd8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
-                0x000071e0                USBUART_ReadDieID
+                0x000072c8       0xd8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
+                0x000072c8                USBUART_ReadDieID
  .text.USBUART_ConfigReg
-                0x000072b8      0x138 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
-                0x000072b8                USBUART_ConfigReg
+                0x000073a0      0x138 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
+                0x000073a0                USBUART_ConfigReg
  .text.USBUART_Config
-                0x000073f0      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
-                0x000073f0                USBUART_Config
+                0x000074d8      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
+                0x000074d8                USBUART_Config
  .text.USBUART_ConfigAltChanged
-                0x00007794      0x25c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
-                0x00007794                USBUART_ConfigAltChanged
+                0x0000787c      0x25c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
+                0x0000787c                USBUART_ConfigAltChanged
  .text.USBUART_GetConfigTablePtr
-                0x000079f0       0x50 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
-                0x000079f0                USBUART_GetConfigTablePtr
+                0x00007ad8       0x50 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
+                0x00007ad8                USBUART_GetConfigTablePtr
  .text.USBUART_GetDeviceTablePtr
-                0x00007a40       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
-                0x00007a40                USBUART_GetDeviceTablePtr
+                0x00007b28       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
+                0x00007b28                USBUART_GetDeviceTablePtr
  .text.USBUART_GetInterfaceClassTablePtr
-                0x00007a64       0x4c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
-                0x00007a64                USBUART_GetInterfaceClassTablePtr
+                0x00007b4c       0x4c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
+                0x00007b4c                USBUART_GetInterfaceClassTablePtr
  .text.USBUART_SetEndpointHalt
-                0x00007ab0       0xe8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
-                0x00007ab0                USBUART_SetEndpointHalt
+                0x00007b98       0xe8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
+                0x00007b98                USBUART_SetEndpointHalt
  .text.USBUART_ClearEndpointHalt
-                0x00007b98      0x158 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
-                0x00007b98                USBUART_ClearEndpointHalt
+                0x00007c80      0x158 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
+                0x00007c80                USBUART_ClearEndpointHalt
  .text.USBUART_ValidateAlternateSetting
-                0x00007cf0       0x70 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
-                0x00007cf0                USBUART_ValidateAlternateSetting
+                0x00007dd8       0x70 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
+                0x00007dd8                USBUART_ValidateAlternateSetting
  .text.USBUART_HandleVendorRqst
-                0x00007d60       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_vnd.o)
-                0x00007d60                USBUART_HandleVendorRqst
+                0x00007e48       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_vnd.o)
+                0x00007e48                USBUART_HandleVendorRqst
  .text.SampleClock_SetDividerRegister
-                0x00007db4      0x164 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(SampleClock.o)
-                0x00007db4                SampleClock_SetDividerRegister
+                0x00007e9c      0x164 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(SampleClock.o)
+                0x00007e9c                SampleClock_SetDividerRegister
  .text.SampleClock_GetDividerRegister
-                0x00007f18       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(SampleClock.o)
-                0x00007f18                SampleClock_GetDividerRegister
+                0x00008000       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(SampleClock.o)
+                0x00008000                SampleClock_GetDividerRegister
  .text.SampleClock_GetSourceRegister
-                0x00007f30       0x1c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(SampleClock.o)
-                0x00007f30                SampleClock_GetSourceRegister
+                0x00008018       0x1c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(SampleClock.o)
+                0x00008018                SampleClock_GetSourceRegister
  .text.Vtrigger_Init
-                0x00007f4c       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
-                0x00007f4c                Vtrigger_Init
+                0x00008034       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
+                0x00008034                Vtrigger_Init
  .text.Vtrigger_Enable
-                0x00007f74       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
-                0x00007f74                Vtrigger_Enable
+                0x0000805c       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
+                0x0000805c                Vtrigger_Enable
  .text.Vtrigger_Start
-                0x00007fa8       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
-                0x00007fa8                Vtrigger_Start
+                0x00008090       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
+                0x00008090                Vtrigger_Start
  .text.Vtrigger_SetSpeed
-                0x00007fd0       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
-                0x00007fd0                Vtrigger_SetSpeed
+                0x000080b8       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
+                0x000080b8                Vtrigger_SetSpeed
  .text.Vtrigger_SetRange
-                0x00008010       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
-                0x00008010                Vtrigger_SetRange
+                0x000080f8       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
+                0x000080f8                Vtrigger_SetRange
  .text.Vtrigger_SetValue
-                0x00008050       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
-                0x00008050                Vtrigger_SetValue
+                0x00008138       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
+                0x00008138                Vtrigger_SetValue
  .text.Vtrigger_DacTrim
-                0x00008070       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
-                0x00008070                Vtrigger_DacTrim
+                0x00008158       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
+                0x00008158                Vtrigger_DacTrim
  .text.Amux_Trigger_FastSelect
-                0x000080ac       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Amux_Trigger.o)
-                0x000080ac                Amux_Trigger_FastSelect
+                0x00008194       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Amux_Trigger.o)
+                0x00008194                Amux_Trigger_FastSelect
  .text.DMA_Channel_1_DmaInitialize
-                0x000080e4       0x64 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(DMA_Channel_1_dma.o)
-                0x000080e4                DMA_Channel_1_DmaInitialize
+                0x000081cc       0x64 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(DMA_Channel_1_dma.o)
+                0x000081cc                DMA_Channel_1_DmaInitialize
  .text.DMA_Channel_2_DmaInitialize
-                0x00008148       0x64 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(DMA_Channel_2_dma.o)
-                0x00008148                DMA_Channel_2_DmaInitialize
+                0x00008230       0x64 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(DMA_Channel_2_dma.o)
+                0x00008230                DMA_Channel_2_DmaInitialize
  .text.PWM_Sample_Buffer_Start
-                0x000081ac       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
-                0x000081ac                PWM_Sample_Buffer_Start
+                0x00008294       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
+                0x00008294                PWM_Sample_Buffer_Start
  .text.PWM_Sample_Buffer_Init
-                0x000081d0       0x94 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
-                0x000081d0                PWM_Sample_Buffer_Init
+                0x000082b8       0x94 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
+                0x000082b8                PWM_Sample_Buffer_Init
  .text.PWM_Sample_Buffer_Enable
-                0x00008264       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
-                0x00008264                PWM_Sample_Buffer_Enable
+                0x0000834c       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
+                0x0000834c                PWM_Sample_Buffer_Enable
  .text.PWM_Sample_Buffer_WriteCounter
-                0x00008284       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
-                0x00008284                PWM_Sample_Buffer_WriteCounter
+                0x0000836c       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
+                0x0000836c                PWM_Sample_Buffer_WriteCounter
  .text.PWM_Sample_Buffer_ClearFIFO
-                0x000082a4       0x1c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
-                0x000082a4                PWM_Sample_Buffer_ClearFIFO
+                0x0000838c       0x1c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
+                0x0000838c                PWM_Sample_Buffer_ClearFIFO
  .text.PWM_Sample_Buffer_WritePeriod
-                0x000082c0       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
-                0x000082c0                PWM_Sample_Buffer_WritePeriod
+                0x000083a8       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
+                0x000083a8                PWM_Sample_Buffer_WritePeriod
  .text.PWM_Sample_Buffer_WriteCompare
-                0x000082e0       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
-                0x000082e0                PWM_Sample_Buffer_WriteCompare
+                0x000083c8       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
+                0x000083c8                PWM_Sample_Buffer_WriteCompare
  .text.PWM_Sample_Buffer_SetInterruptMode
-                0x00008300       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
-                0x00008300                PWM_Sample_Buffer_SetInterruptMode
+                0x000083e8       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
+                0x000083e8                PWM_Sample_Buffer_SetInterruptMode
  .text.PWM_Sample_Buffer_ReadStatusRegister
-                0x00008320       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
-                0x00008320                PWM_Sample_Buffer_ReadStatusRegister
+                0x00008408       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
+                0x00008408                PWM_Sample_Buffer_ReadStatusRegister
  .text.PWM_Sample_Buffer_ReadCapture
-                0x00008338       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
-                0x00008338                PWM_Sample_Buffer_ReadCapture
+                0x00008420       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
+                0x00008420                PWM_Sample_Buffer_ReadCapture
  .text.USBUART_Dp_ClearInterrupt
-                0x00008350       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_Dp.o)
-                0x00008350                USBUART_Dp_ClearInterrupt
+                0x00008438       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_Dp.o)
+                0x00008438                USBUART_Dp_ClearInterrupt
  .text.Trigger_Control_Write
-                0x00008370       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Control.o)
-                0x00008370                Trigger_Control_Write
+                0x00008458       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Control.o)
+                0x00008458                Trigger_Control_Write
  .text.Trigger_Control_Read
-                0x00008390       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Control.o)
-                0x00008390                Trigger_Control_Read
+                0x00008478       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Control.o)
+                0x00008478                Trigger_Control_Read
  .text.Trigger_Status_Read
-                0x000083a8       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Status.o)
-                0x000083a8                Trigger_Status_Read
+                0x00008490       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Status.o)
+                0x00008490                Trigger_Status_Read
  .text.Trigger_Comp_Init
-                0x000083c0       0x68 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
-                0x000083c0                Trigger_Comp_Init
+                0x000084a8       0x68 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
+                0x000084a8                Trigger_Comp_Init
  .text.Trigger_Comp_Enable
-                0x00008428       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
-                0x00008428                Trigger_Comp_Enable
+                0x00008510       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
+                0x00008510                Trigger_Comp_Enable
  .text.Trigger_Comp_Start
-                0x0000845c       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
-                0x0000845c                Trigger_Comp_Start
+                0x00008544       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
+                0x00008544                Trigger_Comp_Start
  .text.Trigger_Comp_SetSpeed
-                0x00008480       0x84 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
-                0x00008480                Trigger_Comp_SetSpeed
+                0x00008568       0x84 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
+                0x00008568                Trigger_Comp_SetSpeed
  .text.PRS_Init
-                0x00008504       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
-                0x00008504                PRS_Init
+                0x000085ec       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
+                0x000085ec                PRS_Init
  .text.PRS_Enable
-                0x00008528       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
-                0x00008528                PRS_Enable
+                0x00008610       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
+                0x00008610                PRS_Enable
  .text.PRS_Start
-                0x00008548       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
-                0x00008548                PRS_Start
+                0x00008630       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
+                0x00008630                PRS_Start
  .text.PRS_ResetSeedInit
-                0x0000856c       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
-                0x0000856c                PRS_ResetSeedInit
+                0x00008654       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
+                0x00008654                PRS_ResetSeedInit
  .text.PRS_WriteSeed
-                0x000085c0       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
-                0x000085c0                PRS_WriteSeed
+                0x000086a8       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
+                0x000086a8                PRS_WriteSeed
  .text.PRS_WritePolynomial
-                0x000085e0       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
-                0x000085e0                PRS_WritePolynomial
+                0x000086c8       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
+                0x000086c8                PRS_WritePolynomial
  .text.Wave_Control_Write
-                0x00008600       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
-                0x00008600                Wave_Control_Write
+                0x000086e8       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
+                0x000086e8                Wave_Control_Write
  .text.Wave_Control_Read
-                0x00008620       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
-                0x00008620                Wave_Control_Read
+                0x00008708       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
+                0x00008708                Wave_Control_Read
+ .text.Digital_Out_Control_Write
+                0x00008720       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Digital_Out_Control.o)
+                0x00008720                Digital_Out_Control_Write
  .text.AuxDAC_Buf_Init
-                0x00008638       0x10 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
-                0x00008638                AuxDAC_Buf_Init
+                0x00008740       0x10 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
+                0x00008740                AuxDAC_Buf_Init
  .text.AuxDAC_Buf_Enable
-                0x00008648       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
-                0x00008648                AuxDAC_Buf_Enable
+                0x00008750       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
+                0x00008750                AuxDAC_Buf_Enable
  .text.AuxDAC_Buf_Start
-                0x00008690       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
-                0x00008690                AuxDAC_Buf_Start
+                0x00008798       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
+                0x00008798                AuxDAC_Buf_Start
  .text.AuxDAC_Buf_SetPower
-                0x000086b4       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
-                0x000086b4                AuxDAC_Buf_SetPower
+                0x000087bc       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
+                0x000087bc                AuxDAC_Buf_SetPower
  .text.AuxDAC_1_Init
-                0x000086f4       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
-                0x000086f4                AuxDAC_1_Init
+                0x000087fc       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
+                0x000087fc                AuxDAC_1_Init
  .text.AuxDAC_1_Enable
-                0x0000871c       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
-                0x0000871c                AuxDAC_1_Enable
+                0x00008824       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
+                0x00008824                AuxDAC_1_Enable
  .text.AuxDAC_1_Start
-                0x00008750       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
-                0x00008750                AuxDAC_1_Start
+                0x00008858       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
+                0x00008858                AuxDAC_1_Start
  .text.AuxDAC_1_SetSpeed
-                0x00008778       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
-                0x00008778                AuxDAC_1_SetSpeed
+                0x00008880       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
+                0x00008880                AuxDAC_1_SetSpeed
  .text.AuxDAC_1_SetRange
-                0x000087b8       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
-                0x000087b8                AuxDAC_1_SetRange
+                0x000088c0       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
+                0x000088c0                AuxDAC_1_SetRange
  .text.AuxDAC_1_SetValue
-                0x000087f8       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
-                0x000087f8                AuxDAC_1_SetValue
+                0x00008900       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
+                0x00008900                AuxDAC_1_SetValue
  .text.AuxDAC_1_DacTrim
-                0x00008818       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
-                0x00008818                AuxDAC_1_DacTrim
+                0x00008920       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
+                0x00008920                AuxDAC_1_DacTrim
  .text.ScopeA_Buf_Init
-                0x00008854       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
-                0x00008854                ScopeA_Buf_Init
+                0x0000895c       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
+                0x0000895c                ScopeA_Buf_Init
  .text.ScopeA_Buf_Enable
-                0x00008890       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
-                0x00008890                ScopeA_Buf_Enable
+                0x00008998       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
+                0x00008998                ScopeA_Buf_Enable
  .text.ScopeA_Buf_Start
-                0x000088d8       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
-                0x000088d8                ScopeA_Buf_Start
+                0x000089e0       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
+                0x000089e0                ScopeA_Buf_Start
  .text.ScopeA_Buf_SetPower
-                0x000088fc       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
-                0x000088fc                ScopeA_Buf_SetPower
+                0x00008a04       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
+                0x00008a04                ScopeA_Buf_SetPower
  .text.ScopeA_Buf_SetGain
-                0x00008934       0xbc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
-                0x00008934                ScopeA_Buf_SetGain
+                0x00008a3c       0xbc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
+                0x00008a3c                ScopeA_Buf_SetGain
  .text.ScopeB_Buf_Init
-                0x000089f0       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
-                0x000089f0                ScopeB_Buf_Init
+                0x00008af8       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
+                0x00008af8                ScopeB_Buf_Init
  .text.ScopeB_Buf_Enable
-                0x00008a2c       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
-                0x00008a2c                ScopeB_Buf_Enable
+                0x00008b34       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
+                0x00008b34                ScopeB_Buf_Enable
  .text.ScopeB_Buf_Start
-                0x00008a74       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
-                0x00008a74                ScopeB_Buf_Start
+                0x00008b7c       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
+                0x00008b7c                ScopeB_Buf_Start
  .text.ScopeB_Buf_SetPower
-                0x00008a98       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
-                0x00008a98                ScopeB_Buf_SetPower
+                0x00008ba0       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
+                0x00008ba0                ScopeB_Buf_SetPower
  .text.ScopeB_Buf_SetGain
-                0x00008ad0       0xbc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
-                0x00008ad0                ScopeB_Buf_SetGain
+                0x00008bd8       0xbc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
+                0x00008bd8                ScopeB_Buf_SetGain
  .text.WaveA_DAC_Init
-                0x00008b8c       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
-                0x00008b8c                WaveA_DAC_Init
+                0x00008c94       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
+                0x00008c94                WaveA_DAC_Init
  .text.WaveA_DAC_Enable
-                0x00008be0       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
-                0x00008be0                WaveA_DAC_Enable
+                0x00008ce8       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
+                0x00008ce8                WaveA_DAC_Enable
  .text.WaveA_DAC_Start
-                0x00008c14       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
-                0x00008c14                WaveA_DAC_Start
+                0x00008d1c       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
+                0x00008d1c                WaveA_DAC_Start
  .text.WaveA_DAC_Wave1Setup
-                0x00008c38       0x68 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
-                0x00008c38                WaveA_DAC_Wave1Setup
+                0x00008d40       0x68 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
+                0x00008d40                WaveA_DAC_Wave1Setup
  .text.WaveA_DAC_Wave2Setup
-                0x00008ca0       0x68 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
-                0x00008ca0                WaveA_DAC_Wave2Setup
+                0x00008da8       0x68 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
+                0x00008da8                WaveA_DAC_Wave2Setup
  .text.WaveA_Buf_Init
-                0x00008d08       0x10 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
-                0x00008d08                WaveA_Buf_Init
+                0x00008e10       0x10 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
+                0x00008e10                WaveA_Buf_Init
  .text.WaveA_Buf_Enable
-                0x00008d18       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
-                0x00008d18                WaveA_Buf_Enable
+                0x00008e20       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
+                0x00008e20                WaveA_Buf_Enable
  .text.WaveA_Buf_Start
-                0x00008d60       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
-                0x00008d60                WaveA_Buf_Start
+                0x00008e68       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
+                0x00008e68                WaveA_Buf_Start
  .text.WaveA_Buf_SetPower
-                0x00008d84       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
-                0x00008d84                WaveA_Buf_SetPower
+                0x00008e8c       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
+                0x00008e8c                WaveA_Buf_SetPower
  .text.WaveA_Clock_SetDividerRegister
-                0x00008dc4      0x164 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
-                0x00008dc4                WaveA_Clock_SetDividerRegister
+                0x00008ecc      0x164 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
+                0x00008ecc                WaveA_Clock_SetDividerRegister
  .text.WaveA_Clock_GetDividerRegister
-                0x00008f28       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
-                0x00008f28                WaveA_Clock_GetDividerRegister
+                0x00009030       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
+                0x00009030                WaveA_Clock_GetDividerRegister
  .text.WaveA_Clock_GetSourceRegister
-                0x00008f40       0x1c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
-                0x00008f40                WaveA_Clock_GetSourceRegister
+                0x00009048       0x1c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
+                0x00009048                WaveA_Clock_GetSourceRegister
  .text.WaveB_Buf_Init
-                0x00008f5c       0x10 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
-                0x00008f5c                WaveB_Buf_Init
+                0x00009064       0x10 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
+                0x00009064                WaveB_Buf_Init
  .text.WaveB_Buf_Enable
-                0x00008f6c       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
-                0x00008f6c                WaveB_Buf_Enable
+                0x00009074       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
+                0x00009074                WaveB_Buf_Enable
  .text.WaveB_Buf_Start
-                0x00008fb4       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
-                0x00008fb4                WaveB_Buf_Start
+                0x000090bc       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
+                0x000090bc                WaveB_Buf_Start
  .text.WaveB_Buf_SetPower
-                0x00008fd8       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
-                0x00008fd8                WaveB_Buf_SetPower
+                0x000090e0       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
+                0x000090e0                WaveB_Buf_SetPower
  .text.WaveB_DAC_Init
-                0x00009018       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
-                0x00009018                WaveB_DAC_Init
+                0x00009120       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
+                0x00009120                WaveB_DAC_Init
  .text.WaveB_DAC_Enable
-                0x0000906c       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
-                0x0000906c                WaveB_DAC_Enable
+                0x00009174       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
+                0x00009174                WaveB_DAC_Enable
  .text.WaveB_DAC_Start
-                0x000090a0       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
-                0x000090a0                WaveB_DAC_Start
+                0x000091a8       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
+                0x000091a8                WaveB_DAC_Start
  .text.WaveB_DAC_Wave1Setup
-                0x000090c4       0x68 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
-                0x000090c4                WaveB_DAC_Wave1Setup
+                0x000091cc       0x68 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
+                0x000091cc                WaveB_DAC_Wave1Setup
  .text.WaveB_DAC_Wave2Setup
-                0x0000912c       0x68 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
-                0x0000912c                WaveB_DAC_Wave2Setup
+                0x00009234       0x68 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
+                0x00009234                WaveB_DAC_Wave2Setup
  .text.WaveB_Clock_SetDividerRegister
-                0x00009194      0x164 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
-                0x00009194                WaveB_Clock_SetDividerRegister
+                0x0000929c      0x164 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
+                0x0000929c                WaveB_Clock_SetDividerRegister
  .text.WaveB_Clock_GetDividerRegister
-                0x000092f8       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
-                0x000092f8                WaveB_Clock_GetDividerRegister
+                0x00009400       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
+                0x00009400                WaveB_Clock_GetDividerRegister
  .text.WaveB_Clock_GetSourceRegister
-                0x00009310       0x1c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
-                0x00009310                WaveB_Clock_GetSourceRegister
+                0x00009418       0x1c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
+                0x00009418                WaveB_Clock_GetSourceRegister
  .text.WaveA_DAC_Wave1_DMA_DmaInitialize
-                0x0000932c       0x64 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
-                0x0000932c                WaveA_DAC_Wave1_DMA_DmaInitialize
+                0x00009434       0x64 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
+                0x00009434                WaveA_DAC_Wave1_DMA_DmaInitialize
  .text.WaveA_DAC_Wave2_DMA_DmaInitialize
-                0x00009390       0x64 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
-                0x00009390                WaveA_DAC_Wave2_DMA_DmaInitialize
+                0x00009498       0x64 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
+                0x00009498                WaveA_DAC_Wave2_DMA_DmaInitialize
  .text.WaveA_DAC_VDAC8_Init
-                0x000093f4       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
-                0x000093f4                WaveA_DAC_VDAC8_Init
+                0x000094fc       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
+                0x000094fc                WaveA_DAC_VDAC8_Init
  .text.WaveA_DAC_VDAC8_Enable
-                0x00009430       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
-                0x00009430                WaveA_DAC_VDAC8_Enable
+                0x00009538       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
+                0x00009538                WaveA_DAC_VDAC8_Enable
  .text.WaveA_DAC_VDAC8_SetSpeed
-                0x00009464       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
-                0x00009464                WaveA_DAC_VDAC8_SetSpeed
+                0x0000956c       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
+                0x0000956c                WaveA_DAC_VDAC8_SetSpeed
  .text.WaveA_DAC_VDAC8_SetRange
-                0x000094a4       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
-                0x000094a4                WaveA_DAC_VDAC8_SetRange
+                0x000095ac       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
+                0x000095ac                WaveA_DAC_VDAC8_SetRange
  .text.WaveA_DAC_VDAC8_SetValue
-                0x000094e4       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
-                0x000094e4                WaveA_DAC_VDAC8_SetValue
+                0x000095ec       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
+                0x000095ec                WaveA_DAC_VDAC8_SetValue
  .text.WaveA_DAC_VDAC8_DacTrim
-                0x00009504       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
-                0x00009504                WaveA_DAC_VDAC8_DacTrim
+                0x0000960c       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
+                0x0000960c                WaveA_DAC_VDAC8_DacTrim
  .text.WaveB_DAC_Wave1_DMA_DmaInitialize
-                0x00009540       0x64 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
-                0x00009540                WaveB_DAC_Wave1_DMA_DmaInitialize
+                0x00009648       0x64 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
+                0x00009648                WaveB_DAC_Wave1_DMA_DmaInitialize
  .text.WaveB_DAC_Wave2_DMA_DmaInitialize
-                0x000095a4       0x64 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
-                0x000095a4                WaveB_DAC_Wave2_DMA_DmaInitialize
+                0x000096ac       0x64 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
+                0x000096ac                WaveB_DAC_Wave2_DMA_DmaInitialize
  .text.WaveB_DAC_VDAC8_Init
-                0x00009608       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
-                0x00009608                WaveB_DAC_VDAC8_Init
+                0x00009710       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
+                0x00009710                WaveB_DAC_VDAC8_Init
  .text.WaveB_DAC_VDAC8_Enable
-                0x00009644       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
-                0x00009644                WaveB_DAC_VDAC8_Enable
+                0x0000974c       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
+                0x0000974c                WaveB_DAC_VDAC8_Enable
  .text.WaveB_DAC_VDAC8_SetSpeed
-                0x00009678       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
-                0x00009678                WaveB_DAC_VDAC8_SetSpeed
+                0x00009780       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
+                0x00009780                WaveB_DAC_VDAC8_SetSpeed
  .text.WaveB_DAC_VDAC8_SetRange
-                0x000096b8       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
-                0x000096b8                WaveB_DAC_VDAC8_SetRange
+                0x000097c0       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
+                0x000097c0                WaveB_DAC_VDAC8_SetRange
  .text.WaveB_DAC_VDAC8_SetValue
-                0x000096f8       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
-                0x000096f8                WaveB_DAC_VDAC8_SetValue
+                0x00009800       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
+                0x00009800                WaveB_DAC_VDAC8_SetValue
  .text.WaveB_DAC_VDAC8_DacTrim
-                0x00009718       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
-                0x00009718                WaveB_DAC_VDAC8_DacTrim
+                0x00009820       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
+                0x00009820                WaveB_DAC_VDAC8_DacTrim
  .text.NoiseA_Clock_SetDividerRegister
-                0x00009754      0x164 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
-                0x00009754                NoiseA_Clock_SetDividerRegister
+                0x0000985c      0x164 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
+                0x0000985c                NoiseA_Clock_SetDividerRegister
  .text.NoiseA_Clock_GetDividerRegister
-                0x000098b8       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
-                0x000098b8                NoiseA_Clock_GetDividerRegister
+                0x000099c0       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
+                0x000099c0                NoiseA_Clock_GetDividerRegister
  .text.NoiseA_Clock_GetSourceRegister
-                0x000098d0       0x1c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
-                0x000098d0                NoiseA_Clock_GetSourceRegister
+                0x000099d8       0x1c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
+                0x000099d8                NoiseA_Clock_GetSourceRegister
  .text.Dig_PWM_Start
-                0x000098ec       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
-                0x000098ec                Dig_PWM_Start
+                0x000099f4       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+                0x000099f4                Dig_PWM_Start
  .text.Dig_PWM_Init
-                0x00009910       0x7c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
-                0x00009910                Dig_PWM_Init
+                0x00009a18       0x7c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+                0x00009a18                Dig_PWM_Init
  .text.Dig_PWM_Enable
-                0x0000998c       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
-                0x0000998c                Dig_PWM_Enable
+                0x00009a94       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+                0x00009a94                Dig_PWM_Enable
  .text.Dig_PWM_WriteCounter
-                0x000099ac       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
-                0x000099ac                Dig_PWM_WriteCounter
+                0x00009ab4       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+                0x00009ab4                Dig_PWM_WriteCounter
  .text.Dig_PWM_ClearFIFO
-                0x000099cc       0x1c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
-                0x000099cc                Dig_PWM_ClearFIFO
+                0x00009ad4       0x1c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+                0x00009ad4                Dig_PWM_ClearFIFO
  .text.Dig_PWM_WritePeriod
-                0x000099e8       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
-                0x000099e8                Dig_PWM_WritePeriod
+                0x00009af0       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+                0x00009af0                Dig_PWM_WritePeriod
  .text.Dig_PWM_WriteCompare
-                0x00009a08       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
-                0x00009a08                Dig_PWM_WriteCompare
+                0x00009b10       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+                0x00009b10                Dig_PWM_WriteCompare
  .text.Dig_PWM_SetInterruptMode
-                0x00009a28       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
-                0x00009a28                Dig_PWM_SetInterruptMode
+                0x00009b30       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+                0x00009b30                Dig_PWM_SetInterruptMode
  .text.Dig_PWM_ReadStatusRegister
-                0x00009a48       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
-                0x00009a48                Dig_PWM_ReadStatusRegister
+                0x00009b50       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+                0x00009b50                Dig_PWM_ReadStatusRegister
  .text.Dig_PWM_ReadCapture
-                0x00009a60       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
-                0x00009a60                Dig_PWM_ReadCapture
+                0x00009b68       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+                0x00009b68                Dig_PWM_ReadCapture
  .text.Dig_PWM_Clock_Start
-                0x00009a78       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
-                0x00009a78                Dig_PWM_Clock_Start
+                0x00009b80       0x34 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
+                0x00009b80                Dig_PWM_Clock_Start
  .text.Dig_PWM_Clock_SetDividerRegister
-                0x00009aac      0x164 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
-                0x00009aac                Dig_PWM_Clock_SetDividerRegister
+                0x00009bb4      0x164 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
+                0x00009bb4                Dig_PWM_Clock_SetDividerRegister
  .text.Dig_PWM_Clock_GetDividerRegister
-                0x00009c10       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
-                0x00009c10                Dig_PWM_Clock_GetDividerRegister
+                0x00009d18       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
+                0x00009d18                Dig_PWM_Clock_GetDividerRegister
  .text.Dig_PWM_Clock_GetSourceRegister
-                0x00009c28       0x1c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
-                0x00009c28                Dig_PWM_Clock_GetSourceRegister
- .text.Dig_Out_Reg_Write
-                0x00009c44       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_Out_Reg.o)
-                0x00009c44                Dig_Out_Reg_Write
+                0x00009d30       0x1c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
+                0x00009d30                Dig_PWM_Clock_GetSourceRegister
  .text.ScopeC_Buf_Init
-                0x00009c64       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
-                0x00009c64                ScopeC_Buf_Init
+                0x00009d4c       0x3c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
+                0x00009d4c                ScopeC_Buf_Init
  .text.ScopeC_Buf_Enable
-                0x00009ca0       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
-                0x00009ca0                ScopeC_Buf_Enable
+                0x00009d88       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
+                0x00009d88                ScopeC_Buf_Enable
  .text.ScopeC_Buf_Start
-                0x00009ce8       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
-                0x00009ce8                ScopeC_Buf_Start
+                0x00009dd0       0x24 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
+                0x00009dd0                ScopeC_Buf_Start
  .text.ScopeC_Buf_SetPower
-                0x00009d0c       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
-                0x00009d0c                ScopeC_Buf_SetPower
+                0x00009df4       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
+                0x00009df4                ScopeC_Buf_SetPower
  .text.ScopeC_Buf_SetGain
-                0x00009d44       0xbc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
-                0x00009d44                ScopeC_Buf_SetGain
+                0x00009e2c       0xbc .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
+                0x00009e2c                ScopeC_Buf_SetGain
  .text.AMux_1_FastSelect
-                0x00009e00       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AMux_1.o)
-                0x00009e00                AMux_1_FastSelect
- .text          0x00009e38       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyBootAsmGnu.o)
-                0x00009e38                CyDelayCycles
-                0x00009e48                CyEnterCriticalSection
-                0x00009e50                CyExitCriticalSection
+                0x00009ee8       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AMux_1.o)
+                0x00009ee8                AMux_1_FastSelect
+ .text          0x00009f20       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyBootAsmGnu.o)
+                0x00009f20                CyDelayCycles
+                0x00009f30                CyEnterCriticalSection
+                0x00009f38                CyExitCriticalSection
  .text.USBUART_DispatchClassRqst
-                0x00009e58       0x84 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cls.o)
-                0x00009e58                USBUART_DispatchClassRqst
- .text          0x00009edc      0x370 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubdf3.o)
-                0x00009edc                __aeabi_drsub
-                0x00009ee4                __aeabi_dsub
-                0x00009ee4                __subdf3
-                0x00009ee8                __aeabi_dadd
-                0x00009ee8                __adddf3
-                0x0000a160                __floatunsidf
-                0x0000a160                __aeabi_ui2d
-                0x0000a180                __floatsidf
-                0x0000a180                __aeabi_i2d
-                0x0000a1a4                __aeabi_f2d
-                0x0000a1a4                __extendsfdf2
-                0x0000a1e0                __floatundidf
-                0x0000a1e0                __aeabi_ul2d
-                0x0000a1f0                __floatdidf
-                0x0000a1f0                __aeabi_l2d
- .text          0x0000a24c      0x424 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivdf3.o)
-                0x0000a24c                __aeabi_dmul
-                0x0000a24c                __muldf3
-                0x0000a4a0                __divdf3
-                0x0000a4a0                __aeabi_ddiv
- .text          0x0000a670       0x40 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixunsdfsi.o)
-                0x0000a670                __aeabi_d2uiz
-                0x0000a670                __fixunsdfsi
- .text          0x0000a6b0       0xa0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_truncdfsf2.o)
-                0x0000a6b0                __truncdfsf2
-                0x0000a6b0                __aeabi_d2f
- .text          0x0000a750      0x21c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
-                0x0000a750                __aeabi_frsub
-                0x0000a758                __subsf3
-                0x0000a758                __aeabi_fsub
-                0x0000a75c                __aeabi_fadd
-                0x0000a75c                __addsf3
-                0x0000a8bc                __aeabi_ui2f
-                0x0000a8bc                __floatunsisf
-                0x0000a8c4                __aeabi_i2f
-                0x0000a8c4                __floatsisf
-                0x0000a8e0                __aeabi_ul2f
-                0x0000a8e0                __floatundisf
-                0x0000a8f0                __aeabi_l2f
-                0x0000a8f0                __floatdisf
- .text          0x0000a96c      0x2a0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
-                0x0000a96c                __mulsf3
-                0x0000a96c                __aeabi_fmul
-                0x0000aad4                __aeabi_fdiv
-                0x0000aad4                __divsf3
- .text          0x0000ac0c       0xec c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_cmpsf2.o)
-                0x0000ac0c                __gesf2
-                0x0000ac0c                __gtsf2
-                0x0000ac14                __lesf2
-                0x0000ac14                __ltsf2
-                0x0000ac1c                __nesf2
-                0x0000ac1c                __eqsf2
-                0x0000ac1c                __cmpsf2
-                0x0000ac7c                __aeabi_cfrcmple
-                0x0000ac84                __aeabi_cfcmpeq
-                0x0000ac84                __aeabi_cfcmple
-                0x0000ac94                __aeabi_fcmpeq
-                0x0000aca8                __aeabi_fcmplt
-                0x0000acbc                __aeabi_fcmple
-                0x0000acd0                __aeabi_fcmpge
-                0x0000ace4                __aeabi_fcmpgt
- .text          0x0000acf8       0x40 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixunssfsi.o)
-                0x0000acf8                __fixunssfsi
-                0x0000acf8                __aeabi_f2uiz
- .text.__errno  0x0000ad38        0xc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
-                0x0000ad38                __errno
+                0x00009f40       0x84 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cls.o)
+                0x00009f40                USBUART_DispatchClassRqst
+ .text          0x00009fc4      0x370 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubdf3.o)
+                0x00009fc4                __aeabi_drsub
+                0x00009fcc                __aeabi_dsub
+                0x00009fcc                __subdf3
+                0x00009fd0                __aeabi_dadd
+                0x00009fd0                __adddf3
+                0x0000a248                __floatunsidf
+                0x0000a248                __aeabi_ui2d
+                0x0000a268                __floatsidf
+                0x0000a268                __aeabi_i2d
+                0x0000a28c                __aeabi_f2d
+                0x0000a28c                __extendsfdf2
+                0x0000a2c8                __floatundidf
+                0x0000a2c8                __aeabi_ul2d
+                0x0000a2d8                __floatdidf
+                0x0000a2d8                __aeabi_l2d
+ .text          0x0000a334      0x424 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivdf3.o)
+                0x0000a334                __aeabi_dmul
+                0x0000a334                __muldf3
+                0x0000a588                __divdf3
+                0x0000a588                __aeabi_ddiv
+ .text          0x0000a758       0x40 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixunsdfsi.o)
+                0x0000a758                __aeabi_d2uiz
+                0x0000a758                __fixunsdfsi
+ .text          0x0000a798       0xa0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_truncdfsf2.o)
+                0x0000a798                __truncdfsf2
+                0x0000a798                __aeabi_d2f
+ .text          0x0000a838      0x21c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
+                0x0000a838                __aeabi_frsub
+                0x0000a840                __subsf3
+                0x0000a840                __aeabi_fsub
+                0x0000a844                __aeabi_fadd
+                0x0000a844                __addsf3
+                0x0000a9a4                __aeabi_ui2f
+                0x0000a9a4                __floatunsisf
+                0x0000a9ac                __aeabi_i2f
+                0x0000a9ac                __floatsisf
+                0x0000a9c8                __aeabi_ul2f
+                0x0000a9c8                __floatundisf
+                0x0000a9d8                __aeabi_l2f
+                0x0000a9d8                __floatdisf
+ .text          0x0000aa54      0x2a0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
+                0x0000aa54                __mulsf3
+                0x0000aa54                __aeabi_fmul
+                0x0000abbc                __aeabi_fdiv
+                0x0000abbc                __divsf3
+ .text          0x0000acf4       0xec c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_cmpsf2.o)
+                0x0000acf4                __gesf2
+                0x0000acf4                __gtsf2
+                0x0000acfc                __lesf2
+                0x0000acfc                __ltsf2
+                0x0000ad04                __nesf2
+                0x0000ad04                __eqsf2
+                0x0000ad04                __cmpsf2
+                0x0000ad64                __aeabi_cfrcmple
+                0x0000ad6c                __aeabi_cfcmpeq
+                0x0000ad6c                __aeabi_cfcmple
+                0x0000ad7c                __aeabi_fcmpeq
+                0x0000ad90                __aeabi_fcmplt
+                0x0000ada4                __aeabi_fcmple
+                0x0000adb8                __aeabi_fcmpge
+                0x0000adcc                __aeabi_fcmpgt
+ .text          0x0000ade0       0x40 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixunssfsi.o)
+                0x0000ade0                __fixunssfsi
+                0x0000ade0                __aeabi_f2uiz
+ .text.__errno  0x0000ae20        0xc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                0x0000ae20                __errno
  .text.__libc_init_array
-                0x0000ad44       0x4c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
-                0x0000ad44                __libc_init_array
- .text.memcpy   0x0000ad90       0x16 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
-                0x0000ad90                memcpy
- .text.memset   0x0000ada6       0x10 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
-                0x0000ada6                memset
- *fill*         0x0000adb6        0x2 
- .text.sscanf   0x0000adb8       0x54 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sscanf.o)
-                0x0000adb8                siscanf
-                0x0000adb8                sscanf
+                0x0000ae2c       0x4c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x0000ae2c                __libc_init_array
+ .text.memcpy   0x0000ae78       0x16 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+                0x0000ae78                memcpy
+ .text.memset   0x0000ae8e       0x10 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x0000ae8e                memset
+ *fill*         0x0000ae9e        0x2 
+ .text.sscanf   0x0000aea0       0x54 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sscanf.o)
+                0x0000aea0                siscanf
+                0x0000aea0                sscanf
  .text.__seofread
-                0x0000ae0c        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
-                0x0000ae0c                __seofread
- .text          0x0000ae10       0x10 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strlen.o)
-                0x0000ae10                strlen
- .text.strtok   0x0000ae20       0x64 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strtok.o)
-                0x0000ae20                strtok
+                0x0000aef4        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
+                0x0000aef4                __seofread
+ .text          0x0000aef8       0x10 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strlen.o)
+                0x0000aef8                strlen
+ .text.strtok   0x0000af08       0x64 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strtok.o)
+                0x0000af08                strtok
  .text.__strtok_r
-                0x0000ae84       0x56 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strtok_r.o)
-                0x0000ae84                __strtok_r
- *fill*         0x0000aeda        0x2 
- .text.malloc   0x0000aedc       0x10 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-malloc.o)
-                0x0000aedc                malloc
- .text._free_r  0x0000aeec       0x98 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
-                0x0000aeec                _free_r
+                0x0000af6c       0x56 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strtok_r.o)
+                0x0000af6c                __strtok_r
+ *fill*         0x0000afc2        0x2 
+ .text.malloc   0x0000afc4       0x10 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-malloc.o)
+                0x0000afc4                malloc
+ .text._free_r  0x0000afd4       0x98 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+                0x0000afd4                _free_r
  .text._malloc_r
-                0x0000af84       0xbc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
-                0x0000af84                _malloc_r
+                0x0000b06c       0xbc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+                0x0000b06c                _malloc_r
  .text._sungetc_r
-                0x0000b040       0x7c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfscanf.o)
-                0x0000b040                _sungetc_r
+                0x0000b128       0x7c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfscanf.o)
+                0x0000b128                _sungetc_r
  .text.__ssrefill_r
-                0x0000b0bc       0x3a c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfscanf.o)
-                0x0000b0bc                __ssrefill_r
- *fill*         0x0000b0f6        0x2 
+                0x0000b1a4       0x3a c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfscanf.o)
+                0x0000b1a4                __ssrefill_r
+ *fill*         0x0000b1de        0x2 
  .text.__ssvfscanf_r
-                0x0000b0f8      0x2a8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfscanf.o)
-                0x0000b0f8                __ssvfiscanf_r
-                0x0000b0f8                __ssvfscanf_r
+                0x0000b1e0      0x2a8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfscanf.o)
+                0x0000b1e0                __ssvfiscanf_r
+                0x0000b1e0                __ssvfscanf_r
  .text._scanf_chars
-                0x0000b3a0       0xcc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfscanf_i.o)
-                0x0000b3a0                _scanf_chars
+                0x0000b488       0xcc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfscanf_i.o)
+                0x0000b488                _scanf_chars
  .text._scanf_i
-                0x0000b46c      0x1e4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfscanf_i.o)
-                0x0000b46c                _scanf_i
- .text._sbrk_r  0x0000b650       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
-                0x0000b650                _sbrk_r
- .text.__sccl   0x0000b670       0x60 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sccl.o)
-                0x0000b670                __sccl
+                0x0000b554      0x1e4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfscanf_i.o)
+                0x0000b554                _scanf_i
+ .text._sbrk_r  0x0000b738       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+                0x0000b738                _sbrk_r
+ .text.__sccl   0x0000b758       0x60 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sccl.o)
+                0x0000b758                __sccl
  .text._strtol_r
-                0x0000b6d0      0x10c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strtol.o)
-                0x0000b6d0                _strtol_r
+                0x0000b7b8      0x10c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strtol.o)
+                0x0000b7b8                _strtol_r
  .text._strtoul_r
-                0x0000b7dc       0xfc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strtoul.o)
-                0x0000b7dc                _strtoul_r
+                0x0000b8c4       0xfc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strtoul.o)
+                0x0000b8c4                _strtoul_r
  .text.__submore
-                0x0000b8d8       0x72 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-ungetc.o)
-                0x0000b8d8                __submore
- .text.memchr   0x0000b94a       0x1c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr-stub.o)
-                0x0000b94a                memchr
+                0x0000b9c0       0x72 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-ungetc.o)
+                0x0000b9c0                __submore
+ .text.memchr   0x0000ba32       0x1c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr-stub.o)
+                0x0000ba32                memchr
  .text.__malloc_lock
-                0x0000b966        0x2 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
-                0x0000b966                __malloc_lock
+                0x0000ba4e        0x2 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
+                0x0000ba4e                __malloc_lock
  .text.__malloc_unlock
-                0x0000b968        0x2 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
-                0x0000b968                __malloc_unlock
+                0x0000ba50        0x2 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
+                0x0000ba50                __malloc_unlock
  .text._realloc_r
-                0x0000b96a       0x4c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
-                0x0000b96a                _realloc_r
+                0x0000ba52       0x4c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+                0x0000ba52                _realloc_r
  .text._malloc_usable_size_r
-                0x0000b9b6       0x14 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
-                0x0000b9b6                _malloc_usable_size_r
+                0x0000ba9e       0x14 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+                0x0000ba9e                _malloc_usable_size_r
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
- .glue_7t       0x0000b9ca        0x0 linker stubs
+ .glue_7t       0x0000bab2        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x0000b9ca        0x0 linker stubs
+ .glue_7        0x0000bab2        0x0 linker stubs
  *(.vfp11_veneer)
- .vfp11_veneer  0x0000b9ca        0x0 linker stubs
+ .vfp11_veneer  0x0000bab2        0x0 linker stubs
  *(.bootloader)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
 
-.v4_bx          0x0000b9cc        0x0
- .v4_bx         0x0000b9cc        0x0 linker stubs
+.v4_bx          0x0000bab4        0x0
+ .v4_bx         0x0000bab4        0x0 linker stubs
 
-.iplt           0x0000b9cc        0x0
- .iplt          0x0000b9cc        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+.iplt           0x0000bab4        0x0
+ .iplt          0x0000bab4        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
 
-.eh_frame       0x0000b9cc        0x4
+.eh_frame       0x0000bab4        0x4
  *(.eh_frame)
- .eh_frame      0x0000b9cc        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
- .eh_frame      0x0000b9cc        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .eh_frame      0x0000bab4        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .eh_frame      0x0000bab4        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
                 [!provide]                PROVIDE (__exidx_start, .)
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000b9d0                __exidx_end = .
+                0x0000bab8                __exidx_end = .
 
-.rodata         0x0000b9d0      0x900
+.rodata         0x0000bab8      0x900
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x0000b9d0       0x55 .\CortexM3\ARM_GCC_541\Debug\main.o
- *fill*         0x0000ba25        0x3 
- .rodata        0x0000ba28       0x4e .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
-                0x0000ba28                AMux_1__addrTable
-                0x0000ba38                AMux_1__maskTable
-                0x0000ba3c                Amux_Trigger__addrTable
-                0x0000ba48                Amux_Trigger__maskTable
- *fill*         0x0000ba76        0x2 
- .rodata        0x0000ba78       0x11 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
- *fill*         0x0000ba89        0x3 
- .rodata        0x0000ba8c       0x15 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
- *fill*         0x0000baa1        0x3 
- .rodata        0x0000baa4       0x15 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
- *fill*         0x0000bab9        0x3 
- .rodata        0x0000babc      0x232 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
-                0x0000babc                WaveA_DAC_wave1
-                0x0000bcbc                WaveA_DAC_wave2
- *fill*         0x0000bcee        0x2 
- .rodata        0x0000bcf0      0x264 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
-                0x0000bcf0                WaveB_DAC_wave1
-                0x0000bef0                WaveB_DAC_wave2
- .rodata        0x0000bf54       0x15 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
- *fill*         0x0000bf69        0x3 
- .rodata        0x0000bf6c      0x19c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_descr.o)
-                0x0000bf6c                USBUART_DEVICE0_DESCR
-                0x0000bf80                USBUART_DEVICE0_CONFIGURATION0_DESCR
-                0x0000bfc4                USBUART_STRING_DESCRIPTORS
-                0x0000c064                USBUART_SN_STRING_DESCRIPTOR
-                0x0000c068                USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
-                0x0000c080                USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
-                0x0000c084                USBUART_DEVICE0_CONFIGURATION0_TABLE
-                0x0000c0ac                USBUART_DEVICE0_TABLE
-                0x0000c0c4                USBUART_TABLE
-                0x0000c0cc                USBUART_MSOS_DESCRIPTOR
-                0x0000c0e0                USBUART_MSOS_CONFIGURATION_DESCR
+ .rodata        0x0000bab8       0x59 .\CortexM3\ARM_GCC_541\Debug\main.o
+ *fill*         0x0000bb11        0x3 
+ .rodata        0x0000bb14       0x4e .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x0000bb14                AMux_1__addrTable
+                0x0000bb24                AMux_1__maskTable
+                0x0000bb28                Amux_Trigger__addrTable
+                0x0000bb34                Amux_Trigger__maskTable
+ *fill*         0x0000bb62        0x2 
+ .rodata        0x0000bb64       0x11 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
+ *fill*         0x0000bb75        0x3 
+ .rodata        0x0000bb78       0x15 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
+ *fill*         0x0000bb8d        0x3 
+ .rodata        0x0000bb90       0x15 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
+ *fill*         0x0000bba5        0x3 
+ .rodata        0x0000bba8      0x232 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
+                0x0000bba8                WaveA_DAC_wave1
+                0x0000bda8                WaveA_DAC_wave2
+ *fill*         0x0000bdda        0x2 
+ .rodata        0x0000bddc      0x264 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
+                0x0000bddc                WaveB_DAC_wave1
+                0x0000bfdc                WaveB_DAC_wave2
+ .rodata        0x0000c040       0x15 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
+ *fill*         0x0000c055        0x3 
+ .rodata        0x0000c058      0x19c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_descr.o)
+                0x0000c058                USBUART_DEVICE0_DESCR
+                0x0000c06c                USBUART_DEVICE0_CONFIGURATION0_DESCR
+                0x0000c0b0                USBUART_STRING_DESCRIPTORS
+                0x0000c150                USBUART_SN_STRING_DESCRIPTOR
+                0x0000c154                USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+                0x0000c16c                USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+                0x0000c170                USBUART_DEVICE0_CONFIGURATION0_TABLE
+                0x0000c198                USBUART_DEVICE0_TABLE
+                0x0000c1b0                USBUART_TABLE
+                0x0000c1b8                USBUART_MSOS_DESCRIPTOR
+                0x0000c1cc                USBUART_MSOS_CONFIGURATION_DESCR
  .rodata.str1.1
-                0x0000c108        0x2 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x0000c1f4        0x2 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
  .rodata.str1.1
-                0x0000c10a        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfscanf.o)
- *fill*         0x0000c10e        0x2 
- .rodata        0x0000c110        0xc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfscanf_i.o)
+                0x0000c1f6        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfscanf.o)
+ *fill*         0x0000c1fa        0x2 
+ .rodata        0x0000c1fc        0xc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfscanf_i.o)
  .rodata.str1.1
-                0x0000c11c       0x1b c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfscanf_i.o)
+                0x0000c208       0x1b c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfscanf_i.o)
  .rodata._ctype_
-                0x0000c137      0x101 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-ctype_.o)
-                0x0000c137                _ctype_
+                0x0000c223      0x101 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-ctype_.o)
+                0x0000c223                _ctype_
  .rodata.__sf_fake_stdin
-                0x0000c238       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x0000c238                __sf_fake_stdin
+                0x0000c324       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x0000c324                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x0000c258       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x0000c258                __sf_fake_stdout
+                0x0000c344       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x0000c344                __sf_fake_stdout
  .rodata.__sf_fake_stderr
-                0x0000c278       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x0000c278                __sf_fake_stderr
-                0x0000c298                . = ALIGN (0x4)
+                0x0000c364       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x0000c364                __sf_fake_stderr
+                0x0000c384                . = ALIGN (0x4)
  *(.init)
- .init          0x0000c298        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
-                0x0000c298                _init
- .init          0x0000c29c        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
-                0x0000c2a4                . = ALIGN (0x4)
-                0x0000c2a4                __preinit_array_start = .
+ .init          0x0000c384        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x0000c384                _init
+ .init          0x0000c388        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x0000c390                . = ALIGN (0x4)
+                0x0000c390                __preinit_array_start = .
  *(.preinit_array)
-                0x0000c2a4                __preinit_array_end = .
-                0x0000c2a4                . = ALIGN (0x4)
-                0x0000c2a4                __init_array_start = .
+                0x0000c390                __preinit_array_end = .
+                0x0000c390                . = ALIGN (0x4)
+                0x0000c390                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x0000c2a4        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
- .init_array    0x0000c2a8        0x4 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                0x0000c2ac                __init_array_end = .
-                0x0000c2ac                . = ALIGN (0x4)
+ .init_array    0x0000c390        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .init_array    0x0000c394        0x4 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x0000c398                __init_array_end = .
+                0x0000c398                . = ALIGN (0x4)
  *(.fini)
- .fini          0x0000c2ac        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
-                0x0000c2ac                _fini
- .fini          0x0000c2b0        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
-                0x0000c2b8                . = ALIGN (0x4)
-                0x0000c2b8                __fini_array_start = .
+ .fini          0x0000c398        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x0000c398                _fini
+ .fini          0x0000c39c        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x0000c3a4                . = ALIGN (0x4)
+                0x0000c3a4                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x0000c2b8        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .fini_array    0x0000c3a4        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x0000c2bc                __fini_array_end = .
-                0x0000c2bc                . = ALIGN (0x4)
+                0x0000c3a8                __fini_array_end = .
+                0x0000c3a8                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x0000c2bc                . = ALIGN (0x4)
+                0x0000c3a8                . = ALIGN (0x4)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x0000c2bc                . = ALIGN (0x4)
-                0x0000c2bc                __cy_regions = .
-                0x0000c2bc        0x4 LONG 0xc2d0 __cy_region_init_ram
-                0x0000c2c0        0x4 LONG 0x1fff80c8 __cy_region_start_data
-                0x0000c2c4        0x4 LONG 0xb0 __cy_region_init_size_ram
-                0x0000c2c8        0x4 LONG 0x4218 __cy_region_zero_size_ram
-                0x0000c2cc                __cy_regions_end = .
-                0x0000c2d0                . = ALIGN (0x8)
- *fill*         0x0000c2cc        0x4 
-                0x0000c2d0                _etext = .
+                0x0000c3a8                . = ALIGN (0x4)
+                0x0000c3a8                __cy_regions = .
+                0x0000c3a8        0x4 LONG 0xc3b8 __cy_region_init_ram
+                0x0000c3ac        0x4 LONG 0x1fff80c8 __cy_region_start_data
+                0x0000c3b0        0x4 LONG 0xb0 __cy_region_init_size_ram
+                0x0000c3b4        0x4 LONG 0x4218 __cy_region_zero_size_ram
+                0x0000c3b8                __cy_regions_end = .
+                0x0000c3b8                . = ALIGN (0x8)
+                0x0000c3b8                _etext = .
 
 .ramvectors     0x1fff8000       0xc0
                 0x1fff8000                __cy_region_start_ram = .
@@ -2286,7 +2285,7 @@ END GROUP
  .noinit        0x1fff80c4        0x1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyLib.o)
                 0x1fff80c4                CyResetStatus
 
-.data           0x1fff80c8       0xb0 load address 0x0000c2d0
+.data           0x1fff80c8       0xb0 load address 0x0000c3b8
                 0x1fff80c8                __cy_region_start_data = .
  *(.jcr)
  .jcr           0x1fff80c8        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
@@ -2332,10 +2331,10 @@ END GROUP
  *(.ram)
                 0x1fff8178                _edata = .
 
-.igot.plt       0x1fff8178        0x0 load address 0x0000c380
+.igot.plt       0x1fff8178        0x0 load address 0x0000c468
  .igot.plt      0x1fff8178        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
-.bss            0x1fff8178     0x4218 load address 0x0000c380
+.bss            0x1fff8178     0x4218 load address 0x0000c468
                 0x1fff8178                PROVIDE (__bss_start__, .)
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
@@ -2461,11 +2460,11 @@ END GROUP
                 0x1fffc390                __end = .
                 0x1fffc390                PROVIDE (end, .)
                 0x1fffc390                PROVIDE (__bss_end__, .)
-                0x0000c2d0                __cy_region_init_ram = LOADADDR (.data)
+                0x0000c3b8                __cy_region_init_ram = LOADADDR (.data)
                 0x000000b0                __cy_region_init_size_ram = (_edata - ADDR (.data))
                 0x00004218                __cy_region_zero_size_ram = (_end - _edata)
 
-.heap           0x1fffc390       0x80 load address 0x0000c380
+.heap           0x1fffc390       0x80 load address 0x0000c468
                 0x1fffc390                . = _end
                 0x1fffc410                . = (. + 0x80)
  *fill*         0x1fffc390       0x80 
@@ -2620,45 +2619,45 @@ END GROUP
  .debug_aranges
                 0x00000d90       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
  .debug_aranges
-                0x00000db8       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
+                0x00000db8       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Digital_Out_Control.o)
  .debug_aranges
-                0x00000df8       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
+                0x00000de0       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
  .debug_aranges
-                0x00000e50       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
+                0x00000e20       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
  .debug_aranges
-                0x00000e98       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
+                0x00000e78       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
  .debug_aranges
-                0x00000ee0       0x50 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
+                0x00000ec0       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
  .debug_aranges
-                0x00000f30       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
+                0x00000f08       0x50 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
  .debug_aranges
-                0x00000f70       0x70 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
+                0x00000f58       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
  .debug_aranges
-                0x00000fe0       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
+                0x00000f98       0x70 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
  .debug_aranges
-                0x00001020       0x50 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
+                0x00001008       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
  .debug_aranges
-                0x00001070       0x70 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
+                0x00001048       0x50 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
  .debug_aranges
-                0x000010e0       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
+                0x00001098       0x70 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
  .debug_aranges
-                0x00001108       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
+                0x00001108       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
  .debug_aranges
-                0x00001130       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
+                0x00001130       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
  .debug_aranges
-                0x00001188       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
+                0x00001158       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
  .debug_aranges
-                0x000011b0       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
+                0x000011b0       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
  .debug_aranges
-                0x000011d8       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
+                0x000011d8       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
  .debug_aranges
-                0x00001230       0x70 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
+                0x00001200       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
  .debug_aranges
-                0x000012a0       0x98 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+                0x00001258       0x70 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
  .debug_aranges
-                0x00001338       0x70 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
+                0x000012c8       0x98 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
  .debug_aranges
-                0x000013a8       0x28 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_Out_Reg.o)
+                0x00001360       0x70 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
  .debug_aranges
                 0x000013d0       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
  .debug_aranges
@@ -2677,66 +2676,66 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x9df6
+.debug_info     0x00000000     0x9dfb
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0x503 .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_info    0x00000503      0x51c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_info    0x00000a1f      0x32b .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_info    0x00000d4a       0xd3 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_info    0x00000e1d      0x16a .\CortexM3\ARM_GCC_541\Debug\cybootloader.o
- .debug_info    0x00000f87      0x8c0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
- .debug_info    0x00001847      0xe51 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyLib.o)
- .debug_info    0x00002698      0x57a .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(cyPm.o)
- .debug_info    0x00002c12      0x45b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2.o)
- .debug_info    0x0000306d       0x92 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2_INT.o)
- .debug_info    0x000030ff      0x45b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1.o)
- .debug_info    0x0000355a       0x92 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1_INT.o)
- .debug_info    0x000035ec      0x717 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
- .debug_info    0x00003d03      0x924 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
- .debug_info    0x00004627      0x52d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
- .debug_info    0x00004b54      0x23b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_episr.o)
- .debug_info    0x00004d8f      0x18d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_pm.o)
- .debug_info    0x00004f1c      0x961 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
- .debug_info    0x0000587d      0x1a9 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_vnd.o)
- .debug_info    0x00005a26      0x25d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(SampleClock.o)
- .debug_info    0x00005c83      0x185 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
- .debug_info    0x00005e08       0xf7 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Amux_Trigger.o)
- .debug_info    0x00005eff      0x11b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(DMA_Channel_1_dma.o)
- .debug_info    0x0000601a      0x11b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(DMA_Channel_2_dma.o)
- .debug_info    0x00006135      0x2a7 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
- .debug_info    0x000063dc      0x171 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_Dp.o)
- .debug_info    0x0000654d       0xd7 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Control.o)
- .debug_info    0x00006624      0x142 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Status.o)
- .debug_info    0x00006766      0x246 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
- .debug_info    0x000069ac      0x205 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
- .debug_info    0x00006bb1       0xd7 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
- .debug_info    0x00006c88      0x125 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
- .debug_info    0x00006dad      0x185 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
- .debug_info    0x00006f32      0x192 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
- .debug_info    0x000070c4      0x192 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
- .debug_info    0x00007256      0x259 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
- .debug_info    0x000074af      0x125 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
- .debug_info    0x000075d4      0x25d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
- .debug_info    0x00007831      0x125 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
- .debug_info    0x00007956      0x259 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
- .debug_info    0x00007baf      0x25d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
- .debug_info    0x00007e0c      0x11b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
- .debug_info    0x00007f27      0x11b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
- .debug_info    0x00008042      0x185 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
- .debug_info    0x000081c7      0x11b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
- .debug_info    0x000082e2      0x11b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
- .debug_info    0x000083fd      0x185 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
- .debug_info    0x00008582      0x25d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
- .debug_info    0x000087df      0x28a .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
- .debug_info    0x00008a69      0x25d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
- .debug_info    0x00008cc6       0xd7 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_Out_Reg.o)
- .debug_info    0x00008d9d      0x192 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
- .debug_info    0x00008f2f       0xf7 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AMux_1.o)
- .debug_info    0x00009026       0xae .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyBootAsmGnu.o)
- .debug_info    0x000090d4      0x3b9 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyFlash.o)
- .debug_info    0x0000948d      0x4c0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CySpc.o)
- .debug_info    0x0000994d      0x1c8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cls.o)
- .debug_info    0x00009b15      0x2e1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_descr.o)
+ .debug_info    0x00000000      0x511 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_info    0x00000511      0x51c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_info    0x00000a2d      0x32b .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_info    0x00000d58       0xd3 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x00000e2b      0x16a .\CortexM3\ARM_GCC_541\Debug\cybootloader.o
+ .debug_info    0x00000f95      0x8c0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
+ .debug_info    0x00001855      0xe51 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyLib.o)
+ .debug_info    0x000026a6      0x57a .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(cyPm.o)
+ .debug_info    0x00002c20      0x45b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2.o)
+ .debug_info    0x0000307b       0x92 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2_INT.o)
+ .debug_info    0x0000310d      0x45b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1.o)
+ .debug_info    0x00003568       0x92 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1_INT.o)
+ .debug_info    0x000035fa      0x717 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
+ .debug_info    0x00003d11      0x924 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
+ .debug_info    0x00004635      0x52d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+ .debug_info    0x00004b62      0x23b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_episr.o)
+ .debug_info    0x00004d9d      0x18d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_pm.o)
+ .debug_info    0x00004f2a      0x961 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
+ .debug_info    0x0000588b      0x1a9 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_vnd.o)
+ .debug_info    0x00005a34      0x25d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(SampleClock.o)
+ .debug_info    0x00005c91      0x185 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
+ .debug_info    0x00005e16       0xf7 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Amux_Trigger.o)
+ .debug_info    0x00005f0d      0x11b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(DMA_Channel_1_dma.o)
+ .debug_info    0x00006028      0x11b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(DMA_Channel_2_dma.o)
+ .debug_info    0x00006143      0x2a7 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
+ .debug_info    0x000063ea      0x171 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_Dp.o)
+ .debug_info    0x0000655b       0xd7 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Control.o)
+ .debug_info    0x00006632      0x142 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Status.o)
+ .debug_info    0x00006774      0x246 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
+ .debug_info    0x000069ba      0x205 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
+ .debug_info    0x00006bbf       0xd7 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
+ .debug_info    0x00006c96       0xd7 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Digital_Out_Control.o)
+ .debug_info    0x00006d6d      0x125 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
+ .debug_info    0x00006e92      0x185 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
+ .debug_info    0x00007017      0x192 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
+ .debug_info    0x000071a9      0x192 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
+ .debug_info    0x0000733b      0x259 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
+ .debug_info    0x00007594      0x125 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
+ .debug_info    0x000076b9      0x25d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
+ .debug_info    0x00007916      0x125 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
+ .debug_info    0x00007a3b      0x259 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
+ .debug_info    0x00007c94      0x25d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
+ .debug_info    0x00007ef1      0x11b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
+ .debug_info    0x0000800c      0x11b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
+ .debug_info    0x00008127      0x185 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
+ .debug_info    0x000082ac      0x11b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
+ .debug_info    0x000083c7      0x11b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
+ .debug_info    0x000084e2      0x185 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
+ .debug_info    0x00008667      0x25d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
+ .debug_info    0x000088c4      0x28a .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+ .debug_info    0x00008b4e      0x25d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
+ .debug_info    0x00008dab      0x192 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
+ .debug_info    0x00008f3d       0xf7 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AMux_1.o)
+ .debug_info    0x00009034       0xa5 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyBootAsmGnu.o)
+ .debug_info    0x000090d9      0x3b9 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyFlash.o)
+ .debug_info    0x00009492      0x4c0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CySpc.o)
+ .debug_info    0x00009952      0x1c8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cls.o)
+ .debug_info    0x00009b1a      0x2e1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_descr.o)
 
 .debug_abbrev   0x00000000     0x378b
  *(.debug_abbrev)
@@ -2771,26 +2770,26 @@ END GROUP
  .debug_abbrev  0x00001e86      0x146 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
  .debug_abbrev  0x00001fcc      0x123 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
  .debug_abbrev  0x000020ef       0x81 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
- .debug_abbrev  0x00002170       0xa8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
- .debug_abbrev  0x00002218       0xeb .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
- .debug_abbrev  0x00002303       0xd0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
- .debug_abbrev  0x000023d3       0xd0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
- .debug_abbrev  0x000024a3       0xec .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
- .debug_abbrev  0x0000258f       0xa8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
- .debug_abbrev  0x00002637      0x11d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
- .debug_abbrev  0x00002754       0xa8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
- .debug_abbrev  0x000027fc       0xec .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
- .debug_abbrev  0x000028e8      0x11d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
- .debug_abbrev  0x00002a05       0x8b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
- .debug_abbrev  0x00002a90       0x8b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
- .debug_abbrev  0x00002b1b       0xeb .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
- .debug_abbrev  0x00002c06       0x8b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
- .debug_abbrev  0x00002c91       0x8b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
- .debug_abbrev  0x00002d1c       0xeb .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
- .debug_abbrev  0x00002e07      0x11d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
- .debug_abbrev  0x00002f24      0x12e .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
- .debug_abbrev  0x00003052      0x11d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
- .debug_abbrev  0x0000316f       0x81 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_Out_Reg.o)
+ .debug_abbrev  0x00002170       0x81 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Digital_Out_Control.o)
+ .debug_abbrev  0x000021f1       0xa8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
+ .debug_abbrev  0x00002299       0xeb .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
+ .debug_abbrev  0x00002384       0xd0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
+ .debug_abbrev  0x00002454       0xd0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
+ .debug_abbrev  0x00002524       0xec .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
+ .debug_abbrev  0x00002610       0xa8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
+ .debug_abbrev  0x000026b8      0x11d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
+ .debug_abbrev  0x000027d5       0xa8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
+ .debug_abbrev  0x0000287d       0xec .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
+ .debug_abbrev  0x00002969      0x11d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
+ .debug_abbrev  0x00002a86       0x8b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
+ .debug_abbrev  0x00002b11       0x8b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
+ .debug_abbrev  0x00002b9c       0xeb .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
+ .debug_abbrev  0x00002c87       0x8b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
+ .debug_abbrev  0x00002d12       0x8b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
+ .debug_abbrev  0x00002d9d       0xeb .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
+ .debug_abbrev  0x00002e88      0x11d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
+ .debug_abbrev  0x00002fa5      0x12e .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+ .debug_abbrev  0x000030d3      0x11d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
  .debug_abbrev  0x000031f0       0xd0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
  .debug_abbrev  0x000032c0       0x87 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AMux_1.o)
  .debug_abbrev  0x00003347       0x14 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyBootAsmGnu.o)
@@ -2799,66 +2798,66 @@ END GROUP
  .debug_abbrev  0x00003612       0xc5 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cls.o)
  .debug_abbrev  0x000036d7       0xb4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_descr.o)
 
-.debug_line     0x00000000     0x51ab
+.debug_line     0x00000000     0x51cc
  *(.debug_line)
- .debug_line    0x00000000      0x463 .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_line    0x00000463      0x275 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_line    0x000006d8      0x1da .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_line    0x000008b2      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_line    0x000009f3       0x53 .\CortexM3\ARM_GCC_541\Debug\cybootloader.o
- .debug_line    0x00000a46      0x2b6 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
- .debug_line    0x00000cfc      0x883 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyLib.o)
- .debug_line    0x0000157f      0x38e .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(cyPm.o)
- .debug_line    0x0000190d      0x1e2 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2.o)
- .debug_line    0x00001aef       0x55 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2_INT.o)
- .debug_line    0x00001b44      0x1e2 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1.o)
- .debug_line    0x00001d26       0x55 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1_INT.o)
- .debug_line    0x00001d7b      0x307 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
- .debug_line    0x00002082      0x30c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
- .debug_line    0x0000238e      0x21f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
- .debug_line    0x000025ad       0xf2 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_episr.o)
- .debug_line    0x0000269f       0xe6 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_pm.o)
- .debug_line    0x00002785      0x470 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
- .debug_line    0x00002bf5       0x8f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_vnd.o)
- .debug_line    0x00002c84      0x1aa .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(SampleClock.o)
- .debug_line    0x00002e2e       0xf1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
- .debug_line    0x00002f1f       0xa1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Amux_Trigger.o)
- .debug_line    0x00002fc0       0x80 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(DMA_Channel_1_dma.o)
- .debug_line    0x00003040       0x80 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(DMA_Channel_2_dma.o)
- .debug_line    0x000030c0      0x195 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
- .debug_line    0x00003255       0xbf .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_Dp.o)
- .debug_line    0x00003314       0x78 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Control.o)
- .debug_line    0x0000338c       0xb1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Status.o)
- .debug_line    0x0000343d      0x174 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
- .debug_line    0x000035b1      0x10c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
- .debug_line    0x000036bd       0x75 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
- .debug_line    0x00003732       0xb2 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
- .debug_line    0x000037e4       0xf1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
- .debug_line    0x000038d5       0xda .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
- .debug_line    0x000039af       0xda .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
- .debug_line    0x00003a89       0xf1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
- .debug_line    0x00003b7a       0xb1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
- .debug_line    0x00003c2b      0x1aa .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
- .debug_line    0x00003dd5       0xb1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
- .debug_line    0x00003e86       0xf1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
- .debug_line    0x00003f77      0x1aa .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
- .debug_line    0x00004121       0x86 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
- .debug_line    0x000041a7       0x86 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
- .debug_line    0x0000422d       0xf7 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
- .debug_line    0x00004324       0x86 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
- .debug_line    0x000043aa       0x86 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
- .debug_line    0x00004430       0xf7 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
- .debug_line    0x00004527      0x1ab .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
- .debug_line    0x000046d2      0x188 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
- .debug_line    0x0000485a      0x1ac .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
- .debug_line    0x00004a06       0x74 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_Out_Reg.o)
- .debug_line    0x00004a7a       0xda .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
- .debug_line    0x00004b54       0x9b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AMux_1.o)
- .debug_line    0x00004bef       0x66 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyBootAsmGnu.o)
- .debug_line    0x00004c55      0x22f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyFlash.o)
- .debug_line    0x00004e84      0x231 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CySpc.o)
- .debug_line    0x000050b5       0x95 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cls.o)
- .debug_line    0x0000514a       0x61 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_descr.o)
+ .debug_line    0x00000000      0x47c .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_line    0x0000047c      0x275 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_line    0x000006f1      0x1da .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_line    0x000008cb      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x00000a0c       0x53 .\CortexM3\ARM_GCC_541\Debug\cybootloader.o
+ .debug_line    0x00000a5f      0x2b6 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
+ .debug_line    0x00000d15      0x883 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyLib.o)
+ .debug_line    0x00001598      0x38e .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(cyPm.o)
+ .debug_line    0x00001926      0x1e2 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2.o)
+ .debug_line    0x00001b08       0x55 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2_INT.o)
+ .debug_line    0x00001b5d      0x1e2 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1.o)
+ .debug_line    0x00001d3f       0x55 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1_INT.o)
+ .debug_line    0x00001d94      0x307 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
+ .debug_line    0x0000209b      0x30c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
+ .debug_line    0x000023a7      0x21f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+ .debug_line    0x000025c6       0xf2 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_episr.o)
+ .debug_line    0x000026b8       0xe6 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_pm.o)
+ .debug_line    0x0000279e      0x470 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
+ .debug_line    0x00002c0e       0x8f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_vnd.o)
+ .debug_line    0x00002c9d      0x1aa .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(SampleClock.o)
+ .debug_line    0x00002e47       0xf1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
+ .debug_line    0x00002f38       0xa1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Amux_Trigger.o)
+ .debug_line    0x00002fd9       0x80 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(DMA_Channel_1_dma.o)
+ .debug_line    0x00003059       0x80 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(DMA_Channel_2_dma.o)
+ .debug_line    0x000030d9      0x195 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
+ .debug_line    0x0000326e       0xbf .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_Dp.o)
+ .debug_line    0x0000332d       0x78 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Control.o)
+ .debug_line    0x000033a5       0xb1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Status.o)
+ .debug_line    0x00003456      0x174 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
+ .debug_line    0x000035ca      0x10c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
+ .debug_line    0x000036d6       0x75 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
+ .debug_line    0x0000374b       0x7c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Digital_Out_Control.o)
+ .debug_line    0x000037c7       0xb2 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
+ .debug_line    0x00003879       0xf1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
+ .debug_line    0x0000396a       0xda .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
+ .debug_line    0x00003a44       0xda .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
+ .debug_line    0x00003b1e       0xf1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
+ .debug_line    0x00003c0f       0xb1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
+ .debug_line    0x00003cc0      0x1aa .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
+ .debug_line    0x00003e6a       0xb1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
+ .debug_line    0x00003f1b       0xf1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
+ .debug_line    0x0000400c      0x1aa .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
+ .debug_line    0x000041b6       0x86 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
+ .debug_line    0x0000423c       0x86 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
+ .debug_line    0x000042c2       0xf7 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
+ .debug_line    0x000043b9       0x86 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
+ .debug_line    0x0000443f       0x86 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
+ .debug_line    0x000044c5       0xf7 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
+ .debug_line    0x000045bc      0x1ab .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
+ .debug_line    0x00004767      0x188 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+ .debug_line    0x000048ef      0x1ac .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
+ .debug_line    0x00004a9b       0xda .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
+ .debug_line    0x00004b75       0x9b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AMux_1.o)
+ .debug_line    0x00004c10       0x66 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyBootAsmGnu.o)
+ .debug_line    0x00004c76      0x22f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyFlash.o)
+ .debug_line    0x00004ea5      0x231 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CySpc.o)
+ .debug_line    0x000050d6       0x95 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cls.o)
+ .debug_line    0x0000516b       0x61 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_descr.o)
 
 .debug_frame    0x00000000     0x585c
  *(.debug_frame)
@@ -2891,26 +2890,26 @@ END GROUP
  .debug_frame   0x00003158      0x19c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
  .debug_frame   0x000032f4      0x150 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
  .debug_frame   0x00003444       0x5c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
- .debug_frame   0x000034a0       0xb8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
- .debug_frame   0x00003558      0x130 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
- .debug_frame   0x00003688       0xe0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
- .debug_frame   0x00003768       0xe0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
- .debug_frame   0x00003848       0xf8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
- .debug_frame   0x00003940       0xb8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
- .debug_frame   0x000039f8      0x1b4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
- .debug_frame   0x00003bac       0xb8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
- .debug_frame   0x00003c64       0xf8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
- .debug_frame   0x00003d5c      0x1b4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
- .debug_frame   0x00003f10       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
- .debug_frame   0x00003f68       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
- .debug_frame   0x00003fc0      0x130 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
- .debug_frame   0x000040f0       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
- .debug_frame   0x00004148       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
- .debug_frame   0x000041a0      0x130 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
- .debug_frame   0x000042d0      0x1b4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
- .debug_frame   0x00004484      0x25c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
- .debug_frame   0x000046e0      0x1b4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
- .debug_frame   0x00004894       0x5c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_Out_Reg.o)
+ .debug_frame   0x000034a0       0x5c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Digital_Out_Control.o)
+ .debug_frame   0x000034fc       0xb8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
+ .debug_frame   0x000035b4      0x130 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
+ .debug_frame   0x000036e4       0xe0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
+ .debug_frame   0x000037c4       0xe0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
+ .debug_frame   0x000038a4       0xf8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
+ .debug_frame   0x0000399c       0xb8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
+ .debug_frame   0x00003a54      0x1b4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
+ .debug_frame   0x00003c08       0xb8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
+ .debug_frame   0x00003cc0       0xf8 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
+ .debug_frame   0x00003db8      0x1b4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
+ .debug_frame   0x00003f6c       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
+ .debug_frame   0x00003fc4       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
+ .debug_frame   0x0000401c      0x130 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
+ .debug_frame   0x0000414c       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
+ .debug_frame   0x000041a4       0x58 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
+ .debug_frame   0x000041fc      0x130 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
+ .debug_frame   0x0000432c      0x1b4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
+ .debug_frame   0x000044e0      0x25c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+ .debug_frame   0x0000473c      0x1b4 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
  .debug_frame   0x000048f0       0xe0 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
  .debug_frame   0x000049d0       0x7c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AMux_1.o)
  .debug_frame   0x00004a4c      0x238 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyFlash.o)
@@ -2954,122 +2953,122 @@ END GROUP
  .debug_frame   0x0000581c       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a(read.o)
  .debug_frame   0x0000583c       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a(write.o)
 
-.debug_str      0x00000000     0x4b15
+.debug_str      0x00000000     0x4b89
  *(.debug_str)
- .debug_str     0x00000000      0x3db .\CortexM3\ARM_GCC_541\Debug\main.o
-                                0x447 (size before relaxing)
- .debug_str     0x000003db      0x201 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
-                                0x3cd (size before relaxing)
- .debug_str     0x000005dc      0x11d .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                                0x2f5 (size before relaxing)
- .debug_str     0x000006f9       0x51 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_str     0x00000000      0x3d7 .\CortexM3\ARM_GCC_541\Debug\main.o
+                                0x443 (size before relaxing)
+ .debug_str     0x000003d7      0x201 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                                0x3c4 (size before relaxing)
+ .debug_str     0x000005d8      0x11d .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                                0x2ec (size before relaxing)
+ .debug_str     0x000006f5       0xb1 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
                                 0x1d4 (size before relaxing)
- .debug_str     0x0000074a       0x82 .\CortexM3\ARM_GCC_541\Debug\cybootloader.o
-                                0x215 (size before relaxing)
- .debug_str     0x000007cc      0x323 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
-                                0x53b (size before relaxing)
- .debug_str     0x00000aef      0x7d9 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyLib.o)
-                                0xa08 (size before relaxing)
- .debug_str     0x000012c8      0x371 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(cyPm.o)
-                                0x561 (size before relaxing)
- .debug_str     0x00001639      0x1db .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2.o)
-                                0x3d6 (size before relaxing)
- .debug_str     0x00001814       0x2d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2_INT.o)
-                                0x1b1 (size before relaxing)
- .debug_str     0x00001841      0x17d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1.o)
-                                0x3d6 (size before relaxing)
- .debug_str     0x000019be       0x2d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1_INT.o)
-                                0x1b1 (size before relaxing)
- .debug_str     0x000019eb      0x410 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
-                                0x609 (size before relaxing)
- .debug_str     0x00001dfb      0x4d2 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
-                                0x738 (size before relaxing)
- .debug_str     0x000022cd      0x296 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
-                                0x618 (size before relaxing)
- .debug_str     0x00002563       0x80 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_episr.o)
-                                0x2e5 (size before relaxing)
- .debug_str     0x000025e3       0xac .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_pm.o)
-                                0x289 (size before relaxing)
- .debug_str     0x0000268f      0x2b2 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
-                                0x778 (size before relaxing)
- .debug_str     0x00002941       0x5f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_vnd.o)
-                                0x295 (size before relaxing)
- .debug_str     0x000029a0      0x192 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(SampleClock.o)
-                                0x33c (size before relaxing)
- .debug_str     0x00002b32       0xc1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
-                                0x25b (size before relaxing)
- .debug_str     0x00002bf3       0x8a .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Amux_Trigger.o)
-                                0x21c (size before relaxing)
- .debug_str     0x00002c7d       0xb3 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(DMA_Channel_1_dma.o)
-                                0x259 (size before relaxing)
- .debug_str     0x00002d30       0x78 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(DMA_Channel_2_dma.o)
-                                0x259 (size before relaxing)
- .debug_str     0x00002da8      0x27b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
-                                0x433 (size before relaxing)
- .debug_str     0x00003023       0xbe .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_Dp.o)
-                                0x25f (size before relaxing)
- .debug_str     0x000030e1       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Control.o)
-                                0x1eb (size before relaxing)
- .debug_str     0x00003135       0xac .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Status.o)
-                                0x264 (size before relaxing)
- .debug_str     0x000031e1      0x182 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
-                                0x33a (size before relaxing)
- .debug_str     0x00003363       0xcd .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
-                                0x29b (size before relaxing)
- .debug_str     0x00003430       0x4b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
+ .debug_str     0x000007a6       0x82 .\CortexM3\ARM_GCC_541\Debug\cybootloader.o
+                                0x20c (size before relaxing)
+ .debug_str     0x00000828      0x323 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyDmac.o)
+                                0x532 (size before relaxing)
+ .debug_str     0x00000b4b      0x7d9 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyLib.o)
+                                0x9ff (size before relaxing)
+ .debug_str     0x00001324      0x371 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(cyPm.o)
+                                0x558 (size before relaxing)
+ .debug_str     0x00001695      0x1db .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2.o)
+                                0x3cd (size before relaxing)
+ .debug_str     0x00001870       0x2d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_2_INT.o)
+                                0x1a8 (size before relaxing)
+ .debug_str     0x0000189d      0x17d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1.o)
+                                0x3cd (size before relaxing)
+ .debug_str     0x00001a1a       0x2d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ADC_1_INT.o)
+                                0x1a8 (size before relaxing)
+ .debug_str     0x00001a47      0x410 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART.o)
+                                0x600 (size before relaxing)
+ .debug_str     0x00001e57      0x4d2 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cdc.o)
+                                0x72f (size before relaxing)
+ .debug_str     0x00002329      0x296 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_drv.o)
+                                0x60f (size before relaxing)
+ .debug_str     0x000025bf       0x80 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_episr.o)
+                                0x2dc (size before relaxing)
+ .debug_str     0x0000263f       0xac .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_pm.o)
+                                0x280 (size before relaxing)
+ .debug_str     0x000026eb      0x2b2 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_std.o)
+                                0x76f (size before relaxing)
+ .debug_str     0x0000299d       0x5f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_vnd.o)
+                                0x28c (size before relaxing)
+ .debug_str     0x000029fc      0x192 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(SampleClock.o)
+                                0x333 (size before relaxing)
+ .debug_str     0x00002b8e       0xc1 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Vtrigger.o)
+                                0x252 (size before relaxing)
+ .debug_str     0x00002c4f       0x8a .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Amux_Trigger.o)
+                                0x213 (size before relaxing)
+ .debug_str     0x00002cd9       0xb3 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(DMA_Channel_1_dma.o)
+                                0x250 (size before relaxing)
+ .debug_str     0x00002d8c       0x78 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(DMA_Channel_2_dma.o)
+                                0x250 (size before relaxing)
+ .debug_str     0x00002e04      0x27b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PWM_Sample_Buffer.o)
+                                0x42a (size before relaxing)
+ .debug_str     0x0000307f       0xbe .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_Dp.o)
+                                0x256 (size before relaxing)
+ .debug_str     0x0000313d       0x54 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Control.o)
                                 0x1e2 (size before relaxing)
- .debug_str     0x0000347b       0x8e .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
-                                0x238 (size before relaxing)
- .debug_str     0x00003509       0xb5 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
+ .debug_str     0x00003191       0xac .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Status.o)
                                 0x25b (size before relaxing)
- .debug_str     0x000035be       0xca .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
-                                0x27f (size before relaxing)
- .debug_str     0x00003688       0xca .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
-                                0x27f (size before relaxing)
- .debug_str     0x00003752      0x159 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
-                                0x306 (size before relaxing)
- .debug_str     0x000038ab       0x87 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
-                                0x231 (size before relaxing)
- .debug_str     0x00003932      0x147 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
-                                0x33c (size before relaxing)
- .debug_str     0x00003a79       0x87 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
-                                0x231 (size before relaxing)
- .debug_str     0x00003b00      0x11c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
-                                0x306 (size before relaxing)
- .debug_str     0x00003c1c      0x147 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
-                                0x33c (size before relaxing)
- .debug_str     0x00003d63       0x90 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
-                                0x271 (size before relaxing)
- .debug_str     0x00003df3       0x90 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
-                                0x271 (size before relaxing)
- .debug_str     0x00003e83       0xfb .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
-                                0x2a1 (size before relaxing)
- .debug_str     0x00003f7e       0x90 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
-                                0x271 (size before relaxing)
- .debug_str     0x0000400e       0x90 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
-                                0x271 (size before relaxing)
- .debug_str     0x0000409e       0xfb .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
-                                0x2a1 (size before relaxing)
- .debug_str     0x00004199      0x153 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
-                                0x348 (size before relaxing)
- .debug_str     0x000042ec      0x18b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
-                                0x368 (size before relaxing)
- .debug_str     0x00004477      0x15f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
-                                0x354 (size before relaxing)
- .debug_str     0x000045d6       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_Out_Reg.o)
-                                0x1df (size before relaxing)
- .debug_str     0x0000461e       0xca .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
-                                0x27f (size before relaxing)
- .debug_str     0x000046e8       0x67 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AMux_1.o)
-                                0x1fe (size before relaxing)
- .debug_str     0x0000474f      0x156 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyFlash.o)
-                                0x325 (size before relaxing)
- .debug_str     0x000048a5      0x12d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CySpc.o)
-                                0x31f (size before relaxing)
- .debug_str     0x000049d2       0x3f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cls.o)
-                                0x2ad (size before relaxing)
- .debug_str     0x00004a11      0x104 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_descr.o)
-                                0x3b0 (size before relaxing)
+ .debug_str     0x0000323d      0x182 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
+                                0x331 (size before relaxing)
+ .debug_str     0x000033bf       0xcd .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
+                                0x292 (size before relaxing)
+ .debug_str     0x0000348c       0x4b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
+                                0x1d9 (size before relaxing)
+ .debug_str     0x000034d7       0x60 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Digital_Out_Control.o)
+                                0x1ee (size before relaxing)
+ .debug_str     0x00003537       0x8e .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
+                                0x22f (size before relaxing)
+ .debug_str     0x000035c5       0xb5 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
+                                0x252 (size before relaxing)
+ .debug_str     0x0000367a       0xca .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
+                                0x276 (size before relaxing)
+ .debug_str     0x00003744       0xca .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
+                                0x276 (size before relaxing)
+ .debug_str     0x0000380e      0x159 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
+                                0x2fd (size before relaxing)
+ .debug_str     0x00003967       0x87 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
+                                0x228 (size before relaxing)
+ .debug_str     0x000039ee      0x147 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
+                                0x333 (size before relaxing)
+ .debug_str     0x00003b35       0x87 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
+                                0x228 (size before relaxing)
+ .debug_str     0x00003bbc      0x11c .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
+                                0x2fd (size before relaxing)
+ .debug_str     0x00003cd8      0x147 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
+                                0x333 (size before relaxing)
+ .debug_str     0x00003e1f       0x90 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
+                                0x268 (size before relaxing)
+ .debug_str     0x00003eaf       0x90 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
+                                0x268 (size before relaxing)
+ .debug_str     0x00003f3f       0xfb .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
+                                0x298 (size before relaxing)
+ .debug_str     0x0000403a       0x90 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
+                                0x268 (size before relaxing)
+ .debug_str     0x000040ca       0x90 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
+                                0x268 (size before relaxing)
+ .debug_str     0x0000415a       0xfb .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
+                                0x298 (size before relaxing)
+ .debug_str     0x00004255      0x153 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
+                                0x33f (size before relaxing)
+ .debug_str     0x000043a8      0x18b .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+                                0x35f (size before relaxing)
+ .debug_str     0x00004533      0x15f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
+                                0x34b (size before relaxing)
+ .debug_str     0x00004692       0xca .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
+                                0x276 (size before relaxing)
+ .debug_str     0x0000475c       0x67 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AMux_1.o)
+                                0x1f5 (size before relaxing)
+ .debug_str     0x000047c3      0x156 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyFlash.o)
+                                0x31c (size before relaxing)
+ .debug_str     0x00004919      0x12d .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CySpc.o)
+                                0x316 (size before relaxing)
+ .debug_str     0x00004a46       0x3f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_cls.o)
+                                0x2a4 (size before relaxing)
+ .debug_str     0x00004a85      0x104 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(USBUART_descr.o)
+                                0x3a7 (size before relaxing)
 
 .debug_loc
  *(.debug_loc)
@@ -3108,26 +3107,26 @@ END GROUP
  .debug_ranges  0x00000af0       0x60 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
  .debug_ranges  0x00000b50       0x50 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
  .debug_ranges  0x00000ba0       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
- .debug_ranges  0x00000bb8       0x30 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
- .debug_ranges  0x00000be8       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
- .debug_ranges  0x00000c30       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
- .debug_ranges  0x00000c68       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
- .debug_ranges  0x00000ca0       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
- .debug_ranges  0x00000ce0       0x30 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
- .debug_ranges  0x00000d10       0x60 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
- .debug_ranges  0x00000d70       0x30 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
- .debug_ranges  0x00000da0       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
- .debug_ranges  0x00000de0       0x60 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
- .debug_ranges  0x00000e40       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
- .debug_ranges  0x00000e58       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
- .debug_ranges  0x00000e70       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
- .debug_ranges  0x00000eb8       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
- .debug_ranges  0x00000ed0       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
- .debug_ranges  0x00000ee8       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
- .debug_ranges  0x00000f30       0x60 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
- .debug_ranges  0x00000f90       0x88 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
- .debug_ranges  0x00001018       0x60 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
- .debug_ranges  0x00001078       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_Out_Reg.o)
+ .debug_ranges  0x00000bb8       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Digital_Out_Control.o)
+ .debug_ranges  0x00000bd0       0x30 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
+ .debug_ranges  0x00000c00       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
+ .debug_ranges  0x00000c48       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
+ .debug_ranges  0x00000c80       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
+ .debug_ranges  0x00000cb8       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
+ .debug_ranges  0x00000cf8       0x30 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
+ .debug_ranges  0x00000d28       0x60 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
+ .debug_ranges  0x00000d88       0x30 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
+ .debug_ranges  0x00000db8       0x40 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
+ .debug_ranges  0x00000df8       0x60 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
+ .debug_ranges  0x00000e58       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
+ .debug_ranges  0x00000e70       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
+ .debug_ranges  0x00000e88       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
+ .debug_ranges  0x00000ed0       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
+ .debug_ranges  0x00000ee8       0x18 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
+ .debug_ranges  0x00000f00       0x48 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
+ .debug_ranges  0x00000f48       0x60 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
+ .debug_ranges  0x00000fa8       0x88 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+ .debug_ranges  0x00001030       0x60 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
  .debug_ranges  0x00001090       0x38 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
  .debug_ranges  0x000010c8       0x20 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AMux_1.o)
  .debug_ranges  0x000010e8       0x78 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyFlash.o)
@@ -3167,6 +3166,7 @@ END GROUP
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Trigger_Comp.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(PRS.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Digital_Out_Control.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
@@ -3186,7 +3186,6 @@ END GROUP
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
- .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_Out_Reg.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AMux_1.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(CyFlash.o)
@@ -3281,45 +3280,45 @@ END GROUP
  .ARM.attributes
                 0x0000065f       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Wave_Control.o)
  .ARM.attributes
-                0x00000692       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
+                0x00000692       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Digital_Out_Control.o)
  .ARM.attributes
-                0x000006c5       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
+                0x000006c5       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_Buf.o)
  .ARM.attributes
-                0x000006f8       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
+                0x000006f8       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(AuxDAC_1.o)
  .ARM.attributes
-                0x0000072b       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
+                0x0000072b       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeA_Buf.o)
  .ARM.attributes
-                0x0000075e       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
+                0x0000075e       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeB_Buf.o)
  .ARM.attributes
-                0x00000791       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
+                0x00000791       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC.o)
  .ARM.attributes
-                0x000007c4       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
+                0x000007c4       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Buf.o)
  .ARM.attributes
-                0x000007f7       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
+                0x000007f7       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_Clock.o)
  .ARM.attributes
-                0x0000082a       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
+                0x0000082a       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Buf.o)
  .ARM.attributes
-                0x0000085d       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
+                0x0000085d       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC.o)
  .ARM.attributes
-                0x00000890       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
+                0x00000890       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_Clock.o)
  .ARM.attributes
-                0x000008c3       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
+                0x000008c3       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave1_DMA_dma.o)
  .ARM.attributes
-                0x000008f6       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
+                0x000008f6       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_Wave2_DMA_dma.o)
  .ARM.attributes
-                0x00000929       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
+                0x00000929       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveA_DAC_VDAC8.o)
  .ARM.attributes
-                0x0000095c       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
+                0x0000095c       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave1_DMA_dma.o)
  .ARM.attributes
-                0x0000098f       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
+                0x0000098f       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_Wave2_DMA_dma.o)
  .ARM.attributes
-                0x000009c2       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
+                0x000009c2       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(WaveB_DAC_VDAC8.o)
  .ARM.attributes
-                0x000009f5       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
+                0x000009f5       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(NoiseA_Clock.o)
  .ARM.attributes
-                0x00000a28       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
+                0x00000a28       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM.o)
  .ARM.attributes
-                0x00000a5b       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_Out_Reg.o)
+                0x00000a5b       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(Dig_PWM_Clock.o)
  .ARM.attributes
                 0x00000a8e       0x33 .\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.a(ScopeC_Buf.o)
  .ARM.attributes
@@ -3439,4 +3438,4 @@ END GROUP
 
 /DISCARD/
  *(.note.GNU-stack)
-OUTPUT(C:\Users\merce\Documents\scope\CyScope\Twelve-bit-4-chan-43\ScopeKitProg\Scope_CY8KIT-043.cydsn\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.elf elf32-littlearm)
+OUTPUT(C:\Users\merce\Documents\scope\CyScope\CY8CKIT-043\ScopeKitProg\Scope_CY8KIT-043.cydsn\CortexM3\ARM_GCC_541\Debug\Scope_CY8KIT-043.elf elf32-littlearm)

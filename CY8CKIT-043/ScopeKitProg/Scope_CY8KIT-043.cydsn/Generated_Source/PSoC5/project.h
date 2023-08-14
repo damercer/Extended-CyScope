@@ -69,7 +69,7 @@
 #include "Dig_PWM_Clock.h"
 #include "DPWM_Out_aliases.h"
 #include "DPWM_Out.h"
-#include "Dig_Out_Reg.h"
+#include "Digital_Out_Control.h"
 #include "Dig_Out_0_aliases.h"
 #include "Dig_Out_0.h"
 #include "Dig_Out_1_aliases.h"

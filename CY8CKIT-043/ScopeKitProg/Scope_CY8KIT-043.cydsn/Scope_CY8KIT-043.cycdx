@@ -159,8 +159,8 @@
   <block name="Dig_Out_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Dig_Out_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Dig_Out_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Dig_Out_Reg" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <register name="Dig_Out_Reg_CONTROL_REG" address="0x40006578" bitWidth="8" desc="" hidden="false" />
+  <block name="Digital_Out_Control" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+    <register name="Digital_Out_Control_CONTROL_REG" address="0x40006578" bitWidth="8" desc="" hidden="false" />
   </block>
   <block name="Dig_Out_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
